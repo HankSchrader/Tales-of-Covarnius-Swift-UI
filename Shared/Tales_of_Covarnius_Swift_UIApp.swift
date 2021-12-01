@@ -11,7 +11,7 @@ import SwiftUI
 struct Tales_of_Covarnius_Swift_UIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentViewPageChapter1Page1()
         }
     }
 }
