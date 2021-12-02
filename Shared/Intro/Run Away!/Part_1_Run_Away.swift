@@ -9,18 +9,10 @@ import SwiftUI
 
 struct Page_1_2: View {
     var body: some View {
-      
-            VStack {
-        Text("You run away as fast as you can. You don’t need a closer look to know that aliens have just invaded Earth!\n\nVeering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side.")
-                    .fontWeight(.light)
-                    .padding()
-                    Spacer()
-            
-                NavigationLink(destination: Part_2_Run_Away()) {
-                       Text("Continue")
-                }.padding()
-                
-            }
+        let text =
+        "You run away as fast as you can. You don’t need a closer look to know that aliens have just invaded Earth!\n\nVeering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side."
+        
+        getPageView(mainText: text, firstChoice: AnyView(Part_2_Run_Away()))
         
     }
 }

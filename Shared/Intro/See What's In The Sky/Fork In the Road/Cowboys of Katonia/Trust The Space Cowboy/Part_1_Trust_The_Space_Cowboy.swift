@@ -9,16 +9,9 @@ import SwiftUI
 
 struct Part_1_Trust_The_Space_Cowboy: View {
     var body: some View {
-        VStack {
-        Text("You look around at the vast landscape stretching out in all directions. Where could you run? There was nowhere to go. No water. No anything. You decide to trust the space cowboy.\n\n“Our ship broke down,” you say with hesitation. “We need help repairing it.”\n\nThe cowboy smiles. “Well then you crash landed on the right planet. One of my ranch hands, Kebo, is an excellent mechanic. He’ll get you fixed up in no time.”\n\nYou exchange a look with Chrono, still uncertain whether or not to trust the space cowboy.\n\n“My name is Kayo,” he continues, \"you can stay in the ranch house while we get your ship good as new. My wife, Kina, will be fixing dinner. I’m sure you all must be starving.”")
-                .fontWeight(.light)
-                .padding()
-                Spacer()
-            NavigationLink(destination: Part_1_Trust_The_Space_Cowboy()) {
-                       Text("Continue")
-                   }.padding()
+        let text =
+        "You look around at the vast landscape stretching out in all directions. Where could you run? There was nowhere to go. No water. No anything. You decide to trust the space cowboy.\n\n“Our ship broke down,” you say with hesitation. “We need help repairing it.”\n\nThe cowboy smiles. “Well then you crash landed on the right planet. One of my ranch hands, Kebo, is an excellent mechanic. He’ll get you fixed up in no time.”\n\nYou exchange a look with Chrono, still uncertain whether or not to trust the space cowboy.\n\n“My name is Kayo,” he continues, \"you can stay in the ranch house while we get your ship good as new. My wife, Kina, will be fixing dinner. I’m sure you all must be starving.”"
+        getPageView(mainText: text, firstChoice: AnyView(Part_1_Trust_The_Space_Cowboy()))
+        
     }
-}
-
-
 }

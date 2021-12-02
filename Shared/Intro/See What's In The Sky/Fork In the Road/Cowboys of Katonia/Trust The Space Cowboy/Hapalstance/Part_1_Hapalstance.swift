@@ -9,15 +9,9 @@ import SwiftUI
 
 struct Part_1_Hapalstance: View {
     var body: some View {
-        VStack {
-            Text("“Thanks for putting your trust in us!” Kayo says appreciatively. He seems like a nice enough guy.\n\nKayo leaves the house in search of Kebo. You and Chrono plop down on the couch in front of the roaring fire, and Luna stretches out nearby on a fluffy rug. Kina brings you a tray of something called “Mekop”. It tastes like a citrusy sugar cookie.\n\nAfter eating until your stomach is about to burst, you quickly fall asleep. The next thing you know, the sound of Kayo’s voice awakens you from your slumber.\n\n“Your ship should be all set now, partner,” Kayo says happily")
-                    .fontWeight(.light)
-                    .padding()
-                    Spacer()
-                NavigationLink(destination: Part_2_Hapalstance()) {
-                           Text("Continue")
-                       }.padding()
-        }  
+        let text =
+        "“Thanks for putting your trust in us!” Kayo says appreciatively. He seems like a nice enough guy.\n\nKayo leaves the house in search of Kebo. You and Chrono plop down on the couch in front of the roaring fire, and Luna stretches out nearby on a fluffy rug. Kina brings you a tray of something called “Mekop”. It tastes like a citrusy sugar cookie.\n\nAfter eating until your stomach is about to burst, you quickly fall asleep. The next thing you know, the sound of Kayo’s voice awakens you from your slumber.\n\n“Your ship should be all set now, partner,” Kayo says happily"
+        getPageView(mainText: text, firstChoice: AnyView(Part_2_Hapalstance()))
     }
 }
 

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Part_5_Cowboys_Of_Katonia: View {
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     var body: some View {
+        
         VStack {
         Text("The alien babbles in a language that you have never heard.\n\n“I’m sorry, but I don’t understand,” you say politely, shrugging your shoulders.\n\nThe alien looks at you, as if he is straining to hear. Then he nods his head vigorously and pushes a button on his belt.\n\n“Howdy, you folks having some trouble?” His voice is now in English, he must have the same device as Chrono!\n\nWith a broken down ship, you don’t have many options. The way you see it, you can either trust the space cowboy and hope he is as friendly as he seems. Or, you can make a run for it. You mull over the situation for a moment and decide to:  ")
             .fontWeight(.light)
