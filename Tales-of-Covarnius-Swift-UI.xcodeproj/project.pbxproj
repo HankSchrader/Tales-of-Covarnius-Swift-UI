@@ -27,6 +27,10 @@
 		5303C7FC2755CEC400710D34 /* Went_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7FA2755CEC400710D34 /* Went_Home.swift */; };
 		535E39CF275855260074EA50 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39CE275855260074EA50 /* PageView.swift */; };
 		535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */; };
+		535E39D42758FB310074EA50 /* Part_2_Greatest_Scientists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */; };
+		535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */; };
+		535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
+		535E39DA2758FCC10074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
 		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -119,8 +123,6 @@
 		53BACE3D2757095D009E493E /* Bright_Green.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE3B2757095D009E493E /* Bright_Green.swift */; };
 		53BACE3F275709BC009E493E /* Turn_Into_Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE3E275709BC009E493E /* Turn_Into_Frog.swift */; };
 		53BACE40275709BC009E493E /* Turn_Into_Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE3E275709BC009E493E /* Turn_Into_Frog.swift */; };
-		53BACE4327570A47009E493E /* Part_1_Outta_Here.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE4227570A47009E493E /* Part_1_Outta_Here.swift */; };
-		53BACE4427570A47009E493E /* Part_1_Outta_Here.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE4227570A47009E493E /* Part_1_Outta_Here.swift */; };
 		53BACE462757134A009E493E /* Part-4 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE452757134A009E493E /* Part-4 See Whats In The Sky.swift */; };
 		53BACE472757134A009E493E /* Part-4 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE452757134A009E493E /* Part-4 See Whats In The Sky.swift */; };
 /* End PBXBuildFile section */
@@ -140,6 +142,9 @@
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
 		535E39CE275855260074EA50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
+		535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Greatest_Scientists.swift; sourceTree = "<group>"; };
+		535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Warmongers.swift; sourceTree = "<group>"; };
+		535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abandonded_Chrono.swift; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -187,7 +192,6 @@
 		53BACE3827570906009E493E /* Part_2_Wing_It.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Wing_It.swift; sourceTree = "<group>"; };
 		53BACE3B2757095D009E493E /* Bright_Green.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bright_Green.swift; sourceTree = "<group>"; };
 		53BACE3E275709BC009E493E /* Turn_Into_Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn_Into_Frog.swift; sourceTree = "<group>"; };
-		53BACE4227570A47009E493E /* Part_1_Outta_Here.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Outta_Here.swift; sourceTree = "<group>"; };
 		53BACE452757134A009E493E /* Part-4 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part-4 See Whats In The Sky.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +287,7 @@
 		5303C7F92755CE7A00710D34 /* Game Over Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */,
 				5303C7FA2755CEC400710D34 /* Went_Home.swift */,
 				53BACE3B2757095D009E493E /* Bright_Green.swift */,
 				53BACE3E275709BC009E493E /* Turn_Into_Frog.swift */,
@@ -294,8 +299,17 @@
 			isa = PBXGroup;
 			children = (
 				535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */,
+				535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */,
 			);
 			path = "Earth's Greatest Scientist";
+			sourceTree = "<group>";
+		};
+		535E39D52758FC2C0074EA50 /* Warmongers you say? */ = {
+			isa = PBXGroup;
+			children = (
+				535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */,
+			);
+			path = "Warmongers you say?";
 			sourceTree = "<group>";
 		};
 		536F3CED2757A986007E5250 /* utilities */ = {
@@ -426,7 +440,7 @@
 		53BACE20275704DB009E493E /* I'm Not A Scientist */ = {
 			isa = PBXGroup;
 			children = (
-				53BACE4127570A32009E493E /* I'm Outta Here */,
+				535E39D52758FC2C0074EA50 /* Warmongers you say? */,
 				53BACE222757051D009E493E /* Part_1_Not_Scientist.swift */,
 				53BACE28275705DB009E493E /* Part_2_Not_Scientist.swift */,
 				53BACE2B2757063B009E493E /* Part_3_Not_Scientist.swift */,
@@ -452,14 +466,6 @@
 				53BACE3827570906009E493E /* Part_2_Wing_It.swift */,
 			);
 			path = "Wing it";
-			sourceTree = "<group>";
-		};
-		53BACE4127570A32009E493E /* I'm Outta Here */ = {
-			isa = PBXGroup;
-			children = (
-				53BACE4227570A47009E493E /* Part_1_Outta_Here.swift */,
-			);
-			path = "I'm Outta Here";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,9 +619,11 @@
 				5303C7D92755AEC600710D34 /* Tales_of_Covarnius_Swift_UIApp.swift in Sources */,
 				53BACDB22756EA21009E493E /* Part 1 Fork In The Road.swift in Sources */,
 				53BACE3F275709BC009E493E /* Turn_Into_Frog.swift in Sources */,
+				535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */,
 				53BACDC22756EF6C009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
-				53BACE4327570A47009E493E /* Part_1_Outta_Here.swift in Sources */,
+				535E39D42758FB310074EA50 /* Part_2_Greatest_Scientists.swift in Sources */,
 				53BACE1B27570411009E493E /* Part_1_Landing.swift in Sources */,
+				535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */,
 				53BACDD52756F716009E493E /* Part_5_Cowboys_Of_Katonia.swift in Sources */,
 				53BACDF32756FDB4009E493E /* Part_2_Who_Trusts_Alien_Cowboys.swift in Sources */,
 				53BACDBC2756EE38009E493E /* Part_2_Fork_In_The_Road.swift in Sources */,
@@ -673,10 +681,10 @@
 				53BACE302757068A009E493E /* Part_4_Not_Scientist.swift in Sources */,
 				53BACDB72756EB02009E493E /* Part_1_Dissect_My_Brains.swift in Sources */,
 				5303C7DA2755AEC600710D34 /* Tales_of_Covarnius_Swift_UIApp.swift in Sources */,
+				535E39DA2758FCC10074EA50 /* Abandonded_Chrono.swift in Sources */,
 				53BACDB32756EA21009E493E /* Part 1 Fork In The Road.swift in Sources */,
 				53BACE40275709BC009E493E /* Turn_Into_Frog.swift in Sources */,
 				53BACDC32756EF6C009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
-				53BACE4427570A47009E493E /* Part_1_Outta_Here.swift in Sources */,
 				53BACE1C27570411009E493E /* Part_1_Landing.swift in Sources */,
 				53BACDD62756F716009E493E /* Part_5_Cowboys_Of_Katonia.swift in Sources */,
 				53BACDF42756FDB4009E493E /* Part_2_Who_Trusts_Alien_Cowboys.swift in Sources */,
