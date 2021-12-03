@@ -31,6 +31,101 @@
 		535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */; };
 		535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
 		535E39DA2758FCC10074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
+		535E39DD275990B10074EA50 /* Part_1_Let_Me_Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39DC275990B10074EA50 /* Part_1_Let_Me_Help.swift */; };
+		535E39DF275991A20074EA50 /* Part_2_Let_Me_Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39DE275991A20074EA50 /* Part_2_Let_Me_Help.swift */; };
+		535E39E12759922E0074EA50 /* Part_3_Let_Me_Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39E02759922E0074EA50 /* Part_3_Let_Me_Help.swift */; };
+		535E39E3275992620074EA50 /* Part_4_Let_Me_Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39E2275992620074EA50 /* Part_4_Let_Me_Help.swift */; };
+		535E39E5275992AD0074EA50 /* Part_5_Let_Me_Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39E4275992AD0074EA50 /* Part_5_Let_Me_Help.swift */; };
+		535E39E8275993490074EA50 /* Part_1_Try_Give_Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39E7275993490074EA50 /* Part_1_Try_Give_Up.swift */; };
+		535E39EB275993AB0074EA50 /* Part_1_Do_Ourselves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39EA275993AB0074EA50 /* Part_1_Do_Ourselves.swift */; };
+		535E39ED275994450074EA50 /* Part_2_Do_Ourselves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39EC275994450074EA50 /* Part_2_Do_Ourselves.swift */; };
+		535E39EF2759948D0074EA50 /* Part_3_Do_Ourselves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39EE2759948D0074EA50 /* Part_3_Do_Ourselves.swift */; };
+		535E39F2275995060074EA50 /* Part_1_Diplomatic_Immunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39F1275995060074EA50 /* Part_1_Diplomatic_Immunity.swift */; };
+		535E39F52759953D0074EA50 /* Part_1_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39F42759953D0074EA50 /* Part_1_Boarding_Ticket.swift */; };
+		535E39F72759962E0074EA50 /* Part_2_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39F62759962E0074EA50 /* Part_2_Boarding_Ticket.swift */; };
+		535E39FA275997440074EA50 /* Part_3_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39F9275997440074EA50 /* Part_3_Boarding_Ticket.swift */; };
+		535E39FC275997990074EA50 /* Part_4_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39FB275997990074EA50 /* Part_4_Boarding_Ticket.swift */; };
+		535E39FE2759981B0074EA50 /* Part_5_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39FD2759981B0074EA50 /* Part_5_Boarding_Ticket.swift */; };
+		535E3A00275998910074EA50 /* Part_6_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39FF275998910074EA50 /* Part_6_Boarding_Ticket.swift */; };
+		535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A01275998FA0074EA50 /* Part_7_Boarding_Ticket.swift */; };
+		535E3A04275999A30074EA50 /* Part_8_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A03275999A30074EA50 /* Part_8_Boarding_Ticket.swift */; };
+		535E3A0627599A220074EA50 /* Part_9_Boarding_Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A0527599A220074EA50 /* Part_9_Boarding_Ticket.swift */; };
+		535E3A0927599B060074EA50 /* Part_1_Crash_Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A0827599B060074EA50 /* Part_1_Crash_Wall.swift */; };
+		535E3A0D27599B5D0074EA50 /* Part_1_Fetch_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A0C27599B5D0074EA50 /* Part_1_Fetch_Key.swift */; };
+		535E3A0F27599C270074EA50 /* Part_2_Crash_Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A0E27599C270074EA50 /* Part_2_Crash_Wall.swift */; };
+		535E3A1127599CDF0074EA50 /* Part_3_Crash_Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1027599CDF0074EA50 /* Part_3_Crash_Wall.swift */; };
+		535E3A1327599D200074EA50 /* Part_2_Fetch_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1227599D200074EA50 /* Part_2_Fetch_Key.swift */; };
+		535E3A1527599DA50074EA50 /* Part_3_Fetch_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1427599DA50074EA50 /* Part_3_Fetch_Key.swift */; };
+		535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1627599DFC0074EA50 /* Part_4_Fetch_Key.swift */; };
+		535E3A1927599E600074EA50 /* Part_5_Fetch_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1827599E600074EA50 /* Part_5_Fetch_Key.swift */; };
+		535E3A1D27599F360074EA50 /* Got_Caught.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1C27599F360074EA50 /* Got_Caught.swift */; };
+		535E3A1F2759A0230074EA50 /* Part_1_Sneak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A1E2759A0230074EA50 /* Part_1_Sneak.swift */; };
+		535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A202759A0A00074EA50 /* Part_2_Sneak.swift */; };
+		535E3A232759A1040074EA50 /* Part_3_Sneak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A222759A1040074EA50 /* Part_3_Sneak.swift */; };
+		535E3A252759A1A20074EA50 /* Part_4_Sneak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A242759A1A20074EA50 /* Part_4_Sneak.swift */; };
+		535E3A282759A2170074EA50 /* Part_1_Murkblur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A272759A2170074EA50 /* Part_1_Murkblur.swift */; };
+		535E3A2C2759A27C0074EA50 /* Part_1_Giant_Luna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A2B2759A27C0074EA50 /* Part_1_Giant_Luna.swift */; };
+		535E3A2E2759A3150074EA50 /* Part_2_Giant_Luna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A2D2759A3150074EA50 /* Part_2_Giant_Luna.swift */; };
+		535E3A302759A3940074EA50 /* Part_3_Giant_Luna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A2F2759A3940074EA50 /* Part_3_Giant_Luna.swift */; };
+		535E3A322759A3FD0074EA50 /* Part_4_Giant_Luna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A312759A3FD0074EA50 /* Part_4_Giant_Luna.swift */; };
+		535E3A362759A48D0074EA50 /* Part_1_Dont_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A352759A48D0074EA50 /* Part_1_Dont_Tell.swift */; };
+		535E3A382759A4950074EA50 /* Part_1_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A372759A4950074EA50 /* Part_1_Tell.swift */; };
+		535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A392759A55B0074EA50 /* Part_2_Tell.swift */; };
+		535E3A3C2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A3B2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift */; };
+		535E3A402759A8C70074EA50 /* Part_1_Council.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A3F2759A8C70074EA50 /* Part_1_Council.swift */; };
+		535E3A422759A8D20074EA50 /* Part_1_House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A412759A8D20074EA50 /* Part_1_House.swift */; };
+		535E3A442759A9EC0074EA50 /* Part_2_House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A432759A9EC0074EA50 /* Part_2_House.swift */; };
+		535E3A462759AA6D0074EA50 /* Part_2_Council.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A452759AA6D0074EA50 /* Part_2_Council.swift */; };
+		535E3A482759AADC0074EA50 /* Part_3_Council.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A472759AADC0074EA50 /* Part_3_Council.swift */; };
+		535E3A4C2759AC500074EA50 /* Part_1_Ask_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A4B2759AC500074EA50 /* Part_1_Ask_Chrono.swift */; };
+		535E3A4E2759ACAF0074EA50 /* Part_1_Store_Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A4D2759ACAF0074EA50 /* Part_1_Store_Room.swift */; };
+		535E3A522759AD9D0074EA50 /* Caught_By_Covarnian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A512759AD9D0074EA50 /* Caught_By_Covarnian.swift */; };
+		535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A532759AE890074EA50 /* Part_2_Store_Room.swift */; };
+		535E3A562759AEE30074EA50 /* Part_3_Store_Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A552759AEE30074EA50 /* Part_3_Store_Room.swift */; };
+		535E3A582759AFA40074EA50 /* Part_4_Store_Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A572759AFA40074EA50 /* Part_4_Store_Room.swift */; };
+		535E3A5B2759B0290074EA50 /* Part_1_Keep_Thinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A5A2759B0290074EA50 /* Part_1_Keep_Thinking.swift */; };
+		535E3A5E2759B0940074EA50 /* Part_1_Not_Important.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A5D2759B0940074EA50 /* Part_1_Not_Important.swift */; };
+		535E3A602759B1040074EA50 /* Part_2_Keep_Thinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A5F2759B1040074EA50 /* Part_2_Keep_Thinking.swift */; };
+		535E3A622759B1D90074EA50 /* Part_3_Keep_Thinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A612759B1D90074EA50 /* Part_3_Keep_Thinking.swift */; };
+		535E3A652759B2B00074EA50 /* Part_1_Luna_Stays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A642759B2B00074EA50 /* Part_1_Luna_Stays.swift */; };
+		535E3A672759B3200074EA50 /* Part_2_Luna_Stays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A662759B3200074EA50 /* Part_2_Luna_Stays.swift */; };
+		535E3A6A2759B4120074EA50 /* Part_1_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */; };
+		535E3A6C2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */; };
+		535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A6F2759B86B0074EA50 /* Part_1_Take_Key.swift */; };
+		535E3A722759B89A0074EA50 /* Part_1_Too_Risky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A712759B89A0074EA50 /* Part_1_Too_Risky.swift */; };
+		535E3A742759B8F90074EA50 /* Part_3_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */; };
+		535E3A762759B9840074EA50 /* Part_4_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A752759B9840074EA50 /* Part_4_Two_Diplomats.swift */; };
+		535E3A792759BA360074EA50 /* Part_1_Peace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A782759BA360074EA50 /* Part_1_Peace.swift */; };
+		535E3A7B2759BAA80074EA50 /* Part_2_Peace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A7A2759BAA80074EA50 /* Part_2_Peace.swift */; };
+		535E3A7E2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A7D2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift */; };
+		535E3A812759BC020074EA50 /* Part_1_Ice_Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A802759BC020074EA50 /* Part_1_Ice_Ray.swift */; };
+		535E3A842759BC960074EA50 /* Part_1_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A832759BC960074EA50 /* Part_1_Gravity_Gun.swift */; };
+		535E3A862759BD880074EA50 /* Part_2_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A852759BD880074EA50 /* Part_2_Gravity_Gun.swift */; };
+		535E3A882759BE0E0074EA50 /* Part_3_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A872759BE0E0074EA50 /* Part_3_Gravity_Gun.swift */; };
+		535E3A8A2759BE650074EA50 /* Part_4_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A892759BE650074EA50 /* Part_4_Gravity_Gun.swift */; };
+		535E3A8C2759BEB20074EA50 /* Part_5_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A8B2759BEB20074EA50 /* Part_5_Gravity_Gun.swift */; };
+		535E3A8E2759BEF70074EA50 /* Part_6_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A8D2759BEF70074EA50 /* Part_6_Gravity_Gun.swift */; };
+		535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A8F2759BF600074EA50 /* Part_7_Gravity_Gun.swift */; };
+		535E3A922759BFBB0074EA50 /* Part_8_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A912759BFBB0074EA50 /* Part_8_Gravity_Gun.swift */; };
+		535E3A942759BFFA0074EA50 /* Part_9_Gravity_Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A932759BFFA0074EA50 /* Part_9_Gravity_Gun.swift */; };
+		535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A972759C06E0074EA50 /* Part_1_Clog_Toilet.swift */; };
+		535E3A9A2759C07E0074EA50 /* Part_1_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A992759C07E0074EA50 /* Part_1_Hypersleep.swift */; };
+		535E3A9C2759C0F40074EA50 /* Part_2_Clog_Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A9B2759C0F40074EA50 /* Part_2_Clog_Toilet.swift */; };
+		535E3A9E2759C1380074EA50 /* Part_3_Clog_Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A9D2759C1380074EA50 /* Part_3_Clog_Toilet.swift */; };
+		535E3AA02759C1810074EA50 /* Part_4_Clog_Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A9F2759C1810074EA50 /* Part_4_Clog_Toilet.swift */; };
+		535E3AA32759C2050074EA50 /* Part_1_Help_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AA22759C2050074EA50 /* Part_1_Help_Chrono.swift */; };
+		535E3AA52759C23D0074EA50 /* Bad_Distraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AA42759C23D0074EA50 /* Bad_Distraction.swift */; };
+		535E3AA72759C2F80074EA50 /* Part_5_Clog_Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AA62759C2F80074EA50 /* Part_5_Clog_Toilet.swift */; };
+		535E3AA92759C3EC0074EA50 /* Part_2_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AA82759C3EC0074EA50 /* Part_2_Hypersleep.swift */; };
+		535E3AAB2759C4290074EA50 /* Part_3_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AAA2759C4290074EA50 /* Part_3_Hypersleep.swift */; };
+		535E3AAD2759C4A10074EA50 /* Part_4_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AAC2759C4A10074EA50 /* Part_4_Hypersleep.swift */; };
+		535E3AAF2759C4DF0074EA50 /* Part_5_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AAE2759C4DF0074EA50 /* Part_5_Hypersleep.swift */; };
+		535E3AB12759C4EA0074EA50 /* Part_6_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AB02759C4EA0074EA50 /* Part_6_Hypersleep.swift */; };
+		535E3AB32759C4F20074EA50 /* Part_7_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AB22759C4F20074EA50 /* Part_7_Hypersleep.swift */; };
+		535E3AB52759C5BD0074EA50 /* Part_8_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AB42759C5BD0074EA50 /* Part_8_Hypersleep.swift */; };
+		535E3AB82759C6040074EA50 /* Part_9_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AB72759C6040074EA50 /* Part_9_Hypersleep.swift */; };
+		535E3ABB2759C6620074EA50 /* Home_Sweet_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */; };
+		535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABC2759C67B0074EA50 /* Celebrate.swift */; };
 		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -145,6 +240,101 @@
 		535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Greatest_Scientists.swift; sourceTree = "<group>"; };
 		535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Warmongers.swift; sourceTree = "<group>"; };
 		535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abandonded_Chrono.swift; sourceTree = "<group>"; };
+		535E39DC275990B10074EA50 /* Part_1_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Let_Me_Help.swift; sourceTree = "<group>"; };
+		535E39DE275991A20074EA50 /* Part_2_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Let_Me_Help.swift; sourceTree = "<group>"; };
+		535E39E02759922E0074EA50 /* Part_3_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Let_Me_Help.swift; sourceTree = "<group>"; };
+		535E39E2275992620074EA50 /* Part_4_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Let_Me_Help.swift; sourceTree = "<group>"; };
+		535E39E4275992AD0074EA50 /* Part_5_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Let_Me_Help.swift; sourceTree = "<group>"; };
+		535E39E7275993490074EA50 /* Part_1_Try_Give_Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Try_Give_Up.swift; sourceTree = "<group>"; };
+		535E39EA275993AB0074EA50 /* Part_1_Do_Ourselves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Do_Ourselves.swift; sourceTree = "<group>"; };
+		535E39EC275994450074EA50 /* Part_2_Do_Ourselves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Do_Ourselves.swift; sourceTree = "<group>"; };
+		535E39EE2759948D0074EA50 /* Part_3_Do_Ourselves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Do_Ourselves.swift; sourceTree = "<group>"; };
+		535E39F1275995060074EA50 /* Part_1_Diplomatic_Immunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Diplomatic_Immunity.swift; sourceTree = "<group>"; };
+		535E39F42759953D0074EA50 /* Part_1_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E39F62759962E0074EA50 /* Part_2_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E39F9275997440074EA50 /* Part_3_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E39FB275997990074EA50 /* Part_4_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E39FD2759981B0074EA50 /* Part_5_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E39FF275998910074EA50 /* Part_6_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_6_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E3A01275998FA0074EA50 /* Part_7_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_7_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E3A03275999A30074EA50 /* Part_8_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_8_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E3A0527599A220074EA50 /* Part_9_Boarding_Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_9_Boarding_Ticket.swift; sourceTree = "<group>"; };
+		535E3A0827599B060074EA50 /* Part_1_Crash_Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Crash_Wall.swift; sourceTree = "<group>"; };
+		535E3A0C27599B5D0074EA50 /* Part_1_Fetch_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Fetch_Key.swift; sourceTree = "<group>"; };
+		535E3A0E27599C270074EA50 /* Part_2_Crash_Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Crash_Wall.swift; sourceTree = "<group>"; };
+		535E3A1027599CDF0074EA50 /* Part_3_Crash_Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Crash_Wall.swift; sourceTree = "<group>"; };
+		535E3A1227599D200074EA50 /* Part_2_Fetch_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Fetch_Key.swift; sourceTree = "<group>"; };
+		535E3A1427599DA50074EA50 /* Part_3_Fetch_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Fetch_Key.swift; sourceTree = "<group>"; };
+		535E3A1627599DFC0074EA50 /* Part_4_Fetch_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Fetch_Key.swift; sourceTree = "<group>"; };
+		535E3A1827599E600074EA50 /* Part_5_Fetch_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Fetch_Key.swift; sourceTree = "<group>"; };
+		535E3A1C27599F360074EA50 /* Got_Caught.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Got_Caught.swift; sourceTree = "<group>"; };
+		535E3A1E2759A0230074EA50 /* Part_1_Sneak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Sneak.swift; sourceTree = "<group>"; };
+		535E3A202759A0A00074EA50 /* Part_2_Sneak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Sneak.swift; sourceTree = "<group>"; };
+		535E3A222759A1040074EA50 /* Part_3_Sneak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Sneak.swift; sourceTree = "<group>"; };
+		535E3A242759A1A20074EA50 /* Part_4_Sneak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Sneak.swift; sourceTree = "<group>"; };
+		535E3A272759A2170074EA50 /* Part_1_Murkblur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Murkblur.swift; sourceTree = "<group>"; };
+		535E3A2B2759A27C0074EA50 /* Part_1_Giant_Luna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Giant_Luna.swift; sourceTree = "<group>"; };
+		535E3A2D2759A3150074EA50 /* Part_2_Giant_Luna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Giant_Luna.swift; sourceTree = "<group>"; };
+		535E3A2F2759A3940074EA50 /* Part_3_Giant_Luna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Giant_Luna.swift; sourceTree = "<group>"; };
+		535E3A312759A3FD0074EA50 /* Part_4_Giant_Luna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Giant_Luna.swift; sourceTree = "<group>"; };
+		535E3A352759A48D0074EA50 /* Part_1_Dont_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Dont_Tell.swift; sourceTree = "<group>"; };
+		535E3A372759A4950074EA50 /* Part_1_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Tell.swift; sourceTree = "<group>"; };
+		535E3A392759A55B0074EA50 /* Part_2_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Tell.swift; sourceTree = "<group>"; };
+		535E3A3B2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Diplomatic_Immunity.swift; sourceTree = "<group>"; };
+		535E3A3F2759A8C70074EA50 /* Part_1_Council.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Council.swift; sourceTree = "<group>"; };
+		535E3A412759A8D20074EA50 /* Part_1_House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_House.swift; sourceTree = "<group>"; };
+		535E3A432759A9EC0074EA50 /* Part_2_House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_House.swift; sourceTree = "<group>"; };
+		535E3A452759AA6D0074EA50 /* Part_2_Council.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Council.swift; sourceTree = "<group>"; };
+		535E3A472759AADC0074EA50 /* Part_3_Council.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Council.swift; sourceTree = "<group>"; };
+		535E3A4B2759AC500074EA50 /* Part_1_Ask_Chrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Ask_Chrono.swift; sourceTree = "<group>"; };
+		535E3A4D2759ACAF0074EA50 /* Part_1_Store_Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Store_Room.swift; sourceTree = "<group>"; };
+		535E3A512759AD9D0074EA50 /* Caught_By_Covarnian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caught_By_Covarnian.swift; sourceTree = "<group>"; };
+		535E3A532759AE890074EA50 /* Part_2_Store_Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Store_Room.swift; sourceTree = "<group>"; };
+		535E3A552759AEE30074EA50 /* Part_3_Store_Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Store_Room.swift; sourceTree = "<group>"; };
+		535E3A572759AFA40074EA50 /* Part_4_Store_Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Store_Room.swift; sourceTree = "<group>"; };
+		535E3A5A2759B0290074EA50 /* Part_1_Keep_Thinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Keep_Thinking.swift; sourceTree = "<group>"; };
+		535E3A5D2759B0940074EA50 /* Part_1_Not_Important.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Not_Important.swift; sourceTree = "<group>"; };
+		535E3A5F2759B1040074EA50 /* Part_2_Keep_Thinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Keep_Thinking.swift; sourceTree = "<group>"; };
+		535E3A612759B1D90074EA50 /* Part_3_Keep_Thinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Keep_Thinking.swift; sourceTree = "<group>"; };
+		535E3A642759B2B00074EA50 /* Part_1_Luna_Stays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Luna_Stays.swift; sourceTree = "<group>"; };
+		535E3A662759B3200074EA50 /* Part_2_Luna_Stays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Luna_Stays.swift; sourceTree = "<group>"; };
+		535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Two_Diplomats.swift; sourceTree = "<group>"; };
+		535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IMPORTANT Part_2_Two_Diplomats.swift"; sourceTree = "<group>"; };
+		535E3A6F2759B86B0074EA50 /* Part_1_Take_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Take_Key.swift; sourceTree = "<group>"; };
+		535E3A712759B89A0074EA50 /* Part_1_Too_Risky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Too_Risky.swift; sourceTree = "<group>"; };
+		535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Two_Diplomats.swift; sourceTree = "<group>"; };
+		535E3A752759B9840074EA50 /* Part_4_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Two_Diplomats.swift; sourceTree = "<group>"; };
+		535E3A782759BA360074EA50 /* Part_1_Peace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Peace.swift; sourceTree = "<group>"; };
+		535E3A7A2759BAA80074EA50 /* Part_2_Peace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Peace.swift; sourceTree = "<group>"; };
+		535E3A7D2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Secret_Weapon.swift; sourceTree = "<group>"; };
+		535E3A802759BC020074EA50 /* Part_1_Ice_Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Ice_Ray.swift; sourceTree = "<group>"; };
+		535E3A832759BC960074EA50 /* Part_1_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A852759BD880074EA50 /* Part_2_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A872759BE0E0074EA50 /* Part_3_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A892759BE650074EA50 /* Part_4_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A8B2759BEB20074EA50 /* Part_5_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A8D2759BEF70074EA50 /* Part_6_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_6_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A8F2759BF600074EA50 /* Part_7_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_7_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A912759BFBB0074EA50 /* Part_8_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_8_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A932759BFFA0074EA50 /* Part_9_Gravity_Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_9_Gravity_Gun.swift; sourceTree = "<group>"; };
+		535E3A972759C06E0074EA50 /* Part_1_Clog_Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Clog_Toilet.swift; sourceTree = "<group>"; };
+		535E3A992759C07E0074EA50 /* Part_1_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3A9B2759C0F40074EA50 /* Part_2_Clog_Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Clog_Toilet.swift; sourceTree = "<group>"; };
+		535E3A9D2759C1380074EA50 /* Part_3_Clog_Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Clog_Toilet.swift; sourceTree = "<group>"; };
+		535E3A9F2759C1810074EA50 /* Part_4_Clog_Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Clog_Toilet.swift; sourceTree = "<group>"; };
+		535E3AA22759C2050074EA50 /* Part_1_Help_Chrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Help_Chrono.swift; sourceTree = "<group>"; };
+		535E3AA42759C23D0074EA50 /* Bad_Distraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bad_Distraction.swift; sourceTree = "<group>"; };
+		535E3AA62759C2F80074EA50 /* Part_5_Clog_Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Clog_Toilet.swift; sourceTree = "<group>"; };
+		535E3AA82759C3EC0074EA50 /* Part_2_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AAA2759C4290074EA50 /* Part_3_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AAC2759C4A10074EA50 /* Part_4_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AAE2759C4DF0074EA50 /* Part_5_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AB02759C4EA0074EA50 /* Part_6_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_6_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AB22759C4F20074EA50 /* Part_7_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_7_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AB42759C5BD0074EA50 /* Part_8_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_8_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3AB72759C6040074EA50 /* Part_9_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_9_Hypersleep.swift; sourceTree = "<group>"; };
+		535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Sweet_Home.swift; sourceTree = "<group>"; };
+		535E3ABC2759C67B0074EA50 /* Celebrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrate.swift; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -291,6 +481,9 @@
 				5303C7FA2755CEC400710D34 /* Went_Home.swift */,
 				53BACE3B2757095D009E493E /* Bright_Green.swift */,
 				53BACE3E275709BC009E493E /* Turn_Into_Frog.swift */,
+				535E3A1C27599F360074EA50 /* Got_Caught.swift */,
+				535E3A512759AD9D0074EA50 /* Caught_By_Covarnian.swift */,
+				535E3AA42759C23D0074EA50 /* Bad_Distraction.swift */,
 			);
 			path = "Game Over Scenarios";
 			sourceTree = "<group>";
@@ -310,6 +503,337 @@
 				535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */,
 			);
 			path = "Warmongers you say?";
+			sourceTree = "<group>";
+		};
+		535E39DB275990980074EA50 /* Let me help! */ = {
+			isa = PBXGroup;
+			children = (
+				535E39E92759937E0074EA50 /* Let's do it ourselves! */,
+				535E39E6275993320074EA50 /* Try to give up */,
+				535E39DC275990B10074EA50 /* Part_1_Let_Me_Help.swift */,
+				535E39DE275991A20074EA50 /* Part_2_Let_Me_Help.swift */,
+				535E39E02759922E0074EA50 /* Part_3_Let_Me_Help.swift */,
+				535E39E2275992620074EA50 /* Part_4_Let_Me_Help.swift */,
+				535E39E4275992AD0074EA50 /* Part_5_Let_Me_Help.swift */,
+			);
+			path = "Let me help!";
+			sourceTree = "<group>";
+		};
+		535E39E6275993320074EA50 /* Try to give up */ = {
+			isa = PBXGroup;
+			children = (
+				535E39E7275993490074EA50 /* Part_1_Try_Give_Up.swift */,
+			);
+			path = "Try to give up";
+			sourceTree = "<group>";
+		};
+		535E39E92759937E0074EA50 /* Let's do it ourselves! */ = {
+			isa = PBXGroup;
+			children = (
+				535E39F3275995210074EA50 /* Where's Your Boarding Ticket? (Chapter Marker) */,
+				535E39F0275994F70074EA50 /* Diplomatic Immunity (Chapter Markter) */,
+				535E39EA275993AB0074EA50 /* Part_1_Do_Ourselves.swift */,
+				535E39EC275994450074EA50 /* Part_2_Do_Ourselves.swift */,
+				535E39EE2759948D0074EA50 /* Part_3_Do_Ourselves.swift */,
+			);
+			path = "Let's do it ourselves!";
+			sourceTree = "<group>";
+		};
+		535E39F0275994F70074EA50 /* Diplomatic Immunity (Chapter Markter) */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A3E2759A8B30074EA50 /* Council Chambers */,
+				535E3A3D2759A8A00074EA50 /* Sneak Into House */,
+				535E39F1275995060074EA50 /* Part_1_Diplomatic_Immunity.swift */,
+				535E3A3B2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift */,
+			);
+			path = "Diplomatic Immunity (Chapter Markter)";
+			sourceTree = "<group>";
+		};
+		535E39F3275995210074EA50 /* Where's Your Boarding Ticket? (Chapter Marker) */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A0A27599B410074EA50 /* Fetch Key */,
+				535E3A0727599AF40074EA50 /* Crash Thru Wall */,
+				535E39F42759953D0074EA50 /* Part_1_Boarding_Ticket.swift */,
+				535E39F62759962E0074EA50 /* Part_2_Boarding_Ticket.swift */,
+				535E39F9275997440074EA50 /* Part_3_Boarding_Ticket.swift */,
+				535E39FB275997990074EA50 /* Part_4_Boarding_Ticket.swift */,
+				535E39FD2759981B0074EA50 /* Part_5_Boarding_Ticket.swift */,
+				535E39FF275998910074EA50 /* Part_6_Boarding_Ticket.swift */,
+				535E3A01275998FA0074EA50 /* Part_7_Boarding_Ticket.swift */,
+				535E3A03275999A30074EA50 /* Part_8_Boarding_Ticket.swift */,
+				535E3A0527599A220074EA50 /* Part_9_Boarding_Ticket.swift */,
+			);
+			path = "Where's Your Boarding Ticket? (Chapter Marker)";
+			sourceTree = "<group>";
+		};
+		535E3A0727599AF40074EA50 /* Crash Thru Wall */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A0827599B060074EA50 /* Part_1_Crash_Wall.swift */,
+				535E3A0E27599C270074EA50 /* Part_2_Crash_Wall.swift */,
+				535E3A1027599CDF0074EA50 /* Part_3_Crash_Wall.swift */,
+			);
+			path = "Crash Thru Wall";
+			sourceTree = "<group>";
+		};
+		535E3A0A27599B410074EA50 /* Fetch Key */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A1B27599EDB0074EA50 /* Sneak */,
+				535E3A0C27599B5D0074EA50 /* Part_1_Fetch_Key.swift */,
+				535E3A1227599D200074EA50 /* Part_2_Fetch_Key.swift */,
+				535E3A1427599DA50074EA50 /* Part_3_Fetch_Key.swift */,
+				535E3A1627599DFC0074EA50 /* Part_4_Fetch_Key.swift */,
+				535E3A1827599E600074EA50 /* Part_5_Fetch_Key.swift */,
+			);
+			path = "Fetch Key";
+			sourceTree = "<group>";
+		};
+		535E3A1B27599EDB0074EA50 /* Sneak */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A292759A2670074EA50 /* Giant Luna */,
+				535E3A262759A2090074EA50 /* Murkblur */,
+				535E3A1E2759A0230074EA50 /* Part_1_Sneak.swift */,
+				535E3A202759A0A00074EA50 /* Part_2_Sneak.swift */,
+				535E3A222759A1040074EA50 /* Part_3_Sneak.swift */,
+				535E3A242759A1A20074EA50 /* Part_4_Sneak.swift */,
+			);
+			path = Sneak;
+			sourceTree = "<group>";
+		};
+		535E3A262759A2090074EA50 /* Murkblur */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A272759A2170074EA50 /* Part_1_Murkblur.swift */,
+			);
+			path = Murkblur;
+			sourceTree = "<group>";
+		};
+		535E3A292759A2670074EA50 /* Giant Luna */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A342759A47E0074EA50 /* Don't Tell */,
+				535E3A332759A4750074EA50 /* Tell Zanarq */,
+				535E3A2B2759A27C0074EA50 /* Part_1_Giant_Luna.swift */,
+				535E3A2D2759A3150074EA50 /* Part_2_Giant_Luna.swift */,
+				535E3A2F2759A3940074EA50 /* Part_3_Giant_Luna.swift */,
+				535E3A312759A3FD0074EA50 /* Part_4_Giant_Luna.swift */,
+			);
+			path = "Giant Luna";
+			sourceTree = "<group>";
+		};
+		535E3A332759A4750074EA50 /* Tell Zanarq */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A372759A4950074EA50 /* Part_1_Tell.swift */,
+				535E3A392759A55B0074EA50 /* Part_2_Tell.swift */,
+			);
+			path = "Tell Zanarq";
+			sourceTree = "<group>";
+		};
+		535E3A342759A47E0074EA50 /* Don't Tell */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A352759A48D0074EA50 /* Part_1_Dont_Tell.swift */,
+			);
+			path = "Don't Tell";
+			sourceTree = "<group>";
+		};
+		535E3A3D2759A8A00074EA50 /* Sneak Into House */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A412759A8D20074EA50 /* Part_1_House.swift */,
+				535E3A432759A9EC0074EA50 /* Part_2_House.swift */,
+			);
+			path = "Sneak Into House";
+			sourceTree = "<group>";
+		};
+		535E3A3E2759A8B30074EA50 /* Council Chambers */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A4A2759AC1E0074EA50 /* Store Room */,
+				535E3A492759AC140074EA50 /* Ask Chrono */,
+				535E3A3F2759A8C70074EA50 /* Part_1_Council.swift */,
+				535E3A452759AA6D0074EA50 /* Part_2_Council.swift */,
+				535E3A472759AADC0074EA50 /* Part_3_Council.swift */,
+			);
+			path = "Council Chambers";
+			sourceTree = "<group>";
+		};
+		535E3A492759AC140074EA50 /* Ask Chrono */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A4B2759AC500074EA50 /* Part_1_Ask_Chrono.swift */,
+			);
+			path = "Ask Chrono";
+			sourceTree = "<group>";
+		};
+		535E3A4A2759AC1E0074EA50 /* Store Room */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A5C2759B07E0074EA50 /* Not Important */,
+				535E3A592759B0180074EA50 /* Keep Thinking... */,
+				535E3A4D2759ACAF0074EA50 /* Part_1_Store_Room.swift */,
+				535E3A532759AE890074EA50 /* Part_2_Store_Room.swift */,
+				535E3A552759AEE30074EA50 /* Part_3_Store_Room.swift */,
+				535E3A572759AFA40074EA50 /* Part_4_Store_Room.swift */,
+			);
+			path = "Store Room";
+			sourceTree = "<group>";
+		};
+		535E3A592759B0180074EA50 /* Keep Thinking... */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A682759B3FA0074EA50 /* Two Diplomate (Chapter Marker) */,
+				535E3A632759B2A30074EA50 /* Luna Stays */,
+				535E3A5A2759B0290074EA50 /* Part_1_Keep_Thinking.swift */,
+				535E3A5F2759B1040074EA50 /* Part_2_Keep_Thinking.swift */,
+				535E3A612759B1D90074EA50 /* Part_3_Keep_Thinking.swift */,
+			);
+			path = "Keep Thinking...";
+			sourceTree = "<group>";
+		};
+		535E3A5C2759B07E0074EA50 /* Not Important */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A5D2759B0940074EA50 /* Part_1_Not_Important.swift */,
+			);
+			path = "Not Important";
+			sourceTree = "<group>";
+		};
+		535E3A632759B2A30074EA50 /* Luna Stays */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A642759B2B00074EA50 /* Part_1_Luna_Stays.swift */,
+				535E3A662759B3200074EA50 /* Part_2_Luna_Stays.swift */,
+			);
+			path = "Luna Stays";
+			sourceTree = "<group>";
+		};
+		535E3A682759B3FA0074EA50 /* Two Diplomate (Chapter Marker) */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A7C2759BB2E0074EA50 /* Secret Weapon */,
+				535E3A772759BA240074EA50 /* We Want Peace */,
+				535E3A6E2759B84A0074EA50 /* Too Risky */,
+				535E3A6D2759B8430074EA50 /* Take Key */,
+				535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */,
+				535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */,
+				535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */,
+				535E3A752759B9840074EA50 /* Part_4_Two_Diplomats.swift */,
+			);
+			path = "Two Diplomate (Chapter Marker)";
+			sourceTree = "<group>";
+		};
+		535E3A6D2759B8430074EA50 /* Take Key */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A6F2759B86B0074EA50 /* Part_1_Take_Key.swift */,
+			);
+			path = "Take Key";
+			sourceTree = "<group>";
+		};
+		535E3A6E2759B84A0074EA50 /* Too Risky */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A712759B89A0074EA50 /* Part_1_Too_Risky.swift */,
+			);
+			path = "Too Risky";
+			sourceTree = "<group>";
+		};
+		535E3A772759BA240074EA50 /* We Want Peace */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A782759BA360074EA50 /* Part_1_Peace.swift */,
+				535E3A7A2759BAA80074EA50 /* Part_2_Peace.swift */,
+			);
+			path = "We Want Peace";
+			sourceTree = "<group>";
+		};
+		535E3A7C2759BB2E0074EA50 /* Secret Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A822759BC800074EA50 /* Gravity Gun */,
+				535E3A7F2759BBF70074EA50 /* Ice Ray */,
+				535E3A7D2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift */,
+			);
+			path = "Secret Weapon";
+			sourceTree = "<group>";
+		};
+		535E3A7F2759BBF70074EA50 /* Ice Ray */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A802759BC020074EA50 /* Part_1_Ice_Ray.swift */,
+			);
+			path = "Ice Ray";
+			sourceTree = "<group>";
+		};
+		535E3A822759BC800074EA50 /* Gravity Gun */ = {
+			isa = PBXGroup;
+			children = (
+				535E3A962759C0630074EA50 /* Clog Toilet */,
+				535E3A952759C05B0074EA50 /* Hypersleep (Chapter Marker) */,
+				535E3A832759BC960074EA50 /* Part_1_Gravity_Gun.swift */,
+				535E3A852759BD880074EA50 /* Part_2_Gravity_Gun.swift */,
+				535E3A872759BE0E0074EA50 /* Part_3_Gravity_Gun.swift */,
+				535E3A892759BE650074EA50 /* Part_4_Gravity_Gun.swift */,
+				535E3A8B2759BEB20074EA50 /* Part_5_Gravity_Gun.swift */,
+				535E3A8D2759BEF70074EA50 /* Part_6_Gravity_Gun.swift */,
+				535E3A8F2759BF600074EA50 /* Part_7_Gravity_Gun.swift */,
+				535E3A912759BFBB0074EA50 /* Part_8_Gravity_Gun.swift */,
+				535E3A932759BFFA0074EA50 /* Part_9_Gravity_Gun.swift */,
+			);
+			path = "Gravity Gun";
+			sourceTree = "<group>";
+		};
+		535E3A952759C05B0074EA50 /* Hypersleep (Chapter Marker) */ = {
+			isa = PBXGroup;
+			children = (
+				535E3AB92759C6510074EA50 /* THE END */,
+				535E3A992759C07E0074EA50 /* Part_1_Hypersleep.swift */,
+				535E3AA82759C3EC0074EA50 /* Part_2_Hypersleep.swift */,
+				535E3AAA2759C4290074EA50 /* Part_3_Hypersleep.swift */,
+				535E3AAC2759C4A10074EA50 /* Part_4_Hypersleep.swift */,
+				535E3AAE2759C4DF0074EA50 /* Part_5_Hypersleep.swift */,
+				535E3AB02759C4EA0074EA50 /* Part_6_Hypersleep.swift */,
+				535E3AB22759C4F20074EA50 /* Part_7_Hypersleep.swift */,
+				535E3AB42759C5BD0074EA50 /* Part_8_Hypersleep.swift */,
+				535E3AB72759C6040074EA50 /* Part_9_Hypersleep.swift */,
+			);
+			path = "Hypersleep (Chapter Marker)";
+			sourceTree = "<group>";
+		};
+		535E3A962759C0630074EA50 /* Clog Toilet */ = {
+			isa = PBXGroup;
+			children = (
+				535E3AA12759C1F20074EA50 /* Help Chrono */,
+				535E3A972759C06E0074EA50 /* Part_1_Clog_Toilet.swift */,
+				535E3A9B2759C0F40074EA50 /* Part_2_Clog_Toilet.swift */,
+				535E3A9D2759C1380074EA50 /* Part_3_Clog_Toilet.swift */,
+				535E3A9F2759C1810074EA50 /* Part_4_Clog_Toilet.swift */,
+				535E3AA62759C2F80074EA50 /* Part_5_Clog_Toilet.swift */,
+			);
+			path = "Clog Toilet";
+			sourceTree = "<group>";
+		};
+		535E3AA12759C1F20074EA50 /* Help Chrono */ = {
+			isa = PBXGroup;
+			children = (
+				535E3AA22759C2050074EA50 /* Part_1_Help_Chrono.swift */,
+			);
+			path = "Help Chrono";
+			sourceTree = "<group>";
+		};
+		535E3AB92759C6510074EA50 /* THE END */ = {
+			isa = PBXGroup;
+			children = (
+				535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */,
+				535E3ABC2759C67B0074EA50 /* Celebrate.swift */,
+			);
+			path = "THE END";
 			sourceTree = "<group>";
 		};
 		536F3CED2757A986007E5250 /* utilities */ = {
@@ -440,6 +964,7 @@
 		53BACE20275704DB009E493E /* I'm Not A Scientist */ = {
 			isa = PBXGroup;
 			children = (
+				535E39DB275990980074EA50 /* Let me help! */,
 				535E39D52758FC2C0074EA50 /* Warmongers you say? */,
 				53BACE222757051D009E493E /* Part_1_Not_Scientist.swift */,
 				53BACE28275705DB009E493E /* Part_2_Not_Scientist.swift */,
@@ -566,66 +1091,161 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535E3AA52759C23D0074EA50 /* Bad_Distraction.swift in Sources */,
+				535E3A842759BC960074EA50 /* Part_1_Gravity_Gun.swift in Sources */,
 				53BACE002756FFF9009E493E /* Part_4_Hapalstance.swift in Sources */,
 				53BACDE22756F954009E493E /* Part_1_Trust_The_Space_Cowboy.swift in Sources */,
 				53BACDC92756F241009E493E /* Part_1_Cowboys_of_Katonia.swift in Sources */,
+				535E3A0D27599B5D0074EA50 /* Part_1_Fetch_Key.swift in Sources */,
+				535E3A9A2759C07E0074EA50 /* Part_1_Hypersleep.swift in Sources */,
+				535E3A00275998910074EA50 /* Part_6_Boarding_Ticket.swift in Sources */,
 				5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */,
 				53BACE0E27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */,
 				53BACE3227570822009E493E /* Part_2_Fake_Til_You_Make.swift in Sources */,
+				535E39FC275997990074EA50 /* Part_4_Boarding_Ticket.swift in Sources */,
 				5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */,
 				53BACE1E2757047A009E493E /* Part_2_Landing.swift in Sources */,
+				535E3A742759B8F90074EA50 /* Part_3_Two_Diplomats.swift in Sources */,
+				535E3A322759A3FD0074EA50 /* Part_4_Giant_Luna.swift in Sources */,
+				535E3A7B2759BAA80074EA50 /* Part_2_Peace.swift in Sources */,
 				53BACDDC2756F87D009E493E /* Part_2_Make_A_Run_For_It.swift in Sources */,
+				535E3A462759AA6D0074EA50 /* Part_2_Council.swift in Sources */,
 				53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */,
 				53BACDCC2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */,
+				535E3A582759AFA40074EA50 /* Part_4_Store_Room.swift in Sources */,
+				535E3A442759A9EC0074EA50 /* Part_2_House.swift in Sources */,
+				535E3AB32759C4F20074EA50 /* Part_7_Hypersleep.swift in Sources */,
+				535E3A2C2759A27C0074EA50 /* Part_1_Giant_Luna.swift in Sources */,
 				53BACE0A27570175009E493E /* Part_3_Hapal_Down.swift in Sources */,
+				535E3A562759AEE30074EA50 /* Part_3_Store_Room.swift in Sources */,
+				535E39F72759962E0074EA50 /* Part_2_Boarding_Ticket.swift in Sources */,
+				535E3A3C2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift in Sources */,
+				535E3A282759A2170074EA50 /* Part_1_Murkblur.swift in Sources */,
+				535E3A812759BC020074EA50 /* Part_1_Ice_Ray.swift in Sources */,
+				535E3A602759B1040074EA50 /* Part_2_Keep_Thinking.swift in Sources */,
 				5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */,
 				53BACDF02756FD37009E493E /* Part_1_Who_Trusts_Alien_Cowboys.swift in Sources */,
 				53BACDD92756F7D3009E493E /* Part_1_Make_A_Run_For_It.swift in Sources */,
+				535E3A422759A8D20074EA50 /* Part_1_House.swift in Sources */,
+				535E3A652759B2B00074EA50 /* Part_1_Luna_Stays.swift in Sources */,
+				535E3A1F2759A0230074EA50 /* Part_1_Sneak.swift in Sources */,
+				535E3AA02759C1810074EA50 /* Part_4_Clog_Toilet.swift in Sources */,
+				535E3A4C2759AC500074EA50 /* Part_1_Ask_Chrono.swift in Sources */,
+				535E3A0927599B060074EA50 /* Part_1_Crash_Wall.swift in Sources */,
+				535E39FA275997440074EA50 /* Part_3_Boarding_Ticket.swift in Sources */,
 				53BACDFD2756FFA6009E493E /* Part_3_Hapalstance.swift in Sources */,
+				535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */,
 				536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_3_Fork_In_The_Road.swift in Sources */,
+				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
 				5303C7EE2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift in Sources */,
+				535E3A7E2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift in Sources */,
+				535E39E5275992AD0074EA50 /* Part_5_Let_Me_Help.swift in Sources */,
+				535E3A6C2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift in Sources */,
+				535E39EB275993AB0074EA50 /* Part_1_Do_Ourselves.swift in Sources */,
 				53BACDFA2756FF26009E493E /* Part_2_Hapalstance.swift in Sources */,
 				536F3CF12757AA59007E5250 /* Constants.swift in Sources */,
 				53BACE2C2757063B009E493E /* Part_3_Not_Scientist.swift in Sources */,
 				53BACE36275708B0009E493E /* Part_1_Wing_It.swift in Sources */,
+				535E3A1D27599F360074EA50 /* Got_Caught.swift in Sources */,
+				535E3ABB2759C6620074EA50 /* Home_Sweet_Home.swift in Sources */,
+				535E3A252759A1A20074EA50 /* Part_4_Sneak.swift in Sources */,
+				535E3A622759B1D90074EA50 /* Part_3_Keep_Thinking.swift in Sources */,
 				53BACE232757051D009E493E /* Part_1_Not_Scientist.swift in Sources */,
+				535E3AA32759C2050074EA50 /* Part_1_Help_Chrono.swift in Sources */,
+				535E3A722759B89A0074EA50 /* Part_1_Too_Risky.swift in Sources */,
 				5303C7E82755AF4900710D34 /* Page 1-1.swift in Sources */,
+				535E39E12759922E0074EA50 /* Part_3_Let_Me_Help.swift in Sources */,
+				535E3AAB2759C4290074EA50 /* Part_3_Hypersleep.swift in Sources */,
+				535E39E8275993490074EA50 /* Part_1_Try_Give_Up.swift in Sources */,
+				535E39DD275990B10074EA50 /* Part_1_Let_Me_Help.swift in Sources */,
+				535E3A1927599E600074EA50 /* Part_5_Fetch_Key.swift in Sources */,
+				535E3A8A2759BE650074EA50 /* Part_4_Gravity_Gun.swift in Sources */,
+				535E39F2275995060074EA50 /* Part_1_Diplomatic_Immunity.swift in Sources */,
+				535E3AA72759C2F80074EA50 /* Part_5_Clog_Toilet.swift in Sources */,
 				53BACE262757054B009E493E /* Part_1_Fake_Til_You_Make.swift in Sources */,
+				535E3A9E2759C1380074EA50 /* Part_3_Clog_Toilet.swift in Sources */,
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
 				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
+				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
+				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
+				535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */,
 				535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */,
+				535E3A522759AD9D0074EA50 /* Caught_By_Covarnian.swift in Sources */,
 				53BACE3927570906009E493E /* Part_2_Wing_It.swift in Sources */,
 				53BACDCF2756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift in Sources */,
+				535E39F52759953D0074EA50 /* Part_1_Boarding_Ticket.swift in Sources */,
 				53BACDC52756EFC4009E493E /* Part_5_Fork_In_The_Road.swift in Sources */,
 				5303C7DB2755AEC600710D34 /* ContentView.swift in Sources */,
+				535E3AAF2759C4DF0074EA50 /* Part_5_Hypersleep.swift in Sources */,
 				53BACDDF2756F8F5009E493E /* Part_2_Trust_The_Space_Cowboy.swift in Sources */,
+				535E3A862759BD880074EA50 /* Part_2_Gravity_Gun.swift in Sources */,
+				535E3A792759BA360074EA50 /* Part_1_Peace.swift in Sources */,
+				535E3A1527599DA50074EA50 /* Part_3_Fetch_Key.swift in Sources */,
+				535E3AA92759C3EC0074EA50 /* Part_2_Hypersleep.swift in Sources */,
 				53BACDE92756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
+				535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */,
+				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
 				535E39CF275855260074EA50 /* PageView.swift in Sources */,
 				53BACE1127570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */,
+				535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */,
+				535E3A8E2759BEF70074EA50 /* Part_6_Gravity_Gun.swift in Sources */,
 				53BACDB92756EB58009E493E /* Part_2_Dissect_My_Brains.swift in Sources */,
+				535E3A882759BE0E0074EA50 /* Part_3_Gravity_Gun.swift in Sources */,
+				535E3A232759A1040074EA50 /* Part_3_Sneak.swift in Sources */,
+				535E3A672759B3200074EA50 /* Part_2_Luna_Stays.swift in Sources */,
 				53BACE0727570127009E493E /* Part_2_Hapal_Down.swift in Sources */,
+				535E3A5E2759B0940074EA50 /* Part_1_Not_Important.swift in Sources */,
 				53BACE462757134A009E493E /* Part-4 See Whats In The Sky.swift in Sources */,
+				535E39E3275992620074EA50 /* Part_4_Let_Me_Help.swift in Sources */,
+				535E3A382759A4950074EA50 /* Part_1_Tell.swift in Sources */,
 				53BACDD22756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift in Sources */,
+				535E3AB82759C6040074EA50 /* Part_9_Hypersleep.swift in Sources */,
 				53BACE0427570080009E493E /* Part_1_Hapal_Down.swift in Sources */,
+				535E3A4E2759ACAF0074EA50 /* Part_1_Store_Room.swift in Sources */,
 				53BACDEC2756FBE3009E493E /* Part_5_Trust_The_Space_Cowboy.swift in Sources */,
+				535E39DF275991A20074EA50 /* Part_2_Let_Me_Help.swift in Sources */,
 				53BACE29275705DB009E493E /* Part_2_Not_Scientist.swift in Sources */,
+				535E3A362759A48D0074EA50 /* Part_1_Dont_Tell.swift in Sources */,
 				53BACDF62756FE34009E493E /* Part_1_Hapalstance.swift in Sources */,
+				535E3A1127599CDF0074EA50 /* Part_3_Crash_Wall.swift in Sources */,
+				535E3A8C2759BEB20074EA50 /* Part_5_Gravity_Gun.swift in Sources */,
 				53BACE14275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */,
 				5303C7EB2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */,
+				535E3AAD2759C4A10074EA50 /* Part_4_Hypersleep.swift in Sources */,
 				53BACE2F2757068A009E493E /* Part_4_Not_Scientist.swift in Sources */,
+				535E3A942759BFFA0074EA50 /* Part_9_Gravity_Gun.swift in Sources */,
+				535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */,
+				535E3A402759A8C70074EA50 /* Part_1_Council.swift in Sources */,
+				535E3AB52759C5BD0074EA50 /* Part_8_Hypersleep.swift in Sources */,
+				535E3A302759A3940074EA50 /* Part_3_Giant_Luna.swift in Sources */,
+				535E3A762759B9840074EA50 /* Part_4_Two_Diplomats.swift in Sources */,
+				535E3A6A2759B4120074EA50 /* Part_1_Two_Diplomats.swift in Sources */,
+				535E3A04275999A30074EA50 /* Part_8_Boarding_Ticket.swift in Sources */,
 				53BACDB62756EB02009E493E /* Part_1_Dissect_My_Brains.swift in Sources */,
+				535E39ED275994450074EA50 /* Part_2_Do_Ourselves.swift in Sources */,
+				535E3A482759AADC0074EA50 /* Part_3_Council.swift in Sources */,
 				5303C7D92755AEC600710D34 /* Tales_of_Covarnius_Swift_UIApp.swift in Sources */,
 				53BACDB22756EA21009E493E /* Part 1 Fork In The Road.swift in Sources */,
+				535E39EF2759948D0074EA50 /* Part_3_Do_Ourselves.swift in Sources */,
+				535E39FE2759981B0074EA50 /* Part_5_Boarding_Ticket.swift in Sources */,
 				53BACE3F275709BC009E493E /* Turn_Into_Frog.swift in Sources */,
 				535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */,
 				53BACDC22756EF6C009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
+				535E3AB12759C4EA0074EA50 /* Part_6_Hypersleep.swift in Sources */,
 				535E39D42758FB310074EA50 /* Part_2_Greatest_Scientists.swift in Sources */,
 				53BACE1B27570411009E493E /* Part_1_Landing.swift in Sources */,
+				535E3A5B2759B0290074EA50 /* Part_1_Keep_Thinking.swift in Sources */,
+				535E3A922759BFBB0074EA50 /* Part_8_Gravity_Gun.swift in Sources */,
+				535E3A1327599D200074EA50 /* Part_2_Fetch_Key.swift in Sources */,
+				535E3A9C2759C0F40074EA50 /* Part_2_Clog_Toilet.swift in Sources */,
 				535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */,
 				53BACDD52756F716009E493E /* Part_5_Cowboys_Of_Katonia.swift in Sources */,
+				535E3A2E2759A3150074EA50 /* Part_2_Giant_Luna.swift in Sources */,
+				535E3A0F27599C270074EA50 /* Part_2_Crash_Wall.swift in Sources */,
 				53BACDF32756FDB4009E493E /* Part_2_Who_Trusts_Alien_Cowboys.swift in Sources */,
+				535E3A0627599A220074EA50 /* Part_9_Boarding_Ticket.swift in Sources */,
 				53BACDBC2756EE38009E493E /* Part_2_Fork_In_The_Road.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

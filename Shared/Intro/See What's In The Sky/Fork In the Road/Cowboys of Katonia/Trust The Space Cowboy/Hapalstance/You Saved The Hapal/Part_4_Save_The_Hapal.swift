@@ -10,7 +10,7 @@ import SwiftUI
 struct Part_4_Save_The_Hapal: View {
     var body: some View {
         let text =
-        "“Ok, onwards to Covarnius then,” Chrono says happily, “to stop the Sinisterians once and for all!”\n\nYou still want to go back to Earth but crashing the ship again isn’t going to get you there. “On to Covarnius,” you agree with Chrono.\n\nHelping Kayo and Kina rescue their baby hapal made you happy. Maybe you’d be able to help the Covarnians too and then head back to Earth as an intergalactic hero.\n\nYou wonder what kind of issues the Covarnians are having as Chrono engages hypersleep. The last thought that crosses your mind is: What in the world is a Sinisterian? "
+        "“Ok, onwards to Covarnius then,” Chrono says, “to stop the Sinisterians once and for all!”\n\nYou still want to go back to Earth but crashing the ship again isn’t going to get you there. “On to Covarnius,” you agree.\n\nHelping Kayo and Kina rescue their baby hapal made you happy. Maybe you’d be able to help the Covarnians too and then head back to Earth as an intergalactic hero.\n\nYou wonder what kind of issues the Covarnians are having as Chrono engages hypersleep. The last thought that crosses your mind is: What in the world is a Sinisterian? "
         
         getPageView(mainText: text, firstChoice: AnyView(Part_1_Landing()))
     }
