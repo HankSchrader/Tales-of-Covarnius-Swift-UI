@@ -126,6 +126,9 @@
 		535E3AB82759C6040074EA50 /* Part_9_Hypersleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AB72759C6040074EA50 /* Part_9_Hypersleep.swift */; };
 		535E3ABB2759C6620074EA50 /* Home_Sweet_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */; };
 		535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABC2759C67B0074EA50 /* Celebrate.swift */; };
+		535E3ACD275B10710074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
+		535E3ACF275B1A310074EA50 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACE275B1A310074EA50 /* MainView.swift */; };
+		535E3AD1275B9DEE0074EA50 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */; };
 		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -335,6 +338,9 @@
 		535E3AB72759C6040074EA50 /* Part_9_Hypersleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_9_Hypersleep.swift; sourceTree = "<group>"; };
 		535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Sweet_Home.swift; sourceTree = "<group>"; };
 		535E3ABC2759C67B0074EA50 /* Celebrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrate.swift; sourceTree = "<group>"; };
+		535E3ACC275B10710074EA50 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		535E3ACE275B1A310074EA50 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -842,6 +848,9 @@
 				536F3CEE2757A99C007E5250 /* Extenstions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
 				535E39CE275855260074EA50 /* PageView.swift */,
+				535E3ACC275B10710074EA50 /* MenuView.swift */,
+				535E3ACE275B1A310074EA50 /* MainView.swift */,
+				535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -1135,6 +1144,7 @@
 				535E39FA275997440074EA50 /* Part_3_Boarding_Ticket.swift in Sources */,
 				53BACDFD2756FFA6009E493E /* Part_3_Hapalstance.swift in Sources */,
 				535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */,
+				535E3ACD275B10710074EA50 /* MenuView.swift in Sources */,
 				536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_3_Fork_In_The_Road.swift in Sources */,
 				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
@@ -1169,6 +1179,7 @@
 				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
+				535E3AD1275B9DEE0074EA50 /* RootViewModel.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */,
 				535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */,
@@ -1213,6 +1224,7 @@
 				535E3A8C2759BEB20074EA50 /* Part_5_Gravity_Gun.swift in Sources */,
 				53BACE14275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */,
 				5303C7EB2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */,
+				535E3ACF275B1A310074EA50 /* MainView.swift in Sources */,
 				535E3AAD2759C4A10074EA50 /* Part_4_Hypersleep.swift in Sources */,
 				53BACE2F2757068A009E493E /* Part_4_Not_Scientist.swift in Sources */,
 				535E3A942759BFFA0074EA50 /* Part_9_Gravity_Gun.swift in Sources */,
