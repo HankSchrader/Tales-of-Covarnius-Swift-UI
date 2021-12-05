@@ -8,12 +8,51 @@
 import SwiftUI
 
 struct Went_Home: View {
+ 
+    @State var showMenu = false
+  
     var body: some View {
-            let text =
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
+            }
+        let text =
         "You decide to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the T.V is reporting on a story about a kitten that was just rescued from a tree. Nothing about an invasion.\n\nYou make a snack and keep watching, but nothing ever happens. Eventually, you switch the channel over to cartoons and begin to wonder if you even really saw a spaceship.\n\nYou know what you saw though, and can’t help but wonder what the aliens wanted. As you head to bed, you wonder if you should have investigated after all.\n\nYou can’t help but think perhaps you missed out on the opportunity of a lifetime..."
-        getPageView(mainText: text, firstChoice: AnyView(ContentViewPageChapter1Page1()), decision1: Constants.GameOverPhrase)
-           
-    }
+        let decision1 = Constants.GameOverPhrase
+        let firstChoice = AnyView(ContentViewPageChapter1Page1())
+        let secondChoice = AnyView(Text(""))
+        let decision2 = ""
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, decision2: decision2,
+                                     firstChoice: firstChoice, secondChoice: secondChoice)
+      
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+            DisplayView(showMenu: self.$showMenu, view: storyView)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .offset(x: self.showMenu ? geometry.size.width/2 : 0)
+                                                .disabled(self.showMenu ? true : false)
+            if self.showMenu {
+                                  MenuView()
+                    .frame(width: geometry.size.width/2)
+                                      .transition(.move(edge: .leading))
+                              }
+                }.gesture(drag)
+            }
+                        .navigationBarItems(leading: (
+                            Button(action: {
+                                withAnimation {
+                                    self.showMenu.toggle()
+                                }
+                            }) {
+                                Image(systemName: "line.horizontal.3")
+                                    .imageScale(.large)
+                            }
+                        ))
+                    }
 }
 
 struct Went_Home_Previews: PreviewProvider {
