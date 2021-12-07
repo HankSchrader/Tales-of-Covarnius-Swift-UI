@@ -13,6 +13,7 @@ struct Part_4_See_Whats_In_The_Sky: View {
     var body: some View {
         getPageView(mainText: text, firstChoice: AnyView(Part_1_Dissect_My_Brains()), decision1: "\"No Way! You'll dissect my brains!\"", secondChoice: AnyView(Part_1_Fork_In_The_Road()), decision2: "\"Sure! I'll Help\"")
     }
+    
 }
 
 struct Part_4_See_Whats_In_The_Sky_Previews: PreviewProvider {

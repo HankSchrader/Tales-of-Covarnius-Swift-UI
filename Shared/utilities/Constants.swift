@@ -7,7 +7,7 @@
 
 import Foundation
 struct Constants {
-    static let ipadFontSize = 32
+    static let ipadFontSize = 24
     static let ContinuePhrase = "Keep Going"
     static let GameOverPhrase = "GAME OVER"
 }

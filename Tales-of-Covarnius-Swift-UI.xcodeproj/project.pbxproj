@@ -13,8 +13,8 @@
 		5303C7DC2755AEC600710D34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7CA2755AEC500710D34 /* ContentView.swift */; };
 		5303C7DD2755AEC600710D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5303C7CB2755AEC600710D34 /* Assets.xcassets */; };
 		5303C7DE2755AEC600710D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5303C7CB2755AEC600710D34 /* Assets.xcassets */; };
-		5303C7E82755AF4900710D34 /* Page 1-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7E72755AF4900710D34 /* Page 1-1.swift */; };
-		5303C7E92755AF4900710D34 /* Page 1-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7E72755AF4900710D34 /* Page 1-1.swift */; };
+		5303C7E82755AF4900710D34 /* Part_1_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7E72755AF4900710D34 /* Part_1_Intro.swift */; };
+		5303C7E92755AF4900710D34 /* Part_1_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7E72755AF4900710D34 /* Part_1_Intro.swift */; };
 		5303C7EB2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7EA2755B0EC00710D34 /* Part_1_Run_Away.swift */; };
 		5303C7EC2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7EA2755B0EC00710D34 /* Part_1_Run_Away.swift */; };
 		5303C7EE2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7ED2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift */; };
@@ -127,8 +127,9 @@
 		535E3ABB2759C6620074EA50 /* Home_Sweet_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */; };
 		535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABC2759C67B0074EA50 /* Celebrate.swift */; };
 		535E3ACD275B10710074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
-		535E3AD1275B9DEE0074EA50 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */; };
+		535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */; };
 		535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD6275D27460074EA50 /* StoryPayload.swift */; };
+		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
 		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -232,7 +233,7 @@
 		5303C7D02755AEC600710D34 /* Tales-of-Covarnius-Swift-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tales-of-Covarnius-Swift-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5303C7D62755AEC600710D34 /* Tales-of-Covarnius-Swift-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tales-of-Covarnius-Swift-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5303C7D82755AEC600710D34 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		5303C7E72755AF4900710D34 /* Page 1-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 1-1.swift"; sourceTree = "<group>"; };
+		5303C7E72755AF4900710D34 /* Part_1_Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Intro.swift; sourceTree = "<group>"; };
 		5303C7EA2755B0EC00710D34 /* Part_1_Run_Away.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Run_Away.swift; sourceTree = "<group>"; };
 		5303C7ED2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part-1-See-What-In-The-Sky.swift"; sourceTree = "<group>"; };
 		5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part-2-See-Whats-In-The-Sky.swift"; sourceTree = "<group>"; };
@@ -339,8 +340,9 @@
 		535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Sweet_Home.swift; sourceTree = "<group>"; };
 		535E3ABC2759C67B0074EA50 /* Celebrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrate.swift; sourceTree = "<group>"; };
 		535E3ACC275B10710074EA50 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterLog.swift; sourceTree = "<group>"; };
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
+		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 				5303C7C92755AEC500710D34 /* Tales_of_Covarnius_Swift_UIApp.swift */,
 				5303C7CA2755AEC500710D34 /* ContentView.swift */,
 				5303C7CB2755AEC600710D34 /* Assets.xcassets */,
+				535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -453,7 +456,7 @@
 			children = (
 				5303C7F42755CB3200710D34 /* See What's In The Sky */,
 				5303C7F52755CB5D00710D34 /* Run Away! */,
-				5303C7E72755AF4900710D34 /* Page 1-1.swift */,
+				5303C7E72755AF4900710D34 /* Part_1_Intro.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -849,7 +852,7 @@
 				536F3CF02757AA59007E5250 /* Constants.swift */,
 				535E39CE275855260074EA50 /* PageView.swift */,
 				535E3ACC275B10710074EA50 /* MenuView.swift */,
-				535E3AD0275B9DEE0074EA50 /* RootViewModel.swift */,
+				535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */,
 				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
 			);
 			path = utilities;
@@ -1081,6 +1084,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */,
 				5303C7DD2755AEC600710D34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1164,7 +1168,7 @@
 				53BACE232757051D009E493E /* Part_1_Not_Scientist.swift in Sources */,
 				535E3AA32759C2050074EA50 /* Part_1_Help_Chrono.swift in Sources */,
 				535E3A722759B89A0074EA50 /* Part_1_Too_Risky.swift in Sources */,
-				5303C7E82755AF4900710D34 /* Page 1-1.swift in Sources */,
+				5303C7E82755AF4900710D34 /* Part_1_Intro.swift in Sources */,
 				535E39E12759922E0074EA50 /* Part_3_Let_Me_Help.swift in Sources */,
 				535E3AAB2759C4290074EA50 /* Part_3_Hypersleep.swift in Sources */,
 				535E39E8275993490074EA50 /* Part_1_Try_Give_Up.swift in Sources */,
@@ -1179,7 +1183,7 @@
 				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
-				535E3AD1275B9DEE0074EA50 /* RootViewModel.swift in Sources */,
+				535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */,
 				535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */,
@@ -1288,7 +1292,7 @@
 				53BACE2D2757063B009E493E /* Part_3_Not_Scientist.swift in Sources */,
 				53BACE37275708B0009E493E /* Part_1_Wing_It.swift in Sources */,
 				53BACE242757051D009E493E /* Part_1_Not_Scientist.swift in Sources */,
-				5303C7E92755AF4900710D34 /* Page 1-1.swift in Sources */,
+				5303C7E92755AF4900710D34 /* Part_1_Intro.swift in Sources */,
 				53BACE272757054B009E493E /* Part_1_Fake_Til_You_Make.swift in Sources */,
 				53BACE3D2757095D009E493E /* Bright_Green.swift in Sources */,
 				53BACE18275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
