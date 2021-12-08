@@ -130,6 +130,7 @@
 		535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */; };
 		535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD6275D27460074EA50 /* StoryPayload.swift */; };
 		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
+		535E3ADE2760DEAF0074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
 		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -341,6 +342,7 @@
 		535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterLog.swift; sourceTree = "<group>"; };
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
 		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
+		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		5303C7C32755AEC500710D34 = {
 			isa = PBXGroup;
 			children = (
+				535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */,
 				5303C7C82755AEC500710D34 /* Shared */,
 				5303C7D72755AEC600710D34 /* macOS */,
 				5303C7D12755AEC600710D34 /* Products */,
@@ -420,11 +423,11 @@
 		5303C7C82755AEC500710D34 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				536F3CED2757A986007E5250 /* utilities */,
-				5303C7F92755CE7A00710D34 /* Game Over Scenarios */,
-				5303C7F32755CB2000710D34 /* Intro */,
+				535E3ADC2760DB4F0074EA50 /* Model */,
+				535E3ADD2760DB9A0074EA50 /* View */,
+				535E3ADF2760DEBB0074EA50 /* ViewModel */,
+				536F3CED2757A986007E5250 /* Utilities */,
 				5303C7C92755AEC500710D34 /* Tales_of_Covarnius_Swift_UIApp.swift */,
-				5303C7CA2755AEC500710D34 /* ContentView.swift */,
 				5303C7CB2755AEC600710D34 /* Assets.xcassets */,
 				535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */,
 			);
@@ -842,17 +845,41 @@
 			path = "THE END";
 			sourceTree = "<group>";
 		};
-		536F3CED2757A986007E5250 /* utilities */ = {
+		535E3ADC2760DB4F0074EA50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
+				535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		535E3ADD2760DB9A0074EA50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				535E3ACC275B10710074EA50 /* MenuView.swift */,
+				5303C7CA2755AEC500710D34 /* ContentView.swift */,
+				5303C7F32755CB2000710D34 /* Intro */,
+				5303C7F92755CE7A00710D34 /* Game Over Scenarios */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		535E3ADF2760DEBB0074EA50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				535E39CE275855260074EA50 /* PageView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		536F3CED2757A986007E5250 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				536F3CEE2757A99C007E5250 /* Extenstions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
-				535E39CE275855260074EA50 /* PageView.swift */,
-				535E3ACC275B10710074EA50 /* MenuView.swift */,
-				535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */,
-				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
 			);
-			path = utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		53BACDB02756E9E0009E493E /* Fork In the Road */ = {
@@ -1305,6 +1332,7 @@
 				53BACDD32756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift in Sources */,
 				53BACE0527570080009E493E /* Part_1_Hapal_Down.swift in Sources */,
 				53BACDED2756FBE3009E493E /* Part_5_Trust_The_Space_Cowboy.swift in Sources */,
+				535E3ADE2760DEAF0074EA50 /* MenuView.swift in Sources */,
 				53BACE2A275705DB009E493E /* Part_2_Not_Scientist.swift in Sources */,
 				53BACDF72756FE34009E493E /* Part_1_Hapalstance.swift in Sources */,
 				53BACE15275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */,
@@ -1446,9 +1474,9 @@
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1476,9 +1504,9 @@
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

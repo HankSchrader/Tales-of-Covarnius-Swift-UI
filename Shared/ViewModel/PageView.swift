@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+
+// MARK: Will be deleted.
 func getPageView(mainText: String,
                              firstChoice: AnyView,
                  decision1: String = Constants.ContinuePhrase,
