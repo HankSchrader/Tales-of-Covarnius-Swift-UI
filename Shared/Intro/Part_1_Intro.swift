@@ -35,14 +35,15 @@ struct Part_1_Intro: View {
         let text =
         "Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The wind whips against your face and the streets are eerily empty.\n\n As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V.\n\nJust as you are about to circle back home, a strange shape emerges from the sky. It’s large and shaped like a saucer. Multi-colored lights blink all over the aircraft. It looks somewhat like a strangely shaped Christmas tree. Your first instinct is to run away, but you also want to see what the strange object is. "
         let decision1 = "Run Away!"
-        let firstChoice = AnyView(Page_1_2())
-        let secondChoice = AnyView(Part_1_See_What_In_The_Sky())
+        let firstChoice = AnyView(Page_1_2()          .environmentObject(log))
+        let secondChoice = AnyView(Part_1_See_What_In_The_Sky()          .environmentObject(log))
         let decision2 = "See what's in the sky."
         let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1, decision2: decision2,
                                       secondChoice: secondChoice)
         VStack {
             DisplayView(showMenu: self.$showMenu, view: storyView)
             .onAppear(perform: {log.unlockChapter(page: storyView)})
+
                     }
                 }
     

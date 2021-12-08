@@ -20,7 +20,9 @@ struct MenuView: View {
                 Image(systemName: "person")
                     .foregroundColor(.gray)
                     .imageScale(.large)
-                NavigationLink(destination: Page_1_2().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: Part_1_Intro()
+                                .navigationBarBackButtonHidden(true)
+                                .environmentObject(log)) {
                     Text("Intro")
             }
 

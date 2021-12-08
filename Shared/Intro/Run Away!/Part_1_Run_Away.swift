@@ -20,6 +20,7 @@ struct Page_1_2: View {
       
         VStack {
             DisplayView(showMenu: self.$showMenu, view: storyView)
+                .environmentObject(log)
         }
         
             }

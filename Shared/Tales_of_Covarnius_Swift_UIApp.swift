@@ -9,13 +9,13 @@ import SwiftUI
 
 @main
 struct Tales_of_Covarnius_Swift_UIApp: App {
-    @StateObject var chapterLog = ChapterLog()
+    @StateObject var log = ChapterLog()
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 Part_1_Intro()
 
-                    .environmentObject(ChapterLog())
+                    .environmentObject(log)
           
             }
             .navigationViewStyle(StackNavigationViewStyle())

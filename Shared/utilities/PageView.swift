@@ -38,6 +38,7 @@ func getPageView(mainText: String,
     }
 
 func getPageView(view: StoryPayload) -> some View {
+    @EnvironmentObject var log: ChapterLog
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     return VStack {
         ZStack {
@@ -59,15 +60,18 @@ func getPageView(view: StoryPayload) -> some View {
         NavigationLink(destination: view.firstChoice.navigationBarBackButtonHidden(view.decision2 != "")) {
             Text(view.decision1)
                }
+        
         .padding()
         if(view.decision2 != "") {
             NavigationLink(destination: view.secondChoice.navigationBarBackButtonHidden(true)) {
                 Text(view.decision2)
                     .padding()
+                    
             }
+        
         }
     }
-    .padding(.bottom)
+
     }
 struct DisplayView: View {
     @Binding var showMenu: Bool
@@ -106,13 +110,15 @@ struct DisplayView: View {
                                     .frame(width: geometry.size.width, height: geometry.size.height)
                                     .offset(x: self.showMenu ? geometry.size.width/2 : 0)
                                                             .disabled(self.showMenu ? true : false)
+                                                            .environmentObject(log)
                 
-              
 
                 if self.showMenu {
                     MenuView()
                         .frame(width: geometry.size.width/2)
                                           .transition(.move(edge: .leading))
+                                          .environmentObject(log)
+                                          
                                   }
             }.gesture(drag)
                  .gesture(tap)

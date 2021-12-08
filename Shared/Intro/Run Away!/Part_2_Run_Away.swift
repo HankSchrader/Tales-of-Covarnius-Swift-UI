@@ -23,6 +23,7 @@ struct Part_2_Run_Away: View {
         let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1, decision2: decision2,
                                       secondChoice: secondChoice)
         DisplayView(showMenu: self.$showMenu, view: storyView)
+            .environmentObject(log)
     }
 }
 
