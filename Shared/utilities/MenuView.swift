@@ -17,18 +17,39 @@ struct MenuView: View {
             
         VStack(alignment: .leading) {
             HStack {
-                Image(systemName: "person")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                NavigationLink(destination: Part_1_Intro()
-                                .navigationBarBackButtonHidden(true)
-                                .environmentObject(log)) {
-                    Text("Intro")
-            }
+                let chapter: StoryPayload? = self.log.findChapter(chapterName: Constants.ChapterOne)
+                if let chapter = chapter {
+                    Image(systemName: "person")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    NavigationLink(destination: chapter.currentView
+                                    .navigationBarBackButtonHidden(true)
+                                    .environmentObject(log)) {
+                        Text(Constants.ChapterOne)
+                        }
+                    }
 
-            }
+                }
+            .padding(.bottom)
             .foregroundColor(.gray)
-            .font(.headline)
+            
+            HStack {
+                let chapter: StoryPayload? = self.log.findChapter(chapterName: Constants.ForkInTheRoad)
+                if let chapter = chapter {
+                    Image(systemName: "person")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    NavigationLink(destination: chapter.currentView
+                                    .navigationBarBackButtonHidden(true)
+                                    .environmentObject(log)) {
+                        Text(Constants.ForkInTheRoad)
+                        }
+                    }
+
+                }
+                .foregroundColor(.gray)
+                .padding(.bottom)
+                
             Spacer()
 
     }

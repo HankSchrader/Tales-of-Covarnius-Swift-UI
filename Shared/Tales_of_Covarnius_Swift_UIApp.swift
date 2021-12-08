@@ -19,6 +19,7 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
           
             }
             .navigationViewStyle(StackNavigationViewStyle())
+        
         }
     }
 }

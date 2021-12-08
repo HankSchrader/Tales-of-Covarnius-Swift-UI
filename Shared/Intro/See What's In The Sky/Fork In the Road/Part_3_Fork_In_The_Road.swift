@@ -10,7 +10,7 @@ import SwiftUI
 struct Part_3_Fork_In_The_Road: View {
     var body: some View {
        let text =
-        "“As I said before—although I guess it was in French—my name is Chrono, and my home planet Covarnius is in trouble.”\n\nChrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be more dedicated to the operation of the ship, rather than the answering of your questions.\n\n“And what does any of this have to do with me?” you question skeptically. You watch out the window as the spacecraft ascends upwards leaving Earth behind. The houses below quickly become tiny dots...this is becoming too real."
+        "“Your groundbreaking research,” Chrono starts as he continues flipping switches and dials on the control panel, “it’s absolutely brilliant. You are the only one who can save Covarnius now.”\n\nLeaning back in your seat, you mull over what Chrono just told you. Your research for the science fair had definitely been A+ material, but you don't see how it could save an alien planet.\n\nAnd where is Covarnius anyway? If it was close to Earth, wouldn’t we know of its existence? And if it was far…you recall your science teacher informing your class that it would take thousands of years just to travel one light year.\n\nSo how far away is this Covarnius?” you inquire with skepticism, afraid of what the answer may be."
         getPageView(mainText: text, firstChoice: AnyView(Part_4_Fork_In_The_Road()))
   
     }

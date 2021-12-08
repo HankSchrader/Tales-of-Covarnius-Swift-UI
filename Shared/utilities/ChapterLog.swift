@@ -28,6 +28,14 @@ class ChapterLog: ObservableObject {
         self.storyPages.append(page)
     }
     
+    func findChapter(chapterName: String) -> StoryPayload? {
+        return self.chapterSelectionPages.filter {
+            $0.chapterName == chapterName
+        }.first
+        
+  
+    }
+    
     //...unlock chapter by adding it to the side nav.
     func unlockChapter(page: StoryPayload) {
         self.chapterSelectionPages.append(page)

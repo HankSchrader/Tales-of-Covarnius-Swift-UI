@@ -17,6 +17,9 @@ class StoryPayload: Identifiable {
     var firstChoice: AnyView
     var secondChoice: AnyView
     
+    //Only needed on the start of chapters. Needed for side view.
+    var chapterName: String?
+    var currentView: AnyView?
     
     init(text: String, firstChoice: AnyView, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, decision2: String = "",  secondChoice: AnyView = AnyView(Text(""))) {
         self.id = UUID()

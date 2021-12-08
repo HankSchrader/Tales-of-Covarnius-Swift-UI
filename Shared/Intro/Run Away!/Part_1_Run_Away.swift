@@ -15,13 +15,9 @@ struct Page_1_2: View {
         let text =
         "You run away as fast as you can. You don’t need a closer look to know that aliens have just invaded Earth!\n\nVeering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side."
         let decision1 = Constants.ContinuePhrase
-        let firstChoice = AnyView(AnyView(Part_2_Run_Away()))
+        let firstChoice = AnyView(Part_2_Run_Away().environmentObject(log))
         let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1)
-      
-        VStack {
-            DisplayView(showMenu: self.$showMenu, view: storyView)
-                .environmentObject(log)
-        }
+        DisplayView(showMenu: self.$showMenu, view: storyView)
         
             }
                         

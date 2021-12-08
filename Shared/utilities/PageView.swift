@@ -38,7 +38,6 @@ func getPageView(mainText: String,
     }
 
 func getPageView(view: StoryPayload) -> some View {
-    @EnvironmentObject var log: ChapterLog
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     return VStack {
         ZStack {
@@ -75,7 +74,7 @@ func getPageView(view: StoryPayload) -> some View {
     }
 struct DisplayView: View {
     @Binding var showMenu: Bool
-    @EnvironmentObject var log: ChapterLog
+
 
     var view: StoryPayload
     var body: some View {
@@ -94,36 +93,30 @@ struct DisplayView: View {
                     withAnimation {
                         self.showMenu = false
                     }
-                
             }
        return VStack {
             Button(action: {
                         self.showMenu = true
-                
                     }) {
-                     
                     }
          GeometryReader { geometry in
             ZStack(alignment: .leading) {
            
                     getPageView(view: view)
                                     .frame(width: geometry.size.width, height: geometry.size.height)
-                                    .offset(x: self.showMenu ? geometry.size.width/2 : 0)
+                                    .offset(x: self.showMenu ? geometry.size.width/1.25 : 0)
                                                             .disabled(self.showMenu ? true : false)
-                                                            .environmentObject(log)
-                
-
                 if self.showMenu {
                     MenuView()
-                        .frame(width: geometry.size.width/2)
+                        .frame(width: geometry.size.width/1.75)
                                           .transition(.move(edge: .leading))
-                                          .environmentObject(log)
+                                         
                                           
                                   }
             }.gesture(drag)
                  .gesture(tap)
         }
-        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarTitle("Tales of Covarnius", displayMode: .inline)
                     .navigationBarItems(leading: (
                         Button(action: {
                             withAnimation {
