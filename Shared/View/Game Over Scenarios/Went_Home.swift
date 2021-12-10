@@ -10,6 +10,7 @@ import SwiftUI
 struct Went_Home: View {
     @EnvironmentObject var log: ChapterLog
     @State var showMenu = false
+   
 
     var body: some View {
 
@@ -18,9 +19,11 @@ struct Went_Home: View {
         let decision1 = Constants.GameOverPhrase
         let firstChoice = AnyView(Part_1_Intro().environmentObject(log))
         let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1)
-      
             
-        DisplayView(showMenu: self.$showMenu, view: storyView)
+        DisplayView(showMenu: self.$showMenu, view: storyView).onSubmit {
+            UserDefaults.standard.removeObject(forKey: DefaultsKeys.currentPage)
+        }
+      
 
       
     }

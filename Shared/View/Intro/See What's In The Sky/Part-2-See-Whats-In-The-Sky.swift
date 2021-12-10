@@ -10,12 +10,14 @@ import SwiftUI
 struct Part_2_See_Whats_In_The_Sky: View {
     @State var showMenu = false
     @EnvironmentObject var log: ChapterLog
+
+    
     var body: some View {
         let text =
         "Luna’s head tilts to the left, she is staring at the object as well. Could the two of you really be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens!\n\nBut the odd green creature in the UFO makes you think otherwise. You hear the loud his of decompressing of air. The top of what appears to be an alien spaceship opens.\n\nYup, definitely an alien!"
         let decision1 = Constants.ContinuePhrase
-        let firstChoice = AnyView(Part_3_See_Whats_In_The_Sky().environmentObject(log))
-        let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1)
+        let firstChoicePageName = "Part_3_See_Whats_In_The_Sky"
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

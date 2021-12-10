@@ -58,18 +58,25 @@ func getPageView(view: StoryPayload) -> some View {
         }
             Spacer()
     
-        NavigationLink(destination: view.firstChoice.navigationBarBackButtonHidden(view.decision2 != "")) {
+        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(view.decision2 != "")) {
             Text(view.decision1)
-               }
+            
+        }.simultaneousGesture(TapGesture().onEnded{
+            print("Decision 1")
+            UserDefaults.standard.set(view.firstChoicePageName, forKey: DefaultsKeys.currentPage)
+                        })
         
         .padding()
         if(view.decision2 != "") {
-            NavigationLink(destination: view.secondChoice.navigationBarBackButtonHidden(true)) {
+            NavigationLink(destination: subviews[view.secondChoicePageName].navigationBarBackButtonHidden(true)) {
                 Text(view.decision2)
                     .padding()
                     
             }
-        
+            .simultaneousGesture(TapGesture().onEnded{
+                print("Decision 2")
+                UserDefaults.standard.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
+                            })
         }
     }
 

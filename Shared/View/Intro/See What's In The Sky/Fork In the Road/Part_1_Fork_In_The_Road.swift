@@ -10,6 +10,13 @@ import SwiftUI
 struct Part_1_Fork_In_The_Road: View {
     @State var showMenu = false
     @EnvironmentObject var log: ChapterLog
+    init () {
+        let defaults = UserDefaults.standard
+        defaults.set("Part_1_Fork_In_The_Road", forKey: DefaultsKeys.currentPage)
+        var chapters = defaults.array(forKey: DefaultsKeys.unlockedChapters)
+        chapters?.append("Part_1_Fork_In_The_Road")
+        defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+    }
     var body: some View {
         let text =
         "After careful consideration, you decide the alien is probably not going to dissect your brain. The pleading look in his eyes and frightened demeanor give the impression that he does need help.\n\nAt the very least, you’ll get out of all the math homework your teacher assigned today. You cautiously approach the green hued creature. Before you know it, he is insisting you enter the spaceship.\n\n“Quickly, quickly,” the alien commands. “Covarnius can’t hold out much longer.”\n\nHe jumps back into the ship and you stumble into the seat next to his. Luna follows you into the spaceship. At least you’re not going alone! She finds a cozy corner to lay down in."
@@ -19,10 +26,8 @@ struct Part_1_Fork_In_The_Road: View {
         let firstChoice = AnyView(Part_2_Fork_In_The_Road()
                                     .environmentObject(log))
         let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1)
-        storyView.chapterName = Constants.ForkInTheRoad
-        storyView.currentView = AnyView(Part_1_Fork_In_The_Road())
             return DisplayView(showMenu: self.$showMenu, view: storyView)
-            .onAppear(perform: {log.unlockChapter(page: storyView)})
+
     }
 }
 
