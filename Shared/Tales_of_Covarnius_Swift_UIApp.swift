@@ -11,22 +11,26 @@ import SwiftUI
 struct Tales_of_Covarnius_Swift_UIApp: App {
 
     @StateObject var log = ChapterLog()
-    let startingView: String
+    var startingView: String
     let defaults = UserDefaults.standard
     init() {
-  
-        self.startingView = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)!
-        print(self.startingView)
-
+        self.startingView = "Part_1_Intro"
+        let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
+        if let v = startingViewOptional {
+            self.startingView = v
+            print(self.startingView)
+        }
+    
     }
 
     
     var body: some Scene {
-
+        print(self.startingView)
 
         return WindowGroup {
             NavigationView {
-                subviews[startingView]
+                
+                subviews[self.startingView]
                     .environmentObject(log)
             }
             .navigationViewStyle(StackNavigationViewStyle())

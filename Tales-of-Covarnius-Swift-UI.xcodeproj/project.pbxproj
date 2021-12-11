@@ -27,7 +27,7 @@
 		5303C7FC2755CEC400710D34 /* Went_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7FA2755CEC400710D34 /* Went_Home.swift */; };
 		535E39CF275855260074EA50 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39CE275855260074EA50 /* PageView.swift */; };
 		535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */; };
-		535E39D42758FB310074EA50 /* Part_2_Greatest_Scientists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */; };
+		535E39D42758FB310074EA50 /* Part_2_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_2_Greatest_Scientist.swift */; };
 		535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */; };
 		535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
 		535E39DA2758FCC10074EA50 /* Abandonded_Chrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */; };
@@ -131,7 +131,7 @@
 		535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD6275D27460074EA50 /* StoryPayload.swift */; };
 		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
 		535E3ADE2760DEAF0074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
-		536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extenstions.swift */; };
+		536F3CEF2757A99C007E5250 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extentions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		538D7CE9276185C3007003F6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CE8276185C3007003F6 /* DataController.swift */; };
 		538D7CEC276185FF007003F6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CEA276185FF007003F6 /* Model.xcdatamodeld */; };
@@ -152,8 +152,8 @@
 		53BACDC02756EF14009E493E /* Part_3_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDBE2756EF14009E493E /* Part_3_Fork_In_The_Road.swift */; };
 		53BACDC52756EFC4009E493E /* Part_4_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC42756EFC4009E493E /* Part_4_Fork_In_The_Road.swift */; };
 		53BACDC62756EFC4009E493E /* Part_4_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC42756EFC4009E493E /* Part_4_Fork_In_The_Road.swift */; };
-		53BACDC92756F241009E493E /* Part_1_Cowboys_of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC82756F241009E493E /* Part_1_Cowboys_of_Katonia.swift */; };
-		53BACDCA2756F241009E493E /* Part_1_Cowboys_of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC82756F241009E493E /* Part_1_Cowboys_of_Katonia.swift */; };
+		53BACDC92756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC82756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift */; };
+		53BACDCA2756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDC82756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift */; };
 		53BACDCC2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDCB2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift */; };
 		53BACDCD2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDCB2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift */; };
 		53BACDCF2756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDCE2756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift */; };
@@ -245,7 +245,7 @@
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
 		535E39CE275855260074EA50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
-		535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Greatest_Scientists.swift; sourceTree = "<group>"; };
+		535E39D32758FB310074EA50 /* Part_2_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Warmongers.swift; sourceTree = "<group>"; };
 		535E39D82758FC9C0074EA50 /* Abandonded_Chrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abandonded_Chrono.swift; sourceTree = "<group>"; };
 		535E39DC275990B10074EA50 /* Part_1_Let_Me_Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Let_Me_Help.swift; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
 		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
 		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
-		536F3CEE2757A99C007E5250 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		536F3CEE2757A99C007E5250 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		538D7CE8276185C3007003F6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		538D7CEB276185FF007003F6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -362,7 +362,7 @@
 		53BACDBB2756EE38009E493E /* Part_2_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Fork_In_The_Road.swift; sourceTree = "<group>"; };
 		53BACDBE2756EF14009E493E /* Part_3_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Fork_In_The_Road.swift; sourceTree = "<group>"; };
 		53BACDC42756EFC4009E493E /* Part_4_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Fork_In_The_Road.swift; sourceTree = "<group>"; };
-		53BACDC82756F241009E493E /* Part_1_Cowboys_of_Katonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Cowboys_of_Katonia.swift; sourceTree = "<group>"; };
+		53BACDC82756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Cowboys_Of_Katonia.swift; sourceTree = "<group>"; };
 		53BACDCB2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Cowboys_Of_Katonia.swift; sourceTree = "<group>"; };
 		53BACDCE2756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Cowboys_Of_Katonia.swift; sourceTree = "<group>"; };
 		53BACDD12756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Cowboys_Of_Katonia.swift; sourceTree = "<group>"; };
@@ -515,7 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */,
-				535E39D32758FB310074EA50 /* Part_2_Greatest_Scientists.swift */,
+				535E39D32758FB310074EA50 /* Part_2_Greatest_Scientist.swift */,
 			);
 			path = "Earth's Greatest Scientist";
 			sourceTree = "<group>";
@@ -891,7 +891,7 @@
 			isa = PBXGroup;
 			children = (
 				538D7CF227618F0D007003F6 /* DefaultKeys.swift */,
-				536F3CEE2757A99C007E5250 /* Extenstions.swift */,
+				536F3CEE2757A99C007E5250 /* Extentions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
 			);
 			path = Utilities;
@@ -900,12 +900,12 @@
 		53BACDB02756E9E0009E493E /* Fork In the Road */ = {
 			isa = PBXGroup;
 			children = (
-				535E39D0275858610074EA50 /* Earth's Greatest Scientist */,
-				53BACDC72756F22F009E493E /* Cowboys of Katonia */,
 				53BACDB12756EA21009E493E /* Part_1_Fork_In_The_Road.swift */,
 				53BACDBB2756EE38009E493E /* Part_2_Fork_In_The_Road.swift */,
 				53BACDBE2756EF14009E493E /* Part_3_Fork_In_The_Road.swift */,
 				53BACDC42756EFC4009E493E /* Part_4_Fork_In_The_Road.swift */,
+				535E39D0275858610074EA50 /* Earth's Greatest Scientist */,
+				53BACDC72756F22F009E493E /* Cowboys of Katonia */,
 			);
 			path = "Fork In the Road";
 			sourceTree = "<group>";
@@ -924,7 +924,7 @@
 			children = (
 				53BACDE42756F979009E493E /* Trust The Space Cowboy */,
 				53BACDD72756F7B9009E493E /* Make a Run For It */,
-				53BACDC82756F241009E493E /* Part_1_Cowboys_of_Katonia.swift */,
+				53BACDC82756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift */,
 				53BACDCB2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift */,
 				53BACDCE2756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift */,
 				53BACDD12756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift */,
@@ -1146,7 +1146,7 @@
 				535E3A842759BC960074EA50 /* Part_1_Gravity_Gun.swift in Sources */,
 				53BACE002756FFF9009E493E /* Part_4_Hapalstance.swift in Sources */,
 				53BACDE22756F954009E493E /* Part_1_Trust_The_Space_Cowboy.swift in Sources */,
-				53BACDC92756F241009E493E /* Part_1_Cowboys_of_Katonia.swift in Sources */,
+				53BACDC92756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift in Sources */,
 				535E3A0D27599B5D0074EA50 /* Part_1_Fetch_Key.swift in Sources */,
 				535E3A9A2759C07E0074EA50 /* Part_1_Hypersleep.swift in Sources */,
 				535E3A00275998910074EA50 /* Part_6_Boarding_Ticket.swift in Sources */,
@@ -1191,7 +1191,7 @@
 				535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */,
 				535E3ACD275B10710074EA50 /* MenuView.swift in Sources */,
 				538D7CE9276185C3007003F6 /* DataController.swift in Sources */,
-				536F3CEF2757A99C007E5250 /* Extenstions.swift in Sources */,
+				536F3CEF2757A99C007E5250 /* Extentions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_3_Fork_In_The_Road.swift in Sources */,
 				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
 				5303C7EE2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift in Sources */,
@@ -1292,7 +1292,7 @@
 				53BACE3F275709BC009E493E /* Turn_Into_Frog.swift in Sources */,
 				535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */,
 				535E3AB12759C4EA0074EA50 /* Part_6_Hypersleep.swift in Sources */,
-				535E39D42758FB310074EA50 /* Part_2_Greatest_Scientists.swift in Sources */,
+				535E39D42758FB310074EA50 /* Part_2_Greatest_Scientist.swift in Sources */,
 				53BACE1B27570411009E493E /* Part_1_Landing.swift in Sources */,
 				535E3A5B2759B0290074EA50 /* Part_1_Keep_Thinking.swift in Sources */,
 				535E3A922759BFBB0074EA50 /* Part_8_Gravity_Gun.swift in Sources */,
@@ -1314,7 +1314,7 @@
 			files = (
 				53BACE012756FFF9009E493E /* Part_4_Hapalstance.swift in Sources */,
 				53BACDE32756F954009E493E /* Part_1_Trust_The_Space_Cowboy.swift in Sources */,
-				53BACDCA2756F241009E493E /* Part_1_Cowboys_of_Katonia.swift in Sources */,
+				53BACDCA2756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift in Sources */,
 				5303C7FC2755CEC400710D34 /* Went_Home.swift in Sources */,
 				53BACE0F27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */,
 				53BACE3327570822009E493E /* Part_2_Fake_Til_You_Make.swift in Sources */,

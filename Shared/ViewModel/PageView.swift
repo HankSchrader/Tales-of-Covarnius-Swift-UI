@@ -58,7 +58,7 @@ func getPageView(view: StoryPayload) -> some View {
         }
             Spacer()
     
-        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(view.decision2 != "")) {
+        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(view.decision2 != "" || view.decision1 == Constants.GameOverPhrase)) {
             Text(view.decision1)
             
         }.simultaneousGesture(TapGesture().onEnded{

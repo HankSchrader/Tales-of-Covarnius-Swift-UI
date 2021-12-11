@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Part_1_Cowboys_of_Katonia: View {
+struct Part_1_Cowboys_Of_Katonia: View {
     var body: some View {
         let isIPad = UIDevice.current.userInterfaceIdiom == .pad
         VStack {
@@ -22,8 +22,8 @@ struct Part_1_Cowboys_of_Katonia: View {
     }
 }
 
-struct Part_1_Cowboys_of_Katonia_Previews: PreviewProvider {
+struct Part_1_Cowboys_Of_Katonia_Previews: PreviewProvider {
     static var previews: some View {
-        Part_1_Cowboys_of_Katonia()
+        Part_1_Cowboys_Of_Katonia()
     }
 }

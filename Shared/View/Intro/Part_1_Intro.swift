@@ -40,9 +40,7 @@ struct Part_1_Intro: View {
         let firstChoicePageName = "Part_1_Run_Away"
         let secondChoicePageName = "Part_1_See_What_In_The_Sky"
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
-            return DisplayView(showMenu: self.$showMenu, view: storyView)
-          
-        
+             DisplayView(showMenu: self.$showMenu, view: storyView)
 
                 }
 }
