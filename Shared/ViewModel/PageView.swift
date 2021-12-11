@@ -15,8 +15,6 @@ func getPageView(mainText: String,
                              decision2: String = "") -> some View {
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     return VStack {
-        
-
         Text(mainText)
             .fontWeight(.light)
             .if(isIPad) {
@@ -40,6 +38,13 @@ func getPageView(mainText: String,
     }
 
 func getPageView(view: StoryPayload) -> some View {
+    let isNoSecondChoice = {
+        view.decision2 != ""
+    }
+    let isGameOver = {
+        view.decision1 == Constants.GameOverPhrase
+    }
+    let defaults = UserDefaults.standard
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     return VStack {
         ZStack {
@@ -58,23 +63,35 @@ func getPageView(view: StoryPayload) -> some View {
         }
             Spacer()
     
-        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(view.decision2 != "" || view.decision1 == Constants.GameOverPhrase)) {
+        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(isNoSecondChoice() || isGameOver())) {
             Text(view.decision1)
             
         }.simultaneousGesture(TapGesture().onEnded{
-            print("Decision 1")
-            UserDefaults.standard.set(view.firstChoicePageName, forKey: DefaultsKeys.currentPage)
-                        })
-        
-        .padding()
-        if(view.decision2 != "") {
+            if Constants.chapters.contains(view.firstChoicePageName) {
+                let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+               
+                if let chapterOptional = chapterOptional {
+                    var chapters = chapterOptional
+                    chapters.append(view.firstChoicePageName)
+                    defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                }
+            }
+            
+            // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
+            if view.decision1 == Constants.GameOverPhrase {
+                UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+            } else {
+                defaults.set(view.firstChoicePageName, forKey: DefaultsKeys.currentPage)
+            }
+
+                }) .padding()
+        if(isNoSecondChoice()) {
             NavigationLink(destination: subviews[view.secondChoicePageName].navigationBarBackButtonHidden(true)) {
                 Text(view.decision2)
                     .padding()
                     
             }
             .simultaneousGesture(TapGesture().onEnded{
-                print("Decision 2")
                 UserDefaults.standard.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
                             })
         }
@@ -83,8 +100,6 @@ func getPageView(view: StoryPayload) -> some View {
     }
 struct DisplayView: View {
     @Binding var showMenu: Bool
-
-
     var view: StoryPayload
     var body: some View {
      
@@ -125,7 +140,7 @@ struct DisplayView: View {
             }.gesture(drag)
                  .gesture(tap)
         }
-        .navigationBarTitle("Tales of Covarnius", displayMode: .inline)
+         .navigationBarTitle("Tales of Covarnius", displayMode: .inline)
                     .navigationBarItems(leading: (
                         Button(action: {
                             withAnimation {

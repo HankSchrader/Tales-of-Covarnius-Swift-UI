@@ -9,9 +9,7 @@ import SwiftUI
 
 struct Part_4_See_Whats_In_The_Sky: View {
     @State var showMenu = false
-    @EnvironmentObject var log: ChapterLog
-
-    
+    static let PageName = "Part_4_See_What_In_The_Sky"
     var body: some View {
         let decision1 = "\"No Way! You'll dissect my brains!\""
         let text =

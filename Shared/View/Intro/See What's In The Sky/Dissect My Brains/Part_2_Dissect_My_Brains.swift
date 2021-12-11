@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct Part_2_Dissect_My_Brains: View {
+    @State var showMenu = false
+    static let PageName = "Part_2_Dissect_My_Brains"
     var body: some View {
         let text =
         "You put your hands on your hips and gaze at him suspiciously, hoping to find a sign that he’s not being entirely truthful.\n\n“Then why do I need to go with you?” you question him. A sound starts to emanate from the spacecraft a few yards away. It sounds like a cross between a wind chime and a howling dog.\n\nThe sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry, the ship is ready to take off! And you’re the only person in the universe who can help.\""
+
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_2_Fork_In_The_Road()))
+        let decision1 = Constants.ContinuePhrase
+
+        let firstChoicePageName = "Part_2_Fork_In_The_Road"
+
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

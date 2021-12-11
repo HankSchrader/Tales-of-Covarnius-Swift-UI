@@ -347,7 +347,7 @@
 		535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterLog.swift; sourceTree = "<group>"; };
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
 		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
-		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
+		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		538D7CE8276185C3007003F6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -423,11 +423,7 @@
 		5303C7C32755AEC500710D34 = {
 			isa = PBXGroup;
 			children = (
-				538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */,
-				538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */,
-				538D7CEA276185FF007003F6 /* Model.xcdatamodeld */,
 				535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */,
-				538D7CE8276185C3007003F6 /* DataController.swift */,
 				5303C7C82755AEC500710D34 /* Shared */,
 				5303C7D72755AEC600710D34 /* macOS */,
 				5303C7D12755AEC600710D34 /* Products */,
@@ -437,6 +433,10 @@
 		5303C7C82755AEC500710D34 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */,
+				538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */,
+				538D7CEA276185FF007003F6 /* Model.xcdatamodeld */,
+				538D7CE8276185C3007003F6 /* DataController.swift */,
 				535E3ADC2760DB4F0074EA50 /* Model */,
 				535E3ADD2760DB9A0074EA50 /* View */,
 				535E3ADF2760DEBB0074EA50 /* ViewModel */,

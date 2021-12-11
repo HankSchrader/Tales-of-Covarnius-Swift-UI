@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Tales_of_Covarnius_Swift_UIApp: App {
 
-    @StateObject var log = ChapterLog()
+   
     var startingView: String
     let defaults = UserDefaults.standard
     init() {
@@ -25,13 +25,12 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
 
     
     var body: some Scene {
-        print(self.startingView)
 
         return WindowGroup {
             NavigationView {
                 
                 subviews[self.startingView]
-                    .environmentObject(log)
+                  
             }
             .navigationViewStyle(StackNavigationViewStyle())
         

@@ -9,24 +9,16 @@ import SwiftUI
 
 struct Part_1_Fork_In_The_Road: View {
     @State var showMenu = false
-    @EnvironmentObject var log: ChapterLog
-    init () {
-        let defaults = UserDefaults.standard
-        defaults.set("Part_1_Fork_In_The_Road", forKey: DefaultsKeys.currentPage)
-        var chapters = defaults.array(forKey: DefaultsKeys.unlockedChapters)
-        chapters?.append("Part_1_Fork_In_The_Road")
-        defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
-    }
+    static let PageName = "Part_1_Fork_In_The_Road"
     var body: some View {
-        let text =
-        "After careful consideration, you decide the alien is probably not going to dissect your brain. The pleading look in his eyes and frightened demeanor give the impression that he does need help.\n\nAt the very least, you’ll get out of all the math homework your teacher assigned today. You cautiously approach the green hued creature. Before you know it, he is insisting you enter the spaceship.\n\n“Quickly, quickly,” the alien commands. “Covarnius can’t hold out much longer.”\n\nHe jumps back into the ship and you stumble into the seat next to his. Luna follows you into the spaceship. At least you’re not going alone! She finds a cozy corner to lay down in."
-        
-
         let decision1 = Constants.ContinuePhrase
-        let firstChoice = AnyView(Part_2_Fork_In_The_Road()
-                                    .environmentObject(log))
-        let storyView: StoryPayload = StoryPayload(text: text, firstChoice: firstChoice, decision1: decision1)
-            return DisplayView(showMenu: self.$showMenu, view: storyView)
+        let text =
+        "Thoughts of scalpels and examination tables suddenly fill your head. The last thing you want is to become a test subject in some alien experiment!\n\nYou tell the alien that you won’t go with him. “How do I know you won’t just dissect my brain?” you ask accusingly. Your fists are clenched with anger and fright.\n\nThe alien stares at you as if you are completely crazy.\n\n“Why on Covarnius would I do a thing like that?” The alien asks indignantly. “Do you have any idea how messy that would be?”"
+    
+        let firstChoicePageName = Part_2_Fork_In_The_Road.PageName
+
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
 
     }
 }

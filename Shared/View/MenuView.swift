@@ -10,7 +10,6 @@ import SwiftUI
 
 struct MenuView: View {
     @State private var showMenu = false
-    @EnvironmentObject var log: ChapterLog
 
     let chapters: [String] = (UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) ?? ["Part_1_Intro"]) as! [String]
     @ViewBuilder
@@ -24,9 +23,8 @@ struct MenuView: View {
                             .foregroundColor(.gray)
                             .imageScale(.large)
                         NavigationLink(destination: Part_1_Intro()
-                                        .navigationBarBackButtonHidden(true)
-                                            .environmentObject(log)) {
-                                Text(Constants.ChapterOne)
+                                        .navigationBarBackButtonHidden(true)) {
+                                Text("Intro")
                             }
                             }
                     .padding(.bottom)
@@ -41,8 +39,7 @@ struct MenuView: View {
                             .foregroundColor(.gray)
                             .imageScale(.large)
                         NavigationLink(destination: Part_1_Fork_In_The_Road()
-                                        .navigationBarBackButtonHidden(true)
-                                        .environmentObject(log)) {
+                                        .navigationBarBackButtonHidden(true)) {
                             Text(Constants.ForkInTheRoad)
                             }
                         

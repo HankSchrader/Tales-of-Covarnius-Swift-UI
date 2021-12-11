@@ -12,8 +12,10 @@ struct Constants {
     static let ContinuePhrase = "Keep Going"
     static let GameOverPhrase = "GAME OVER"
     
-    static let ChapterOne = "Intro"
-    static let ForkInTheRoad = "Fork In The Road"
+    static let ChapterOne = "Part_1_Intro"
+    static let ForkInTheRoad = "Part_1_Fork_In_The_Road"
+    
+    static let chapters = [ChapterOne, ForkInTheRoad]
     
 
 }
@@ -133,6 +135,8 @@ enum subviews {
            Part_4_Not_Scientist()
         case "Part_1_Warmongers":
             Part_1_Warmongers()
+        case "Part_1_Greatest_Scientist":
+            Part_1_Greatest_Scientist()
         default:
           fatalError()
     }

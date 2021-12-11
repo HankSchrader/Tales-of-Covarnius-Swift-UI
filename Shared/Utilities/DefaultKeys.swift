@@ -7,9 +7,14 @@
 
 import Foundation
 struct DefaultsKeys {
-    // An Array that will never have more than one element.
+    // A string that will never have more than one element.
     static let currentPage = "currentChapter"
     
-    // All the chapters that will appear in the side menu.
+    // An array All the chapters that will appear in the side menu.
     static let unlockedChapters = "unlockedChapters"
+    
+    // Needed to show the current chapter on the top of the navigation page.
+    static let currentChapter = "Something's in the sky..."
+    
+    
 }

@@ -15,7 +15,7 @@ struct Part_1_Cowboys_Of_Katonia: View {
                 .fontWeight(.light)
                 .padding()
                 Spacer()
-            NavigationLink(destination: Part_2_Cowboys_Of_Katonia()) {
+            NavigationLink(destination: Part_1_Intro()) {
                        Text("Continue")
                    }
         }
