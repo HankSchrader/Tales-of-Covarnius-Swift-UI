@@ -11,10 +11,7 @@ struct Constants {
     static let ipadFontSize = 24
     static let ContinuePhrase = "Keep Going"
     static let GameOverPhrase = "GAME OVER"
-    
-    static let ChapterOne = "Part_1_Intro"
-    static let ForkInTheRoad = "Part_1_Fork_In_The_Road"
-    
+   
     
     static let chapters = [Part_1_Intro.PageName,
                            Part_1_Fork_In_The_Road.PageName,
@@ -24,7 +21,6 @@ struct Constants {
 }
 enum subviews {
     @ViewBuilder static subscript(string: String) -> some View {
-        
         switch string {
         case Part_1_Intro.PageName:
             Part_1_Intro()
@@ -52,23 +48,23 @@ enum subviews {
             Part_2_Fork_In_The_Road()
         case Part_1_Fork_In_The_Road.PageName:
             Part_1_Fork_In_The_Road()
-        case "Part_1_Dissect_My_Brains":
+        case Part_1_Dissect_My_Brains.PageName:
             Part_1_Dissect_My_Brains()
-        case "Part_2_Dissect_My_Brains":
+        case Part_2_Dissect_My_Brains.PageName:
             Part_2_Dissect_My_Brains()
-        case "Bright_Green":
+        case Bright_Green.PageName:
             Bright_Green()
-        case "Went_Home":
+        case Went_Home.PageName:
             Went_Home()
-        case "Bad_Distraction":
+        case Bad_Distraction.PageName:
             Bad_Distraction()
-        case "Caught_By_Covarnian":
+        case Caught_By_Covarnian.PageName:
             Caught_By_Covarnian()
-        case "Got_Caught":
+        case Got_Caught.PageName:
             Got_Caught()
-        case "Turn_Into_Frog":
+        case Turn_Into_Frog.PageName:
             Turn_Into_Frog()
-        case "Abandonded_Chrono":
+        case Abandonded_Chrono.PageName:
             Abandonded_Chrono()
         case "Part_1_Cowboys_Of_Katonia":
             Part_1_Cowboys_Of_Katonia()
@@ -122,7 +118,7 @@ enum subviews {
             Part_4_Save_The_Hapal()
         case "Part_1_Landing":
             Part_1_Landing()
-        case "Part_2_Landing":
+        case Part_2_Landing.PageName:
             Part_2_Landing()
         case Part_1_Fake_Til_You_Make.PageName:
             Part_1_Fake_Til_You_Make()
@@ -150,8 +146,6 @@ enum subviews {
             Part_3_Greatest_Scientist()
         case Part_4_Greatest_Scientist.PageName:
             Part_4_Greatest_Scientist()
-            
-            
         default:
             fatalError()
         }
