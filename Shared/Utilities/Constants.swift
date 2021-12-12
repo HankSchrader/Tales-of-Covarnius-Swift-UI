@@ -15,21 +15,24 @@ struct Constants {
     static let ChapterOne = "Part_1_Intro"
     static let ForkInTheRoad = "Part_1_Fork_In_The_Road"
     
-    static let chapters = [ChapterOne, ForkInTheRoad]
     
-
+    static let chapters = [Part_1_Intro.PageName,
+                           Part_1_Fork_In_The_Road.PageName,
+                           Part_1_Cowboys_Of_Katonia.PageName]
+    
+    
 }
 enum subviews {
-  @ViewBuilder static subscript(string: String) -> some View {
-      
-    switch string {
-        case "Part_1_Intro":
+    @ViewBuilder static subscript(string: String) -> some View {
+        
+        switch string {
+        case Part_1_Intro.PageName:
             Part_1_Intro()
-        case "Part_1_Run_Away":
+        case Part_1_Run_Away.PageName:
             Part_1_Run_Away()
-        case "Part_1_See_What_In_The_Sky":
+        case Part_1_See_What_In_The_Sky.PageName:
             Part_1_See_What_In_The_Sky()
-        case "Part_2_Run_Away":
+        case Part_2_Run_Away.PageName:
             Part_2_Run_Away()
         case "Part_4_See_Whats_In_The_Sky":
             Part_4_See_Whats_In_The_Sky()
@@ -37,13 +40,17 @@ enum subviews {
             Part_3_See_Whats_In_The_Sky()
         case "Part_2_See_Whats_In_The_Sky":
             Part_2_See_Whats_In_The_Sky()
-        case "Part_4_Fork_In_The_Road":
+        case Part_6_Fork_In_The_Road.PageName:
+            Part_6_Fork_In_The_Road()
+        case Part_5_Fork_In_The_Road.PageName:
+            Part_5_Fork_In_The_Road()
+        case Part_4_Fork_In_The_Road.PageName:
             Part_4_Fork_In_The_Road()
-        case "Part_3_Fork_In_The_Road":
+        case Part_3_Fork_In_The_Road.PageName:
             Part_3_Fork_In_The_Road()
-        case "Part_2_Fork_In_The_Road":
+        case Part_2_Fork_In_The_Road.PageName:
             Part_2_Fork_In_The_Road()
-        case "Part_1_Fork_In_The_Road":
+        case Part_1_Fork_In_The_Road.PageName:
             Part_1_Fork_In_The_Road()
         case "Part_1_Dissect_My_Brains":
             Part_1_Dissect_My_Brains()
@@ -58,15 +65,15 @@ enum subviews {
         case "Caught_By_Covarnian":
             Caught_By_Covarnian()
         case "Got_Caught":
-           Got_Caught()
+            Got_Caught()
         case "Turn_Into_Frog":
-           Turn_Into_Frog()
+            Turn_Into_Frog()
         case "Abandonded_Chrono":
-           Abandonded_Chrono()
+            Abandonded_Chrono()
         case "Part_1_Cowboys_Of_Katonia":
             Part_1_Cowboys_Of_Katonia()
         case "Part_2_Cowboys_Of_Katonia":
-           Part_2_Cowboys_Of_Katonia()
+            Part_2_Cowboys_Of_Katonia()
         case "Part_3_Cowboys_Of_Katonia":
             Part_3_Cowboys_Of_Katonia()
         case "Part_4_Cowboys_of_Katonia":
@@ -117,28 +124,36 @@ enum subviews {
             Part_1_Landing()
         case "Part_2_Landing":
             Part_2_Landing()
-        case "Part_1_Fake_Til_You_Make":
+        case Part_1_Fake_Til_You_Make.PageName:
             Part_1_Fake_Til_You_Make()
-        case "Part_2_Fake_Til_You_Make":
+        case Part_2_Fake_Til_You_Make.PageName:
             Part_2_Fake_Til_You_Make()
-        case "Part_1_Wing_It":
-          Part_1_Wing_It()
-        case "Part_2_Wing_It":
+        case Part_1_Wing_It.PageName:
+            Part_1_Wing_It()
+        case Part_2_Wing_It.PageName:
             Part_2_Wing_It()
-        case "Part_1_Not_Scientist":
-           Part_1_Not_Scientist()
-        case "Part_2_Not_Scientist":
-           Part_2_Not_Scientist()
-        case "Part_3_Not_Scientist":
-           Part_3_Not_Scientist()
-        case "Part_4_Not_Scientist":
-           Part_4_Not_Scientist()
-        case "Part_1_Warmongers":
+        case Part_1_Not_Scientist.PageName:
+            Part_1_Not_Scientist()
+        case Part_2_Not_Scientist.PageName:
+            Part_2_Not_Scientist()
+        case Part_3_Not_Scientist.PageName:
+            Part_3_Not_Scientist()
+        case Part_4_Not_Scientist.PageName:
+            Part_4_Not_Scientist()
+        case Part_1_Warmongers.PageName:
             Part_1_Warmongers()
-        case "Part_1_Greatest_Scientist":
+        case Part_1_Greatest_Scientist.PageName:
             Part_1_Greatest_Scientist()
+        case Part_2_Greatest_Scientist.PageName:
+            Part_2_Greatest_Scientist()
+        case Part_3_Greatest_Scientist.PageName:
+            Part_3_Greatest_Scientist()
+        case Part_4_Greatest_Scientist.PageName:
+            Part_4_Greatest_Scientist()
+            
+            
         default:
-          fatalError()
+            fatalError()
+        }
     }
-  }
 }

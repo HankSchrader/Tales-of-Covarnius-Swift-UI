@@ -13,10 +13,8 @@ struct Part_1_Fork_In_The_Road: View {
     var body: some View {
         let decision1 = Constants.ContinuePhrase
         let text =
-        "Thoughts of scalpels and examination tables suddenly fill your head. The last thing you want is to become a test subject in some alien experiment!\n\nYou tell the alien that you won’t go with him. “How do I know you won’t just dissect my brain?” you ask accusingly. Your fists are clenched with anger and fright.\n\nThe alien stares at you as if you are completely crazy.\n\n“Why on Covarnius would I do a thing like that?” The alien asks indignantly. “Do you have any idea how messy that would be?”"
-    
+        "After careful consideration, you decide the alien is probably not going to dissect your brain. The pleading look in his eyes and frightened demeanor give the impression that he does need help.\n\nAt the very least, you’ll get out of all the math homework your teacher assigned today. You cautiously approach the green hued creature. Before you know it, he is insisting you enter the spaceship."
         let firstChoicePageName = Part_2_Fork_In_The_Road.PageName
-
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
 

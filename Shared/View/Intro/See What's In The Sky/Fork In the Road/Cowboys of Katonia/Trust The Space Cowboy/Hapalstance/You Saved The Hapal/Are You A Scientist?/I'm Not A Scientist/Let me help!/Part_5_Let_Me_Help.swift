@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_5_Let_Me_Help: View {
+    static let PageName = "Part_5_Let_Me_Help"
+    @State var showMenu = false
     var body: some View {
         let text =
         "“That might be the worst plan I have ever heard,” King Zanarq responds quickly. “It’s almost certain death for anyone who would undertake such a mission.” King Zanarq waves his hand dismissively. The guards respond by opening the door and escorting the three of you outside.\n\n“Well that didn’t work as planned,” Chrono says matter-of-factly. “Ready to give up yet?”\n\n You think it over for a moment and respond..."

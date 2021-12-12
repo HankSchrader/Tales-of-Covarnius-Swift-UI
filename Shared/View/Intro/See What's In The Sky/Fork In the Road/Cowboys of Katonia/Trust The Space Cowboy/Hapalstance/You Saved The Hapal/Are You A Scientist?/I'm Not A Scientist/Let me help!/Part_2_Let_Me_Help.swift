@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_2_Let_Me_Help: View {
+    static let PageName = "Part_2_Let_Me_Help"
+    @State var showMenu = false
     var body: some View {
         let text =
         "Chrono looks at you with skepticism. “But how?” he asks, scratching his green chin.“You said that all the spaceships can be programmed to go anywhere in the universe.”“That’s right,” Chrono agrees, nodding his head slowly.“Well, then what if we program the Sinisterian ship to go somewhere else? Somewhere like a black hole or a wormhole or something. Then, they’d never even make it to Covarnius!\""

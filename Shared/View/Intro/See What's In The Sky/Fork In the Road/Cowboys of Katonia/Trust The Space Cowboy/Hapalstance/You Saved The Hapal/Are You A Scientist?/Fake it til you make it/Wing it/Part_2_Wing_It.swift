@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_2_Wing_It: View {
+    static let PageName = "Part_2_Wing_It"
+    @State var showMenu = false
     var body: some View {
         
         let text =

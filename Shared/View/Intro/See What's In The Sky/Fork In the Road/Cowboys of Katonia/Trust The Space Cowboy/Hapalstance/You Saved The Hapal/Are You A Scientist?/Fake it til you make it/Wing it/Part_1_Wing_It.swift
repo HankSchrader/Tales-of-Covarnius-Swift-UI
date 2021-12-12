@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_1_Wing_It: View {
+    static let PageName = "Part_1_Wing_It"
+    @State var showMenu = false
     var body: some View {
         let text =
         "You pick up a beaker filled with a strange smelling liquid. It’s red, bubbly and seems important. As you bring it up to eye level to observe its contents, the Covarnian scientist lets out a sigh of exasperation.\n\n“The cloaking device is a composite of these chemicals...but I just can’t figure out which ones!” the scientist says, clearly disheartened.\n\nHe notices you holding the beaker. “What are you doing with the electrolytic catalyst accelerator?” he asks in awe"

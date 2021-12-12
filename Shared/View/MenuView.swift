@@ -40,7 +40,7 @@ struct MenuView: View {
                             .imageScale(.large)
                         NavigationLink(destination: Part_1_Fork_In_The_Road()
                                         .navigationBarBackButtonHidden(true)) {
-                            Text(Constants.ForkInTheRoad)
+                            Text("Fork In The Road")
                             }
                         
 

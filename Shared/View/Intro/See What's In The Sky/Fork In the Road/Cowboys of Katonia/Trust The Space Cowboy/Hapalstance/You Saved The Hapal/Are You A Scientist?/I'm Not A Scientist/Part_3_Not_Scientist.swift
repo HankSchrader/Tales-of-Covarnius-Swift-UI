@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_3_Not_Scientist: View {
+    static let PageName = "Part_3_Not_Scientist"
+    @State var showMenu = false
     var body: some View {
         let text =
         "“What’s a Sinisterian?” you ask. Judging by the Covarnians' reactions, you can tell whoever or whatever it is can’t be good.\n\nChrono wrings his hands together as he explains. “The Sinisterians are a race of aliens. They are brutal, savage warmongers to say the least. They plan to invade Covarnius and take over the planet.”"
