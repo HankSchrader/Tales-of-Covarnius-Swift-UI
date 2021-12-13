@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_1_Tell: View {
+    static let PageName = "Part_1_Tell"
+    @State var showMenu = false
     var body: some View {
        let text =
         "The two of you race towards King Zanarq's palace to announce the good news.\n\n“Chrono? You are responsible for this?” the king asks with astonishment.\n\n“Me and the earthling!” Chrono replies proudly, slinging his arm around your neck."

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Part_4_Clog_Toilet: View {
+    static let PageName = "Part_4_Clog_Toilet"
+    @State var showMenu = false
     var body: some View {
         let text =
         "“What does this say?” you cry frustratedly to yourself. As if the key hears you, the scrawl rearranges, mixes and molds into something more familiar: English.\n\nIt says, “Hypersleep disengagement key”. Chewing your lip, you stare intently at the key. Could this provide any value? Does this even matter? Maybe you should just help Chrono. The aliens have already been distracted, no reason to push your luck!"

@@ -90,7 +90,7 @@
 		535E3A652759B2B00074EA50 /* Part_1_Luna_Stays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A642759B2B00074EA50 /* Part_1_Luna_Stays.swift */; };
 		535E3A672759B3200074EA50 /* Part_2_Luna_Stays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A662759B3200074EA50 /* Part_2_Luna_Stays.swift */; };
 		535E3A6A2759B4120074EA50 /* Part_1_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */; };
-		535E3A6C2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */; };
+		535E3A6C2759B4B40074EA50 /* Part_2_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A6B2759B4B40074EA50 /* Part_2_Two_Diplomats.swift */; };
 		535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A6F2759B86B0074EA50 /* Part_1_Take_Key.swift */; };
 		535E3A722759B89A0074EA50 /* Part_1_Too_Risky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A712759B89A0074EA50 /* Part_1_Too_Risky.swift */; };
 		535E3A742759B8F90074EA50 /* Part_3_Two_Diplomats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */; };
@@ -327,7 +327,7 @@
 		535E3A642759B2B00074EA50 /* Part_1_Luna_Stays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Luna_Stays.swift; sourceTree = "<group>"; };
 		535E3A662759B3200074EA50 /* Part_2_Luna_Stays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Luna_Stays.swift; sourceTree = "<group>"; };
 		535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Two_Diplomats.swift; sourceTree = "<group>"; };
-		535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IMPORTANT Part_2_Two_Diplomats.swift"; sourceTree = "<group>"; };
+		535E3A6B2759B4B40074EA50 /* Part_2_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Two_Diplomats.swift; sourceTree = "<group>"; };
 		535E3A6F2759B86B0074EA50 /* Part_1_Take_Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Take_Key.swift; sourceTree = "<group>"; };
 		535E3A712759B89A0074EA50 /* Part_1_Too_Risky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Too_Risky.swift; sourceTree = "<group>"; };
 		535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Two_Diplomats.swift; sourceTree = "<group>"; };
@@ -791,7 +791,7 @@
 				535E3A6E2759B84A0074EA50 /* Too Risky */,
 				535E3A6D2759B8430074EA50 /* Take Key */,
 				535E3A692759B4120074EA50 /* Part_1_Two_Diplomats.swift */,
-				535E3A6B2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift */,
+				535E3A6B2759B4B40074EA50 /* Part_2_Two_Diplomats.swift */,
 				535E3A732759B8F90074EA50 /* Part_3_Two_Diplomats.swift */,
 				535E3A752759B9840074EA50 /* Part_4_Two_Diplomats.swift */,
 			);
@@ -1296,7 +1296,7 @@
 				5303C7EE2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift in Sources */,
 				535E3A7E2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift in Sources */,
 				535E39E5275992AD0074EA50 /* Part_5_Let_Me_Help.swift in Sources */,
-				535E3A6C2759B4B40074EA50 /* IMPORTANT Part_2_Two_Diplomats.swift in Sources */,
+				535E3A6C2759B4B40074EA50 /* Part_2_Two_Diplomats.swift in Sources */,
 				535E39EB275993AB0074EA50 /* Part_1_Do_Ourselves.swift in Sources */,
 				53BACDFA2756FF26009E493E /* Part_2_Hapalstance.swift in Sources */,
 				53BC2901276599910040BFB8 /* Part_5_Fork_In_The_Road.swift in Sources */,
