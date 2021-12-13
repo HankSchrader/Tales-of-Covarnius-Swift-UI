@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct Part_1_Ask_Chrono: View {
+    static let PageName = "Part_1_Ask_Chrono"
+    @State var showMenu = false
     var body: some View {
         let text =
         "“I spent last summer working here as a Covarnian Cleanliness Companion or CCC for short,” Chrono explains.\n\n“That sounds impressive.”\n\n“Not really,” Chrono replies. “That’s just a fancy way of saying garbage man. I still had fun working here though.”\n\n A sense of uneasiness washes over you. “We should probably get to the store room now before we are detected.”\n\nChrono nods and takes the lead down the pristine hallway. The CCC really does a good job you think to yourself. The halls are immaculate"
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_1_Store_Room()))
+       
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_1_Store_Room.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

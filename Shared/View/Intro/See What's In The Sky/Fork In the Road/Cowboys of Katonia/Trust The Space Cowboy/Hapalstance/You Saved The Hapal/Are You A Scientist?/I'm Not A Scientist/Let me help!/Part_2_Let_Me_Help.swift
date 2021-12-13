@@ -13,7 +13,11 @@ struct Part_2_Let_Me_Help: View {
     var body: some View {
         let text =
         "Chrono looks at you with skepticism. “But how?” he asks, scratching his green chin.“You said that all the spaceships can be programmed to go anywhere in the universe.”“That’s right,” Chrono agrees, nodding his head slowly.“Well, then what if we program the Sinisterian ship to go somewhere else? Somewhere like a black hole or a wormhole or something. Then, they’d never even make it to Covarnius!\""
-        getPageView(mainText: text, firstChoice: AnyView(Part_3_Let_Me_Help()))
+        
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_3_Let_Me_Help.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }
 }

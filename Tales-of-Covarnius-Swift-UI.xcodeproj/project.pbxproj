@@ -232,6 +232,22 @@
 		53BC28FD276596830040BFB8 /* Part_3_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC28FC276596830040BFB8 /* Part_3_Greatest_Scientist.swift */; };
 		53BC28FF276598660040BFB8 /* Part_2_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC28FE276598660040BFB8 /* Part_2_Fork_In_The_Road.swift */; };
 		53BC2901276599910040BFB8 /* Part_5_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC2900276599910040BFB8 /* Part_5_Fork_In_The_Road.swift */; };
+		53BC29032766D2540040BFB8 /* Part_3_House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29022766D2540040BFB8 /* Part_3_House.swift */; };
+		53BC29052766D3420040BFB8 /* Part_4_House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29042766D3420040BFB8 /* Part_4_House.swift */; };
+		53BC29082766D4500040BFB8 /* Part_1_They_Are_Vicious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29072766D4500040BFB8 /* Part_1_They_Are_Vicious.swift */; };
+		53BC290A2766D4C50040BFB8 /* Part_2_They_Are_Vicious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29092766D4C50040BFB8 /* Part_2_They_Are_Vicious.swift */; };
+		53BC290C2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC290B2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift */; };
+		53BC290E2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC290D2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift */; };
+		53BC29102766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC290F2766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift */; };
+		53BC29152766D7410040BFB8 /* Part_1_Feed_Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29142766D7410040BFB8 /* Part_1_Feed_Dogs.swift */; };
+		53BC29192766D82F0040BFB8 /* Part_2_Feed_Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29182766D82F0040BFB8 /* Part_2_Feed_Dogs.swift */; };
+		53BC291C2766D99D0040BFB8 /* Growlics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC291B2766D99D0040BFB8 /* Growlics.swift */; };
+		53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC291F2766DB410040BFB8 /* Part_1_Just_Desserts.swift */; };
+		53BC29222766DB850040BFB8 /* Part_2_Just_Desserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29212766DB850040BFB8 /* Part_2_Just_Desserts.swift */; };
+		53BC29242766DC2F0040BFB8 /* Part_1_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29232766DC2F0040BFB8 /* Part_1_Stank_Meat.swift */; };
+		53BC29262766DC440040BFB8 /* Part_2_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29252766DC440040BFB8 /* Part_2_Stank_Meat.swift */; };
+		53BC29282766DC4B0040BFB8 /* Part_3_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */; };
+		53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -408,6 +424,22 @@
 		53BC28FC276596830040BFB8 /* Part_3_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		53BC28FE276598660040BFB8 /* Part_2_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Fork_In_The_Road.swift; sourceTree = "<group>"; };
 		53BC2900276599910040BFB8 /* Part_5_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_Fork_In_The_Road.swift; sourceTree = "<group>"; };
+		53BC29022766D2540040BFB8 /* Part_3_House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_House.swift; sourceTree = "<group>"; };
+		53BC29042766D3420040BFB8 /* Part_4_House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_House.swift; sourceTree = "<group>"; };
+		53BC29072766D4500040BFB8 /* Part_1_They_Are_Vicious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_They_Are_Vicious.swift; sourceTree = "<group>"; };
+		53BC29092766D4C50040BFB8 /* Part_2_They_Are_Vicious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_They_Are_Vicious.swift; sourceTree = "<group>"; };
+		53BC290B2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_They_Are_Vicious.swift; sourceTree = "<group>"; };
+		53BC290D2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_They_Are_Vicious.swift; sourceTree = "<group>"; };
+		53BC290F2766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_5_They_Are_Vicious.swift; sourceTree = "<group>"; };
+		53BC29142766D7410040BFB8 /* Part_1_Feed_Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Feed_Dogs.swift; sourceTree = "<group>"; };
+		53BC29182766D82F0040BFB8 /* Part_2_Feed_Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Feed_Dogs.swift; sourceTree = "<group>"; };
+		53BC291B2766D99D0040BFB8 /* Growlics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Growlics.swift; sourceTree = "<group>"; };
+		53BC291F2766DB410040BFB8 /* Part_1_Just_Desserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Just_Desserts.swift; sourceTree = "<group>"; };
+		53BC29212766DB850040BFB8 /* Part_2_Just_Desserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Just_Desserts.swift; sourceTree = "<group>"; };
+		53BC29232766DC2F0040BFB8 /* Part_1_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Stank_Meat.swift; sourceTree = "<group>"; };
+		53BC29252766DC440040BFB8 /* Part_2_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Stank_Meat.swift; sourceTree = "<group>"; };
+		53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Stank_Meat.swift; sourceTree = "<group>"; };
+		53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Stank_Meat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +547,7 @@
 				535E3A1C27599F360074EA50 /* Got_Caught.swift */,
 				535E3A512759AD9D0074EA50 /* Caught_By_Covarnian.swift */,
 				535E3AA42759C23D0074EA50 /* Bad_Distraction.swift */,
+				53BC291B2766D99D0040BFB8 /* Growlics.swift */,
 			);
 			path = "Game Over Scenarios";
 			sourceTree = "<group>";
@@ -678,8 +711,12 @@
 		535E3A3D2759A8A00074EA50 /* Sneak Into House */ = {
 			isa = PBXGroup;
 			children = (
+				53BC29132766D7330040BFB8 /* Feed_Dogs */,
+				53BC29062766D43B0040BFB8 /* They_Are_Vicious */,
 				535E3A412759A8D20074EA50 /* Part_1_House.swift */,
 				535E3A432759A9EC0074EA50 /* Part_2_House.swift */,
+				53BC29022766D2540040BFB8 /* Part_3_House.swift */,
+				53BC29042766D3420040BFB8 /* Part_4_House.swift */,
 			);
 			path = "Sneak Into House";
 			sourceTree = "<group>";
@@ -1055,6 +1092,49 @@
 			path = "Wing it";
 			sourceTree = "<group>";
 		};
+		53BC29062766D43B0040BFB8 /* They_Are_Vicious */ = {
+			isa = PBXGroup;
+			children = (
+				53BC29072766D4500040BFB8 /* Part_1_They_Are_Vicious.swift */,
+				53BC29092766D4C50040BFB8 /* Part_2_They_Are_Vicious.swift */,
+				53BC290B2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift */,
+				53BC290D2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift */,
+				53BC290F2766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift */,
+			);
+			path = They_Are_Vicious;
+			sourceTree = "<group>";
+		};
+		53BC29132766D7330040BFB8 /* Feed_Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				53BC291E2766DB2B0040BFB8 /* Just_Desserts */,
+				53BC291D2766DB1B0040BFB8 /* Stank_Meat */,
+				53BC29142766D7410040BFB8 /* Part_1_Feed_Dogs.swift */,
+				53BC29182766D82F0040BFB8 /* Part_2_Feed_Dogs.swift */,
+			);
+			path = Feed_Dogs;
+			sourceTree = "<group>";
+		};
+		53BC291D2766DB1B0040BFB8 /* Stank_Meat */ = {
+			isa = PBXGroup;
+			children = (
+				53BC29232766DC2F0040BFB8 /* Part_1_Stank_Meat.swift */,
+				53BC29252766DC440040BFB8 /* Part_2_Stank_Meat.swift */,
+				53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */,
+				53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */,
+			);
+			path = Stank_Meat;
+			sourceTree = "<group>";
+		};
+		53BC291E2766DB2B0040BFB8 /* Just_Desserts */ = {
+			isa = PBXGroup;
+			children = (
+				53BC291F2766DB410040BFB8 /* Part_1_Just_Desserts.swift */,
+				53BC29212766DB850040BFB8 /* Part_2_Just_Desserts.swift */,
+			);
+			path = Just_Desserts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1197,17 +1277,22 @@
 				535E3A1F2759A0230074EA50 /* Part_1_Sneak.swift in Sources */,
 				538D7CF02761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift in Sources */,
 				535E3AA02759C1810074EA50 /* Part_4_Clog_Toilet.swift in Sources */,
+				53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */,
 				53BC28FD276596830040BFB8 /* Part_3_Greatest_Scientist.swift in Sources */,
 				535E3A4C2759AC500074EA50 /* Part_1_Ask_Chrono.swift in Sources */,
 				535E3A0927599B060074EA50 /* Part_1_Crash_Wall.swift in Sources */,
+				53BC29152766D7410040BFB8 /* Part_1_Feed_Dogs.swift in Sources */,
+				53BC29282766DC4B0040BFB8 /* Part_3_Stank_Meat.swift in Sources */,
 				535E39FA275997440074EA50 /* Part_3_Boarding_Ticket.swift in Sources */,
 				53BACDFD2756FFA6009E493E /* Part_3_Hapalstance.swift in Sources */,
 				535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */,
 				535E3ACD275B10710074EA50 /* MenuView.swift in Sources */,
+				53BC290C2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift in Sources */,
 				538D7CE9276185C3007003F6 /* DataController.swift in Sources */,
 				536F3CEF2757A99C007E5250 /* Extentions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
 				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
+				53BC290E2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift in Sources */,
 				5303C7EE2755C61700710D34 /* Part-1-See-What-In-The-Sky.swift in Sources */,
 				535E3A7E2759BB4E0074EA50 /* Part_1_Secret_Weapon.swift in Sources */,
 				535E39E5275992AD0074EA50 /* Part_5_Let_Me_Help.swift in Sources */,
@@ -1224,10 +1309,12 @@
 				535E3A622759B1D90074EA50 /* Part_3_Keep_Thinking.swift in Sources */,
 				53BACE232757051D009E493E /* Part_1_Not_Scientist.swift in Sources */,
 				535E3AA32759C2050074EA50 /* Part_1_Help_Chrono.swift in Sources */,
+				53BC29222766DB850040BFB8 /* Part_2_Just_Desserts.swift in Sources */,
 				535E3A722759B89A0074EA50 /* Part_1_Too_Risky.swift in Sources */,
 				5303C7E82755AF4900710D34 /* Part_1_Intro.swift in Sources */,
 				535E39E12759922E0074EA50 /* Part_3_Let_Me_Help.swift in Sources */,
 				535E3AAB2759C4290074EA50 /* Part_3_Hypersleep.swift in Sources */,
+				53BC290A2766D4C50040BFB8 /* Part_2_They_Are_Vicious.swift in Sources */,
 				535E39E8275993490074EA50 /* Part_1_Try_Give_Up.swift in Sources */,
 				535E39DD275990B10074EA50 /* Part_1_Let_Me_Help.swift in Sources */,
 				535E3A1927599E600074EA50 /* Part_5_Fetch_Key.swift in Sources */,
@@ -1236,12 +1323,14 @@
 				535E3AA72759C2F80074EA50 /* Part_5_Clog_Toilet.swift in Sources */,
 				53BACE262757054B009E493E /* Part_1_Fake_Til_You_Make.swift in Sources */,
 				535E3A9E2759C1380074EA50 /* Part_3_Clog_Toilet.swift in Sources */,
+				53BC29262766DC440040BFB8 /* Part_2_Stank_Meat.swift in Sources */,
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
 				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
 				535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
+				53BC291C2766D99D0040BFB8 /* Growlics.swift in Sources */,
 				535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */,
 				535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */,
 				535E3A522759AD9D0074EA50 /* Caught_By_Covarnian.swift in Sources */,
@@ -1251,15 +1340,18 @@
 				53BACDC52756EFC4009E493E /* Part_6_Fork_In_The_Road.swift in Sources */,
 				5303C7DB2755AEC600710D34 /* ContentView.swift in Sources */,
 				535E3AAF2759C4DF0074EA50 /* Part_5_Hypersleep.swift in Sources */,
+				53BC29032766D2540040BFB8 /* Part_3_House.swift in Sources */,
 				53BACDDF2756F8F5009E493E /* Part_2_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A862759BD880074EA50 /* Part_2_Gravity_Gun.swift in Sources */,
 				535E3A792759BA360074EA50 /* Part_1_Peace.swift in Sources */,
 				535E3A1527599DA50074EA50 /* Part_3_Fetch_Key.swift in Sources */,
 				535E3AA92759C3EC0074EA50 /* Part_2_Hypersleep.swift in Sources */,
+				53BC29082766D4500040BFB8 /* Part_1_They_Are_Vicious.swift in Sources */,
 				53BACDE92756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */,
 				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
 				535E39CF275855260074EA50 /* PageView.swift in Sources */,
+				53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */,
 				53BACE1127570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */,
 				535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */,
 				535E3A8E2759BEF70074EA50 /* Part_6_Gravity_Gun.swift in Sources */,
@@ -1272,6 +1364,7 @@
 				53BACE462757134A009E493E /* Part-4 See Whats In The Sky.swift in Sources */,
 				535E39E3275992620074EA50 /* Part_4_Let_Me_Help.swift in Sources */,
 				535E3A382759A4950074EA50 /* Part_1_Tell.swift in Sources */,
+				53BC29242766DC2F0040BFB8 /* Part_1_Stank_Meat.swift in Sources */,
 				53BACDD22756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift in Sources */,
 				535E3AB82759C6040074EA50 /* Part_9_Hypersleep.swift in Sources */,
 				53BACE0427570080009E493E /* Part_1_Hapal_Down.swift in Sources */,
@@ -1291,6 +1384,7 @@
 				535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */,
 				538D7CF327618F0D007003F6 /* DefaultKeys.swift in Sources */,
 				535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */,
+				53BC29102766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift in Sources */,
 				535E3A402759A8C70074EA50 /* Part_1_Council.swift in Sources */,
 				535E3AB52759C5BD0074EA50 /* Part_8_Hypersleep.swift in Sources */,
 				535E3A302759A3940074EA50 /* Part_3_Giant_Luna.swift in Sources */,
@@ -1312,8 +1406,10 @@
 				535E3A5B2759B0290074EA50 /* Part_1_Keep_Thinking.swift in Sources */,
 				535E3A922759BFBB0074EA50 /* Part_8_Gravity_Gun.swift in Sources */,
 				535E3A1327599D200074EA50 /* Part_2_Fetch_Key.swift in Sources */,
+				53BC29052766D3420040BFB8 /* Part_4_House.swift in Sources */,
 				535E3A9C2759C0F40074EA50 /* Part_2_Clog_Toilet.swift in Sources */,
 				535E39D92758FC9C0074EA50 /* Abandonded_Chrono.swift in Sources */,
+				53BC29192766D82F0040BFB8 /* Part_2_Feed_Dogs.swift in Sources */,
 				53BACDD52756F716009E493E /* Part_5_Cowboys_Of_Katonia.swift in Sources */,
 				535E3A2E2759A3150074EA50 /* Part_2_Giant_Luna.swift in Sources */,
 				535E3A0F27599C270074EA50 /* Part_2_Crash_Wall.swift in Sources */,

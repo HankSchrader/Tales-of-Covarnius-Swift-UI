@@ -15,7 +15,11 @@ struct Constants {
     
     static let chapters = [Part_1_Intro.PageName,
                            Part_1_Fork_In_The_Road.PageName,
-                           Part_1_Cowboys_Of_Katonia.PageName]
+                           Part_1_Cowboys_Of_Katonia.PageName,
+                           Part_1_Fake_Til_You_Make.PageName,
+                           Part_1_Diplomatic_Immunity.PageName,
+                           Part_1_Boarding_Ticket.PageName,
+                           Part_1_Greatest_Scientist.PageName]
     
     
 }

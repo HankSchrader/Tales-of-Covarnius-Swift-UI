@@ -41,6 +41,10 @@ func getPageView(view: StoryPayload) -> some View {
     let isNoSecondChoice = {
         view.decision2 != ""
     }
+    
+    let isNoThirdChoice = {
+        view.decision2 != ""
+    }
     let isGameOver = {
         view.decision1 == Constants.GameOverPhrase
     }
@@ -88,6 +92,17 @@ func getPageView(view: StoryPayload) -> some View {
         if(isNoSecondChoice()) {
             NavigationLink(destination: subviews[view.secondChoicePageName].navigationBarBackButtonHidden(true)) {
                 Text(view.decision2)
+                    .padding()
+                
+            }
+            .simultaneousGesture(TapGesture().onEnded{
+                UserDefaults.standard.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
+            })
+        }
+        
+        if(isNoThirdChoice()) {
+            NavigationLink(destination: subviews[view.thirdChoicePageName ?? ""].navigationBarBackButtonHidden(true)) {
+                Text(view.decision3 ?? "")
                     .padding()
                 
             }

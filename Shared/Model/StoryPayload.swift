@@ -18,9 +18,13 @@ class StoryPayload: Identifiable {
     var secondChoice: AnyView?
     var firstChoicePageName: String
     var secondChoicePageName: String
+    
+    // MARK: Only used on ONE page.
+    var decision3: String?
+    var thirdChoicePageName: String?
 
     
-    init(text: String, firstChoice: AnyView, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "",  secondChoice: AnyView = AnyView(Text(""))) {
+    init(text: String, firstChoice: AnyView, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "", secondChoice: AnyView = AnyView(Text(""))) {
         self.id = UUID()
         self.text = text
         self.firstChoice = firstChoice
@@ -33,7 +37,7 @@ class StoryPayload: Identifiable {
         
     }
     
-    init(text: String, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "") {
+    init(text: String, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "", decision3: String = "", thirdChoicePageName: String = "") {
         self.id = UUID()
         self.text = text
         self.decision1 = decision1

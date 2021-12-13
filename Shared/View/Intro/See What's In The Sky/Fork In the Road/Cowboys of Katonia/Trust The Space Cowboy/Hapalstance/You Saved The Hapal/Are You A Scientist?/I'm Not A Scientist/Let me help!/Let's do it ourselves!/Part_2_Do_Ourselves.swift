@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct Part_2_Do_Ourselves: View {
+    static let PageName = "Part_2_Do_Ourselves"
+    @State var showMenu = false
     var body: some View {
         let text =
         "“Well it seems like those are our only options,” you say after a moment of silence. “It has to be one of them.”\n\nChrono looks nervous, a bead of sweat forms on his brow. For the first time since arriving on Covarnius, you realize it’s pretty warm out. You wonder if Covarnius has seasons the same way Earth does.\n\n“Then what’s our next move?” Chrono asks, interrupting your thoughts. “I’ll leave it up to you, earthling."
-        
-        getPageView(mainText: text, firstChoice: AnyView(Part_3_Do_Ourselves()))
+
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_3_Do_Ourselves.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

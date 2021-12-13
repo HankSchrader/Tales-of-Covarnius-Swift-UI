@@ -13,9 +13,12 @@ struct Part_5_Let_Me_Help: View {
     var body: some View {
         let text =
         "“That might be the worst plan I have ever heard,” King Zanarq responds quickly. “It’s almost certain death for anyone who would undertake such a mission.” King Zanarq waves his hand dismissively. The guards respond by opening the door and escorting the three of you outside.\n\n“Well that didn’t work as planned,” Chrono says matter-of-factly. “Ready to give up yet?”\n\n You think it over for a moment and respond..."
-        
-        
-        getPageView(mainText: text, firstChoice: AnyView(Part_1_Do_Ourselves()), decision1: "Let's do it ourselves!", secondChoice: AnyView(Part_1_Try_Give_Up()), decision2: "I give up. At least we tried...")
+        let decision1 =  "Let's do it ourselves!"
+        let decision2 = "I give up. At least we tried..."
+        let firstChoicePageName = Part_1_Do_Ourselves.PageName
+        let secondChoicePageName = Part_1_Let_Me_Help.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 
