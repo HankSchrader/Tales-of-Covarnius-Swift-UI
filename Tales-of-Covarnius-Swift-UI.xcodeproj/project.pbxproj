@@ -192,16 +192,8 @@
 		53BACE0527570080009E493E /* Part_1_Hapal_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0327570080009E493E /* Part_1_Hapal_Down.swift */; };
 		53BACE0727570127009E493E /* Part_2_Hapal_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0627570127009E493E /* Part_2_Hapal_Down.swift */; };
 		53BACE0827570127009E493E /* Part_2_Hapal_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0627570127009E493E /* Part_2_Hapal_Down.swift */; };
-		53BACE0A27570175009E493E /* Part_3_Hapal_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0927570175009E493E /* Part_3_Hapal_Down.swift */; };
-		53BACE0B27570175009E493E /* Part_3_Hapal_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0927570175009E493E /* Part_3_Hapal_Down.swift */; };
-		53BACE0E27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0D27570203009E493E /* Part_1_Save_The_Hapal.swift */; };
-		53BACE0F27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0D27570203009E493E /* Part_1_Save_The_Hapal.swift */; };
-		53BACE1127570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE1027570280009E493E /* Part_2_Save_The_Hapal.swift */; };
-		53BACE1227570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE1027570280009E493E /* Part_2_Save_The_Hapal.swift */; };
-		53BACE14275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE13275702DF009E493E /* Part_3_Save_The_Hapal.swift */; };
-		53BACE15275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE13275702DF009E493E /* Part_3_Save_The_Hapal.swift */; };
-		53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE16275703A5009E493E /* Part_4_Save_The_Hapal.swift */; };
-		53BACE18275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE16275703A5009E493E /* Part_4_Save_The_Hapal.swift */; };
+		53BACE0E27570203009E493E /* Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0D27570203009E493E /* Save_The_Hapal.swift */; };
+		53BACE0F27570203009E493E /* Save_The_Hapal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE0D27570203009E493E /* Save_The_Hapal.swift */; };
 		53BACE1B27570411009E493E /* Part_1_Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE1A27570411009E493E /* Part_1_Landing.swift */; };
 		53BACE1C27570411009E493E /* Part_1_Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE1A27570411009E493E /* Part_1_Landing.swift */; };
 		53BACE1E2757047A009E493E /* Part_2_Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACE1D2757047A009E493E /* Part_2_Landing.swift */; };
@@ -403,11 +395,7 @@
 		53BACDFF2756FFF9009E493E /* Part_4_Hapalstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Hapalstance.swift; sourceTree = "<group>"; };
 		53BACE0327570080009E493E /* Part_1_Hapal_Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Hapal_Down.swift; sourceTree = "<group>"; };
 		53BACE0627570127009E493E /* Part_2_Hapal_Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Hapal_Down.swift; sourceTree = "<group>"; };
-		53BACE0927570175009E493E /* Part_3_Hapal_Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Hapal_Down.swift; sourceTree = "<group>"; };
-		53BACE0D27570203009E493E /* Part_1_Save_The_Hapal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Save_The_Hapal.swift; sourceTree = "<group>"; };
-		53BACE1027570280009E493E /* Part_2_Save_The_Hapal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Save_The_Hapal.swift; sourceTree = "<group>"; };
-		53BACE13275702DF009E493E /* Part_3_Save_The_Hapal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Save_The_Hapal.swift; sourceTree = "<group>"; };
-		53BACE16275703A5009E493E /* Part_4_Save_The_Hapal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Save_The_Hapal.swift; sourceTree = "<group>"; };
+		53BACE0D27570203009E493E /* Save_The_Hapal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save_The_Hapal.swift; sourceTree = "<group>"; };
 		53BACE1A27570411009E493E /* Part_1_Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Landing.swift; sourceTree = "<group>"; };
 		53BACE1D2757047A009E493E /* Part_2_Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Landing.swift; sourceTree = "<group>"; };
 		53BACE222757051D009E493E /* Part_1_Not_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Not_Scientist.swift; sourceTree = "<group>"; };
@@ -1035,7 +1023,6 @@
 			children = (
 				53BACE0327570080009E493E /* Part_1_Hapal_Down.swift */,
 				53BACE0627570127009E493E /* Part_2_Hapal_Down.swift */,
-				53BACE0927570175009E493E /* Part_3_Hapal_Down.swift */,
 			);
 			path = "You Let The Hapal Down...";
 			sourceTree = "<group>";
@@ -1044,10 +1031,7 @@
 			isa = PBXGroup;
 			children = (
 				53BACE19275703EA009E493E /* Are You A Scientist? */,
-				53BACE0D27570203009E493E /* Part_1_Save_The_Hapal.swift */,
-				53BACE1027570280009E493E /* Part_2_Save_The_Hapal.swift */,
-				53BACE13275702DF009E493E /* Part_3_Save_The_Hapal.swift */,
-				53BACE16275703A5009E493E /* Part_4_Save_The_Hapal.swift */,
+				53BACE0D27570203009E493E /* Save_The_Hapal.swift */,
 			);
 			path = "You Saved The Hapal";
 			sourceTree = "<group>";
@@ -1246,7 +1230,7 @@
 				535E3A9A2759C07E0074EA50 /* Part_1_Hypersleep.swift in Sources */,
 				535E3A00275998910074EA50 /* Part_6_Boarding_Ticket.swift in Sources */,
 				5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */,
-				53BACE0E27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */,
+				53BACE0E27570203009E493E /* Save_The_Hapal.swift in Sources */,
 				53BACE3227570822009E493E /* Part_2_Fake_Til_You_Make.swift in Sources */,
 				535E39FC275997990074EA50 /* Part_4_Boarding_Ticket.swift in Sources */,
 				5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */,
@@ -1264,7 +1248,6 @@
 				535E3AB32759C4F20074EA50 /* Part_7_Hypersleep.swift in Sources */,
 				538D7CEC276185FF007003F6 /* Model.xcdatamodeld in Sources */,
 				535E3A2C2759A27C0074EA50 /* Part_1_Giant_Luna.swift in Sources */,
-				53BACE0A27570175009E493E /* Part_3_Hapal_Down.swift in Sources */,
 				535E3A562759AEE30074EA50 /* Part_3_Store_Room.swift in Sources */,
 				535E39F72759962E0074EA50 /* Part_2_Boarding_Ticket.swift in Sources */,
 				535E3A3C2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift in Sources */,
@@ -1329,7 +1312,6 @@
 				53BC292E2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift in Sources */,
 				53BC29262766DC440040BFB8 /* Part_2_Stank_Meat.swift in Sources */,
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
-				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
 				535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */,
@@ -1356,7 +1338,6 @@
 				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
 				535E39CF275855260074EA50 /* PageView.swift in Sources */,
 				53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */,
-				53BACE1127570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */,
 				535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */,
 				535E3A8E2759BEF70074EA50 /* Part_6_Gravity_Gun.swift in Sources */,
 				53BACDB92756EB58009E493E /* Part_2_Dissect_My_Brains.swift in Sources */,
@@ -1380,7 +1361,6 @@
 				53BACDF62756FE34009E493E /* Part_1_Hapalstance.swift in Sources */,
 				535E3A1127599CDF0074EA50 /* Part_3_Crash_Wall.swift in Sources */,
 				535E3A8C2759BEB20074EA50 /* Part_5_Gravity_Gun.swift in Sources */,
-				53BACE14275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */,
 				5303C7EB2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */,
 				535E3AAD2759C4A10074EA50 /* Part_4_Hypersleep.swift in Sources */,
 				53BACE2F2757068A009E493E /* Part_4_Not_Scientist.swift in Sources */,
@@ -1432,14 +1412,13 @@
 				53BACDE32756F954009E493E /* Part_1_Trust_The_Space_Cowboy.swift in Sources */,
 				53BACDCA2756F241009E493E /* Part_1_Cowboys_Of_Katonia.swift in Sources */,
 				5303C7FC2755CEC400710D34 /* Went_Home.swift in Sources */,
-				53BACE0F27570203009E493E /* Part_1_Save_The_Hapal.swift in Sources */,
+				53BACE0F27570203009E493E /* Save_The_Hapal.swift in Sources */,
 				53BACE3327570822009E493E /* Part_2_Fake_Til_You_Make.swift in Sources */,
 				5303C7F82755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */,
 				53BACE1F2757047A009E493E /* Part_2_Landing.swift in Sources */,
 				53BACDDD2756F87D009E493E /* Part_2_Make_A_Run_For_It.swift in Sources */,
 				53BACDAC2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */,
 				53BACDCD2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */,
-				53BACE0B27570175009E493E /* Part_3_Hapal_Down.swift in Sources */,
 				5303C7F22755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */,
 				53BACDF12756FD37009E493E /* Part_1_Who_Trusts_Alien_Cowboys.swift in Sources */,
 				53BACDDA2756F7D3009E493E /* Part_1_Make_A_Run_For_It.swift in Sources */,
@@ -1453,7 +1432,6 @@
 				5303C7E92755AF4900710D34 /* Part_1_Intro.swift in Sources */,
 				53BACE272757054B009E493E /* Part_1_Fake_Til_You_Make.swift in Sources */,
 				53BACE3D2757095D009E493E /* Bright_Green.swift in Sources */,
-				53BACE18275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
 				53BACDE72756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
 				53BACE3A27570906009E493E /* Part_2_Wing_It.swift in Sources */,
 				53BACDD02756F698009E493E /* Part_3_Cowboys_Of_Katonia.swift in Sources */,
@@ -1461,7 +1439,6 @@
 				5303C7DC2755AEC600710D34 /* ContentView.swift in Sources */,
 				53BACDE02756F8F5009E493E /* Part_2_Trust_The_Space_Cowboy.swift in Sources */,
 				53BACDEA2756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
-				53BACE1227570280009E493E /* Part_2_Save_The_Hapal.swift in Sources */,
 				53BACDBA2756EB58009E493E /* Part_2_Dissect_My_Brains.swift in Sources */,
 				53BACE0827570127009E493E /* Part_2_Hapal_Down.swift in Sources */,
 				53BACE472757134A009E493E /* Part-4 See Whats In The Sky.swift in Sources */,
@@ -1471,7 +1448,6 @@
 				535E3ADE2760DEAF0074EA50 /* MenuView.swift in Sources */,
 				53BACE2A275705DB009E493E /* Part_2_Not_Scientist.swift in Sources */,
 				53BACDF72756FE34009E493E /* Part_1_Hapalstance.swift in Sources */,
-				53BACE15275702DF009E493E /* Part_3_Save_The_Hapal.swift in Sources */,
 				5303C7EC2755B0EC00710D34 /* Part_1_Run_Away.swift in Sources */,
 				53BACE302757068A009E493E /* Part_4_Not_Scientist.swift in Sources */,
 				53BACDB72756EB02009E493E /* Part_1_Dissect_My_Brains.swift in Sources */,

@@ -14,7 +14,10 @@ struct Part_1_Dont_Tell: View {
         let text =
         "Chrono looks at you incredulously, “Of course, we have to tell King Zanarq! We saved millions of Covarnians. So what if a couple of buildings got destroyed in the process. He’d never get mad at us for that.”\n\nAfter thinking about if for a moment, you smile at your alien friend. “I guess you’re right.”"
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_1_Tell()))
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_1_Tell.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

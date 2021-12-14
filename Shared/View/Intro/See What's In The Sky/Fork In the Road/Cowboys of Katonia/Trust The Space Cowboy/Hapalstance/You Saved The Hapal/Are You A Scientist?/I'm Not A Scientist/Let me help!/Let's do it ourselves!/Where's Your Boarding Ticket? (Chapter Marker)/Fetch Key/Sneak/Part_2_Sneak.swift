@@ -14,7 +14,11 @@ struct Part_2_Sneak: View {
         let text =
         "“So you’re saying it doesn’t work?” Desperation grows in your voice. You look back out the window and notice they’re only five houses away now!\n\n“Nope, it doesn’t work,” Chrono says, pushing the start button to demonstrate its worthlessness. “I’ve checked it’s antimatter modulation unit, the vorpral flux capacitor unit, even the space-time proximity relay. Absolutely nothing is wr—”\n\n“Did you check the power plug?” you say with a smile, holding the dangling cord in your hand."
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_3_Sneak()))
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_3_Sneak.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
+        
     }
 }
 

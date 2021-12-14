@@ -7,43 +7,15 @@
 
 import SwiftUI
 
-// MARK: Will be deleted.
-func getPageView(mainText: String,
-                 firstChoice: AnyView,
-                 decision1: String = Constants.ContinuePhrase,
-                 secondChoice: AnyView = AnyView(Text("s")) ,
-                 decision2: String = "") -> some View {
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
-    return VStack {
-        Text(mainText)
-            .fontWeight(.light)
-            .if(isIPad) {
-                view in
-                view.font(.system(size: CGFloat(Constants.ipadFontSize)))
-            }.padding()
-        Spacer()
-        
-        NavigationLink(destination: firstChoice.navigationBarBackButtonHidden(decision2 != "")) {
-            Text(decision1)
-        }
-        .padding()
-        if(decision2 != "") {
-            NavigationLink(destination: secondChoice.navigationBarBackButtonHidden(true)) {
-                Text(decision2)
-                    .padding()
-            }
-        }
-    }
-    .padding(.bottom)
-}
+
 
 func getPageView(view: StoryPayload) -> some View {
-    let isNoSecondChoice = {
+    let isSecondChoice = {
         view.decision2 != ""
     }
     
-    let isNoThirdChoice = {
-        view.decision2 != ""
+    let isThirdChoice = {
+        view.decision3 != ""
     }
     let isGameOver = {
         view.decision1 == Constants.GameOverPhrase
@@ -67,8 +39,9 @@ func getPageView(view: StoryPayload) -> some View {
         }
         Spacer()
         
-        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(isNoSecondChoice() || isGameOver())) {
+        NavigationLink(destination:subviews [view.firstChoicePageName].navigationBarBackButtonHidden(isSecondChoice() || isGameOver())) {
             Text(view.decision1)
+                .padding()
             
         }.simultaneousGesture(TapGesture().onEnded{
             if Constants.chapters.contains(view.firstChoicePageName) {
@@ -89,25 +62,57 @@ func getPageView(view: StoryPayload) -> some View {
             }
             
         }) .padding()
-        if(isNoSecondChoice()) {
+        if(isSecondChoice()) {
             NavigationLink(destination: subviews[view.secondChoicePageName].navigationBarBackButtonHidden(true)) {
                 Text(view.decision2)
                     .padding()
                 
             }
             .simultaneousGesture(TapGesture().onEnded{
-                UserDefaults.standard.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
+                if Constants.chapters.contains(view.secondChoicePageName) {
+                    let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                    
+                    if let chapterOptional = chapterOptional {
+                        var chapters = chapterOptional
+                        chapters.append(view.secondChoicePageName)
+                        defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                    }
+                }
+                
+                // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
+                if view.decision2 == Constants.GameOverPhrase {
+                    UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+                } else {
+                    defaults.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
+                }
+                
             })
         }
         
-        if(isNoThirdChoice()) {
-            NavigationLink(destination: subviews[view.thirdChoicePageName ?? ""].navigationBarBackButtonHidden(true)) {
-                Text(view.decision3 ?? "")
+        if(isThirdChoice()) {
+            NavigationLink(destination: subviews[view.thirdChoicePageName].navigationBarBackButtonHidden(true)) {
+                Text(view.decision3)
                     .padding()
                 
             }
             .simultaneousGesture(TapGesture().onEnded{
-                UserDefaults.standard.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
+                if Constants.chapters.contains(view.thirdChoicePageName) {
+                    let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                    
+                    if let chapterOptional = chapterOptional {
+                        var chapters = chapterOptional
+                        chapters.append(view.thirdChoicePageName)
+                        defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                    }
+                }
+                
+                // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
+                if view.decision3 == Constants.GameOverPhrase {
+                    UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+                } else {
+                    defaults.set(view.thirdChoicePageName, forKey: DefaultsKeys.currentPage)
+                }
+                
             })
         }
     }

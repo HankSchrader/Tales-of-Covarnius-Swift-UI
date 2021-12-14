@@ -14,7 +14,10 @@ struct Part_6_Boarding_Ticket: View {
         let text =
         "“I told you we should have gone with the other idea,” Chrono grumbles as the two of you sit in the brig.“What?!” You fire back. “No you didn’t!”“Well I was thinking it,” Chrono retorts.“Thinking and telling are two completely different things.”Luna lets out a bark that echoes through the cold, damp holding cell.“Luna’s right,” you grumble. “We’ll never get out of here if we keep arguing.”"
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_7_Boarding_Ticket()))
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_7_Boarding_Ticket.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
         
         
     }

@@ -22,6 +22,7 @@ struct Constants {
                            Part_1_Boarding_Ticket.PageName,
                            Part_1_Not_Scientist.PageName,
                            Part_1_Greatest_Scientist.PageName,
+                           Part_1_Hapal_Down.PageName,
                            Part_2_Hypersleep.PageName]
     
     
@@ -87,7 +88,7 @@ enum subviews {
             Part_1_Make_A_Run_For_It()
         case Part_2_Make_A_Run_For_It.PageName:
             Part_2_Make_A_Run_For_It()
-        case "Part_1_Trust_The_Space_Cowboy":
+        case Part_1_Trust_The_Space_Cowboy.PageName:
             Part_1_Trust_The_Space_Cowboy()
         case "Part_2_Trust_The_Space_Cowboy":
             Part_2_Trust_The_Space_Cowboy()
@@ -113,8 +114,7 @@ enum subviews {
             Part_1_Hapal_Down()
         case "Part_2_Hapal_Down":
             Part_2_Hapal_Down()
-        case "Part_3_Hapal_Down":
-            Part_3_Hapal_Down()
+
         case Part_1_Save_The_Hapal.PageName:
             Part_1_Save_The_Hapal()
         case Part_2_Save_The_Hapal.PageName:
@@ -129,6 +129,8 @@ enum subviews {
             Part_6_Save_The_Hapal()
         case Part_1_Landing.PageName:
             Part_1_Landing()
+        case Part_1_1_Landing.PageName:
+            Part_1_1_Landing()
         case Part_2_Landing.PageName:
             Part_2_Landing()
         case Part_1_Fake_Til_You_Make.PageName:
@@ -345,6 +347,8 @@ enum subviews {
             Part_8_Boarding_Ticket()
         case Part_9_Boarding_Ticket.PageName:
             Part_9_Boarding_Ticket()
+        case Part_10_Boarding_Ticket.PageName:
+            Part_10_Boarding_Ticket()
             
         case Part_1_Crash_Wall.PageName:
             Part_1_Crash_Wall()
@@ -418,6 +422,7 @@ enum subviews {
             Part_3_Toilet_To_Hyper_Sleep()
         case Part_4_Toilet_To_Hyper_Sleep.PageName:
             Part_4_Toilet_To_Hyper_Sleep()
+            
         default:
             fatalError()
         }

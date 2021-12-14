@@ -20,22 +20,10 @@ class StoryPayload: Identifiable {
     var secondChoicePageName: String
     
     // MARK: Only used on ONE page.
-    var decision3: String?
-    var thirdChoicePageName: String?
+    var decision3: String
+    var thirdChoicePageName: String
 
-    
-    init(text: String, firstChoice: AnyView, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "", secondChoice: AnyView = AnyView(Text(""))) {
-        self.id = UUID()
-        self.text = text
-        self.firstChoice = firstChoice
-        self.secondChoice = secondChoice
-        self.decision1 = decision1
-        self.decision2 = decision2
-        self.firstChoicePageName = firstChoicePageName
-        self.secondChoicePageName = secondChoicePageName
-        self.image = image
-        
-    }
+
     
     init(text: String, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "", decision3: String = "", thirdChoicePageName: String = "") {
         self.id = UUID()
@@ -45,6 +33,8 @@ class StoryPayload: Identifiable {
         self.firstChoicePageName = firstChoicePageName
         self.secondChoicePageName = secondChoicePageName
         self.image = image
+        self.decision3 = decision3
+        self.thirdChoicePageName = thirdChoicePageName
         
     }
 }

@@ -13,7 +13,13 @@ struct Part_3_Crash_Wall: View {
     var body: some View {
         let text =
         "Luna picks the key up in her mouth and saunters back over to the cell. You take the key from her mouth and try to ignore the fact that it’s dripping with drool. Hurriedly, you unlock the cell door freeing you and Chrono. “Now let’s get out of here before that guard comes back!”\n\nFirst things first, we need to get off of this ship,” you say as you take the lead down the long corridor.\n\n“And then what?” Chrono asks dejectedly. “We’re too late, the invasion has already begun!”\n\n“It’s never too late,” you exclaim, trying to sound more confident than you feel."
-        getPageView(mainText: text, firstChoice: AnyView(Part_2_Fetch_Key()))
+
+
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_2_Fetch_Key.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
+        
     }
 }
 
