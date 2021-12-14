@@ -13,6 +13,12 @@ struct Part_2_Clog_Toilet: View {
     var body: some View {
         let text =
         "While Chief Korgle and the quartermaster discuss what to do, you slide out the door unnoticed.\n\nYou hope the bathroom distraction will bide enough time for Chrono to make it to the control room. If it doesn’t though… thoughts of the chief finding Chrono in the control room fill your mind. Chief Korgle didn't seem like the sort of man or um… alien to be trifled with. A situation like that would surely end with the utmost disastrous of consequences."
+        
+        
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_3_Clog_Toilet.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

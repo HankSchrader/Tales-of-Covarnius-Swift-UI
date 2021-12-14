@@ -17,9 +17,12 @@ struct Constants {
                            Part_1_Fork_In_The_Road.PageName,
                            Part_1_Cowboys_Of_Katonia.PageName,
                            Part_1_Fake_Til_You_Make.PageName,
+                           Part_1_Hapalstance.PageName,
                            Part_1_Diplomatic_Immunity.PageName,
                            Part_1_Boarding_Ticket.PageName,
-                           Part_1_Greatest_Scientist.PageName]
+                           Part_1_Not_Scientist.PageName,
+                           Part_1_Greatest_Scientist.PageName,
+                           Part_2_Hypersleep.PageName]
     
     
 }
@@ -72,17 +75,17 @@ enum subviews {
             Abandonded_Chrono()
         case Part_1_Cowboys_Of_Katonia.PageName:
             Part_1_Cowboys_Of_Katonia()
-        case "Part_2_Cowboys_Of_Katonia":
+        case Part_2_Cowboys_Of_Katonia.PageName:
             Part_2_Cowboys_Of_Katonia()
-        case "Part_3_Cowboys_Of_Katonia":
+        case Part_3_Cowboys_Of_Katonia.PageName:
             Part_3_Cowboys_Of_Katonia()
-        case "Part_4_Cowboys_of_Katonia":
+        case Part_4_Cowboys_Of_Katonia.PageName:
             Part_4_Cowboys_Of_Katonia()
-        case "Part_5_Cowboys_Of_Katonia":
+        case Part_5_Cowboys_Of_Katonia.PageName:
             Part_5_Cowboys_Of_Katonia()
-        case "Part_1_Make_A_Run_For_It":
+        case Part_1_Make_A_Run_For_It.PageName:
             Part_1_Make_A_Run_For_It()
-        case "Part_2_Make_A_Run_For_It":
+        case Part_2_Make_A_Run_For_It.PageName:
             Part_2_Make_A_Run_For_It()
         case "Part_1_Trust_The_Space_Cowboy":
             Part_1_Trust_The_Space_Cowboy()
@@ -112,14 +115,18 @@ enum subviews {
             Part_2_Hapal_Down()
         case "Part_3_Hapal_Down":
             Part_3_Hapal_Down()
-        case "Part_1_Save_The_Hapal":
+        case Part_1_Save_The_Hapal.PageName:
             Part_1_Save_The_Hapal()
-        case "Part_2_Save_The_Hapal":
+        case Part_2_Save_The_Hapal.PageName:
             Part_2_Save_The_Hapal()
-        case "Part_3_Save_The_Hapal":
+        case Part_3_Save_The_Hapal.PageName:
             Part_3_Save_The_Hapal()
-        case "Part_4_Save_The_Hapal":
+        case Part_4_Save_The_Hapal.PageName:
             Part_4_Save_The_Hapal()
+        case Part_5_Save_The_Hapal.PageName:
+            Part_5_Save_The_Hapal()
+        case Part_6_Save_The_Hapal.PageName:
+            Part_6_Save_The_Hapal()
         case Part_1_Landing.PageName:
             Part_1_Landing()
         case Part_2_Landing.PageName:
@@ -277,6 +284,140 @@ enum subviews {
         case Part_1_Ice_Ray.PageName:
             Part_1_Ice_Ray()
             
+        case Part_1_Gravity_Gun.PageName:
+            Part_1_Gravity_Gun()
+        case Part_2_Gravity_Gun.PageName:
+            Part_2_Gravity_Gun()
+        case Part_3_Gravity_Gun.PageName:
+            Part_3_Gravity_Gun()
+        case Part_4_Gravity_Gun.PageName:
+            Part_4_Gravity_Gun()
+        case Part_5_Gravity_Gun.PageName:
+            Part_5_Gravity_Gun()
+        case Part_6_Gravity_Gun.PageName:
+            Part_6_Gravity_Gun()
+        case Part_7_Gravity_Gun.PageName:
+            Part_7_Gravity_Gun()
+        case Part_8_Gravity_Gun.PageName:
+            Part_8_Gravity_Gun()
+        case Part_9_Gravity_Gun.PageName:
+            Part_9_Gravity_Gun()
+            
+        case Part_1_Hypersleep.PageName:
+            Part_1_Hypersleep()
+        case Part_2_Hypersleep.PageName:
+            Part_2_Hypersleep()
+        case Part_3_Hypersleep.PageName:
+            Part_3_Hypersleep()
+        case Part_4_Hypersleep.PageName:
+            Part_4_Hypersleep()
+        case Part_5_Hypersleep.PageName:
+            Part_5_Hypersleep()
+        case Part_6_Hypersleep.PageName:
+            Part_6_Hypersleep()
+        case Part_7_Hypersleep.PageName:
+            Part_7_Hypersleep()
+        case Part_8_Hypersleep.PageName:
+            Part_8_Hypersleep()
+        case Part_9_Hypersleep.PageName:
+            Part_9_Hypersleep()
+        
+        case Celebrate.PageName:
+            Celebrate()
+        case Home_Sweet_Home.PageName:
+            Home_Sweet_Home()
+            
+        case Part_1_Boarding_Ticket.PageName:
+            Part_1_Boarding_Ticket()
+        case Part_2_Boarding_Ticket.PageName:
+            Part_2_Boarding_Ticket()
+        case Part_3_Boarding_Ticket.PageName:
+            Part_3_Boarding_Ticket()
+        case Part_4_Boarding_Ticket.PageName:
+            Part_4_Boarding_Ticket()
+        case Part_5_Boarding_Ticket.PageName:
+            Part_5_Boarding_Ticket()
+        case Part_6_Boarding_Ticket.PageName:
+            Part_6_Boarding_Ticket()
+        case Part_7_Boarding_Ticket.PageName:
+            Part_7_Boarding_Ticket()
+        case Part_8_Boarding_Ticket.PageName:
+            Part_8_Boarding_Ticket()
+        case Part_9_Boarding_Ticket.PageName:
+            Part_9_Boarding_Ticket()
+            
+        case Part_1_Crash_Wall.PageName:
+            Part_1_Crash_Wall()
+        case Part_2_Crash_Wall.PageName:
+            Part_2_Crash_Wall()
+        case Part_3_Crash_Wall.PageName:
+            Part_3_Crash_Wall()
+            
+        case Part_1_Fetch_Key.PageName:
+            Part_1_Fetch_Key()
+        case Part_2_Fetch_Key.PageName:
+            Part_2_Fetch_Key()
+        case Part_3_Fetch_Key.PageName:
+            Part_3_Fetch_Key()
+        case Part_4_Fetch_Key.PageName:
+            Part_4_Fetch_Key()
+        case Part_5_Fetch_Key.PageName:
+            Part_5_Fetch_Key()
+        
+        case Part_1_Sneak.PageName:
+            Part_1_Sneak()
+        case Part_2_Sneak.PageName:
+            Part_2_Sneak()
+        case Part_3_Sneak.PageName:
+            Part_3_Sneak()
+        case Part_4_Sneak.PageName:
+            Part_4_Sneak()
+            
+        case Part_1_Help_Chrono.PageName:
+            Part_1_Help_Chrono()
+            
+        case Part_1_Clog_Toilet.PageName:
+            Part_1_Clog_Toilet()
+        case Part_2_Clog_Toilet.PageName:
+            Part_2_Clog_Toilet()
+        case Part_3_Clog_Toilet.PageName:
+            Part_3_Clog_Toilet()
+        case Part_4_Clog_Toilet.PageName:
+            Part_4_Clog_Toilet()
+        case Part_5_Clog_Toilet.PageName:
+            Part_5_Clog_Toilet()
+                
+        case Part_1_Not_Important.PageName:
+            Part_1_Not_Important()
+            
+        case Part_1_Murkblur.PageName:
+            Part_1_Murkblur()
+            
+        case Part_1_Giant_Luna.PageName:
+            Part_1_Giant_Luna()
+        case Part_2_Giant_Luna.PageName:
+            Part_2_Giant_Luna()
+        case Part_3_Giant_Luna.PageName:
+            Part_3_Giant_Luna()
+        case Part_4_Giant_Luna.PageName:
+            Part_4_Giant_Luna()
+        
+        case Part_1_Tell.PageName:
+            Part_1_Tell()
+        case Part_2_Tell.PageName:
+            Part_2_Tell()
+        
+        case Part_1_Dont_Tell.PageName:
+            Part_1_Dont_Tell()
+            
+        case Part_1_Toilet_To_Hyper_Sleep.PageName:
+            Part_1_Toilet_To_Hyper_Sleep()
+        case Part_2_Toilet_To_Hyper_Sleep.PageName:
+            Part_2_Toilet_To_Hyper_Sleep()
+        case Part_3_Toilet_To_Hyper_Sleep.PageName:
+            Part_3_Toilet_To_Hyper_Sleep()
+        case Part_4_Toilet_To_Hyper_Sleep.PageName:
+            Part_4_Toilet_To_Hyper_Sleep()
         default:
             fatalError()
         }

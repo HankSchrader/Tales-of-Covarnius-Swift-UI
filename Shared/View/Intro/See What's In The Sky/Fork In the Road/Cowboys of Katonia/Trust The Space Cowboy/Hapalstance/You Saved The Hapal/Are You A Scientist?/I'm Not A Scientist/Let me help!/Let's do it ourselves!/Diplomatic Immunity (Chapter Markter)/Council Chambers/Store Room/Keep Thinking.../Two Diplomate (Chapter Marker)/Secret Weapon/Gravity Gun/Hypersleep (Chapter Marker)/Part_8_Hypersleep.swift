@@ -14,7 +14,10 @@ struct Part_8_Hypersleep: View {
         let text =
         "As soon as you’re away from the Sinisterian ship, you and Chrono break out into celebration. You cheer and clap at a job well done. Even Luna can tell there is cause for celebration as she wags her tail and licks your face.\n\nSuddenly the Sinisterian ship stops dead in its tracks. It appears to be getting stretched like a piece of spaghetti. Then, in the blink of an eye, it's sucked into the blackhole like a vacuum cleaner!"
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_9_Hypersleep()))
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_9_Hypersleep.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

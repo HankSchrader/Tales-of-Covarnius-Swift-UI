@@ -14,8 +14,14 @@ struct Part_4_Clog_Toilet: View {
         let text =
         "“What does this say?” you cry frustratedly to yourself. As if the key hears you, the scrawl rearranges, mixes and molds into something more familiar: English.\n\nIt says, “Hypersleep disengagement key”. Chewing your lip, you stare intently at the key. Could this provide any value? Does this even matter? Maybe you should just help Chrono. The aliens have already been distracted, no reason to push your luck!"
         
+
         
-        getPageView(mainText: text, firstChoice: AnyView(Part_1_Hypersleep()), decision1: "Korgle's distracted. Help Chrono", secondChoice: AnyView(Part_1_Clog_Toilet()), decision2: "Create another distraction.")
+        let decision1 =  "Korgle's distracted. Help Chrono"
+        let decision2 =  "Create another distraction."
+        let firstChoicePageName = Part_1_Help_Chrono.PageName
+        let secondChoicePageName = Part_5_Clog_Toilet.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

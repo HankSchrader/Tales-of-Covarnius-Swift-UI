@@ -14,7 +14,11 @@ struct Part_2_Luna_Stays: View {
     var body: some View {
         let text =
         "“I really thought he'd back down,” you tell Chrono while sitting on a cold, metal bench in the brig.\n\nChrono sighs, “I guess he really didn’t like Luna. It almost seemed like he was allergic to her.”\n\nYou shrug, “Guess not,” you reply. “We’ll just have to come up with a new plan.”"
-        getPageView(mainText: text, firstChoice: AnyView(Part_7_Boarding_Ticket()))
+        
+        let decision1 = Constants.ContinuePhrase
+        let firstChoicePageName = Part_7_Boarding_Ticket.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 

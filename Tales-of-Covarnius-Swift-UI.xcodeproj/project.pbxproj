@@ -248,6 +248,7 @@
 		53BC29262766DC440040BFB8 /* Part_2_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29252766DC440040BFB8 /* Part_2_Stank_Meat.swift */; };
 		53BC29282766DC4B0040BFB8 /* Part_3_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */; };
 		53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */; };
+		53BC292E2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -440,6 +441,7 @@
 		53BC29252766DC440040BFB8 /* Part_2_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Stank_Meat.swift; sourceTree = "<group>"; };
+		53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet_To_Hyper_Sleep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -885,6 +887,7 @@
 				535E3A9D2759C1380074EA50 /* Part_3_Clog_Toilet.swift */,
 				535E3A9F2759C1810074EA50 /* Part_4_Clog_Toilet.swift */,
 				535E3AA62759C2F80074EA50 /* Part_5_Clog_Toilet.swift */,
+				53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */,
 			);
 			path = "Clog Toilet";
 			sourceTree = "<group>";
@@ -1323,6 +1326,7 @@
 				535E3AA72759C2F80074EA50 /* Part_5_Clog_Toilet.swift in Sources */,
 				53BACE262757054B009E493E /* Part_1_Fake_Til_You_Make.swift in Sources */,
 				535E3A9E2759C1380074EA50 /* Part_3_Clog_Toilet.swift in Sources */,
+				53BC292E2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift in Sources */,
 				53BC29262766DC440040BFB8 /* Part_2_Stank_Meat.swift in Sources */,
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
 				53BACE17275703A5009E493E /* Part_4_Save_The_Hapal.swift in Sources */,
