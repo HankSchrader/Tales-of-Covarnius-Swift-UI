@@ -20,7 +20,6 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
             self.startingView = v
             print(self.startingView)
         }
-    
     }
 
     

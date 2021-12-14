@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_1_Boarding_Ticket: View {
-    static let PageName = "Part_1_Boarding_Ticket"
+    static let PageName = "7_Part_1_Boarding_Ticket"
     @State var showMenu = false
     var body: some View {
         let text =

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_2_Hypersleep: View {
-    static let PageName = "Part_2_Hypersleep"
+    static let PageName = "999_Part_2_Hypersleep"
     @State var showMenu = false
     var body: some View {
         let text =

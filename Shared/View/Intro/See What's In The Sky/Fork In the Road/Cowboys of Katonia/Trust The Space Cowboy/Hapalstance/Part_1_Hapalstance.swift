@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_1_Hapalstance: View {
-    static let PageName = "Part_1_Hapalstance"
+    static let PageName = "5_Part_1_Hapalstance"
     @State var showMenu = false
     var body: some View {
         let text =

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_1_Diplomatic_Immunity: View {
-    static let PageName = "Part_1_Diplomatic_Immunity"
+    static let PageName = "6_Part_1_Diplomatic_Immunity"
     @State var showMenu = false
     var body: some View {
         let text =
