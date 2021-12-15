@@ -18,7 +18,6 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
         if let v = startingViewOptional {
             self.startingView = v
-            print(self.startingView)
         }
     }
 
