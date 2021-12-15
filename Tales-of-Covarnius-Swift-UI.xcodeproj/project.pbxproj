@@ -131,7 +131,7 @@
 		535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD6275D27460074EA50 /* StoryPayload.swift */; };
 		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
 		535E3ADE2760DEAF0074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
-		536F3CEF2757A99C007E5250 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extentions.swift */; };
+		536F3CEF2757A99C007E5250 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extensions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
 		538D7CE9276185C3007003F6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CE8276185C3007003F6 /* DataController.swift */; };
 		538D7CEC276185FF007003F6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CEA276185FF007003F6 /* Model.xcdatamodeld */; };
@@ -361,7 +361,7 @@
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
 		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
 		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
-		536F3CEE2757A99C007E5250 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		536F3CEE2757A99C007E5250 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		538D7CE8276185C3007003F6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		538D7CEB276185FF007003F6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -929,7 +929,7 @@
 			isa = PBXGroup;
 			children = (
 				538D7CF227618F0D007003F6 /* DefaultKeys.swift */,
-				536F3CEE2757A99C007E5250 /* Extentions.swift */,
+				536F3CEE2757A99C007E5250 /* Extensions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
 			);
 			path = Utilities;
@@ -1275,7 +1275,7 @@
 				535E3ACD275B10710074EA50 /* MenuView.swift in Sources */,
 				53BC290C2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift in Sources */,
 				538D7CE9276185C3007003F6 /* DataController.swift in Sources */,
-				536F3CEF2757A99C007E5250 /* Extentions.swift in Sources */,
+				536F3CEF2757A99C007E5250 /* Extensions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
 				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
 				53BC290E2766D5C10040BFB8 /* Part_4_They_Are_Vicious.swift in Sources */,
@@ -1589,6 +1589,7 @@
 				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1619,6 +1620,7 @@
 				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

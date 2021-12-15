@@ -90,9 +90,9 @@ enum subviews {
             Part_2_Make_A_Run_For_It()
         case Part_1_Trust_The_Space_Cowboy.PageName:
             Part_1_Trust_The_Space_Cowboy()
-        case "Part_2_Trust_The_Space_Cowboy":
+        case Part_2_Trust_The_Space_Cowboy.PageName:
             Part_2_Trust_The_Space_Cowboy()
-        case "Part_3_Trust_The_Space_Cowboy":
+        case Part_3_Trust_The_Space_Cowboy.PageName:
             Part_3_Trust_The_Space_Cowboy()
         case "Part_4_Trust_The_Space_Cowboy":
             Part_4_Trust_The_Space_Cowboy()
