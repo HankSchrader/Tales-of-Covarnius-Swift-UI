@@ -117,7 +117,7 @@
 		535E3ABB2759C6620074EA50 /* Home_Sweet_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */; };
 		535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ABC2759C67B0074EA50 /* Celebrate.swift */; };
 		535E3ACD275B10710074EA50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3ACC275B10710074EA50 /* MenuView.swift */; };
-		535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */; };
+		535E3AD1275B9DEE0074EA50 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD0275B9DEE0074EA50 /* Chapter.swift */; };
 		535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3AD6275D27460074EA50 /* StoryPayload.swift */; };
 		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
 		536F3CEF2757A99C007E5250 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extensions.swift */; };
@@ -127,6 +127,7 @@
 		538D7CEF2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */; };
 		538D7CF02761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */; };
 		538D7CF327618F0D007003F6 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CF227618F0D007003F6 /* DefaultKeys.swift */; };
+		539312C7276C138900C0FC05 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539312C6276C138900C0FC05 /* BaseView.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
 		53BACDB22756EA21009E493E /* Part_1_Fork_In_The_Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDB12756EA21009E493E /* Part_1_Fork_In_The_Road.swift */; };
 		53BACDB62756EB02009E493E /* Part_1_Dissect_My_Brains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDB52756EB02009E493E /* Part_1_Dissect_My_Brains.swift */; };
@@ -304,7 +305,7 @@
 		535E3ABA2759C6620074EA50 /* Home_Sweet_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Sweet_Home.swift; sourceTree = "<group>"; };
 		535E3ABC2759C67B0074EA50 /* Celebrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrate.swift; sourceTree = "<group>"; };
 		535E3ACC275B10710074EA50 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterLog.swift; sourceTree = "<group>"; };
+		535E3AD0275B9DEE0074EA50 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		535E3AD6275D27460074EA50 /* StoryPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPayload.swift; sourceTree = "<group>"; };
 		535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Luna at park.jpg"; path = "../../../../Dropbox/My Mac (Eriks-Mac-mini.local)/Downloads/Luna at park.jpg"; sourceTree = "<group>"; };
 		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
@@ -315,6 +316,7 @@
 		538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryPayloadModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryPayloadModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		538D7CF227618F0D007003F6 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
+		539312C6276C138900C0FC05 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
 		53BACDB12756EA21009E493E /* Part_1_Fork_In_The_Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Fork_In_The_Road.swift; sourceTree = "<group>"; };
 		53BACDB52756EB02009E493E /* Part_1_Dissect_My_Brains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Dissect_My_Brains.swift; sourceTree = "<group>"; };
@@ -840,7 +842,7 @@
 			isa = PBXGroup;
 			children = (
 				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
-				535E3AD0275B9DEE0074EA50 /* ChapterLog.swift */,
+				535E3AD0275B9DEE0074EA50 /* Chapter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -859,6 +861,7 @@
 		535E3ADF2760DEBB0074EA50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				539312C6276C138900C0FC05 /* BaseView.swift */,
 				535E39CE275855260074EA50 /* PageView.swift */,
 			);
 			path = ViewModel;
@@ -1142,6 +1145,7 @@
 				5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */,
 				53BACE0E27570203009E493E /* Save_The_Hapal.swift in Sources */,
 				53BACE3227570822009E493E /* Part_2_Fake_Til_You_Make.swift in Sources */,
+				539312C7276C138900C0FC05 /* BaseView.swift in Sources */,
 				535E39FC275997990074EA50 /* Part_4_Boarding_Ticket.swift in Sources */,
 				5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */,
 				53BACE1E2757047A009E493E /* Part_2_Landing.swift in Sources */,
@@ -1224,7 +1228,7 @@
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
-				535E3AD1275B9DEE0074EA50 /* ChapterLog.swift in Sources */,
+				535E3AD1275B9DEE0074EA50 /* Chapter.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
 				53BC291C2766D99D0040BFB8 /* Growlics.swift in Sources */,
 				535E3A982759C06E0074EA50 /* Part_1_Clog_Toilet.swift in Sources */,
@@ -1435,7 +1439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.21;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1450,7 +1454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1468,7 +1472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.21;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1484,7 +1488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

@@ -25,6 +25,27 @@ struct Constants {
                            Part_1_Hapal_Down.PageName,
                            Part_2_Hypersleep.PageName]
     
+    static let chapterMap = [
+        Part_1_Intro.PageName: Chapter(pageName: Part_1_Intro.PageName, chapterTitle: "Time For An Adventure!", order: 1),
+        
+        Part_1_Fork_In_The_Road.PageName: Chapter(pageName: Part_1_Fork_In_The_Road.PageName, chapterTitle: "Fork In The Road", order: 2) ,
+        
+        Part_1_Cowboys_Of_Katonia.PageName: Chapter(pageName: Part_1_Cowboys_Of_Katonia.PageName, chapterTitle: "Cowboys of Katonia", order: 3),
+        
+        Part_1_Greatest_Scientist.PageName: Chapter(pageName: Part_1_Greatest_Scientist.PageName, chapterTitle: "The King and the Invasion", order: 4),
+        Part_1_Fake_Til_You_Make.PageName: Chapter(pageName: Part_1_Fake_Til_You_Make.PageName, chapterTitle: "Fake it til you make it", order: 5),
+        
+        Part_1_Not_Scientist.PageName: Chapter(pageName: Part_1_Not_Scientist.PageName, chapterTitle: "Next up!", order: 6),
+        
+        Part_1_Hapalstance.PageName: Chapter(pageName: Part_1_Hapalstance.PageName, chapterTitle: "By Random Hapalstance", order: 7),
+        
+        Part_1_Diplomatic_Immunity.PageName: Chapter(pageName: Part_1_Diplomatic_Immunity.PageName, chapterTitle: "Diplomatic Immunity", order: 8),
+        
+        Part_1_Boarding_Ticket.PageName: Chapter(pageName: Part_1_Boarding_Ticket.PageName, chapterTitle: "Where's Your Boarding Ticket?", order: 9),
+        Part_1_Hapal_Down.PageName: Chapter(pageName: Part_1_Hapal_Down.PageName, chapterTitle: "You Let The Hapal Down...", order: 10),
+        
+        Part_2_Hypersleep.PageName: Chapter(pageName: Part_2_Hypersleep.PageName, chapterTitle: "Rise and Shine!", order: 11)
+    ]
     
 }
 enum subviews {
@@ -94,13 +115,13 @@ enum subviews {
             Part_2_Trust_The_Space_Cowboy()
         case Part_3_Trust_The_Space_Cowboy.PageName:
             Part_3_Trust_The_Space_Cowboy()
-        case "Part_4_Trust_The_Space_Cowboy":
+        case Part_4_Trust_The_Space_Cowboy.PageName:
             Part_4_Trust_The_Space_Cowboy()
-        case "Part_5_Trust_The_Space_Cowboy":
+        case Part_5_Trust_The_Space_Cowboy.PageName:
             Part_5_Trust_The_Space_Cowboy()
-        case "Part_1_Who_Trusts_Alien_Cowboys":
+        case Part_1_Who_Trusts_Alien_Cowboys.PageName:
             Part_1_Who_Trusts_Alien_Cowboys()
-        case "Part_2_Who_Trusts_Alien_Cowboys":
+        case Part_2_Who_Trusts_Alien_Cowboys.PageName:
             Part_2_Who_Trusts_Alien_Cowboys()
         case Part_1_Hapalstance.PageName:
             Part_1_Hapalstance()
