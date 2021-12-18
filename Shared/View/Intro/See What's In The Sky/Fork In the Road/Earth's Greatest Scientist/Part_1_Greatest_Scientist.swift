@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_1_Greatest_Scientist: View {
     @State var showMenu = false
-    static let PageName = "33_Part_1_Greatest_Scientist"
+    static let PageName = "Part_1_Greatest_Scientist"
     var body: some View {
         
         let text = "Chrono grins at you.\n\n“You’ll help me? That’s great! So if you have no further questions, I will engage hypersleep now.” Chrono says glancing in your direction.\n\n“Hyper what?” you ask. “What is that?”\n\n“Hypersleep,” Chrono repeats. “It's the only way to pass a five light-year journey.”"

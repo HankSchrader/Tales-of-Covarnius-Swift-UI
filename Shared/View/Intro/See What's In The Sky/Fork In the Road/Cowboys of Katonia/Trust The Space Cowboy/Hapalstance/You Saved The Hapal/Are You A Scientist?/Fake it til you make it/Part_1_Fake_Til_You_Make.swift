@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_1_Fake_Til_You_Make: View {
-    static let PageName = "4_Part_1_Fake_Til_You_Make"
+    static let PageName = "Part_1_Fake_Til_You_Make"
     @State var showMenu = false
     var body: some View {
         let text =

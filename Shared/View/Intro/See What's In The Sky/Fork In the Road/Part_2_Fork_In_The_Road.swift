@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_2_Fork_In_The_Road: View {
     @State var showMenu = false
-    static let PageName = "Part_1_Fork_In_The_Road"
+    static let PageName = "Part_2_Fork_In_The_Road"
     var body: some View {
         let text =
         "“Quickly, quickly,” the alien commands. “Covarnius can’t hold out much longer.”\n\n He jumps back into the ship and you stumble into the seat next to his.\n\nLuna follows you into the spaceship. At least you’re not going alone! She finds a cozy corner to lay down in.\n\nAfter taking a quick peek at your surroundings, you notice that switches, dials and knobs encompass the entire vessel.\n\nYou stare back at the alien, “If I’m going back to Covarnius with you, at least tell me your name first.”"

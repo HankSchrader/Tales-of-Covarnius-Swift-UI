@@ -127,7 +127,7 @@ enum subviews {
             Part_1_Hapalstance()
         case Part_2_Hapalstance.PageName:
             Part_2_Hapalstance()
-        case "Part_3_Hapalstance":
+        case Part_3_Hapalstance.PageName:
             Part_3_Hapalstance()
         case "Part_4_Hapalstance":
             Part_4_Hapalstance()

@@ -16,6 +16,7 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
     init() {
         self.startingView = "Part_1_Intro"
         UserDefaults.standard.set("Part_1_Intro", forKey: DefaultsKeys.currentPage)
+        
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
         if let v = startingViewOptional {
             self.startingView = v

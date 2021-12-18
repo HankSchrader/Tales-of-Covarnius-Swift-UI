@@ -69,7 +69,7 @@ struct Part_5_Save_The_Hapal: View {
         "“You did it! You saved the baby hapal!” Kayo exclaims. “How can we ever thank you?”\n\n“You’ve already done so much for us, it was the least I could do,” you tell the couple.\n\n“That was just some Katonian hospitality,” Kayo says with a wave of his hand. What you did to rescue our hapal was above and beyond… Now if you ever need anything, anything at all. Don’t you hesitate to ask.”\n\nKayo and Kina walk you back to your ship and Kina gives you a big bag of mekop for the road... er, um journey.\n\nYou, Chrono and Luna jump into the ship and wave goodbye as you ascend into the sky. You’re glad you were able to help them rescue their baby hapal. It’s a good thing you had to make an emergency landing after all!"
         
         let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_4_Save_The_Hapal.PageName
+        let firstChoicePageName = Part_6_Save_The_Hapal.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
@@ -80,7 +80,7 @@ struct Part_6_Save_The_Hapal: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“Ok, onwards to Covarnius then,” Chrono says, “to stop the Sinisterians once and for all!”\n\nYou still want to go back to Earth but crashing the ship again isn’t going to get you there. “On to Covarnius,” you agree.\n\nHelping Kayo and Kina rescue their baby hapal made you happy. Maybe you’d be able to help the Covarnians too and then head back to Earth as an intergalactic hero.\n\nYou wonder what kind of issues the Covarnians are having as Chrono engages hypersleep. The last thought that crosses your mind is: What in the world is a Sinisterian? "
+        "“Ok, onwards to Covarnius then,” Chrono says, “to finally stop the Sinisterians!”\n\nYou still want to go back to Earth, but crashing the ship again isn’t going to get you there. “On to Covarnius,” you agree.\n\nHelping Kayo and Kina rescue their baby hapal made you happy. Maybe you’d be able to help the Covarnians too, then head back to Earth as an intergalactic hero.\n\nYou wonder what kind of issues the Covarnians are having as Chrono engages hypersleep. The last thought that crosses your mind is: What is a Sinisterian?"
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Landing.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
