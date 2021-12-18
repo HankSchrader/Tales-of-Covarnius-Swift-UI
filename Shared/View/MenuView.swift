@@ -11,38 +11,38 @@ import SwiftUI
 struct MenuView: View {
     @State private var showMenu = false
     
-    let chaptersDict = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) ?? [Part_1_Intro.PageName]
+    let currentChaptersUnlocked = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) ?? []
     
-    var chapters: [String] = []
-    
+    var chapters: [Chapter] = []
+    var sortedChapters: [Chapter] = []
     init() {
-        for (value) in chaptersDict {
-          
-            chapters.append("\(value)")
-       
+        // Gather up all the unlocked chapters.
+        for chapter in currentChaptersUnlocked {
+            chapters.append(Constants.chapterMap[chapter as! String] ?? Chapter(pageName: "Something Wrong", chapterTitle: "Bad", order: -1))
         }
-        print(self.chapters)
+        sortedChapters = chapters.sorted {
+            $0.order < $1.order
+        }
     }
   
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text("")
-//                ForEach(chapters, id: \.self) { chapter in
-//
-//                    HStack {
-//                            Image(systemName: "person")
-//                                .foregroundColor(.gray)
-//                                .imageScale(.large)
-//                            NavigationLink(destination: subviews[chapter]
-//                                            .navigationBarBackButtonHidden(true)) {
-//                                Text(chapter)
-//                            }
-//                        }
-//                                .padding(.bottom)
-//                                .foregroundColor(.gray)
-//
-//                            }
+                ForEach(self.sortedChapters) { chapter in
+
+                    HStack {
+                            Image(systemName: "person")
+                                .foregroundColor(.gray)
+                                .imageScale(.large)
+                        NavigationLink(destination: subviews[chapter.pageName]
+                                            .navigationBarBackButtonHidden(true)) {
+                            Text(chapter.chapterTitle)
+                            }
+                        }
+                                .padding(.bottom)
+                                .foregroundColor(.gray)
+
+                            }
                 Spacer()
                 
             }.padding()

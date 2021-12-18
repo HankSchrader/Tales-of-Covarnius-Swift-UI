@@ -117,6 +117,8 @@ enum subviews {
             Part_3_Trust_The_Space_Cowboy()
         case Part_4_Trust_The_Space_Cowboy.PageName:
             Part_4_Trust_The_Space_Cowboy()
+        case Part_4_Trust_The_Space_Cowboy_Part_2.PageName:
+            Part_4_Trust_The_Space_Cowboy_Part_2()
         case Part_5_Trust_The_Space_Cowboy.PageName:
             Part_5_Trust_The_Space_Cowboy()
         case Part_1_Who_Trusts_Alien_Cowboys.PageName:
@@ -129,7 +131,7 @@ enum subviews {
             Part_2_Hapalstance()
         case Part_3_Hapalstance.PageName:
             Part_3_Hapalstance()
-        case "Part_4_Hapalstance":
+        case Part_4_Hapalstance.PageName:
             Part_4_Hapalstance()
         case "Part_1_Hapal_Down":
             Part_1_Hapal_Down()

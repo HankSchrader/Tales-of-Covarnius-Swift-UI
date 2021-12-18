@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct Chapter {
-    
+struct Chapter: Identifiable {
+    var id: UUID
     var pageName: String
     var chapterTitle: String
     var order: Int
     
     init(pageName: String, chapterTitle: String, order: Int) {
+        id = UUID()
         self.pageName = pageName
         self.chapterTitle = chapterTitle
         self.order = order

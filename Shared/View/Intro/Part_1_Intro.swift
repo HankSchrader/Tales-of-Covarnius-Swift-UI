@@ -35,7 +35,7 @@ struct Part_1_Intro: View {
     
     init() {
         let chaptersOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-        if chaptersOptional != nil {
+        if chaptersOptional == nil {
             UserDefaults.standard.set( [Part_1_Intro.PageName], forKey: DefaultsKeys.unlockedChapters)
         }
     }
