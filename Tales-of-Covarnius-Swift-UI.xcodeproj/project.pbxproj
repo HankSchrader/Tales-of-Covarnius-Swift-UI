@@ -123,10 +123,6 @@
 		535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 535E3AD8275D9A9E0074EA50 /* Luna at park.jpg */; };
 		536F3CEF2757A99C007E5250 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CEE2757A99C007E5250 /* Extensions.swift */; };
 		536F3CF12757AA59007E5250 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F3CF02757AA59007E5250 /* Constants.swift */; };
-		538D7CE9276185C3007003F6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CE8276185C3007003F6 /* DataController.swift */; };
-		538D7CEC276185FF007003F6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CEA276185FF007003F6 /* Model.xcdatamodeld */; };
-		538D7CEF2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */; };
-		538D7CF02761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */; };
 		538D7CF327618F0D007003F6 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D7CF227618F0D007003F6 /* DefaultKeys.swift */; };
 		539312C7276C138900C0FC05 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539312C6276C138900C0FC05 /* BaseView.swift */; };
 		53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */; };
@@ -206,6 +202,7 @@
 		5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Run_Away.swift; sourceTree = "<group>"; };
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
 		533A58F2276E328100393BCB /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		533A58F62770147600393BCB /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		535E39CE275855260074EA50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Greatest_Scientist.swift; sourceTree = "<group>"; };
@@ -313,10 +310,6 @@
 		535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist"; sourceTree = "<group>"; };
 		536F3CEE2757A99C007E5250 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		536F3CF02757AA59007E5250 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		538D7CE8276185C3007003F6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		538D7CEB276185FF007003F6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryPayloadModel+CoreDataClass.swift"; sourceTree = "<group>"; };
-		538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryPayloadModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		538D7CF227618F0D007003F6 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		539312C6276C138900C0FC05 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		53BACDAA2756E6A1009E493E /* Part 3 See Whats In The Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3 See Whats In The Sky.swift"; sourceTree = "<group>"; };
@@ -397,6 +390,7 @@
 		5303C7C32755AEC500710D34 = {
 			isa = PBXGroup;
 			children = (
+				533A58F62770147600393BCB /* ReadMe.md */,
 				535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */,
 				5303C7C82755AEC500710D34 /* Shared */,
 				5303C7D72755AEC600710D34 /* macOS */,
@@ -407,10 +401,6 @@
 		5303C7C82755AEC500710D34 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				538D7CED2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift */,
-				538D7CEE2761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift */,
-				538D7CEA276185FF007003F6 /* Model.xcdatamodeld */,
-				538D7CE8276185C3007003F6 /* DataController.swift */,
 				535E3ADC2760DB4F0074EA50 /* Model */,
 				535E3ADD2760DB9A0074EA50 /* View */,
 				535E3ADF2760DEBB0074EA50 /* ViewModel */,
@@ -1152,7 +1142,6 @@
 				535E39FC275997990074EA50 /* Part_4_Boarding_Ticket.swift in Sources */,
 				5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */,
 				53BACE1E2757047A009E493E /* Part_2_Landing.swift in Sources */,
-				538D7CEF2761895B007003F6 /* StoryPayloadModel+CoreDataClass.swift in Sources */,
 				535E3A742759B8F90074EA50 /* Part_3_Two_Diplomats.swift in Sources */,
 				535E3A322759A3FD0074EA50 /* Part_4_Giant_Luna.swift in Sources */,
 				535E3A7B2759BAA80074EA50 /* Part_2_Peace.swift in Sources */,
@@ -1163,7 +1152,6 @@
 				535E3A582759AFA40074EA50 /* Part_4_Store_Room.swift in Sources */,
 				535E3A442759A9EC0074EA50 /* Part_2_House.swift in Sources */,
 				535E3AB32759C4F20074EA50 /* Part_7_Hypersleep.swift in Sources */,
-				538D7CEC276185FF007003F6 /* Model.xcdatamodeld in Sources */,
 				535E3A2C2759A27C0074EA50 /* Part_1_Giant_Luna.swift in Sources */,
 				535E3A562759AEE30074EA50 /* Part_3_Store_Room.swift in Sources */,
 				535E39F72759962E0074EA50 /* Part_2_Boarding_Ticket.swift in Sources */,
@@ -1178,7 +1166,6 @@
 				535E3A422759A8D20074EA50 /* Part_1_House.swift in Sources */,
 				535E3A652759B2B00074EA50 /* Part_1_Luna_Stays.swift in Sources */,
 				535E3A1F2759A0230074EA50 /* Part_1_Sneak.swift in Sources */,
-				538D7CF02761895B007003F6 /* StoryPayloadModel+CoreDataProperties.swift in Sources */,
 				535E3AA02759C1810074EA50 /* Part_4_Clog_Toilet.swift in Sources */,
 				53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */,
 				53BC28FD276596830040BFB8 /* Part_3_Greatest_Scientist.swift in Sources */,
@@ -1191,7 +1178,6 @@
 				535E3A702759B86B0074EA50 /* Part_1_Take_Key.swift in Sources */,
 				535E3ACD275B10710074EA50 /* MenuView.swift in Sources */,
 				53BC290C2766D5AC0040BFB8 /* Part_3_They_Are_Vicious.swift in Sources */,
-				538D7CE9276185C3007003F6 /* DataController.swift in Sources */,
 				536F3CEF2757A99C007E5250 /* Extensions.swift in Sources */,
 				53BACDBF2756EF14009E493E /* Part_4_Fork_In_The_Road.swift in Sources */,
 				535E3A02275998FA0074EA50 /* Part_7_Boarding_Ticket.swift in Sources */,
@@ -1526,19 +1512,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		538D7CEA276185FF007003F6 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				538D7CEB276185FF007003F6 /* Model.xcdatamodel */,
-			);
-			currentVersion = 538D7CEB276185FF007003F6 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5303C7C42755AEC500710D34 /* Project object */;
 }
