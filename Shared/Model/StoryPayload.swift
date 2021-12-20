@@ -24,7 +24,6 @@ class StoryPayload: Identifiable {
     var thirdChoicePageName: String
 
 
-    
     init(text: String, image: String = "Luna at park", decision1: String = Constants.ContinuePhrase, firstChoicePageName: String = "", secondChoicePageName: String = "", decision2: String = "", decision3: String = "", thirdChoicePageName: String = "") {
         self.id = UUID()
         self.text = text

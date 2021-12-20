@@ -16,6 +16,7 @@
 		5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */; };
 		5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */; };
 		5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7FA2755CEC400710D34 /* Went_Home.swift */; };
+		533A58F3276E328100393BCB /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533A58F2276E328100393BCB /* TitleView.swift */; };
 		535E39CF275855260074EA50 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39CE275855260074EA50 /* PageView.swift */; };
 		535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */; };
 		535E39D42758FB310074EA50 /* Part_4_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */; };
@@ -204,6 +205,7 @@
 		5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part-2-See-Whats-In-The-Sky.swift"; sourceTree = "<group>"; };
 		5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Run_Away.swift; sourceTree = "<group>"; };
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
+		533A58F2276E328100393BCB /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		535E39CE275855260074EA50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Greatest_Scientist.swift; sourceTree = "<group>"; };
@@ -850,6 +852,7 @@
 		535E3ADD2760DB9A0074EA50 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				533A58F2276E328100393BCB /* TitleView.swift */,
 				535E3ACC275B10710074EA50 /* MenuView.swift */,
 				5303C7CA2755AEC500710D34 /* ContentView.swift */,
 				5303C7F32755CB2000710D34 /* Intro */,
@@ -1249,6 +1252,7 @@
 				53BC29082766D4500040BFB8 /* Part_1_They_Are_Vicious.swift in Sources */,
 				53BACDE92756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */,
+				533A58F3276E328100393BCB /* TitleView.swift in Sources */,
 				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
 				535E39CF275855260074EA50 /* PageView.swift in Sources */,
 				53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */,
@@ -1439,7 +1443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.21;
+				CURRENT_PROJECT_VERSION = 1.22;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1454,7 +1458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.21;
+				MARKETING_VERSION = 1.22;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1472,7 +1476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.21;
+				CURRENT_PROJECT_VERSION = 1.22;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1488,7 +1492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.21;
+				MARKETING_VERSION = 1.22;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

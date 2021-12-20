@@ -9,10 +9,19 @@ import SwiftUI
 
 
 struct ContentView: View {
-
+    var startingView: String
+    let defaults = UserDefaults.standard
+    init() {
+        self.startingView = "Part_1_Intro"
+        UserDefaults.standard.set("Part_1_Intro", forKey: DefaultsKeys.currentPage)
+        
+        let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
+        if let v = startingViewOptional {
+            self.startingView = v
+        }
+    }
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+            subviews[self.startingView]
     }
 }
 
