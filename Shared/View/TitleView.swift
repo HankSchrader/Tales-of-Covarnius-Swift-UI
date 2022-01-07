@@ -16,18 +16,18 @@ struct TitleView: View {
     @State private var opacity3 = 0.0
     @State private var show = false
     @State private var audioPlayer: AVAudioPlayer!
+    @State private var showDeleteAlert = false
+    
+    var defaults = UserDefaults.standard
     private struct Constants {
-         static let duration: Double = 0.9
-         static let minOpacity: Double = 0.25
-         static let maxOpacity: Double = 1.0
-         static let cornerRadius: CGFloat = 2.0
-     }
+        static let duration: Double = 0.9
+        static let minOpacity: Double = 0.25
+        static let maxOpacity: Double = 1.0
+    }
     
     @State private var shimmer: Double = Constants.minOpacity
     var body: some View {
         VStack {
-            
-            
             Text("Tales")
                 .font(.largeTitle)
                 .padding(.bottom)
@@ -71,10 +71,10 @@ struct TitleView: View {
             VStack {
                 NavigationLink(destination: ContentView()
                                 .navigationBarBackButtonHidden(true)) {
-                    Text("Start the Adventure!")
+                    Text(self.isStartOfAdventure() ? "Start the Adventure!" : "Continue the Adventure!")
                         .font(.title)
-                    
                         .opacity(shimmer)
+                        .foregroundColor(self.isStartOfAdventure() ? .cyan : .green)
                         .animation(Animation.easeOut(duration: 0.25).delay(0.5)
                                     .repeatForever(), value: shimmer)
                         .onAppear {
@@ -82,35 +82,51 @@ struct TitleView: View {
                                 shimmer += 1
                             }
                         }
-            
-               
-       
+                    
                 }.padding()
-                  
-
-                
+                    .simultaneousGesture(TapGesture().onEnded{
+                        let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                        impactHeavy.impactOccurred()
+                    })
+          
                 Button(action: {
                     print("Delete Data.")
                 }) {
                     Text("Credits")
                     
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
+                    
                     
                 }
                 .padding()
-                Button(action: {
-                    print("Delete Data.")
-                }) {
-                    Text("Delete Data")
-                    
-                        .foregroundColor(.red)
-                    
+                .simultaneousGesture(TapGesture().onEnded{
+                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                    impactHeavy.impactOccurred()
+                })
+             
+                Button("Delete Progress") {
+                    showDeleteAlert = true
                 }
+                .alert(isPresented: $showDeleteAlert) {
+                    Alert(
+                        title: Text("Are you sure you want to delete your progress?"),
+                        message: Text("There is no undo, what would Chrono think?"),
+                        primaryButton: .destructive(Text("Delete")) {
+                            UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+                            UserDefaults.standard.removeObject(forKey: DefaultsKeys.unlockedChapters)
+                        },
+                        secondaryButton: .cancel()
+                        
+                    )
+                }
+         
                 .padding()
+                .simultaneousGesture(TapGesture().onEnded{
+                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                    impactHeavy.impactOccurred()
+                })
+             
             }  .offset(x: 0, y: -220)
-
-
-            
         }
         
         .onAppear {
@@ -120,16 +136,16 @@ struct TitleView: View {
             Sounds.stopAudio()
         }
         .contentShape(Rectangle())
-     
+        
+    }
+    
+    func isStartOfAdventure() -> Bool {
+        
+        let currentPage: String = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage) ?? ""
+        return currentPage == Part_1_Intro.PageName || currentPage == ""
     }
     
 }
-
-
-
-
-
-
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
