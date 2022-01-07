@@ -12,8 +12,8 @@ struct ContentView: View {
     var startingView: String
     let defaults = UserDefaults.standard
     init() {
-        self.startingView = "Part_1_Intro"
-        UserDefaults.standard.set("Part_1_Intro", forKey: DefaultsKeys.currentPage)
+        self.startingView = Part_1_Intro.PageName
+ 
         
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
         if let v = startingViewOptional {

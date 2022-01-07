@@ -187,6 +187,10 @@
 		53BC29282766DC4B0040BFB8 /* Part_3_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */; };
 		53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */; };
 		53BC292E2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */; };
+		53C460FD2787B1C90052B139 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C460FC2787B1C80052B139 /* Sounds.swift */; };
+		53C461042787B3AD0052B139 /* Button Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461012787B3AC0052B139 /* Button Sound.wav */; };
+		53C461052787B3AD0052B139 /* New Chapter Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461022787B3AD0052B139 /* New Chapter Sound.wav */; };
+		53C461062787B3AD0052B139 /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461032787B3AD0052B139 /* MainMenuSong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,6 +378,10 @@
 		53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet_To_Hyper_Sleep.swift; sourceTree = "<group>"; };
+		53C460FC2787B1C80052B139 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		53C461012787B3AC0052B139 /* Button Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Button Sound.wav"; sourceTree = "<group>"; };
+		53C461022787B3AD0052B139 /* New Chapter Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "New Chapter Sound.wav"; sourceTree = "<group>"; };
+		53C461032787B3AD0052B139 /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +400,7 @@
 			children = (
 				533A58F62770147600393BCB /* ReadMe.md */,
 				535E3AE02760E01A0074EA50 /* Tales-of-Covarnius-Swift-UI--iOS--Info.plist */,
+				53C460F427879FA20052B139 /* Audio */,
 				5303C7C82755AEC500710D34 /* Shared */,
 				5303C7D72755AEC600710D34 /* macOS */,
 				5303C7D12755AEC600710D34 /* Products */,
@@ -866,6 +875,7 @@
 				538D7CF227618F0D007003F6 /* DefaultKeys.swift */,
 				536F3CEE2757A99C007E5250 /* Extensions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
+				53C460FC2787B1C80052B139 /* Sounds.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1057,6 +1067,16 @@
 			path = Just_Desserts;
 			sourceTree = "<group>";
 		};
+		53C460F427879FA20052B139 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				53C461012787B3AC0052B139 /* Button Sound.wav */,
+				53C461032787B3AD0052B139 /* MainMenuSong.wav */,
+				53C461022787B3AD0052B139 /* New Chapter Sound.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1116,7 +1136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				535E3AD9275D9A9E0074EA50 /* Luna at park.jpg in Resources */,
+				53C461042787B3AD0052B139 /* Button Sound.wav in Resources */,
 				5303C7DD2755AEC600710D34 /* Assets.xcassets in Resources */,
+				53C461062787B3AD0052B139 /* MainMenuSong.wav in Resources */,
+				53C461052787B3AD0052B139 /* New Chapter Sound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1159,6 +1182,7 @@
 				535E3A282759A2170074EA50 /* Part_1_Murkblur.swift in Sources */,
 				535E3A812759BC020074EA50 /* Part_1_Ice_Ray.swift in Sources */,
 				53BC28FB276595400040BFB8 /* Part_2_Greatest_Scientist.swift in Sources */,
+				53C460FD2787B1C90052B139 /* Sounds.swift in Sources */,
 				535E3A602759B1040074EA50 /* Part_2_Keep_Thinking.swift in Sources */,
 				5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */,
 				53BACDF02756FD37009E493E /* Part_1_Who_Trusts_Alien_Cowboys.swift in Sources */,
@@ -1429,7 +1453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.23;
+				CURRENT_PROJECT_VERSION = 1.24;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1444,7 +1468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.23;
+				MARKETING_VERSION = 1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1462,7 +1486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.23;
+				CURRENT_PROJECT_VERSION = 1.24;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1478,7 +1502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.23;
+				MARKETING_VERSION = 1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

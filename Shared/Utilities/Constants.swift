@@ -11,7 +11,7 @@ struct Constants {
     static let ipadFontSize = 24
     static let ContinuePhrase = "Keep Going"
     static let GameOverPhrase = "GAME OVER"
-   
+ 
     
     static let chapters = [Part_1_Intro.PageName,
                            Part_1_Fork_In_The_Road.PageName,
@@ -48,9 +48,12 @@ struct Constants {
     ]
     
 }
+// This enum is the whole brains of the operation.
 enum subviews {
     @ViewBuilder static subscript(string: String) -> some View {
         switch string {
+        case "Title View":
+            TitleView()
         case Part_1_Intro.PageName:
             Part_1_Intro()
         case Part_1_Run_Away.PageName:
@@ -133,9 +136,9 @@ enum subviews {
             Part_3_Hapalstance()
         case Part_4_Hapalstance.PageName:
             Part_4_Hapalstance()
-        case "Part_1_Hapal_Down":
+        case Part_1_Hapal_Down.PageName:
             Part_1_Hapal_Down()
-        case "Part_2_Hapal_Down":
+        case Part_2_Hapal_Down.PageName:
             Part_2_Hapal_Down()
 
         case Part_1_Save_The_Hapal.PageName:

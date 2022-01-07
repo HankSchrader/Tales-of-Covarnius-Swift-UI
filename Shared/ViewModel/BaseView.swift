@@ -45,7 +45,7 @@ struct BaseView: View {
                                 .padding(.leading)
                                 .padding(.trailing)
                         }.padding()
-                        }.zIndex(1)
+                }.zIndex(1)
                 
                 Image(view.image)
                     .resizable()
@@ -54,11 +54,11 @@ struct BaseView: View {
             .opacity(opacity)
             .animation(Animation.easeOut(duration: 1.25), value: opacity)
             .onAppear {
-                          DispatchQueue.main.async {
-                                  self.opacity += 1
-                              
-                              
-    }
+                DispatchQueue.main.async {
+                    self.opacity += 1
+                    
+                    
+                }
             }
             Spacer()
             
@@ -71,7 +71,10 @@ struct BaseView: View {
                         Text("Awesome!")
                     }
                 
+                
             }.simultaneousGesture(TapGesture().onEnded{
+                let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                impactHeavy.impactOccurred()
                 userDecision = view.firstChoicePageName
                 if Constants.chapters.contains(view.firstChoicePageName) {
                     let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
@@ -84,11 +87,7 @@ struct BaseView: View {
                 }
                 
                 // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
-                if view.decision1 == Constants.GameOverPhrase {
-                    UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
-                } else {
-                    defaults.set(view.firstChoicePageName, forKey: DefaultsKeys.currentPage)
-                }
+                saveToUserDefaults(view.decision1, view.firstChoicePageName)
                 
             })
                 .onDisappear{
@@ -112,7 +111,10 @@ struct BaseView: View {
                         .padding()
                     
                 }
+                
                 .simultaneousGesture(TapGesture().onEnded{
+                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                    impactHeavy.impactOccurred()
                     userDecision = view.secondChoicePageName
                     if Constants.chapters.contains(view.secondChoicePageName) {
                         let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
@@ -124,23 +126,15 @@ struct BaseView: View {
                         }
                     }
                     
-                    // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
-                    if view.decision2 == Constants.GameOverPhrase {
-                        UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
-                    } else {
-                        defaults.set(view.secondChoicePageName, forKey: DefaultsKeys.currentPage)
-                    }
-                    if(view.secondChoicePageName == Part_1_Fork_In_The_Road.PageName) {
-                        print(view.secondChoicePageName)
-                    }
+                    saveToUserDefaults(view.decision2, view.secondChoicePageName)
+                    
                     
                 })
+                
                 .onDisappear{
                     // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                    print(userDecision)
+                    
                     if allChapters.contains(userDecision) == true && userDecision == view.secondChoicePageName {
-                        print("Decision2: \(userDecision)")
-                        print("Page2 \(view.secondChoicePageName)")
                         constructAndStoreChapter(currentPageView: userDecision)
                         self.showingAlertDecision2 = true
                         
@@ -158,6 +152,8 @@ struct BaseView: View {
                     
                 }
                 .simultaneousGesture(TapGesture().onEnded{
+                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                    impactHeavy.impactOccurred()
                     userDecision = view.thirdChoicePageName
                     if Constants.chapters.contains(view.thirdChoicePageName) {
                         let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
@@ -169,12 +165,8 @@ struct BaseView: View {
                         }
                     }
                     
-                    // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
-                    if view.decision3 == Constants.GameOverPhrase {
-                        UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
-                    } else {
-                        defaults.set(view.thirdChoicePageName, forKey: DefaultsKeys.currentPage)
-                    }
+                    saveToUserDefaults(view.decision3, view.thirdChoicePageName)
+                    
                     
                 })
                 .onDisappear{
@@ -187,11 +179,11 @@ struct BaseView: View {
                 }
             }
         }
-
-    }
-
+        
     }
     
+}
+
 
 private func constructAndStoreChapter(currentPageView: String) -> Void {
     
@@ -205,4 +197,14 @@ private func constructAndStoreChapter(currentPageView: String) -> Void {
         
     }
     
+}
+
+/// Resets the UserDefaults if the user picks a decision that leads to a game over.
+/// If it is a gameover, then reset user defaults. Otherwise save the current page.
+private func saveToUserDefaults(_ view: String, _ viewChoice: String) -> Void {
+    if view == Constants.GameOverPhrase {
+        UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+    } else {
+        UserDefaults.standard.set(viewChoice, forKey: DefaultsKeys.currentPage)
+    }
 }
