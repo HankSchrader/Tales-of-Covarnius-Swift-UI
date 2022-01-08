@@ -9,10 +9,6 @@ import SwiftUI
 
 @main
 struct Tales_of_Covarnius_Swift_UIApp: App {
-    
-    
-    
-    
     var body: some Scene {
         
         return WindowGroup {

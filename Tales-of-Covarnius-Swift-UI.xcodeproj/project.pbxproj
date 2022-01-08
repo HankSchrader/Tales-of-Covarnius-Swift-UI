@@ -16,8 +16,6 @@
 		5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */; };
 		5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */; };
 		5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7FA2755CEC400710D34 /* Went_Home.swift */; };
-		533A58F3276E328100393BCB /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533A58F2276E328100393BCB /* TitleView.swift */; };
-		535E39CF275855260074EA50 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39CE275855260074EA50 /* PageView.swift */; };
 		535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */; };
 		535E39D42758FB310074EA50 /* Part_4_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */; };
 		535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */; };
@@ -187,10 +185,12 @@
 		53BC29282766DC4B0040BFB8 /* Part_3_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */; };
 		53BC292A2766DCE60040BFB8 /* Part_4_Stank_Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */; };
 		53BC292E2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */; };
-		53C460FD2787B1C90052B139 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C460FC2787B1C80052B139 /* Sounds.swift */; };
 		53C461042787B3AD0052B139 /* Button Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461012787B3AC0052B139 /* Button Sound.wav */; };
 		53C461052787B3AD0052B139 /* New Chapter Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461022787B3AD0052B139 /* New Chapter Sound.wav */; };
 		53C461062787B3AD0052B139 /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53C461032787B3AD0052B139 /* MainMenuSong.wav */; };
+		53C4610A2789F4F20052B139 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C461092789F4F20052B139 /* TitleView.swift */; };
+		53C4610E278A1F070052B139 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610D278A1F070052B139 /* DisplayView.swift */; };
+		53C46110278A1F570052B139 /* SoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610F278A1F570052B139 /* SoundsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,9 +205,7 @@
 		5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part-2-See-Whats-In-The-Sky.swift"; sourceTree = "<group>"; };
 		5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Run_Away.swift; sourceTree = "<group>"; };
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
-		533A58F2276E328100393BCB /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		533A58F62770147600393BCB /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
-		535E39CE275855260074EA50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Warmongers.swift; sourceTree = "<group>"; };
@@ -378,10 +376,12 @@
 		53BC29272766DC4B0040BFB8 /* Part_3_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_3_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC29292766DCE60040BFB8 /* Part_4_Stank_Meat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Stank_Meat.swift; sourceTree = "<group>"; };
 		53BC292D2768190B0040BFB8 /* Toilet_To_Hyper_Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet_To_Hyper_Sleep.swift; sourceTree = "<group>"; };
-		53C460FC2787B1C80052B139 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		53C461012787B3AC0052B139 /* Button Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Button Sound.wav"; sourceTree = "<group>"; };
 		53C461022787B3AD0052B139 /* New Chapter Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "New Chapter Sound.wav"; sourceTree = "<group>"; };
 		53C461032787B3AD0052B139 /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
+		53C461092789F4F20052B139 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		53C4610D278A1F070052B139 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		53C4610F278A1F570052B139 /* SoundsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -851,7 +851,7 @@
 		535E3ADD2760DB9A0074EA50 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				533A58F2276E328100393BCB /* TitleView.swift */,
+				53C461092789F4F20052B139 /* TitleView.swift */,
 				535E3ACC275B10710074EA50 /* MenuView.swift */,
 				5303C7CA2755AEC500710D34 /* ContentView.swift */,
 				5303C7F32755CB2000710D34 /* Intro */,
@@ -864,7 +864,7 @@
 			isa = PBXGroup;
 			children = (
 				539312C6276C138900C0FC05 /* BaseView.swift */,
-				535E39CE275855260074EA50 /* PageView.swift */,
+				53C4610D278A1F070052B139 /* DisplayView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -875,7 +875,7 @@
 				538D7CF227618F0D007003F6 /* DefaultKeys.swift */,
 				536F3CEE2757A99C007E5250 /* Extensions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
-				53C460FC2787B1C80052B139 /* Sounds.swift */,
+				53C4610F278A1F570052B139 /* SoundsController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1172,6 +1172,7 @@
 				535E3A462759AA6D0074EA50 /* Part_2_Council.swift in Sources */,
 				53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */,
 				53BACDCC2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */,
+				53C4610E278A1F070052B139 /* DisplayView.swift in Sources */,
 				535E3A582759AFA40074EA50 /* Part_4_Store_Room.swift in Sources */,
 				535E3A442759A9EC0074EA50 /* Part_2_House.swift in Sources */,
 				535E3AB32759C4F20074EA50 /* Part_7_Hypersleep.swift in Sources */,
@@ -1182,7 +1183,6 @@
 				535E3A282759A2170074EA50 /* Part_1_Murkblur.swift in Sources */,
 				535E3A812759BC020074EA50 /* Part_1_Ice_Ray.swift in Sources */,
 				53BC28FB276595400040BFB8 /* Part_2_Greatest_Scientist.swift in Sources */,
-				53C460FD2787B1C90052B139 /* Sounds.swift in Sources */,
 				535E3A602759B1040074EA50 /* Part_2_Keep_Thinking.swift in Sources */,
 				5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */,
 				53BACDF02756FD37009E493E /* Part_1_Who_Trusts_Alien_Cowboys.swift in Sources */,
@@ -1241,6 +1241,7 @@
 				53BACE3C2757095D009E493E /* Bright_Green.swift in Sources */,
 				535E3A542759AE890074EA50 /* Part_2_Store_Room.swift in Sources */,
 				535E3A1727599DFC0074EA50 /* Part_4_Fetch_Key.swift in Sources */,
+				53C4610A2789F4F20052B139 /* TitleView.swift in Sources */,
 				535E3AD1275B9DEE0074EA50 /* Chapter.swift in Sources */,
 				53BACDE62756FB05009E493E /* Part_3_Trust_The_Space_Cowboy.swift in Sources */,
 				53BC291C2766D99D0040BFB8 /* Growlics.swift in Sources */,
@@ -1262,9 +1263,7 @@
 				53BC29082766D4500040BFB8 /* Part_1_They_Are_Vicious.swift in Sources */,
 				53BACDE92756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
 				535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */,
-				533A58F3276E328100393BCB /* TitleView.swift in Sources */,
 				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
-				535E39CF275855260074EA50 /* PageView.swift in Sources */,
 				53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */,
 				535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */,
 				535E3A8E2759BEF70074EA50 /* Part_6_Gravity_Gun.swift in Sources */,
@@ -1279,6 +1278,7 @@
 				535E3A382759A4950074EA50 /* Part_1_Tell.swift in Sources */,
 				53BC29242766DC2F0040BFB8 /* Part_1_Stank_Meat.swift in Sources */,
 				53BACDD22756F6E6009E493E /* Part_4_Cowboys_Of_Katonia.swift in Sources */,
+				53C46110278A1F570052B139 /* SoundsController.swift in Sources */,
 				535E3AB82759C6040074EA50 /* Part_9_Hypersleep.swift in Sources */,
 				53BACE0427570080009E493E /* Part_1_Hapal_Down.swift in Sources */,
 				535E3A4E2759ACAF0074EA50 /* Part_1_Store_Room.swift in Sources */,
@@ -1453,7 +1453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.25;
+				CURRENT_PROJECT_VERSION = 1.26;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1468,7 +1468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25;
+				MARKETING_VERSION = 1.26;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1486,7 +1486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.25;
+				CURRENT_PROJECT_VERSION = 1.26;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1502,7 +1502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25;
+				MARKETING_VERSION = 1.26;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

@@ -7,7 +7,7 @@
 
 import Foundation
 import AVFoundation
-class Sounds {
+class SoundsController {
 
   static var audioPlayer:AVAudioPlayer?
 
