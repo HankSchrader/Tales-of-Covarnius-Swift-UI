@@ -191,6 +191,7 @@
 		53C4610A2789F4F20052B139 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C461092789F4F20052B139 /* TitleView.swift */; };
 		53C4610E278A1F070052B139 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610D278A1F070052B139 /* DisplayView.swift */; };
 		53C46110278A1F570052B139 /* SoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610F278A1F570052B139 /* SoundsController.swift */; };
+		53C46112278A20F40052B139 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46111278A20F40052B139 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -382,6 +383,7 @@
 		53C461092789F4F20052B139 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		53C4610D278A1F070052B139 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		53C4610F278A1F570052B139 /* SoundsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsController.swift; sourceTree = "<group>"; };
+		53C46111278A20F40052B139 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -844,6 +846,7 @@
 			children = (
 				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
 				535E3AD0275B9DEE0074EA50 /* Chapter.swift */,
+				53C46111278A20F40052B139 /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1181,6 +1184,7 @@
 				535E39F72759962E0074EA50 /* Part_2_Boarding_Ticket.swift in Sources */,
 				535E3A3C2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift in Sources */,
 				535E3A282759A2170074EA50 /* Part_1_Murkblur.swift in Sources */,
+				53C46112278A20F40052B139 /* ImageModel.swift in Sources */,
 				535E3A812759BC020074EA50 /* Part_1_Ice_Ray.swift in Sources */,
 				53BC28FB276595400040BFB8 /* Part_2_Greatest_Scientist.swift in Sources */,
 				535E3A602759B1040074EA50 /* Part_2_Keep_Thinking.swift in Sources */,

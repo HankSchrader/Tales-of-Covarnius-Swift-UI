@@ -22,6 +22,7 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
             
             .animation(.none)
             .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(ImageModel())
             
             
         }

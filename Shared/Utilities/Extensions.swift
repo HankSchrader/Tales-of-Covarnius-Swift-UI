@@ -20,4 +20,8 @@ extension View {
             self
         }
     }
+    
+    func choosePicture() -> String {
+        return ""
+    }
 }
