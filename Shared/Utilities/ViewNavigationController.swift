@@ -1,60 +1,18 @@
 //
-//  Constants.swift
+//  ViewNavigationController.swift
 //  Tales-of-Covarnius-Swift-UI (iOS)
 //
-//  Created by Erik Mikac on 12/1/21.
+//  Created by Erik Mikac on 1/9/22.
 //
 
-import Foundation
 import SwiftUI
-struct Constants {
-    static let ipadFontSize = 24
-    static let ContinuePhrase = "Keep Going"
-    static let GameOverPhrase = "GAME OVER"
- 
-    
-    static let chapters = [Part_1_Intro.PageName,
-                           Part_1_Fork_In_The_Road.PageName,
-                           Part_1_Cowboys_Of_Katonia.PageName,
-                           Part_1_Fake_Til_You_Make.PageName,
-                           Part_1_Hapalstance.PageName,
-                           Part_1_Diplomatic_Immunity.PageName,
-                           Part_1_Boarding_Ticket.PageName,
-                           Part_1_Not_Scientist.PageName,
-                           Part_1_Greatest_Scientist.PageName,
-                           Part_1_Hapal_Down.PageName,
-                           Part_2_Hypersleep.PageName]
-    
-    static let chapterMap = [
-        Part_1_Intro.PageName: Chapter(pageName: Part_1_Intro.PageName, chapterTitle: "Time For An Adventure!", order: 1),
-        
-        Part_1_Fork_In_The_Road.PageName: Chapter(pageName: Part_1_Fork_In_The_Road.PageName, chapterTitle: "Fork In The Road", order: 2) ,
-        
-        Part_1_Cowboys_Of_Katonia.PageName: Chapter(pageName: Part_1_Cowboys_Of_Katonia.PageName, chapterTitle: "Cowboys of Katonia", order: 3),
-        
-        Part_1_Greatest_Scientist.PageName: Chapter(pageName: Part_1_Greatest_Scientist.PageName, chapterTitle: "The King and the Invasion", order: 4),
-        Part_1_Fake_Til_You_Make.PageName: Chapter(pageName: Part_1_Fake_Til_You_Make.PageName, chapterTitle: "Fake it til you make it", order: 5),
-        
-        Part_1_Not_Scientist.PageName: Chapter(pageName: Part_1_Not_Scientist.PageName, chapterTitle: "Next up!", order: 6),
-        
-        Part_1_Hapalstance.PageName: Chapter(pageName: Part_1_Hapalstance.PageName, chapterTitle: "By Random Hapalstance", order: 7),
-        
-        Part_1_Diplomatic_Immunity.PageName: Chapter(pageName: Part_1_Diplomatic_Immunity.PageName, chapterTitle: "Diplomatic Immunity", order: 8),
-        
-        Part_1_Boarding_Ticket.PageName: Chapter(pageName: Part_1_Boarding_Ticket.PageName, chapterTitle: "Where's Your Boarding Ticket?", order: 9),
-        Part_1_Hapal_Down.PageName: Chapter(pageName: Part_1_Hapal_Down.PageName, chapterTitle: "You Let The Hapal Down...", order: 10),
-        
-        Part_2_Hypersleep.PageName: Chapter(pageName: Part_2_Hypersleep.PageName, chapterTitle: "Rise and Shine!", order: 11)
-    ]
-    
-}
 
-
-
-// This enum is the whole brains of the operation.
-enum subviews {
-    @ViewBuilder static subscript(string: String) -> some View {
-        switch string {
+// Whole brains of the operation. The user choice is brought in here to determine where to go next. Check README for more info.
+struct ViewNavigationController {
+    
+    @ViewBuilder static func routeDecision(choice userChoice: String) -> some View {
+        
+        switch userChoice {
         case "Title View":
             TitleView()
         case Part_1_Intro.PageName:
@@ -143,7 +101,7 @@ enum subviews {
             Part_1_Hapal_Down()
         case Part_2_Hapal_Down.PageName:
             Part_2_Hapal_Down()
-
+            
         case Part_1_Save_The_Hapal.PageName:
             Part_1_Save_The_Hapal()
         case Part_2_Save_The_Hapal.PageName:
@@ -178,10 +136,10 @@ enum subviews {
             Part_3_Not_Scientist()
         case Part_4_Not_Scientist.PageName:
             Part_4_Not_Scientist()
-        
+            
         case Part_1_Warmongers.PageName:
             Part_1_Warmongers()
-        
+            
         case Part_1_Greatest_Scientist.PageName:
             Part_1_Greatest_Scientist()
         case Part_2_Greatest_Scientist.PageName:
@@ -352,7 +310,7 @@ enum subviews {
             Part_8_Hypersleep()
         case Part_9_Hypersleep.PageName:
             Part_9_Hypersleep()
-        
+            
         case Celebrate.PageName:
             Celebrate()
         case Home_Sweet_Home.PageName:
@@ -396,7 +354,7 @@ enum subviews {
             Part_4_Fetch_Key()
         case Part_5_Fetch_Key.PageName:
             Part_5_Fetch_Key()
-        
+            
         case Part_1_Sneak.PageName:
             Part_1_Sneak()
         case Part_2_Sneak.PageName:
@@ -419,7 +377,7 @@ enum subviews {
             Part_4_Clog_Toilet()
         case Part_5_Clog_Toilet.PageName:
             Part_5_Clog_Toilet()
-                
+            
         case Part_1_Not_Important.PageName:
             Part_1_Not_Important()
             
@@ -434,12 +392,12 @@ enum subviews {
             Part_3_Giant_Luna()
         case Part_4_Giant_Luna.PageName:
             Part_4_Giant_Luna()
-        
+            
         case Part_1_Tell.PageName:
             Part_1_Tell()
         case Part_2_Tell.PageName:
             Part_2_Tell()
-        
+            
         case Part_1_Dont_Tell.PageName:
             Part_1_Dont_Tell()
             

@@ -16,5 +16,7 @@ struct DefaultsKeys {
     // Needed to show the current chapter on the top of the navigation page.
     static let currentChapter = "Something's in the sky..."
     
+    // Needed for when the user comes back, the correct picture will appear.
+    static let currentPicture = "Luna With Bee"
     
 }

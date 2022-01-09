@@ -17,9 +17,10 @@ struct Part_1_Fork_In_The_Road: View {
         let firstChoicePageName = Part_2_Fork_In_The_Road.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
-
+   
     }
 }
+
 
 struct Part_1_Fork_In_The_Road_Previews: PreviewProvider {
     static var previews: some View {

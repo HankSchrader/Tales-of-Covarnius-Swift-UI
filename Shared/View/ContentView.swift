@@ -10,10 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var startingView: String
+    var startingImage: String
     let defaults = UserDefaults.standard
     init() {
         self.startingView = Part_1_Intro.PageName
- 
+        self.startingImage = UserDefaults.standard.string(forKey: DefaultsKeys.currentPicture) ?? ""
         
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
         if let v = startingViewOptional {
@@ -21,7 +22,8 @@ struct ContentView: View {
         }
     }
     var body: some View {
-            subviews[self.startingView]
+          
+        ViewNavigationController.routeDecision(choice: self.startingView)
     }
 }
 

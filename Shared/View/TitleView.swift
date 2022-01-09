@@ -17,7 +17,6 @@ struct TitleView: View {
     @State private var show = false
     @State private var audioPlayer: AVAudioPlayer!
     @State private var showDeleteAlert = false
-    @EnvironmentObject var imageModel: ImageModel
     var defaults = UserDefaults.standard
     private struct Constants {
         static let duration: Double = 0.9

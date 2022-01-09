@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Tales_of_Covarnius_Swift_UIApp: App {
+  //  @StateObject var imageModel = ImageModel()
     var body: some Scene {
         
         return WindowGroup {
@@ -22,7 +23,7 @@ struct Tales_of_Covarnius_Swift_UIApp: App {
             
             .animation(.none)
             .navigationViewStyle(StackNavigationViewStyle())
-            .environmentObject(ImageModel())
+      //      .environmentObject(imageModel)
             
             
         }

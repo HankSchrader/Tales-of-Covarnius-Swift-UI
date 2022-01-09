@@ -46,7 +46,7 @@ struct MenuView: View {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
                             .imageScale(.large)
-                        NavigationLink(destination: subviews[chapter.pageName]
+                            NavigationLink(destination: ViewNavigationController.routeDecision(choice: chapter.pageName)
                                         .navigationBarBackButtonHidden(true)) {
                             Text(chapter.chapterTitle)
                         }

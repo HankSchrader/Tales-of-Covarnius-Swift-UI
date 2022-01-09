@@ -12,6 +12,7 @@ struct BaseView: View {
     @State var showingAlertDecision2 = false
     @State var showingAlertDecision3 = false
     @State private var opacity = 0.0
+    
     var view: StoryPayload
     let defaults = UserDefaults.standard
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
@@ -62,7 +63,8 @@ struct BaseView: View {
             }
             Spacer()
             
-            NavigationLink(destination: subviews[view.firstChoicePageName]
+            NavigationLink(destination:
+                           ViewNavigationController.routeDecision(choice: view.firstChoicePageName)
                             .navigationBarBackButtonHidden(isSecondChoice() || isGameOver())) {
                 
                 Text(view.decision1)
@@ -103,7 +105,7 @@ struct BaseView: View {
             
                 .padding()
             if(isSecondChoice()) {
-                NavigationLink(destination: subviews[view.secondChoicePageName].navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: ViewNavigationController.routeDecision(choice: view.secondChoicePageName).navigationBarBackButtonHidden(true)) {
                     Text(view.decision2)
                         .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {
                             Text("Nice!")
@@ -143,7 +145,7 @@ struct BaseView: View {
             }
             
             if(isThirdChoice()) {
-                NavigationLink(destination: subviews[view.thirdChoicePageName].navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: ViewNavigationController.routeDecision(choice: view.thirdChoicePageName).navigationBarBackButtonHidden(true)) {
                     Text(view.decision3)
                         .alert("\(Constants.chapterMap[view.thirdChoicePageName]?.chapterTitle ?? self.errorMsg) Unlocked!", isPresented: self.$showingAlertDecision3) {
                             Text("Great")
