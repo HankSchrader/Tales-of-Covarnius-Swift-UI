@@ -16,7 +16,7 @@ struct Part_3_Cowboys_Of_Katonia: View {
           
             let decision1 = Constants.ContinuePhrase
             let firstChoicePageName = Part_4_Cowboys_Of_Katonia.PageName
-            let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+            let storyView: StoryPayload = StoryPayload(text: text, image: "Crash Land", decision1: decision1, firstChoicePageName: firstChoicePageName)
             DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

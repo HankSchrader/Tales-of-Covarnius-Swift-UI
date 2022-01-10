@@ -36,9 +36,9 @@ GitHub: @HankSchrader
 
 - The Constants folder contains an @ViewBuilder that determines which view is created next. Is is a Key Value pair. The Key is always an attribute of the StoryPayload Model
 
-### SubView Enum
+### ViewNavigationController
 
-SubView enum is a massive case statement Swift users to determine the next page. The user makes a decision which then sends a point to the SubView Enum. The next View Generated is the one matched in the case statement.
+ViewNavigationController is a massive case statement Swift users to determine the next page. The user makes a decision which then sends a point to the SubView Enum. The next View Generated is the one matched in the case statement.
 
 ### Flow
 

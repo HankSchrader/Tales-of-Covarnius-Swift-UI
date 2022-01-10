@@ -13,7 +13,7 @@ struct ContentView: View {
     var startingImage: String
     let defaults = UserDefaults.standard
     let vnc = ViewNavigationController()
-    @StateObject var im = ImageModel()
+
     init() {
         self.startingViewName = Part_1_Intro.PageName
         self.startingImage = UserDefaults.standard.string(forKey: DefaultsKeys.currentPicture) ?? ""
@@ -26,7 +26,7 @@ struct ContentView: View {
     var body: some View {
           
         self.vnc.routeDecision(choice: self.startingViewName)
-            .environmentObject(im)
+        
     }
         
 }

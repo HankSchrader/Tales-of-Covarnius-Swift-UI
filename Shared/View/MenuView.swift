@@ -12,7 +12,6 @@ struct MenuView: View {
     @State private var showMenu = false
     let vnc = ViewNavigationController()
     let currentChaptersUnlocked = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) ?? []
-    @StateObject var im = ImageModel()
     var chapters: [Chapter] = []
     var sortedChapters: [Chapter] = []
     init() {
@@ -34,7 +33,7 @@ struct MenuView: View {
                         .foregroundColor(.gray)
                         .imageScale(.large)
                     NavigationLink(destination: TitleView()
-                                    .environmentObject(self.im)
+                                
                                     .navigationBarBackButtonHidden(true)) {
                         Text("Title Screen")
                     }

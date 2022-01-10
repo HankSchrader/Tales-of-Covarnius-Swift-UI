@@ -47,22 +47,25 @@ struct BaseView: View {
                                 .padding(.trailing)
                         }.padding()
                 }.zIndex(1)
-                
-                Image(view.image)
-                    .resizable()
-                    .scaledToFit().zIndex(0)
-                
-                    .opacity(opacity)
-                    .animation(Animation.easeOut(duration: 1.25), value: opacity)
-                    .onAppear {
-                        DispatchQueue.main.async {
-                            self.opacity += 1
-                            
+                GeometryReader { geo in
+                    Image(view.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geo.size.width, height: geo.size.height)
+                        .offset(x: 0, y: view.image == "Crash Land" ? 160 : 0)
+                        .opacity(opacity)
+                        .animation(Animation.easeOut(duration: 1.25), value: opacity)
+                        .onAppear {
+                            DispatchQueue.main.async {
+                                self.opacity += 1
+                                
+                                
+                            }
                             
                         }
-                    }
-                
-                
+                }.zIndex(0).ignoresSafeArea()
+        
+        
                 VStack {
                     Spacer()
                     NavigationLink(destination:
