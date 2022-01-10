@@ -27,12 +27,13 @@ struct Part_1_Intro: View {
         let decision2 = "See what's in the sky."
         let firstChoicePageName = "Part_1_Run_Away"
         let secondChoicePageName = "Part_1_See_What_In_The_Sky"
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1,
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Luna With Bee", decision1: decision1,
+
                                                    firstChoicePageName: firstChoicePageName,
                                                    secondChoicePageName: secondChoicePageName,
                                                    decision2: decision2)
              DisplayView(showMenu: self.$showMenu, view: storyView)
-        
+            .environmentObject(ImageModel())
                 }
 
 

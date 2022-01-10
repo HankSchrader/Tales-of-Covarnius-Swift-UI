@@ -10,7 +10,7 @@ import SwiftUI
 // Whole brains of the operation. The user choice is brought in here to determine where to go next. Check README for more info.
 struct ViewNavigationController {
     
-    @ViewBuilder static func routeDecision(choice userChoice: String) -> some View {
+    @ViewBuilder  func routeDecision(choice userChoice: String) -> some View {
         
         switch userChoice {
         case "Title View":
@@ -35,6 +35,8 @@ struct ViewNavigationController {
             Part_5_Fork_In_The_Road()
         case Part_4_Fork_In_The_Road.PageName:
             Part_4_Fork_In_The_Road()
+        case Part_4_Part_2_See_Whats_In_The_Sky.PageName:
+            Part_4_Part_2_See_Whats_In_The_Sky()
         case Part_3_Fork_In_The_Road.PageName:
             Part_3_Fork_In_The_Road()
         case Part_2_Fork_In_The_Road.PageName:

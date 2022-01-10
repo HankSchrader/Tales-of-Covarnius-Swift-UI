@@ -10,9 +10,9 @@ import SwiftUI
 
 struct MenuView: View {
     @State private var showMenu = false
-    
+    let vnc = ViewNavigationController()
     let currentChaptersUnlocked = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) ?? []
-    
+    @StateObject var im = ImageModel()
     var chapters: [Chapter] = []
     var sortedChapters: [Chapter] = []
     init() {
@@ -34,6 +34,7 @@ struct MenuView: View {
                         .foregroundColor(.gray)
                         .imageScale(.large)
                     NavigationLink(destination: TitleView()
+                                    .environmentObject(self.im)
                                     .navigationBarBackButtonHidden(true)) {
                         Text("Title Screen")
                     }
@@ -46,7 +47,7 @@ struct MenuView: View {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
                             .imageScale(.large)
-                            NavigationLink(destination: ViewNavigationController.routeDecision(choice: chapter.pageName)
+                            NavigationLink(destination: self.vnc.routeDecision(choice: chapter.pageName)
                                         .navigationBarBackButtonHidden(true)) {
                             Text(chapter.chapterTitle)
                         }

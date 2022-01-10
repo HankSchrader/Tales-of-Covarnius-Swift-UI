@@ -9,6 +9,7 @@ import SwiftUI
 struct DisplayView: View {
     @Binding var showMenu: Bool
     @State private var showingAlert = false
+    @StateObject var im = ImageModel()
     var view: StoryPayload
     var body: some View {
         
@@ -39,15 +40,17 @@ struct DisplayView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .offset(x: self.showMenu ? geometry.size.width/1.25 : 0)
                     .disabled(self.showMenu ? true : false)
+                    .environmentObject(self.im)
                     if self.showMenu {
                         MenuView()
                             .frame(width: geometry.size.width/1.75)
                             .transition(.move(edge: .leading))
-                        
+                            .environmentObject(self.im)
                         
                     }
                 }.gesture(drag)
                     .gesture(tap)
+                    .environmentObject(self.im)
             }
             .navigationBarTitle("Tales of Covarnius", displayMode: .inline)
             .navigationBarItems(leading: (

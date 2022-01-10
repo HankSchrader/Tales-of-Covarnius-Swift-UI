@@ -18,6 +18,7 @@ struct TitleView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @State private var showDeleteAlert = false
     var defaults = UserDefaults.standard
+    @StateObject var im = ImageModel()
     private struct Constants {
         static let duration: Double = 0.9
         static let minOpacity: Double = 0.25
@@ -77,6 +78,7 @@ struct TitleView: View {
                 Spacer()
                 VStack {
                     NavigationLink(destination: ContentView()
+                                    .environmentObject(self.im)
                                     .navigationBarBackButtonHidden(true)) {
                         Text(self.isStartOfAdventure() ? "Start the Adventure!" : "Continue the Adventure!")
                             .font(.title)
@@ -144,7 +146,7 @@ struct TitleView: View {
             }.zIndex(1)
         }
         .contentShape(Rectangle())
-        
+        .environmentObject(self.im)
     }
     
     func isStartOfAdventure() -> Bool {
@@ -155,11 +157,7 @@ struct TitleView: View {
     
 }
 
-struct TitleView_Previews: PreviewProvider {
-    static var previews: some View {
-        TitleView()
-    }
-}
+
 
 
 

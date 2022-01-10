@@ -9,26 +9,26 @@ import SwiftUI
 
 
 struct ContentView: View {
-    var startingView: String
+    var startingViewName: String
     var startingImage: String
     let defaults = UserDefaults.standard
+    let vnc = ViewNavigationController()
+    @StateObject var im = ImageModel()
     init() {
-        self.startingView = Part_1_Intro.PageName
+        self.startingViewName = Part_1_Intro.PageName
         self.startingImage = UserDefaults.standard.string(forKey: DefaultsKeys.currentPicture) ?? ""
         
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)
         if let v = startingViewOptional {
-            self.startingView = v
+            self.startingViewName = v
         }
     }
     var body: some View {
           
-        ViewNavigationController.routeDecision(choice: self.startingView)
+        self.vnc.routeDecision(choice: self.startingViewName)
+            .environmentObject(im)
     }
+        
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

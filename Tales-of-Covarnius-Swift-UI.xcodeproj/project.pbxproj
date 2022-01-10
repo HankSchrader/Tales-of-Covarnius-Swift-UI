@@ -192,6 +192,7 @@
 		53C4610E278A1F070052B139 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610D278A1F070052B139 /* DisplayView.swift */; };
 		53C46110278A1F570052B139 /* SoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610F278A1F570052B139 /* SoundsController.swift */; };
 		53C46114278B9B130052B139 /* ViewNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46113278B9B130052B139 /* ViewNavigationController.swift */; };
+		53C46116278B9F320052B139 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46115278B9F320052B139 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -384,6 +385,7 @@
 		53C4610D278A1F070052B139 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		53C4610F278A1F570052B139 /* SoundsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsController.swift; sourceTree = "<group>"; };
 		53C46113278B9B130052B139 /* ViewNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationController.swift; sourceTree = "<group>"; };
+		53C46115278B9F320052B139 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -846,6 +848,7 @@
 			children = (
 				535E3AD6275D27460074EA50 /* StoryPayload.swift */,
 				535E3AD0275B9DEE0074EA50 /* Chapter.swift */,
+				53C46115278B9F320052B139 /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1299,6 +1302,7 @@
 				535E3ABD2759C67B0074EA50 /* Celebrate.swift in Sources */,
 				538D7CF327618F0D007003F6 /* DefaultKeys.swift in Sources */,
 				535E3AD7275D27460074EA50 /* StoryPayload.swift in Sources */,
+				53C46116278B9F320052B139 /* ImageModel.swift in Sources */,
 				53BC29102766D5D80040BFB8 /* Part_5_They_Are_Vicious.swift in Sources */,
 				535E3A402759A8C70074EA50 /* Part_1_Council.swift in Sources */,
 				535E3AB52759C5BD0074EA50 /* Part_8_Hypersleep.swift in Sources */,

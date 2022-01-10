@@ -12,7 +12,7 @@ struct BaseView: View {
     @State var showingAlertDecision2 = false
     @State var showingAlertDecision3 = false
     @State private var opacity = 0.0
-    
+    let vnc = ViewNavigationController()
     var view: StoryPayload
     let defaults = UserDefaults.standard
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
@@ -50,135 +50,143 @@ struct BaseView: View {
                 
                 Image(view.image)
                     .resizable()
-                    .scaledToFit()
-            }
-            .opacity(opacity)
-            .animation(Animation.easeOut(duration: 1.25), value: opacity)
-            .onAppear {
-                DispatchQueue.main.async {
-                    self.opacity += 1
-                    
-                    
-                }
-            }
-            Spacer()
-            
-            NavigationLink(destination:
-                           ViewNavigationController.routeDecision(choice: view.firstChoicePageName)
-                            .navigationBarBackButtonHidden(isSecondChoice() || isGameOver())) {
+                    .scaledToFit().zIndex(0)
                 
-                Text(view.decision1)
-                    .padding()
-                    .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
-                        Text("Awesome!")
-                    }
-                
-                
-            }.simultaneousGesture(TapGesture().onEnded{
-                let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                impactHeavy.impactOccurred()
-                userDecision = view.firstChoicePageName
-                if Constants.chapters.contains(view.firstChoicePageName) {
-                    let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-                    
-                    if let chapterOptional = chapterOptional {
-                        var chapters = chapterOptional
-                        chapters.append(view.firstChoicePageName)
-                        defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
-                    }
-                }
-                
-                // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
-                saveToUserDefaults(view.decision1, view.firstChoicePageName)
-                
-            })
-                .onDisappear{
-                    // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                    if allChapters.contains(userDecision) == true && userDecision == view.firstChoicePageName {
-                        print("Decision: \(userDecision)")
-                        print("Page \(view.firstChoicePageName)")
-                        constructAndStoreChapter(currentPageView: userDecision)
-                        self.showingAlertDecision1 = true
-                        
-                    }
-                }
-            
-                .padding()
-            if(isSecondChoice()) {
-                NavigationLink(destination: ViewNavigationController.routeDecision(choice: view.secondChoicePageName).navigationBarBackButtonHidden(true)) {
-                    Text(view.decision2)
-                        .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {
-                            Text("Nice!")
+                    .opacity(opacity)
+                    .animation(Animation.easeOut(duration: 1.25), value: opacity)
+                    .onAppear {
+                        DispatchQueue.main.async {
+                            self.opacity += 1
+                            
+                            
                         }
+                    }
+                
+                
+                VStack {
+                    Spacer()
+                    NavigationLink(destination:
+                                    self.vnc.routeDecision(choice: view.firstChoicePageName)
+                                    .navigationBarBackButtonHidden(isSecondChoice() || isGameOver())) {
+                        
+                        Text(view.decision1)
+                            .padding()
+                            .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
+                                Text("Awesome!")
+                            }
+                        
+                        
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                        impactHeavy.impactOccurred()
+                        userDecision = view.firstChoicePageName
+                        if Constants.chapters.contains(view.firstChoicePageName) {
+                            let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                            
+                            if let chapterOptional = chapterOptional {
+                                var chapters = chapterOptional
+                                chapters.append(view.firstChoicePageName)
+                                defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                            }
+                        }
+                        
+                        
+                        // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
+                        saveToUserDefaults(view.decision1, view.firstChoicePageName)
+                        
+                    })
+                        .onDisappear{
+                            // Shows a chapter unlocked alert if their decision leads them to a new chapter.
+                            if allChapters.contains(userDecision) == true && userDecision == view.firstChoicePageName {
+                                print("Decision: \(userDecision)")
+                                print("Page \(view.firstChoicePageName)")
+                                constructAndStoreChapter(currentPageView: userDecision)
+                                self.showingAlertDecision1 = true
+                                
+                            }
+                        }.zIndex(1)
+                    
                         .padding()
-                    
-                }
-                
-                .simultaneousGesture(TapGesture().onEnded{
-                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                    impactHeavy.impactOccurred()
-                    userDecision = view.secondChoicePageName
-                    if Constants.chapters.contains(view.secondChoicePageName) {
-                        let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                    if(isSecondChoice()) {
+                        NavigationLink(destination: self.vnc.routeDecision(choice: view.secondChoicePageName).navigationBarBackButtonHidden(true)) {
+                            Text(view.decision2)
+                                .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {
+                                    Text("Nice!")
+                                }
+                                .padding()
+                            
+                            
+                        }
                         
-                        if let chapterOptional = chapterOptional {
-                            var chapters = chapterOptional
-                            chapters.append(view.secondChoicePageName)
-                            defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                        .simultaneousGesture(TapGesture().onEnded{
+                            let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                            impactHeavy.impactOccurred()
+                            userDecision = view.secondChoicePageName
+                            if Constants.chapters.contains(view.secondChoicePageName) {
+                                let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                                
+                                if let chapterOptional = chapterOptional {
+                                    var chapters = chapterOptional
+                                    chapters.append(view.secondChoicePageName)
+                                    defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                                }
+                            }
+                            
+                            saveToUserDefaults(view.decision2, view.secondChoicePageName)
+                            
+                            
+                        })
+                        
+                        .onDisappear{
+                            // Shows a chapter unlocked alert if their decision leads them to a new chapter.
+                            
+                            if allChapters.contains(userDecision) == true && userDecision == view.secondChoicePageName {
+                                constructAndStoreChapter(currentPageView: userDecision)
+                                self.showingAlertDecision2 = true
+                                
+                            }
                         }
                     }
                     
-                    saveToUserDefaults(view.decision2, view.secondChoicePageName)
-                    
-                    
-                })
-                
-                .onDisappear{
-                    // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                    
-                    if allChapters.contains(userDecision) == true && userDecision == view.secondChoicePageName {
-                        constructAndStoreChapter(currentPageView: userDecision)
-                        self.showingAlertDecision2 = true
-                        
-                    }
-                }
-            }
-            
-            if(isThirdChoice()) {
-                NavigationLink(destination: ViewNavigationController.routeDecision(choice: view.thirdChoicePageName).navigationBarBackButtonHidden(true)) {
-                    Text(view.decision3)
-                        .alert("\(Constants.chapterMap[view.thirdChoicePageName]?.chapterTitle ?? self.errorMsg) Unlocked!", isPresented: self.$showingAlertDecision3) {
-                            Text("Great")
+                    if(isThirdChoice()) {
+                        NavigationLink(destination: self.vnc.routeDecision(choice: view.thirdChoicePageName).navigationBarBackButtonHidden(true)) {
+                            Text(view.decision3)
+                                .alert("\(Constants.chapterMap[view.thirdChoicePageName]?.chapterTitle ?? self.errorMsg) Unlocked!", isPresented: self.$showingAlertDecision3) {
+                                    Text("Great")
+                                }
+                                .padding()
+                            
+                            
                         }
-                        .padding()
-                    
-                }
-                .simultaneousGesture(TapGesture().onEnded{
-                    let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                    impactHeavy.impactOccurred()
-                    userDecision = view.thirdChoicePageName
-                    if Constants.chapters.contains(view.thirdChoicePageName) {
-                        let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-                        
-                        if let chapterOptional = chapterOptional {
-                            var chapters = chapterOptional
-                            chapters.append(view.thirdChoicePageName)
-                            defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                        .simultaneousGesture(TapGesture().onEnded{
+                            let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                            impactHeavy.impactOccurred()
+                            userDecision = view.thirdChoicePageName
+                            if Constants.chapters.contains(view.thirdChoicePageName) {
+                                let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+                                
+                                if let chapterOptional = chapterOptional {
+                                    var chapters = chapterOptional
+                                    chapters.append(view.thirdChoicePageName)
+                                    defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                                }
+                            }
+                            
+                            saveToUserDefaults(view.decision3, view.thirdChoicePageName)
+                            
+                            
+                        })
+                        .onDisappear{
+                            // Shows a chapter unlocked alert if their decision leads them to a new chapter.
+                            if allChapters.contains(userDecision) == true && userDecision == view.thirdChoicePageName {
+                                constructAndStoreChapter(currentPageView: userDecision)
+                                self.showingAlertDecision3 = true
+                                
+                            }
                         }
                     }
-                    
-                    saveToUserDefaults(view.decision3, view.thirdChoicePageName)
-                    
-                    
-                })
-                .onDisappear{
-                    // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                    if allChapters.contains(userDecision) == true && userDecision == view.thirdChoicePageName {
-                        constructAndStoreChapter(currentPageView: userDecision)
-                        self.showingAlertDecision3 = true
-                        
-                    }
-                }
+                }.zIndex(1)
+                    .padding(.bottom)
             }
         }
         
