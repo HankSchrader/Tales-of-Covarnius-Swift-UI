@@ -114,10 +114,14 @@ struct ViewNavigationController {
             Part_4_Save_The_Hapal()
         case Part_5_Save_The_Hapal.PageName:
             Part_5_Save_The_Hapal()
+        case Part_5_2_Save_The_Hapal.PageName:
+            Part_5_2_Save_The_Hapal()
         case Part_6_Save_The_Hapal.PageName:
             Part_6_Save_The_Hapal()
         case Part_1_Landing.PageName:
             Part_1_Landing()
+        case Part_2_1_Landing.PageName:
+            Part_2_1_Landing()
         case Part_1_1_Landing.PageName:
             Part_1_1_Landing()
         case Part_2_Landing.PageName:
@@ -176,6 +180,8 @@ struct ViewNavigationController {
             
         case Part_1_Diplomatic_Immunity.PageName:
             Part_1_Diplomatic_Immunity()
+        case Part_1_2_Diplomatic_Immunity.PageName:
+            Part_1_2_Diplomatic_Immunity()
         case Part_2_Diplomatic_Immunity.PageName:
             Part_2_Diplomatic_Immunity()
             
@@ -220,6 +226,8 @@ struct ViewNavigationController {
             
         case Part_1_Council.PageName:
             Part_1_Council()
+        case Part_1_2_Council.PageName:
+            Part_1_2_Council()
         case Part_2_Council.PageName:
             Part_2_Council()
         case Part_3_Council.PageName:
@@ -271,6 +279,8 @@ struct ViewNavigationController {
             
         case Part_1_Secret_Weapon.PageName:
             Part_1_Secret_Weapon()
+        case Part_1_Part_2_Secret_Weapon.PageName:
+            Part_1_Part_2_Secret_Weapon()
             
         case Part_1_Ice_Ray.PageName:
             Part_1_Ice_Ray()

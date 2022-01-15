@@ -83,17 +83,7 @@ struct BaseView: View {
                         let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                         impactHeavy.impactOccurred()
                         userDecision = view.firstChoicePageName
-                        if Constants.chapters.contains(view.firstChoicePageName) {
-                            let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-                            
-                            if let chapterOptional = chapterOptional {
-                                var chapters = chapterOptional
-                                chapters.append(view.firstChoicePageName)
-                                defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
-                            }
-                        }
-                        
-                        
+                        saveChapter(pageName: userDecision)
                         // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
                         saveToUserDefaults(view.decision1, view.firstChoicePageName)
                         
@@ -101,8 +91,7 @@ struct BaseView: View {
                         .onDisappear{
                             // Shows a chapter unlocked alert if their decision leads them to a new chapter.
                             if allChapters.contains(userDecision) == true && userDecision == view.firstChoicePageName {
-                                print("Decision: \(userDecision)")
-                                print("Page \(view.firstChoicePageName)")
+    
                                 constructAndStoreChapter(currentPageView: userDecision)
                                 self.showingAlertDecision1 = true
                                 
@@ -125,15 +114,7 @@ struct BaseView: View {
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                             impactHeavy.impactOccurred()
                             userDecision = view.secondChoicePageName
-                            if Constants.chapters.contains(view.secondChoicePageName) {
-                                let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-                                
-                                if let chapterOptional = chapterOptional {
-                                    var chapters = chapterOptional
-                                    chapters.append(view.secondChoicePageName)
-                                    defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
-                                }
-                            }
+                            saveChapter(pageName: userDecision)
                             
                             saveToUserDefaults(view.decision2, view.secondChoicePageName)
                             
@@ -165,15 +146,7 @@ struct BaseView: View {
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                             impactHeavy.impactOccurred()
                             userDecision = view.thirdChoicePageName
-                            if Constants.chapters.contains(view.thirdChoicePageName) {
-                                let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
-                                
-                                if let chapterOptional = chapterOptional {
-                                    var chapters = chapterOptional
-                                    chapters.append(view.thirdChoicePageName)
-                                    defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
-                                }
-                            }
+                            saveChapter(pageName: userDecision)
                             
                             saveToUserDefaults(view.decision3, view.thirdChoicePageName)
                             
@@ -197,7 +170,18 @@ struct BaseView: View {
     
 }
 
-
+private func saveChapter(pageName: String) -> Void {
+    let defaults = UserDefaults.standard
+    if Constants.chapters.contains(pageName) {
+        let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+        
+        if let chapterOptional = chapterOptional {
+            var chapters = chapterOptional
+            chapters.append(pageName)
+            defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+        }
+    }
+}
 private func constructAndStoreChapter(currentPageView: String) -> Void {
     
     // This can be force unwrapped because Part_1_Intro will always be in the Unlocked Chapters array by this point.
@@ -206,10 +190,29 @@ private func constructAndStoreChapter(currentPageView: String) -> Void {
         let chapters: [String] = currentlyUnlockedChapters
         // Convert to set to rem dups.
         let chapts = Array(Set(chapters.map { $0 }))
-        UserDefaults.standard.set(chapts, forKey: DefaultsKeys.unlockedChapters)
+        let filteredChapts = removeMutuallyExclusiveChapters(currentPageView: currentPageView, currentUnlockedChapters: chapts)
+        UserDefaults.standard.set(filteredChapts, forKey: DefaultsKeys.unlockedChapters)
         
     }
     
+}
+
+private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnlockedChapters: [String] ) -> Array<String> {
+    var cuc = currentUnlockedChapters
+    if(currentPageView == Part_1_Hapal_Down.PageName && currentUnlockedChapters.contains(Part_1_Save_The_Hapal.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_1_Save_The_Hapal.PageName)
+        cuc.remove(at: index!)
+    } else if(currentPageView == Part_1_Save_The_Hapal.PageName && currentUnlockedChapters.contains(Part_1_Hapal_Down.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_1_Hapal_Down.PageName)
+        cuc.remove(at: index!)
+    } else if(currentPageView == Part_1_Cowboys_Of_Katonia.PageName && currentUnlockedChapters.contains(Part_1_Greatest_Scientist.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_1_Greatest_Scientist.PageName)
+        cuc.remove(at: index!)
+    } else if(currentPageView == Part_1_Greatest_Scientist.PageName && currentUnlockedChapters.contains(Part_1_Cowboys_Of_Katonia.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_1_Hapal_Down.PageName)
+        cuc.remove(at: index!)
+    }
+    return cuc
 }
 
 /// Resets the UserDefaults if the user picks a decision that leads to a game over.

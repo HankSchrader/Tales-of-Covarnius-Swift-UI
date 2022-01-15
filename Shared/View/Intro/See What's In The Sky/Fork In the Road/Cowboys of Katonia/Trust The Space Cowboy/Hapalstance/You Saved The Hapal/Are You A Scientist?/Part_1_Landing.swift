@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct Part_1_Landing: View {
     @State var showMenu = false
     static let PageName = "Part_1_Landing"
@@ -17,7 +16,7 @@ struct Part_1_Landing: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_1_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
    
     }
@@ -34,7 +33,7 @@ struct Part_1_1_Landing: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship",Ô decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
    
     }

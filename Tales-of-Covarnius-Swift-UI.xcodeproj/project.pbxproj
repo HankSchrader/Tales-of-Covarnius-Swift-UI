@@ -868,6 +868,7 @@
 		535E3ADF2760DEBB0074EA50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				53C46113278B9B130052B139 /* ViewNavigationController.swift */,
 				539312C6276C138900C0FC05 /* BaseView.swift */,
 				53C4610D278A1F070052B139 /* DisplayView.swift */,
 			);
@@ -881,7 +882,6 @@
 				536F3CEE2757A99C007E5250 /* Extensions.swift */,
 				536F3CF02757AA59007E5250 /* Constants.swift */,
 				53C4610F278A1F570052B139 /* SoundsController.swift */,
-				53C46113278B9B130052B139 /* ViewNavigationController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1461,14 +1461,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.26;
+				CURRENT_PROJECT_VERSION = 1.27;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1476,7 +1476,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.26;
+				MARKETING_VERSION = 1.27;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1494,7 +1494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.26;
+				CURRENT_PROJECT_VERSION = 1.27;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1502,7 +1502,7 @@
 				INFOPLIST_FILE = "Tales-of-Covarnius-Swift-UI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1510,7 +1510,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.26;
+				MARKETING_VERSION = 1.27;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

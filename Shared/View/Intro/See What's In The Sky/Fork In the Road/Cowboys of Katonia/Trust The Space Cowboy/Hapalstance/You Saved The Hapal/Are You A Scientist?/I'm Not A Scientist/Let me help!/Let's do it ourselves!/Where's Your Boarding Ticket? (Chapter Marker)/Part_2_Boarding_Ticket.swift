@@ -18,7 +18,7 @@ struct Part_2_Boarding_Ticket: View {
         let decision2 = "I changed my mind."
         let firstChoicePageName = Part_3_Boarding_Ticket.PageName
         let secondChoicePageName = Part_1_Diplomatic_Immunity.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Ambassador Key Card", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
