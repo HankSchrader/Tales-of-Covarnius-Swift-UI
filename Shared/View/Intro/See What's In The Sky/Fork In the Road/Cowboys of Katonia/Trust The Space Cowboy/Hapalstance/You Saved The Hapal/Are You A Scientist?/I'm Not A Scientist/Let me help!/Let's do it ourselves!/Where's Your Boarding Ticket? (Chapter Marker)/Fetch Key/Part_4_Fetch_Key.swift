@@ -17,7 +17,7 @@ struct Part_4_Fetch_Key: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_Fetch_Key.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

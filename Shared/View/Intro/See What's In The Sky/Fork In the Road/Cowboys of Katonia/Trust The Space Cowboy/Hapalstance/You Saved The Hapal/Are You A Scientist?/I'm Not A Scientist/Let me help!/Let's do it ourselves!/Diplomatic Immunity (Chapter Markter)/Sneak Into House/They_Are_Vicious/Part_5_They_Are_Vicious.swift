@@ -12,7 +12,7 @@ struct Part_5_They_Are_Vicious: View {
     @State var showMenu = false
     var body: some View {
        let text =
-        "“Wow!” you exclaim, “We barely made it out of there.”\n\nThe angry growlics can still be clearly heard. Just as Chrono slams the door, one of them rams right into it, trying to break it down.\n\n“That was dangerous!” Chrono says out of breath. “Well, onto our next plan. Let’s see if we have luck getting into the council chamber storeroom.”\n\nYou follow Chrono to the council chamber and then around to the back of the large building. It’s bland utilitarian architecture starkly contrasts the vibrant flora of Covarnius. Speaking of vegetation, strange and colorful looking shrubbery is planted all along the walkways. It grows about a foot high with thick green branches covered in fuzzy little leaves the color of mustard."
+        "That was dangerous!” Chrono says out of breath. “Well, onto our next plan. Let’s see if we have luck getting into the council chamber storeroom.”\n\nYou follow Chrono to the council chamber and then around to the back of the large building. It’s bland utilitarian architecture starkly contrasts the vibrant flora of Covarnius. Speaking of vegetation, strange and colorful looking shrubbery is planted all along the walkways. It grows about a foot high with thick green branches covered in fuzzy little leaves the color of mustard."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Council.PageName

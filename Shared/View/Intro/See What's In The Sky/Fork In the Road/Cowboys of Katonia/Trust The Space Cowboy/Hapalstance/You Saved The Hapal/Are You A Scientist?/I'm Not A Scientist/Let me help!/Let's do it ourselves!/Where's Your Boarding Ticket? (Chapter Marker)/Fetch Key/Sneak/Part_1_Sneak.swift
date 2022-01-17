@@ -16,7 +16,7 @@ struct Part_1_Sneak: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_2_Sneak.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }
@@ -36,8 +36,8 @@ struct Part_1_2_Sneak: View {
         "“That means we don’t have much time to fix the machine. I'm guessing they’ll be here in about twenty minutes,” you say.\n\nYou turn to the Hyper Growth Ray and realize that it might be more difficult to fix than you thought.\n\nIt looks like a telescope, but with a large dial on the side. Covarnian symbols are printed at different intervals on the dial. After asking Chrono, you discover it reads: Large, Very Large, and Humongous!"
         
         let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_1_Sneak.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let firstChoicePageName = Part_2_Sneak.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Ray Gun", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

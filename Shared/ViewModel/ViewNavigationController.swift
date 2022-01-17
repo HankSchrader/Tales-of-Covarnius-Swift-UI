@@ -338,6 +338,8 @@ struct ViewNavigationController {
             Part_4_Boarding_Ticket()
         case Part_5_Boarding_Ticket.PageName:
             Part_5_Boarding_Ticket()
+        case Part_5_1_Boarding_Ticket.PageName:
+            Part_5_1_Boarding_Ticket()
         case Part_6_Boarding_Ticket.PageName:
             Part_6_Boarding_Ticket()
         case Part_7_Boarding_Ticket.PageName:

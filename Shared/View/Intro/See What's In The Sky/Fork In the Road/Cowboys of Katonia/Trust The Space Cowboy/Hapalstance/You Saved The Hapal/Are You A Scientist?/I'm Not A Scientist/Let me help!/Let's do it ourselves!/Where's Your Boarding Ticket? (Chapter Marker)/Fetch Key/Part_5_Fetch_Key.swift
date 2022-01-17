@@ -18,8 +18,8 @@ struct Part_5_Fetch_Key: View {
         let decision1 = "Run for it."
         let decision2 = "Sneak there."
         let firstChoicePageName = Got_Caught.PageName
-        let secondChoicePageName = Part_1_Crash_Wall.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let secondChoicePageName = Part_1_Sneak.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
         

@@ -12,7 +12,7 @@ struct Part_4_They_Are_Vicious: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“I guess we’ll have to sneak into the council chamber to get the uniforms,” Chrono says catching his breath.\n\nPerhaps you should have offered the growlics a snack. Now you'll have to make your way past Covarnian guards in the council chamber. Hopefully you'll have better luck this time...this is Covarnius’ last hope."
+        "“I guess we’ll have to sneak into the council chamber to get the uniforms,” Chrono says catching his breath.\n\nPerhaps you should have offered the growlics a snack. Now you'll have to make your way past Covarnian guards in the council chamber. Hopefully you'll have better luck this time...this is Covarnius’ last hope.\n\n“Wow!” you exclaim, “We barely made it out of there.”\n\nThe angry growlics can still be clearly heard. Just as Chrono slams the door, one of them rams right into it, trying to break it down.“"
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_They_Are_Vicious.PageName

@@ -14,7 +14,7 @@ struct Part_2_Tell: View {
         let text =
         "“Thank you, you both deserve a hero’s celebration.” The king says excitedly, but his voice quickly grows weary. “We must thank Luna too, but her fur will take years to clean up.”\n\n“There may be fur everywhere, but at least we have our planet back!” Chrono points out.\n\n“Yes,” King Zanarq chuckles warmly, “I suppose we do.”"
        
-        let decision1 = Constants.ContinuePhrase
+        let decision1 = "The End. Congratulations!"
         let firstChoicePageName = Part_1_Intro.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
