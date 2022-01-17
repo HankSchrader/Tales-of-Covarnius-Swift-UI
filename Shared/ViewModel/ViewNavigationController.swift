@@ -369,6 +369,8 @@ struct ViewNavigationController {
             
         case Part_1_Sneak.PageName:
             Part_1_Sneak()
+        case Part_1_2_Sneak.PageName:
+            Part_1_2_Sneak()
         case Part_2_Sneak.PageName:
             Part_2_Sneak()
         case Part_3_Sneak.PageName:

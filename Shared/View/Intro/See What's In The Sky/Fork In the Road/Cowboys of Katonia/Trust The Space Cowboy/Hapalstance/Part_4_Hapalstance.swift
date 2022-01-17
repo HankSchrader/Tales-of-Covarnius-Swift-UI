@@ -15,7 +15,7 @@ struct Part_4_Hapalstance: View {
         "You still don’t know what a hapal is, but it sounds like it needs help.\n\nKayo takes off in the direction of the sound. You feel like you should follow him, in case he needs help. But how could you be any help to a baby hapal?\n\nYou’re desperate to get on the newly fixed ship and fly off the planet. You begin to board the Covarnian ship but then stop.\n\nKayo has been so good to you. He helped you when you needed it. Fixing your ship, offering you food and a place to relax…you feel a pang of guilt for not returning the favor.\n\nWhat should you do?"
         
         let decision1 = "Not Your Problem. Board the ship."
-        let decision2 = "Help Kay with the Hapal"
+        let decision2 = "Help Kayo with the Hapal"
         let firstChoicePageName = Part_1_Hapal_Down.PageName
         let secondChoicePageName = Part_1_Save_The_Hapal.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)

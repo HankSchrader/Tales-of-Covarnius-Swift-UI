@@ -33,8 +33,8 @@ struct Constants {
         
         Part_1_Cowboys_Of_Katonia.PageName: Chapter(pageName: Part_1_Cowboys_Of_Katonia.PageName, chapterTitle: "Cowboys of Katonia", order: 3),
         Part_1_Hapalstance.PageName: Chapter(pageName: Part_1_Hapalstance.PageName, chapterTitle: "By Random Hapalstance", order: 4),
-        Part_1_Hapal_Down.PageName: Chapter(pageName: Part_1_Hapal_Down.PageName, chapterTitle: "You Let The Hapal Down...", order: 5),
-        Part_1_Save_The_Hapal.PageName: Chapter(pageName: Part_1_Save_The_Hapal.PageName, chapterTitle: "You Saved The Hapal", order: 6),
+        Part_1_Hapal_Down.PageName: Chapter(pageName: Part_1_Hapal_Down.PageName, chapterTitle: "Let The Hapal Down", order: 5),
+        Part_1_Save_The_Hapal.PageName: Chapter(pageName: Part_1_Save_The_Hapal.PageName, chapterTitle: "Save The Hapal", order: 6),
         Part_1_Greatest_Scientist.PageName: Chapter(pageName: Part_1_Greatest_Scientist.PageName, chapterTitle: "The King and the Invasion", order: 7),
         Part_1_Fake_Til_You_Make.PageName: Chapter(pageName: Part_1_Fake_Til_You_Make.PageName, chapterTitle: "Fake it til you make it", order: 8),
 
