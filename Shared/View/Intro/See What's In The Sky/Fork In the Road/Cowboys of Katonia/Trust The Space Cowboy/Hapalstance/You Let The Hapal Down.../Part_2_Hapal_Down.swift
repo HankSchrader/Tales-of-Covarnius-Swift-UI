@@ -15,7 +15,7 @@ struct Part_2_Hapal_Down: View {
         "You think about Kayo and Kina, and how helpful they had been while you were stranded on their planet. Maybe you should have helped with the baby hapal after all? A feeling of sadness wells up in you, the problem seemed a lot more serious than a stubbed Hapal toe.\n\nNo use thinking about it now, at least you can try to help the Covarnians.\n\nYou wonder what kind of issue the Covarnians are having as Chrono engages hypersleep."
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnius", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

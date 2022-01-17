@@ -16,7 +16,7 @@ struct Part_3_Hapalstance: View {
        
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_Hapalstance.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Katonian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
