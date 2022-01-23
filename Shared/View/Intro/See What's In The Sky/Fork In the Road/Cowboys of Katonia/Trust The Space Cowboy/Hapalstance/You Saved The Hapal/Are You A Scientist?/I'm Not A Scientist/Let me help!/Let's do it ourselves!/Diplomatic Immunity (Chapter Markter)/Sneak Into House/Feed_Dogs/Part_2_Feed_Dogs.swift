@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_2_Feed_Dogs: View {
-    static let PageName = "Part_1_Feed_Dogs"
+    static let PageName = "Part_2_Feed_Dogs"
     @State var showMenu = false
     var body: some View {
         let text =

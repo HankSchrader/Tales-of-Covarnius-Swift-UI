@@ -425,6 +425,8 @@ struct ViewNavigationController {
             Part_3_Toilet_To_Hyper_Sleep()
         case Part_4_Toilet_To_Hyper_Sleep.PageName:
             Part_4_Toilet_To_Hyper_Sleep()
+        case Secret_Ending.PageName:
+            Secret_Ending()
             
         default:
             fatalError()

@@ -1,20 +1,24 @@
 //
-//  Secret_Ending.swift
+//  Part_2_Tell.swift
 //  Tales-of-Covarnius-Swift-UI (iOS)
 //
-//  Created by Erik Mikac on 1/23/22.
+//  Created by Erik Mikac on 12/2/21.
 //
 
 import SwiftUI
 
 struct Secret_Ending: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    static let PageName = "Secret_Ending"
+    @State var showMenu = false
+ 
 
-struct Secret_Ending_Previews: PreviewProvider {
-    static var previews: some View {
-        Secret_Ending()
+    var body: some View {
+        let text =
+        "“Wait!” you cry out, “I just remembered something. Kayo and the Katonians are known for cleaning up after messy Hapals…”\n“That’s right!” Chrono chimes in, “And Kayo said that if we ever needed anything, to let him know!”\nAfter a quick call, a fleet of cowboys quickly come and begin to clean up after Luna.\nKayo surveys the mess and exclaims, “This doesn’t look so bad! We’ll have it cleaned up in a few days.”\nAfter a little finagling, Chrono manages to shrink Luna back down to regular size. Just as Kayo said, Covarnius is cleaned up and back to normal within a few days time.\nYou exchange a heartfelt goodbye with your new friend Chrono and make your way back home to Earth.\nYou helped the Katonians, saved the Covarnians, and got back to Earth in one piece. I’d call that a success. I’d call that an adventure!"
+       
+        let decision1 = "The End. Congratulations!"
+        let firstChoicePageName = Part_1_Intro.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

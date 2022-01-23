@@ -16,6 +16,7 @@
 		5303C7F12755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F02755CAC400710D34 /* Part-2-See-Whats-In-The-Sky.swift */; };
 		5303C7F72755CD6A00710D34 /* Part_2_Run_Away.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */; };
 		5303C7FB2755CEC400710D34 /* Went_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C7FA2755CEC400710D34 /* Went_Home.swift */; };
+		53439B81279D9AB500D3484A /* Secret_Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53439B80279D9AB500D3484A /* Secret_Ending.swift */; };
 		535E39D2275858780074EA50 /* Part_1_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */; };
 		535E39D42758FB310074EA50 /* Part_4_Greatest_Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */; };
 		535E39D72758FC470074EA50 /* Part_1_Warmongers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */; };
@@ -59,7 +60,7 @@
 		535E3A322759A3FD0074EA50 /* Part_4_Giant_Luna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A312759A3FD0074EA50 /* Part_4_Giant_Luna.swift */; };
 		535E3A362759A48D0074EA50 /* Part_1_Dont_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A352759A48D0074EA50 /* Part_1_Dont_Tell.swift */; };
 		535E3A382759A4950074EA50 /* Part_1_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A372759A4950074EA50 /* Part_1_Tell.swift */; };
-		535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A392759A55B0074EA50 /* Part_2_Tell.swift */; };
+		535E3A3A2759A55B0074EA50 /* Part_2_Tell (ENDING).swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A392759A55B0074EA50 /* Part_2_Tell (ENDING).swift */; };
 		535E3A3C2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A3B2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift */; };
 		535E3A402759A8C70074EA50 /* Part_1_Council.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A3F2759A8C70074EA50 /* Part_1_Council.swift */; };
 		535E3A422759A8D20074EA50 /* Part_1_House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E3A412759A8D20074EA50 /* Part_1_House.swift */; };
@@ -208,6 +209,7 @@
 		5303C7F62755CD6A00710D34 /* Part_2_Run_Away.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Run_Away.swift; sourceTree = "<group>"; };
 		5303C7FA2755CEC400710D34 /* Went_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Went_Home.swift; sourceTree = "<group>"; };
 		533A58F62770147600393BCB /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		53439B80279D9AB500D3484A /* Secret_Ending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_Ending.swift; sourceTree = "<group>"; };
 		535E39D1275858780074EA50 /* Part_1_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D32758FB310074EA50 /* Part_4_Greatest_Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Greatest_Scientist.swift; sourceTree = "<group>"; };
 		535E39D62758FC470074EA50 /* Part_1_Warmongers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Warmongers.swift; sourceTree = "<group>"; };
@@ -251,7 +253,7 @@
 		535E3A312759A3FD0074EA50 /* Part_4_Giant_Luna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_4_Giant_Luna.swift; sourceTree = "<group>"; };
 		535E3A352759A48D0074EA50 /* Part_1_Dont_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Dont_Tell.swift; sourceTree = "<group>"; };
 		535E3A372759A4950074EA50 /* Part_1_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Tell.swift; sourceTree = "<group>"; };
-		535E3A392759A55B0074EA50 /* Part_2_Tell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Tell.swift; sourceTree = "<group>"; };
+		535E3A392759A55B0074EA50 /* Part_2_Tell (ENDING).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part_2_Tell (ENDING).swift"; sourceTree = "<group>"; };
 		535E3A3B2759A8300074EA50 /* Part_2_Diplomatic_Immunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_2_Diplomatic_Immunity.swift; sourceTree = "<group>"; };
 		535E3A3F2759A8C70074EA50 /* Part_1_Council.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_Council.swift; sourceTree = "<group>"; };
 		535E3A412759A8D20074EA50 /* Part_1_House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part_1_House.swift; sourceTree = "<group>"; };
@@ -631,7 +633,8 @@
 			isa = PBXGroup;
 			children = (
 				535E3A372759A4950074EA50 /* Part_1_Tell.swift */,
-				535E3A392759A55B0074EA50 /* Part_2_Tell.swift */,
+				535E3A392759A55B0074EA50 /* Part_2_Tell (ENDING).swift */,
+				53439B80279D9AB500D3484A /* Secret_Ending.swift */,
 			);
 			path = "Tell Zanarq";
 			sourceTree = "<group>";
@@ -1268,7 +1271,7 @@
 				535E3AA92759C3EC0074EA50 /* Part_2_Hypersleep.swift in Sources */,
 				53BC29082766D4500040BFB8 /* Part_1_They_Are_Vicious.swift in Sources */,
 				53BACDE92756FB5C009E493E /* Part_4_Trust_The_Space_Cowboy.swift in Sources */,
-				535E3A3A2759A55B0074EA50 /* Part_2_Tell.swift in Sources */,
+				535E3A3A2759A55B0074EA50 /* Part_2_Tell (ENDING).swift in Sources */,
 				535E3A212759A0A00074EA50 /* Part_2_Sneak.swift in Sources */,
 				53BC29202766DB410040BFB8 /* Part_1_Just_Desserts.swift in Sources */,
 				535E3A902759BF600074EA50 /* Part_7_Gravity_Gun.swift in Sources */,
@@ -1324,6 +1327,7 @@
 				53BACE1B27570411009E493E /* Part_1_Landing.swift in Sources */,
 				535E3A5B2759B0290074EA50 /* Part_1_Keep_Thinking.swift in Sources */,
 				535E3A922759BFBB0074EA50 /* Part_8_Gravity_Gun.swift in Sources */,
+				53439B81279D9AB500D3484A /* Secret_Ending.swift in Sources */,
 				535E3A1327599D200074EA50 /* Part_2_Fetch_Key.swift in Sources */,
 				53BC29052766D3420040BFB8 /* Part_4_House.swift in Sources */,
 				535E3A9C2759C0F40074EA50 /* Part_2_Clog_Toilet.swift in Sources */,
@@ -1461,7 +1465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.31;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1476,7 +1480,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.31;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1494,7 +1498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.31;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1510,7 +1514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.31;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;

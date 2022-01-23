@@ -46,8 +46,9 @@ struct Constants {
         
         Part_1_Boarding_Ticket.PageName: Chapter(pageName: Part_1_Boarding_Ticket.PageName, chapterTitle: "Where's Your Boarding Ticket?", order: 11),
        
-        
-        Part_2_Hypersleep.PageName: Chapter(pageName: Part_2_Hypersleep.PageName, chapterTitle: "Rise and Shine!", order: 12)
+
+        Part_2_Hypersleep.PageName: Chapter(pageName: Part_2_Hypersleep.PageName, chapterTitle: "Rise and Shine!", order: 12),
+        Part_2_Hypersleep.PageName: Chapter(pageName: Part_1_Sneak.PageName, chapterTitle: "Raid on Covarnius", order: 13)
     ]
     
 }

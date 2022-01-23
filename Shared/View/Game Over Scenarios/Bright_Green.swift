@@ -18,7 +18,7 @@ struct Bright_Green: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Lab Explosion", decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
             }
         }

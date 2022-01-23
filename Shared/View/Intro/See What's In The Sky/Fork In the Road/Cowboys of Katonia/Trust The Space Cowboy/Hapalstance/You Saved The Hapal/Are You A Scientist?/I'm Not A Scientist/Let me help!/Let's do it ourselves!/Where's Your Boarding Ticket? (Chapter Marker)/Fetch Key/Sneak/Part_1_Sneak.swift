@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Part_1_Sneak: View {
+    // New Chapter: Raid on Covarnius
     static let PageName = "Part_1_Sneak"
     @State var showMenu = false
     var body: some View {

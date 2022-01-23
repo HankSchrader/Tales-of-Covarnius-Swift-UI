@@ -12,10 +12,10 @@ struct Part_1_Wing_It: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "You pick up a beaker filled with a strange smelling liquid. It’s red, bubbly and seems important. As you bring it up to eye level to observe its contents, the Covarnian scientist lets out a sigh of exasperation.\n\n“The cloaking device is a composite of these chemicals...but I just can’t figure out which ones!” the scientist says, clearly disheartened.\n\nHe notices you holding the beaker. “What are you doing with the electrolytic catalyst accelerator?” he asks in awe"
+        "You pick up a beaker filled with a strange smelling liquid. It’s red, bubbly and seems important. As you bring it up to eye level to observe its contents, the Covarnian scientist lets out a sigh of exasperation.\n\n“The cloaking device is a composite of these chemicals...but I just can’t figure out which ones!” the scientist says, clearly disheartened.\n\nHe notices you holding the beaker. “What are you doing with the electrolytic catalyst accelerator?” he asks in awe."
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Wing_It.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Lab", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
   
     }

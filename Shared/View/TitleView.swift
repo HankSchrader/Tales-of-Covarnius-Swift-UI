@@ -28,12 +28,12 @@ struct TitleView: View {
     @State private var shimmer: Double = Constants.minOpacity
     var body: some View {
         ZStack {
-            
-            Image("Covarnius")
-                .resizable()
-                .offset(x: 0, y: -300)
-                .scaledToFit()
 
+            Image("TitleView4")
+                .resizable()
+                .scaledToFill()
+                .offset(x: -55, y: -0)
+                .edgesIgnoringSafeArea(.all)
             VStack {
                 
                 Text("Tales")
@@ -49,7 +49,7 @@ struct TitleView: View {
                             show = true
                             
                         }
-                    }
+                    }                    .foregroundColor(.white)
                 Text("Of")
                     .font(.title)
                     .padding(.bottom)
@@ -63,6 +63,7 @@ struct TitleView: View {
                             show = true
                         }
                     }
+                    .foregroundColor(.white)
                 Text("Covarnius")
                     .font(.largeTitle)
                     .padding(.bottom)
@@ -75,15 +76,18 @@ struct TitleView: View {
                             
                         }
                     }
+                    .foregroundColor(.white)
                 Spacer()
+                 
                 VStack {
+              
                     NavigationLink(destination: ContentView()
                                   
                                     .navigationBarBackButtonHidden(true)) {
                         Text(self.isStartOfAdventure() ? "Start the Adventure!" : "Continue the Adventure!")
                             .font(.title)
                             .opacity(shimmer)
-                            .foregroundColor(self.isStartOfAdventure() ? .cyan : .green)
+                            .foregroundColor(self.isStartOfAdventure() ? .orange : .green)
                             .animation(Animation.easeOut(duration: 0.25).delay(0.5)
                                         .repeatForever(), value: shimmer)
                             .onAppear {
@@ -91,6 +95,8 @@ struct TitleView: View {
                                     shimmer += 1
                                 }
                             }
+
+
                         
                     }.padding()
                         .simultaneousGesture(TapGesture().onEnded{
@@ -103,7 +109,7 @@ struct TitleView: View {
                     }) {
                         Text("Credits")
                         
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color.orange)
                         
                         
                     }
@@ -146,6 +152,7 @@ struct TitleView: View {
             }.zIndex(1)
         }
         .contentShape(Rectangle())
+        
 
     }
     
@@ -160,4 +167,9 @@ struct TitleView: View {
 
 
 
+struct TitleView_Previews: PreviewProvider {
+    static var previews: some View {
+        TitleView()
+    }
+}
 

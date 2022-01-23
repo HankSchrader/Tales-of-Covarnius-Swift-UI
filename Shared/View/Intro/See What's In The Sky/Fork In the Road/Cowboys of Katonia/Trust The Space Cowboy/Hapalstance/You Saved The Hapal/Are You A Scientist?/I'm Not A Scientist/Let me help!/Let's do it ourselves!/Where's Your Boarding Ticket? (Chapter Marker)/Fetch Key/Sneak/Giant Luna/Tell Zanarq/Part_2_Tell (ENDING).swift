@@ -10,12 +10,22 @@ import SwiftUI
 struct Part_2_Tell: View {
     static let PageName = "Part_2_Tell"
     @State var showMenu = false
+    let defaults = UserDefaults.standard
     var body: some View {
         let text =
         "“Thank you, you both deserve a hero’s celebration.” The king says excitedly, but his voice quickly grows weary. “We must thank Luna too, but her fur will take years to clean up.”\n\n“There may be fur everywhere, but at least we have our planet back!” Chrono points out.\n\n“Yes,” King Zanarq chuckles warmly, “I suppose we do.”"
        
-        let decision1 = "The End. Congratulations!"
-        let firstChoicePageName = Part_1_Intro.PageName
+        
+        var decision1 = "The End. Congratulations!"
+        var firstChoicePageName = Part_1_Intro.PageName
+        let currentlyUnlockedChapters: [String]? = defaults.array(forKey: DefaultsKeys.unlockedChapters) as! [String]?
+        if let currentlyUnlockedChapters = currentlyUnlockedChapters {
+            if currentlyUnlockedChapters.contains(Part_1_Save_The_Hapal.PageName) {
+                decision1 = "The End??"
+                firstChoicePageName = Secret_Ending.PageName
+            }
+        }
+     
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
