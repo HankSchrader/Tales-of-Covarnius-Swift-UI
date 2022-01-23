@@ -29,7 +29,7 @@ struct TitleView: View {
     var body: some View {
         ZStack {
 
-            Image("TitleView4")
+            Image("TitleView")
                 .resizable()
                 .scaledToFill()
                 .offset(x: -55, y: -0)

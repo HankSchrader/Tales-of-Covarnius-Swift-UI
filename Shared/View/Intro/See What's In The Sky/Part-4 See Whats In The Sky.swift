@@ -34,7 +34,7 @@ struct Part_4_Part_2_See_Whats_In_The_Sky: View {
         let decision1 = "\"No Way! You'll dissect my brains!\""
         let firstChoicePageName = Part_1_Dissect_My_Brains.PageName
         let secondChoicePageName = Part_1_Fork_In_The_Road.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono In Ship",  decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
       
     }

@@ -15,7 +15,7 @@ struct Part_1_Run_Away: View {
         "You run away as fast as you can. You don’t need a closer look to know that aliens have just invaded Earth!\n\nVeering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side."
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Run_Away.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Luna at park", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
         
             }

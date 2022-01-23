@@ -48,7 +48,7 @@ struct Constants {
        
 
         Part_2_Hypersleep.PageName: Chapter(pageName: Part_2_Hypersleep.PageName, chapterTitle: "Rise and Shine!", order: 12),
-        Part_2_Hypersleep.PageName: Chapter(pageName: Part_1_Sneak.PageName, chapterTitle: "Raid on Covarnius", order: 13)
+        Part_1_Sneak.PageName: Chapter(pageName: Part_1_Sneak.PageName, chapterTitle: "Raid on Covarnius", order: 13)
     ]
     
 }

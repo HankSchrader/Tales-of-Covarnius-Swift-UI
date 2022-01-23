@@ -15,7 +15,7 @@ struct Part_2_See_Whats_In_The_Sky: View {
         "Luna’s head tilts to the left, she's staring at the object too. Could the two of you really be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens!\n\nBut the odd green creature in the UFO makes you think otherwise. You hear a loud hiss of decompressing air. The top of what appears to be an alien spaceship opens.\n\nYup, definitely an alien!"
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_See_Whats_In_The_Sky.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono In Ship",  decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
