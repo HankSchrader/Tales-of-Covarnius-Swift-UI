@@ -16,7 +16,7 @@ struct Part_4_Greatest_Scientist: View {
     
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Asteroid", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

@@ -29,9 +29,7 @@ struct MenuView: View {
             VStack(alignment: .leading) {
                 
                 HStack {
-                    Image(systemName: "person")
-                        .foregroundColor(.gray)
-                        .imageScale(.large)
+                    
                     NavigationLink(destination: TitleView()
                                 
                                     .navigationBarBackButtonHidden(true)) {
@@ -42,13 +40,10 @@ struct MenuView: View {
 
                     ForEach(self.sortedChapters) { chapter in
                         HStack {
-                        
-                        Image(systemName: "person")
-                            .foregroundColor(.gray)
-                            .imageScale(.large)
+   
                             NavigationLink(destination: self.vnc.routeDecision(choice: chapter.pageName)
                                         .navigationBarBackButtonHidden(true)) {
-                            Text(chapter.chapterTitle)
+                                Text("\(chapter.chapterTitle)")
                         }
                         
                     }.padding(.bottom)

@@ -28,7 +28,7 @@ struct Part_2_1_Landing: View {
         let text =
         "On the other hand, you’re not some super genius scientist. How are you going to help?\n\nSeveral tall Covarnians in official garb usher you out of the ship. “My guards will now take you to your new lab and brief you on your mission.” King Zanarq informs you. You swallow hard and tell him:"
         
-        let decision1 = "I'm not a scientist!"
+        let decision1 = "I'm not a scientist."
         let decision2 = "I'm a scientist after all!"
         let firstChoicePageName = Part_1_Not_Scientist.PageName
         let secondChoicePageName = Part_1_Fake_Til_You_Make.PageName

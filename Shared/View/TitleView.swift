@@ -36,7 +36,7 @@ struct TitleView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 
-                Text("Tales")
+                Text("Tales").textCase(.uppercase)
                     .font(.largeTitle)
                     .padding(.bottom)
                     .opacity(opacity1)
@@ -51,7 +51,7 @@ struct TitleView: View {
                         }
                     }                    .foregroundColor(.white)
                 Text("Of")
-                    .font(.title)
+                    .font(.title).textCase(.uppercase)
                     .padding(.bottom)
                     .opacity(opacity2)
                     .animation(Animation.easeOut(duration: 1.5).delay(1.6), value: opacity2)
@@ -64,7 +64,7 @@ struct TitleView: View {
                         }
                     }
                     .foregroundColor(.white)
-                Text("Covarnius")
+                Text("Covarnius").textCase(.uppercase)
                     .font(.largeTitle)
                     .padding(.bottom)
                     .opacity(opacity3)
@@ -136,6 +136,7 @@ struct TitleView: View {
                     }
                     
                     .padding()
+                    .foregroundColor(.orange)
                     .simultaneousGesture(TapGesture().onEnded{
                         let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                         impactHeavy.impactOccurred()

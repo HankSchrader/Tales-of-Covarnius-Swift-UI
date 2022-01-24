@@ -55,6 +55,8 @@ struct ViewNavigationController {
             Bad_Distraction()
         case Caught_By_Covarnian.PageName:
             Caught_By_Covarnian()
+        case Caught_By_Covarnian_2.PageName:
+            Caught_By_Covarnian_2()
         case Got_Caught.PageName:
             Got_Caught()
         case Turn_Into_Frog.PageName:
@@ -158,6 +160,8 @@ struct ViewNavigationController {
             
         case Part_1_Let_Me_Help.PageName:
             Part_1_Let_Me_Help()
+        case Part_1_2_Let_Me_Help.PageName:
+            Part_1_2_Let_Me_Help()
         case Part_2_Let_Me_Help.PageName:
             Part_2_Let_Me_Help()
         case Part_3_Let_Me_Help.PageName:

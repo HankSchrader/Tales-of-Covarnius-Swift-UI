@@ -220,6 +220,14 @@ private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnl
         let index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
         cuc.remove(at: index!)
     }
+    else if(currentPageView == Part_1_Sneak.PageName && currentUnlockedChapters.contains(Part_2_Hypersleep.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_2_Hypersleep.PageName)
+        cuc.remove(at: index!)
+    }
+    else if(currentPageView == Part_2_Hypersleep.PageName && currentUnlockedChapters.contains(Part_1_Sneak.PageName)) {
+        let index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
+        cuc.remove(at: index!)
+    }
     return cuc
 }
 
