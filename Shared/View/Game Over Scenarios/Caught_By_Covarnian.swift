@@ -14,8 +14,8 @@ struct Caught_By_Covarnian: View {
         let text =
         "That was a mistake. Hindsight, as they say, is 20/20...just like that guard’s eyesight. As soon as you peek into the window, you make eye contact with a giant Covarnian watchman.\n\n“Hey!” the guard yells. “Who is that in the storage room?”\n\n“Oh no, he saw us!” Chrono whispers, “why would you look through the window?” Chrono’s ire turns to you.\n\nThe guard swings the storage room door open. You’ve been caught! The jig is up.\n\n“What are you two doing in here?”\n\n“Well you see, we were—” you stammer, but he interrupts you."
         
-        let decision1 =  Caught_By_Covarnian_2.PageName
-        let firstChoicePageName = "Title View"
+        let decision1 =  Constants.ContinuePhrase
+        let firstChoicePageName = Caught_By_Covarnian_2.PageName
         let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
         }

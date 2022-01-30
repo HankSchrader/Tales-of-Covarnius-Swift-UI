@@ -896,9 +896,9 @@
 			isa = PBXGroup;
 			children = (
 				53BACDB12756EA21009E493E /* Part_1_Fork_In_The_Road.swift */,
+				53BACDBE2756EF14009E493E /* Part_4_Fork_In_The_Road.swift */,
 				53BC28FE276598660040BFB8 /* Part_2_Fork_In_The_Road.swift */,
 				53BACDBB2756EE38009E493E /* Part_3_Fork_In_The_Road.swift */,
-				53BACDBE2756EF14009E493E /* Part_4_Fork_In_The_Road.swift */,
 				53BC2900276599910040BFB8 /* Part_5_Fork_In_The_Road.swift */,
 				53BACDC42756EFC4009E493E /* Part_6_Fork_In_The_Road.swift */,
 				535E39D0275858610074EA50 /* Earth's Greatest Scientist */,
@@ -1469,7 +1469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.37;
+				CURRENT_PROJECT_VERSION = 1.39;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1484,7 +1484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.37;
+				MARKETING_VERSION = 1.39;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
@@ -1502,7 +1502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.37;
+				CURRENT_PROJECT_VERSION = 1.39;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1518,7 +1518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.37;
+				MARKETING_VERSION = 1.39;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI";
 				PRODUCT_NAME = "Tales-of-Covarnius-Swift-UI";
 				SDKROOT = iphoneos;
