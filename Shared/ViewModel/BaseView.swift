@@ -100,6 +100,8 @@ struct BaseView: View {
                     
                         .padding()
                     if(isSecondChoice()) {
+                    
+                      
                         NavigationLink(destination: self.vnc.routeDecision(choice: view.secondChoicePageName).navigationBarBackButtonHidden(true)) {
                             Text(view.decision2)
                                 .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {

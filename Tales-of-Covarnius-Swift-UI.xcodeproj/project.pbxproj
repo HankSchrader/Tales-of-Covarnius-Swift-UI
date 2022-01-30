@@ -194,6 +194,7 @@
 		53C46110278A1F570052B139 /* SoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4610F278A1F570052B139 /* SoundsController.swift */; };
 		53C46114278B9B130052B139 /* ViewNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46113278B9B130052B139 /* ViewNavigationController.swift */; };
 		53C46116278B9F320052B139 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46115278B9F320052B139 /* ImageModel.swift */; };
+		53DD4B2E27A62B6300AB78F0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD4B2D27A62B6300AB78F0 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -388,6 +389,7 @@
 		53C4610F278A1F570052B139 /* SoundsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsController.swift; sourceTree = "<group>"; };
 		53C46113278B9B130052B139 /* ViewNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationController.swift; sourceTree = "<group>"; };
 		53C46115278B9F320052B139 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		53DD4B2D27A62B6300AB78F0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -874,6 +876,7 @@
 				53C46113278B9B130052B139 /* ViewNavigationController.swift */,
 				539312C6276C138900C0FC05 /* BaseView.swift */,
 				53C4610D278A1F070052B139 /* DisplayView.swift */,
+				53DD4B2D27A62B6300AB78F0 /* ErrorView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1316,6 +1319,7 @@
 				53BACDB62756EB02009E493E /* Part_1_Dissect_My_Brains.swift in Sources */,
 				535E39ED275994450074EA50 /* Part_2_Do_Ourselves.swift in Sources */,
 				535E3A482759AADC0074EA50 /* Part_3_Council.swift in Sources */,
+				53DD4B2E27A62B6300AB78F0 /* ErrorView.swift in Sources */,
 				5303C7D92755AEC600710D34 /* Tales_of_Covarnius_Swift_UIApp.swift in Sources */,
 				53BACDB22756EA21009E493E /* Part_1_Fork_In_The_Road.swift in Sources */,
 				535E39EF2759948D0074EA50 /* Part_3_Do_Ourselves.swift in Sources */,

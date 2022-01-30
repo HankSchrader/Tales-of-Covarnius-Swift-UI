@@ -10,7 +10,7 @@ import SwiftUI
 // Whole brains of the operation. The user choice is brought in here to determine where to go next. Check README for more info.
 struct ViewNavigationController {
     
-    @ViewBuilder  func routeDecision(choice userChoice: String) -> some View {
+    @ViewBuilder  func routeDecision(choice userChoice: String)  -> some View {
         
         switch userChoice {
         case "Title View":
@@ -429,11 +429,15 @@ struct ViewNavigationController {
             Part_3_Toilet_To_Hyper_Sleep()
         case Part_4_Toilet_To_Hyper_Sleep.PageName:
             Part_4_Toilet_To_Hyper_Sleep()
+        case Growlics.PageName:
+            Growlics()
+        case Growlics_2.PageName:
+            Growlics_2()
         case Secret_Ending.PageName:
             Secret_Ending()
             
         default:
-            fatalError()
+            ErrorView(choice: userChoice)
         }
     }
 }
