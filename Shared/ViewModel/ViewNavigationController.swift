@@ -51,6 +51,8 @@ struct ViewNavigationController {
             Bright_Green()
         case Went_Home.PageName:
             Went_Home()
+        case Went_Home_2.PageName:
+            Went_Home_2()
         case Bad_Distraction.PageName:
             Bad_Distraction()
         case Caught_By_Covarnian.PageName:

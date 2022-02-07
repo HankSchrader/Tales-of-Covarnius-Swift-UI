@@ -16,7 +16,7 @@ struct Growlics: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Growlics_2.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Luna at park", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Pantry", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -30,7 +30,7 @@ struct Growlics_2: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Pantry", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

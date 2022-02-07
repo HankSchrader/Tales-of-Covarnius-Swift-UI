@@ -64,8 +64,8 @@ struct BaseView: View {
                             
                         }
                 }.zIndex(0).ignoresSafeArea()
-        
-        
+                
+                
                 VStack {
                     Spacer()
                     NavigationLink(destination:
@@ -91,7 +91,7 @@ struct BaseView: View {
                         .onDisappear{
                             // Shows a chapter unlocked alert if their decision leads them to a new chapter.
                             if allChapters.contains(userDecision) == true && userDecision == view.firstChoicePageName {
-    
+                                
                                 constructAndStoreChapter(currentPageView: userDecision)
                                 self.showingAlertDecision1 = true
                                 
@@ -100,8 +100,8 @@ struct BaseView: View {
                     
                         .padding()
                     if(isSecondChoice()) {
-                    
-                      
+                        
+                        
                         NavigationLink(destination: self.vnc.routeDecision(choice: view.secondChoicePageName).navigationBarBackButtonHidden(true)) {
                             Text(view.decision2)
                                 .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {
@@ -199,37 +199,78 @@ private func constructAndStoreChapter(currentPageView: String) -> Void {
     
 }
 
-private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnlockedChapters: [String] ) -> Array<String> {
+// When a user is looking at their list of chapters, it should always have a linear progression. The user shouldn't be able to back track and then be able to
+// go down two different potential paths. That wouldn't make sense.
+private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnlockedChapters: [String] ) -> Any {
     var cuc = currentUnlockedChapters
+    var index: Int?
+    
     if(currentPageView == Part_1_Hapal_Down.PageName && currentUnlockedChapters.contains(Part_1_Save_The_Hapal.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Save_The_Hapal.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Save_The_Hapal.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
+        
     } else if(currentPageView == Part_1_Save_The_Hapal.PageName && currentUnlockedChapters.contains(Part_1_Hapal_Down.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Hapal_Down.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Hapal_Down.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
+        
+        
     } else if(currentPageView == Part_1_Cowboys_Of_Katonia.PageName && currentUnlockedChapters.contains(Part_1_Greatest_Scientist.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Greatest_Scientist.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Greatest_Scientist.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     } else if(currentPageView == Part_1_Greatest_Scientist.PageName && currentUnlockedChapters.contains(Part_1_Cowboys_Of_Katonia.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Hapal_Down.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Cowboys_Of_Katonia.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     }
     else if(currentPageView == Part_1_Sneak.PageName && currentUnlockedChapters.contains(Part_2_Hypersleep.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_2_Hypersleep.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_2_Hypersleep.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     }
     else if(currentPageView == Part_2_Hypersleep.PageName && currentUnlockedChapters.contains(Part_1_Sneak.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     }
     else if(currentPageView == Part_1_Sneak.PageName && currentUnlockedChapters.contains(Part_2_Hypersleep.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_2_Hypersleep.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_2_Hypersleep.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     }
     else if(currentPageView == Part_2_Hypersleep.PageName && currentUnlockedChapters.contains(Part_1_Sneak.PageName)) {
-        let index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
-        cuc.remove(at: index!)
+        index = currentUnlockedChapters.firstIndex(of: Part_1_Sneak.PageName)
+        if let index = index {
+            cuc.remove(at: index)
+        } else {
+            return ErrorViewMutualExclusion(currentPageView: currentPageView)
+        }
     }
+    
+    
     return cuc
 }
 
