@@ -66,21 +66,22 @@ struct Part_5_Save_The_Hapal: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“You did it! You saved the baby hapal!” Kayo exclaims. “How can we ever thank you?”\n\n“You’ve already done so much for us, it was the least I could do,” you tell the couple.\n\n“That was just some Katonian hospitality,” Kayo says with a wave of his hand. What you did to rescue our hapal was above and beyond… Now if you ever need anything, anything at all. Don’t you hesitate to ask.”"
+        "“You did it! You saved the baby hapal!” Kayo exclaims. “How can we ever thank you?”\n\n“You’ve already done so much for us, it was the least I could do,” you tell the couple.\n\n“That was just some Katonian hospitality,” Kayo says with a wave of his hand. What you did to rescue our hapal was above and beyond… Now if you ever need anything, anything at all. Don’t you hesitate to ask.”\n\nKayo and Kina walk you back to your ship and Kina gives you a big bag of mekop for the road... er, um journey.\n\nYou, Chrono and Luna jump into the ship and wave goodbye as you ascend into the sky. You’re glad you were able to help them rescue their baby hapal. It’s a good thing you had to make an emergency landing after all!"
         
         let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_5_2_Save_The_Hapal.PageName
+        let firstChoicePageName = Part_6_Save_The_Hapal.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: "Hapal", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
 
+//TODO: Delete this dead code.
 struct Part_5_2_Save_The_Hapal: View {
     static let PageName = "Part_5_2_Save_The_Hapal"
     @State var showMenu = false
     var body: some View {
         let text =
-        "Kayo and Kina walk you back to your ship and Kina gives you a big bag of mekop for the road... er, um journey.\n\nYou, Chrono and Luna jump into the ship and wave goodbye as you ascend into the sky. You’re glad you were able to help them rescue their baby hapal. It’s a good thing you had to make an emergency landing after all!"
+        ""
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_6_Save_The_Hapal.PageName

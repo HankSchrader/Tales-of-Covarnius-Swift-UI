@@ -17,7 +17,7 @@ struct Part_2_Keep_Thinking: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Keep_Thinking.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

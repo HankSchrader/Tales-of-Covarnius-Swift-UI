@@ -15,10 +15,13 @@ struct Part_4_Store_Room: View {
         "You and Chrono throw the robes on over your clothes while the ship heads for the Sinisterians. You look at your reflection in the glass and hope that you can pass for a Covarnian.\n\n“You look just like a Covarnian ambassador,” Chrono says, as if reading your mind.\n\nYou hope he’s right. But still, something keeps nagging at the back of your mind. Almost like there is something important that you’re not thinking of. But what could it be? You have your Covarnian robe, ID, key, your sleek Covarnian cruiser. You can’t think of anything else."
 
         
-        let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_2_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let decision1 = "Keep Thinking"
+        let decision2 = "It's not important"
+        let firstChoicePageName = Part_1_Keep_Thinking.PageName
+        let secondChoicePageName = Part_1_Not_Important.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Cruiser", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
+
     }
 }
 

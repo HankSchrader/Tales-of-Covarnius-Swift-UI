@@ -19,7 +19,7 @@ struct Part_4_Sneak: View {
         let decision2 = "Test the ray on the Murkblur."
         let firstChoicePageName = Part_1_Giant_Luna.PageName
         let secondChoicePageName = Part_1_Murkblur.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Ray Gun", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Growth Ray", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

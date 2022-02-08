@@ -18,7 +18,7 @@ struct Secret_Ending: View {
        
         let decision1 = "The End. Congratulations!"
         let firstChoicePageName = Part_1_Intro.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Katonian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

@@ -18,7 +18,7 @@ struct Part_1_Warmongers: View {
         let decision2 = "Never Give Up! We can do this."
         let firstChoicePageName = Abandonded_Chrono.PageName
         let secondChoicePageName = Part_1_Let_Me_Help.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

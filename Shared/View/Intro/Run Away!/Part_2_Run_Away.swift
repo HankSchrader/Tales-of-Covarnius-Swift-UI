@@ -18,7 +18,7 @@ struct Part_2_Run_Away: View {
         let decision2 = "Turn Back!"
         let firstChoicePageName = Went_Home.PageName
         let secondChoicePageName = Part_1_See_What_In_The_Sky.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Luna at park", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
