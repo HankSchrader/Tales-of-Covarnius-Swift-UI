@@ -12,7 +12,7 @@ struct Part_3_They_Are_Vicious: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“One...two...three!” You take off running as fast as you can. The sudden motion startles the growlics and you are able to make it past them. You, Chrono and Luna speed through the hallway of the small home and out the front door, slamming it shut behind you. You can hear the growlics snarl and howl from inside the house.\n\nYou didn’t get the uniforms, but at least you didn’t end up as dinner."
+        "“One...two...three!” You take off running as fast as you can. The sudden motion startles the growlics, but you're able to make it past them. You, Chrono and Luna speed through the hallway of the small home and out the front door, slamming it shut behind you. You can hear the growlics snarl and howl from inside the house.\n\nYou didn’t get the uniforms, but at least you didn’t end up as dinner."
         
         
         let decision1 = Constants.ContinuePhrase

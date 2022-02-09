@@ -12,7 +12,7 @@ struct Part_2_Diplomatic_Immunity: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“Our first option is to sneak back into the Covarnian council chamber and grab the robes from there,” Chrono explains. “All we need are two robes and a pass key. Then we can use the pass key to take one of the Covarnian cruisers from the back.” You smile as you see the plan fall into place. Chrono scratches his chin in thought, and then suggests an alternative.\n\n“Or, it just so happens my neighbor is a Covarnian Ambassador,” Chrono says. “We could borrow the items from his house. Then return them before he ever knows they were gone.”\n\nYou don’t like the idea of borrowing from a Covarnian ambassador without permission. That seems like it would have big repercussions if you get caught. But on the other hand, it might be easier than trying to sneak past the guards."
+        "“Our first option is to sneak back into the Covarnian council chamber and grab the sashes from there,” Chrono explains. “All we need are two sashes and a pass key. Then we can use the pass key to take one of the Covarnian cruisers from the back.” You smile as you see the plan fall into place. Chrono scratches his chin in thought, and then suggests an alternative.\n\n“Or, it just so happens my neighbor is a Covarnian Ambassador,” Chrono says. “We could borrow the items from his house. Then return them before he ever knows they were gone.”\n\nYou don’t like the idea of borrowing from a Covarnian ambassador without permission. That seems like it would have big repercussions if you get caught. But on the other hand, it might be easier than trying to sneak past the guards."
 
         
         let decision1 =  "\"Borrow\" from the ambassador."

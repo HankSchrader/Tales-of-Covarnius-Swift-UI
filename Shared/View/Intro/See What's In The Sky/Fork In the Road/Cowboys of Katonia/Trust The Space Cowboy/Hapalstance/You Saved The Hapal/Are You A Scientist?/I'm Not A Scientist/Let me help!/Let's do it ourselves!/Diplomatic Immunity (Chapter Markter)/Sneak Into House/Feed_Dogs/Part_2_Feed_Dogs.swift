@@ -12,12 +12,12 @@ struct Part_2_Feed_Dogs: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "Next to that is a plate with what appears to be some sort of dessert. It smells sweet and delicious. (To a human, at least.) It looks like a perfectly spherical cake covered in rainbow colored frosting.\n\nAnd last of all, there is a bowl of something scaly and green. It jiggles like jello, even when left untouched. It’s as weird as it is gross. It has no odor whatsoever, and doesn’t even look edible. What could it even be?\n\n What will you feed them? Think fast!"
+        "Next to that is a plate with what appears to be some sort of fruit. It's perfectly round and slippery to the touch.\n\nAnd last of all, there is a bowl of something scaly and green. It jiggles like jello, even when left untouched. It’s as weird as it is gross.\n\n What will you feed them? Think fast!"
         
         
-        let decision1 =  "Break up the dessert and toss it over."
-        let decision2 = "Slide over the bowl of gross scaly jello."
-        let decision3 = "Throw them the stinky meat."
+        let decision1 =  "Slippery fruit."
+        let decision2 = "Scaly jello."
+        let decision3 = "Stinky meat."
         let firstChoicePageName = Part_1_Just_Desserts.PageName
         let secondChoicePageName = Growlics.PageName
         let thirdChoicePageName = Part_1_Stank_Meat.PageName

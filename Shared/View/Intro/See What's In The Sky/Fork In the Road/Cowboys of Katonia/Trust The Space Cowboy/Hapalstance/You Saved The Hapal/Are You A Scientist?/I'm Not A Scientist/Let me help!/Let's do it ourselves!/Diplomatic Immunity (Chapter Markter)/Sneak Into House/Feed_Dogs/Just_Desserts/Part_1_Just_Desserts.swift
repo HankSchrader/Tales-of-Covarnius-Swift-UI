@@ -12,7 +12,7 @@ struct Part_1_Just_Desserts: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "You grab the plate with the strange looking dessert and throw it to the growlics. They sniff at it with interest. “That’s it,” you urge them, “eat the food.” The canines lick the dessert but seem disinterested.\n\n Your plan isn’t going the way you wanted…time for a new plan!\n\n“Run!” you shout to Chrono. You hightail it out of the kitchen as fast as you can. The three of you make it past the growlics—while they are still distracted with the food—and out into the fresh air. You create a barrier between yourselves and the growlics as you slam the door shut behind you"
+        "You grab the plate with the slippery fruit and throw it to the growlics. The fruit rolls across the floor, and the growlics sniff with interest.\n\n“That’s it,” you urge them, “eat the food.” The canines lick the fruit but seem disinterested.\n\nYour plan isn’t going the way you wanted…time for a new plan!\n\n“Run!” you shout to Chrono. You hightail it out of the kitchen as fast as you can. The three of you make it past the growlics and out into the fresh air.\n\nSafe at last!"
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Just_Desserts.PageName

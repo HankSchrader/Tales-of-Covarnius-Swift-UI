@@ -12,7 +12,7 @@ struct Part_3_Do_Ourselves: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "You mull over the two options for a moment. Kneeling down, you pat Luna’s head and stare thoughtfully into space.\n\nDisguising yourselves as ambassadors may be tricky. It would require finding some of those fancy robes all the high ranking Covarnians wear. But at least that would make it easier to board the Sinisterian ship.\n\nOn the other hand, maybe keeping the mission covert is the way to go. Stay hidden and out of sight from the Sinisterians. Change the coordinates and get out before anyone ever realizes you’re there. After careful consideration, you tell Chrono..."
+        "You mull over the two options for a moment. Kneeling down, you pat Luna’s head and stare thoughtfully into space.\n\nDisguising yourselves as ambassadors may be tricky. It would require finding some of those fancy sashes all the high ranking Covarnians wear. But at least that would make it easier to board the Sinisterian ship.\n\nOn the other hand, maybe keeping the mission covert is the way to go. Stay hidden and out of sight from the Sinisterians. Change the coordinates and get out before anyone ever realizes you’re there. After careful consideration, you tell Chrono..."
         
         let decision1 =  "Sneak onto the Sinisterian ship"
         let decision2 = "Disguise ourselves as ambassadors."
