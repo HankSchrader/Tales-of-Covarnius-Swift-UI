@@ -12,7 +12,7 @@ struct Part_1_Let_Me_Help: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        " “What could we possibly do to help?” Chrono looks at the ground and shakes his head.\n\n“I’m just a screw up,\" he continues, \"I crashed my first ship and now I’m not allowed to pilot one manually anymore. I can’t even get my latest invention, the Hyper Growth Ray, to work! And to top it all off, I brought back the wrong earthling! Now Covarnius will fall to the Sinisterians and it will be all my fault.”"
+        " “What could we possibly do to help?” Chrono looks at the ground and shakes his head.\n\n“I’m just a screw up,\" he continues, \"My flying privleges have been revoked. I can’t even get my latest invention, the Hyper Growth Ray, to work. And to top it all off, I brought back the wrong earthling! Now Covarnius will fall to the Sinisterians and it will be all my fault.”"
         
         
         let decision1 = Constants.ContinuePhrase

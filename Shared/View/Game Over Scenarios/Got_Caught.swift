@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Got_Caught: View {
-    static let PageName = "Caught_By_Covarnian"
+    static let PageName = "Got_Caught"
     @State var showMenu = false
     var body: some View {
         let text =

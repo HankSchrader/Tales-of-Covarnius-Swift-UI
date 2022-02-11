@@ -12,7 +12,7 @@ struct Part_4_Sneak: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“Wait!” you cry, \"test it on that first.\" You point at a tiny bug on the ground. It's a purple ant with two heads. It must be a native Covarnian bug.\n\n“You want me to test it on a little Murkblur?” Chrono asks. “We don’t have time for this!”\n\n“I just want to make sure it doesn't hurt Luna,” you say.\n\nChrono glances out his bedroom window. “The Sinisterians will be here any minute,” he exclaims."
+        "“Wait!” you cry, \"test it on that first.\" You point at a tiny bug on the ground. It's looks sort of like a purple ant with two heads. It must be a native Covarnian bug.\n\n“You want me to test it on a little Murkblur?” Chrono asks. “We don’t have time for this!”\n\n“I just want to make sure it doesn't hurt Luna,” you say.\n\nChrono glances out his bedroom window. “The Sinisterians will be here any minute,” he exclaims."
         
         
         let decision1 = "Skip the test."
