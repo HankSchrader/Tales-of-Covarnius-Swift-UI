@@ -65,6 +65,8 @@ struct ViewNavigationController {
             Turn_Into_Frog()
         case Abandonded_Chrono.PageName:
             Abandonded_Chrono()
+        case Abandonded_Chrono_2.PageName:
+            Abandonded_Chrono_2()
         case Part_1_Cowboys_Of_Katonia.PageName:
             Part_1_Cowboys_Of_Katonia()
         case Part_2_Cowboys_Of_Katonia.PageName:

@@ -29,7 +29,7 @@ struct Part_4_Part_2_See_Whats_In_The_Sky: View {
     var body: some View {
 
         let text =
-        "You can’t imagine why he assumed you spoke French, but it doesn’t matter anyway.\n\n“What do you want?” you ask him, hoping the answer isn't world domination.\n\n“I need you to come with me right away!” the alien declares alarmingly. You hesitate for a moment, and reply..."
+        "You can’t imagine why he assumed you spoke French, but it doesn’t matter anyway.\n\n“What do you want?” you ask him, hoping the answer isn't world domination.\n\n“I need you to come with me right away!” the alien declares. You hesitate for a moment, and reply..."
         let decision2 = "\"Sure! I'll Help\""
         let decision1 = "\"No Way! You'll dissect my brains!\""
         let firstChoicePageName = Part_1_Dissect_My_Brains.PageName
