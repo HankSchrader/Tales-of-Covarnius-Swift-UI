@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Part_1_Gravity_Gun: View {
-    static let PageName = "Part_5_Gravity_Gun"
+    static let PageName = "Part_1_Gravity_Gun"
     @State var showMenu = false
     var body: some View {
         let text =
