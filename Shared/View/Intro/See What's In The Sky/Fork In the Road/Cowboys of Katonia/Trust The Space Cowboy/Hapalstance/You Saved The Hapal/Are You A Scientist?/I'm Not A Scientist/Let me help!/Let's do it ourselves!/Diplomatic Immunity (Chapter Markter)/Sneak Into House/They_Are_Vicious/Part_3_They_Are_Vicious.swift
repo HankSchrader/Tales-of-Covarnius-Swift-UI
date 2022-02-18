@@ -17,7 +17,7 @@ struct Part_3_They_Are_Vicious: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_They_Are_Vicious.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Growlics", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

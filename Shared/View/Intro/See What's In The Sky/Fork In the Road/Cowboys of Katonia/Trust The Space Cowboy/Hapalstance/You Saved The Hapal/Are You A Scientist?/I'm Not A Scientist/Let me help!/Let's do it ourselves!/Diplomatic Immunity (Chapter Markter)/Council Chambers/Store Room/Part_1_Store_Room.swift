@@ -18,7 +18,8 @@ struct Part_1_Store_Room: View {
         let decision2 = "Look out the window."
         let firstChoicePageName = Part_2_Store_Room.PageName
         let secondChoicePageName = Caught_By_Covarnian.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text,
+                                                   image: "box", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

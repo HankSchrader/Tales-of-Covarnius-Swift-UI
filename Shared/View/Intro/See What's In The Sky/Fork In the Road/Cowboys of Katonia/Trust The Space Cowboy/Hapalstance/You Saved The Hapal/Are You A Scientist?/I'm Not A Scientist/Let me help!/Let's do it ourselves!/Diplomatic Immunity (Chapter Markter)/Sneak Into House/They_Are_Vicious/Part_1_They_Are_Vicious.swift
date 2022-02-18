@@ -15,8 +15,8 @@ struct Part_1_They_Are_Vicious: View {
         "The kitchen has a large island in the center. We just might be able to run past them if we go around.\n\nChrono shrugs his shoulders. He seems OK with the plan.\n\n“On the count of three, we run,” you whisper to Chrono. He's been trying to comfort the growlics...unfortunately without much luck."
         
         let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_2_They_Are_Vicious.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let firstChoicePageName = Part_3_They_Are_Vicious.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Growlics", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
