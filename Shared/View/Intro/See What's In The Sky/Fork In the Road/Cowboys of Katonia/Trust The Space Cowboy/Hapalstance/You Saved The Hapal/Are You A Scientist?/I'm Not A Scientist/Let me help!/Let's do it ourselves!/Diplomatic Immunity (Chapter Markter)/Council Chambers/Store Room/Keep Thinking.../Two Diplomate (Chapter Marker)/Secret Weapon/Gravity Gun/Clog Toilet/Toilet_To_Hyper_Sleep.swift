@@ -12,7 +12,7 @@ struct Part_1_Toilet_To_Hyper_Sleep: View {
     @State var showMenu = false
     var body: some View {
        let text =
-        "You keep looking around the high tech console. You’re about to give up and go help Chrono, until you see a bright red button positioned in the upper right hand corner of the console. EMERGENCY DISENGAGE HYPERSLEEP. You smile to yourself, it’s a miracle you found it! You reach out and press the button and the monitors nearby light up.\n\n“Please insert the override key now,” a digitized voice instructs from the speakers.\n\nJust as expected, the key comes in handy.\n\nYou pull the key out of your pocket and insert it into the console. It works! You only have a moment to revel in your victory before you hear the sound of tons of groggy Sinisterians stirring. With no time to lose, you hightail it out of the Hypersleep Chamber"
+        "You keep looking around the high tech console. You’re about to give up and go help Chrono, until you see a bright red button positioned in the upper right hand corner of the console. EMERGENCY DISENGAGE HYPERSLEEP. You smile to yourself, it’s a miracle you found it! You reach out and press the button and the monitors nearby light up.\n\n“Please insert the override key now,” a digitized voice instructs from the speakers.\n\nJust as expected, the key comes in handy.\n\nYou pull the key out of your pocket and insert it into the console. It works! You only have a moment to revel in your victory before you hear the sound of tons of groggy Sinisterians stirring. With no time to lose, you hightail it out of the Hypersleep Chamber."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Toilet_To_Hyper_Sleep.PageName
@@ -27,7 +27,7 @@ struct Part_2_Toilet_To_Hyper_Sleep: View {
     @State var showMenu = false
     var body: some View {
        let text =
-        "A smooth robotic voice says, “HYPERSLEEP: DEACTIVATED.”\n\nTime to get out of here!\n\nYou hurry down the hallway to meet up with Chrono. Hopefully, you can help him. A cold, evil voice shouts at you from behind.\n\n“Why did you clog all those toilets?” the quartermaster screeches angrily.\n\nYou stare at him weakly for a moment, “It...it was the tre-bok,” you say shrugging your shoulders, using the same excuse as before"
+        "A smooth robotic voice says, “HYPERSLEEP: DEACTIVATED.”\n\nTime to get out of here!\n\nYou hurry down the hallway to meet up with Chrono. Hopefully, you can help him. A cold, evil voice shouts at you from behind.\n\n“Why did you clog all those toilets?” the quartermaster screeches angrily.\n\nYou stare at him weakly for a moment, “It...it was the tre-bok,” you say shrugging your shoulders, using the same excuse as before."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Toilet_To_Hyper_Sleep.PageName

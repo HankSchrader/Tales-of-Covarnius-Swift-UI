@@ -12,11 +12,11 @@ struct Part_4_Clog_Toilet: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“What does this say?” you cry frustratedly to yourself. As if the key hears you, the scrawl rearranges, mixes and molds into something more familiar: English.\n\nIt says, “Hypersleep disengagement key”. Chewing your lip, you stare intently at the key. Could this provide any value? Does this even matter? Maybe you should just help Chrono. The aliens have already been distracted, no reason to push your luck!"
+        "“What does this say?” you cry to yourself. As if the key hears you, the scrawl rearranges, mixes and molds into something more familiar: English.\n\nIt says, “Hypersleep disengagement key”. You stare intently at the key. Could this provide any value? Does this even matter? Maybe you should just help Chrono. The aliens have already been distracted, no reason to push your luck!"
         
 
         
-        let decision1 =  "Korgle's distracted. Help Chrono"
+        let decision1 =  "Help Chrono."
         let decision2 =  "Create another distraction."
         let firstChoicePageName = Part_1_Help_Chrono.PageName
         let secondChoicePageName = Part_5_Clog_Toilet.PageName
