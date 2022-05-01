@@ -18,7 +18,7 @@ struct Part_5_Boarding_Ticket: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_1_Boarding_Ticket.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneezing Sinisterian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -34,7 +34,7 @@ struct Part_5_1_Boarding_Ticket: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_6_Boarding_Ticket.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneeszing Sinisterian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

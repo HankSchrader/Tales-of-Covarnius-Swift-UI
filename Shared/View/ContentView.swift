@@ -24,9 +24,7 @@ struct ContentView: View {
         }
     }
     var body: some View {
-          
         self.vnc.routeDecision(choice: self.startingViewName)
-        
     }
         
 }

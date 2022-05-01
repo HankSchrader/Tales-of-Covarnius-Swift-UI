@@ -17,7 +17,7 @@ struct Part_3_Two_Diplomats: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_Two_Diplomats.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chief Korgle", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

@@ -37,7 +37,7 @@ struct Part_10_Boarding_Ticket: View {
         let decision2 = "Ram spaceship into wall."
         let firstChoicePageName = Part_1_Fetch_Key.PageName
         let secondChoicePageName = Part_1_Crash_Wall.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Cruiser", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Brig", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

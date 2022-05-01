@@ -18,7 +18,7 @@ struct Part_4_Two_Diplomats: View {
         let decision2 = "We want peace!"
         let firstChoicePageName = Part_1_Secret_Weapon.PageName
         let secondChoicePageName = Part_1_Peace.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chief Korgle", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

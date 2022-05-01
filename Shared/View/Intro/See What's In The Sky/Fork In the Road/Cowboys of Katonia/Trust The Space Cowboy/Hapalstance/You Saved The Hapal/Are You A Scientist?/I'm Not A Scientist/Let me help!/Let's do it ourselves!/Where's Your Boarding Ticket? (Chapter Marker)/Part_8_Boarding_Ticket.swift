@@ -16,7 +16,7 @@ struct Part_8_Boarding_Ticket: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_9_Boarding_Ticket.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Cruiser", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneezing Sinisterian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

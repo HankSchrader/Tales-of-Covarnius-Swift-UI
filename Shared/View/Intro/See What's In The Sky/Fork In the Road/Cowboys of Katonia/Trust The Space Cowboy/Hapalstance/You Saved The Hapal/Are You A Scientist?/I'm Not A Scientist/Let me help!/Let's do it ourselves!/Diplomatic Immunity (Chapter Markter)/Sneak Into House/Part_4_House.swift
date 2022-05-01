@@ -12,7 +12,7 @@ struct Part_4_House: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "That’s it! If you give the growlics a snack, you can escape while they are busy eating. You are in the kitchen after all, there has to be something you could give them. You take a step towards the refrigerator causing the growlics to snarl with rage and move closer.\n\nMaybe you were too hasty with your decision to offer the growlics a snack. You just seem to be making them angrier. Besides, offering them food may just whet their appetite for more. You could be giving them an appetizer to the main course: you!\n\nYou could try making a run for it. The growlics have left an opening that you could just pass through. But if you can’t manage to outrun them… then it’s Earthling Thermidor for dinner."
+        "That’s it! If you give the growlics a snack, you can escape while they are busy eating. You're in a kitchen after all, there has to be something you could give them. You take a step towards the fridge, causing the growlics to snarl with rage and move closer.\n\nMaybe you were too hasty with your decision to offer the growlics a snack. You just seem to be making them angrier. Besides, offering them food may just whet their appetite for more. You could be giving them an appetizer to the main course: you!\n\nYou could try making a run for it. The growlics have left an opening that you could just pass through. But if you can’t outrun them… then it’s Earthling Thermidor for dinner."
         
         
         let decision1 =  "Maybe give them a snack."
