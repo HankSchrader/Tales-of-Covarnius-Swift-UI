@@ -17,7 +17,7 @@ struct Part_1_Sneak: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Sneak.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Invasion", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }
