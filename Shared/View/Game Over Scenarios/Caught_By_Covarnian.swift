@@ -31,7 +31,7 @@ struct Caught_By_Covarnian_2: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "box", decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
         }
     }

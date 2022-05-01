@@ -199,8 +199,8 @@ private func constructAndStoreChapter(currentPageView: String) -> Void {
     
 }
 
-// When a user is looking at their list of chapters, it should always have a linear progression. The user shouldn't be able to back track and then be able to
-// go down two different potential paths. That wouldn't make sense.
+/// When a user is looking at their list of chapters, it should always have a linear progression. The user shouldn't be able to back track and then be able to
+/// go down two different potential paths. That wouldn't make sense. So we check which paget the user is on, and which page should not be part of the story, and we remove it.
 private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnlockedChapters: [String] ) -> Any {
     var cuc = currentUnlockedChapters
     var index: Int?

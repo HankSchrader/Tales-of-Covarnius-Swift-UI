@@ -27,7 +27,8 @@ struct TitleView: View {
     
     @State private var shimmer: Double = Constants.minOpacity
     var body: some View {
-        ZStack {
+        print("Current configuration: \(BuildConfiguration.shared.environment)")
+        return ZStack {
 
             Image("TitleView")
                 .resizable()

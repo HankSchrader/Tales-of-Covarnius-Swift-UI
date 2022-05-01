@@ -14,7 +14,7 @@ struct ErrorViewMutualExclusion: View {
             Text("The app crashed! You landed here because the app was looking for an element to delete that doesn't exist.")
             Text("🐜🐜🐜🐜🤬")
             Text("Unable to navigate FROM page with PAGE VIEW: \(currentPageView)")
-            Text("Sara...let Erik know which choice it faled on! 🤣!")
+            Text("Sara...let Erik know which choice it failed on! 🤣!")
         }
         NavigationLink(destination: TitleView().navigationBarBackButtonHidden(false)) {
             Text("Main Menu")

@@ -17,7 +17,7 @@ struct Part_5_Let_Me_Help: View {
         let decision2 = "I give up. At least we tried..."
         let firstChoicePageName = Part_1_Do_Ourselves.PageName
         let secondChoicePageName = Part_1_Try_Give_Up.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sad Chrono", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

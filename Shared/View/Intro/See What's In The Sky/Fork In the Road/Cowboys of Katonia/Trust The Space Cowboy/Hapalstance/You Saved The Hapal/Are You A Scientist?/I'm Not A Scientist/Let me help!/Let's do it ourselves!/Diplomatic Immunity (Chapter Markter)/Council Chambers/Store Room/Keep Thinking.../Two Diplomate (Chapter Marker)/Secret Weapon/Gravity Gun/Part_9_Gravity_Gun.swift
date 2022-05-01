@@ -12,9 +12,9 @@ struct Part_9_Gravity_Gun: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "But still, this distraction comes with risks. If you’re caught in the Hypersleep Chamber instead of the bathroom, the jig is up. Also, you’re not sure if you know how to wake up a bunch of aliens from hypersleep.\n\nAs you stand in the dimly lit hallway, you know you have to make a decision fast. You look back and forth between the door to the bathroom and the door to the Hypersleep Chamber. Finally, you decide:"
+        "But still, this distraction comes with risks. If you’re caught in the Hypersleep Chamber instead of the bathroom, the jig is up. Also, you’re not sure if you know how to wake up a bunch of aliens from hypersleep.\n\nAs you stand in the dimly lit hallway, you know you have to make a decision. You look back and forth between the door to the bathroom and the door to the Hypersleep Chamber. Finally, you decide:"
         
-        let decision1 =  "Hypersleep Release Chamber"
+        let decision1 =  "Wake the Sinisterians."
         let decision2 = "Clog the bathroom toilets."
         let firstChoicePageName = Part_1_Hypersleep.PageName
         let secondChoicePageName = Part_1_Clog_Toilet.PageName
