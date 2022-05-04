@@ -17,7 +17,7 @@ struct Part_1_Two_Diplomats: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Two_Diplomats.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneezy Sinistarian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }
@@ -29,11 +29,11 @@ struct Part_1_2_Two_Diplomats: View {
     var body: some View {
 
         let text =
-        "So far so good, you think. The three of you nervously follow the Sinisterian escorting you to the chief. Everything is going according to plan.\n\nYou wind through long hallways with dim lighting and try to remember the way back to the ship. You think it’s better to be prepared, just in case you have to make a hasty getaway."
+        "So far so good, you think. The three of you follow the Sinisterian escorting you to the chief. Everything is going according to plan.\n\nYou wind through long hallways with dim lighting and try to remember the way back to the ship. You think it’s better to be prepared, just in case you have to make a hasty getaway."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Two_Diplomats.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneezy Sinisterian", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

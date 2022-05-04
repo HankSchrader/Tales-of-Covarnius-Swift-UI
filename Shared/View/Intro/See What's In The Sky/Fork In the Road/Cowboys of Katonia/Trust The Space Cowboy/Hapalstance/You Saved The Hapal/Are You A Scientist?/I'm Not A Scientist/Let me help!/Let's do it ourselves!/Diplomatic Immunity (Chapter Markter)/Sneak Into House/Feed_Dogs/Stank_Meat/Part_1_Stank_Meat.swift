@@ -15,7 +15,7 @@ struct Part_1_Stank_Meat: View {
         "“Luna likes meat,” you say quickly to Chrono. “So why wouldn’t growlics?”\n\nChrono nods approvingly at your logic.\n\nYou quickly grab the stinky brown hunk of meat. It appears to be sweating. Yuck! You throw it to the growlics and they wolf it down. You and Chrono take the opportunity to sneak past the animals, closing the kitchen door behind you.\n\nGreat job!"
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Stank_Meat.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Stank Meat", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

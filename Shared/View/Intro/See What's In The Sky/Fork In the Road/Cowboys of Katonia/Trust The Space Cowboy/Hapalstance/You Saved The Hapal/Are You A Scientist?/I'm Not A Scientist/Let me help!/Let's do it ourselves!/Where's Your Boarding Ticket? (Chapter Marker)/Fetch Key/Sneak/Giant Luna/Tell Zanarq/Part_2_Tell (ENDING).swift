@@ -17,7 +17,7 @@ struct Part_2_Tell: View {
        
         
         var decision1 = "The End. Congratulations!"
-        var firstChoicePageName = Part_1_Intro.PageName
+        var firstChoicePageName = Bronze_Ending.PageName
         let currentlyUnlockedChapters: [String]? = defaults.array(forKey: DefaultsKeys.unlockedChapters) as! [String]?
         if let currentlyUnlockedChapters = currentlyUnlockedChapters {
             if currentlyUnlockedChapters.contains(Part_1_Save_The_Hapal.PageName) {

@@ -12,11 +12,11 @@ struct Part_2_Just_Desserts: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "You make it out with your lives but unfortunately, you didn’t procure the items necessary.\n\n“I guess we’ll have to get everything we need from the council chamber,” Chrono says matter of factly. “And we need to hurry, we’re running out of time!\n\nChrono nods his head agreeably, “Good point. Onto the council chamber!”\n\n You follow Chrono to the council chamber and then around to the back of the large metal building. It’s bland architecture contrasts the vibrant flowers of Covarnius."
+        "You make it out with your lives but unfortunately, you didn’t procure the items necessary.\n\n“I guess we’ll have to get everything we need from the council chamber,” Chrono says matter of factly. “And we need to hurry, we’re running out of time!\n\nChrono nods his head, “Good point. Onto the council chamber!”\n\n You follow Chrono to the council chamber and then around to the back of the large metal building. It’s bland architecture contrasts the vibrant flowers of Covarnius."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Slippery Fruit", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

@@ -18,7 +18,7 @@ struct Part_9_Hypersleep: View {
         let decision2 = "Get Home!"
         let firstChoicePageName = Celebrate.PageName
         let secondChoicePageName = Home_Sweet_Home.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Control Room", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

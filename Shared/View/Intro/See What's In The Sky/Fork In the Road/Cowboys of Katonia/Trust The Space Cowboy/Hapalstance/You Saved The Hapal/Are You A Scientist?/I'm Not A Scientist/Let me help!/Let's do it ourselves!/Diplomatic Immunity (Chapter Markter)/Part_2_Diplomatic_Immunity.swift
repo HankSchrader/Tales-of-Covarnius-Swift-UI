@@ -19,7 +19,7 @@ struct Part_2_Diplomatic_Immunity: View {
         let decision2 = "Sneak into the council store room."
         let firstChoicePageName = Part_1_House.PageName
         let secondChoicePageName = Part_1_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Ambassador or Sneak", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

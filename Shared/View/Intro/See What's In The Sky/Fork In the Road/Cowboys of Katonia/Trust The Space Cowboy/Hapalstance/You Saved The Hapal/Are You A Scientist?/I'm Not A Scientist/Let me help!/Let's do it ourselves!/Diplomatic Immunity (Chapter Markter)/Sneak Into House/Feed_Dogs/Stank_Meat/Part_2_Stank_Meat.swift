@@ -12,11 +12,11 @@ struct Part_2_Stank_Meat: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "With that obstacle overcome, you sneak upstairs in search of the ambassador uniforms. The first room you enter on the second story appears to be a bedroom. A closet on the far wall seems the obvious place to look so you make your way across the bedroom. When you open the door, a smile spreads across your face. There are several sashes inside.\n\nYou grab the uniforms and turn around. Chrono is standing next to the night stand with a key card in hand...uh...tentacle.\n\n“Looks like we have everything we need!” you exclaim. “Phase one complete.”"
+        "With that obstacle overcome, you sneak upstairs in search of the ambassador sashes. The first room you enter on the second story appears to be a bedroom. A closet on the far wall seems the obvious place to look so you make your way across the bedroom. When you open the door, a smile spreads across your face. There are several sashes inside.\n\nYou grab the uniforms and turn around. Chrono is standing next to the night stand with a key card in hand.\n\n“Looks like we have everything we need!” you exclaim. “Phase one complete.”"
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Stank_Meat.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Stank Meat", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

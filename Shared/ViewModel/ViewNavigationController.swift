@@ -439,6 +439,12 @@ struct ViewNavigationController {
             Growlics_2()
         case Secret_Ending.PageName:
             Secret_Ending()
+        case Gold_Ending.PageName:
+            Gold_Ending()
+        case Silver_Ending.PageName:
+            Silver_Ending()
+        case Bronze_Ending.PageName:
+            Bronze_Ending()
             
         default:
             ErrorView(choice: userChoice)
