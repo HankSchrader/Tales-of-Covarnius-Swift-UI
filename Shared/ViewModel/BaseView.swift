@@ -52,7 +52,6 @@ struct BaseView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: geo.size.width, height: geo.size.height)
-                        .offset(x: 0, y: view.image == "Crash Land" ? 160 : 0)
                         .opacity(opacity)
                         .animation(Animation.easeOut(duration: 1.25), value: opacity)
                         .onAppear {
@@ -74,6 +73,7 @@ struct BaseView: View {
                         
                         Text(view.decision1)
                             .padding()
+                            .font(.title)
                             .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
                                 Text("Awesome!")
                             }
@@ -108,6 +108,7 @@ struct BaseView: View {
                                     Text("Nice!")
                                 }
                                 .padding()
+                                .font(.title)
                             
                             
                         }
@@ -141,6 +142,7 @@ struct BaseView: View {
                                     Text("Great")
                                 }
                                 .padding()
+                                .font(.title)
                             
                             
                         }

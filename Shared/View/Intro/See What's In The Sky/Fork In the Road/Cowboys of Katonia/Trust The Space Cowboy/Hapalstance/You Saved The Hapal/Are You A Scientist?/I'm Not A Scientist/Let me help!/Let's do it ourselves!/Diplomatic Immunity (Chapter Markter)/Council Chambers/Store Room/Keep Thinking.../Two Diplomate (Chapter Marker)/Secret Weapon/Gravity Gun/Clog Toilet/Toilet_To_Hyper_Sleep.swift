@@ -16,7 +16,7 @@ struct Part_1_Toilet_To_Hyper_Sleep: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Toilet_To_Hyper_Sleep.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hypersleep" decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Hypersleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
