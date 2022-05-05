@@ -23,6 +23,7 @@ struct BaseView: View {
     
     var body: some View {
         var userDecision = ""
+        var isChapterUnlocked = false
         let isSecondChoice = {
             self.view.decision2 != ""
         }
@@ -83,19 +84,19 @@ struct BaseView: View {
                         let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                         impactHeavy.impactOccurred()
                         userDecision = view.firstChoicePageName
-                        saveChapter(pageName: userDecision)
+                        isChapterUnlocked = saveChapter(pageName: userDecision)
                         // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
-                        saveToUserDefaults(view.decision1, view.firstChoicePageName)
+                      
                         
                     })
                         .onDisappear{
                             // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                            if allChapters.contains(userDecision) == true && userDecision == view.firstChoicePageName {
-                                
-                                constructAndStoreChapter(currentPageView: userDecision)
+                            if isChapterAlreadyUnlocked(userDecision: userDecision, choice: view.firstChoicePageName) && !isChapterUnlocked  {
                                 self.showingAlertDecision1 = true
-                                
+                                constructAndStoreChapter(currentPageView: userDecision)
+    
                             }
+                            saveToUserDefaults(view.decision1, view.firstChoicePageName)
                         }.zIndex(1)
                     
                         .padding()
@@ -117,21 +118,19 @@ struct BaseView: View {
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                             impactHeavy.impactOccurred()
                             userDecision = view.secondChoicePageName
-                            saveChapter(pageName: userDecision)
-                            
-                            saveToUserDefaults(view.decision2, view.secondChoicePageName)
-                            
-                            
+                            isChapterUnlocked = saveChapter(pageName: userDecision)
+             
                         })
                         
                         .onDisappear{
                             // Shows a chapter unlocked alert if their decision leads them to a new chapter.
                             
-                            if allChapters.contains(userDecision) == true && userDecision == view.secondChoicePageName {
+                            if isChapterAlreadyUnlocked(userDecision: userDecision, choice: view.secondChoicePageName) && !isChapterUnlocked  {
                                 constructAndStoreChapter(currentPageView: userDecision)
                                 self.showingAlertDecision2 = true
                                 
                             }
+                            saveToUserDefaults(view.decision2, view.secondChoicePageName)
                         }
                     }
                     
@@ -150,19 +149,17 @@ struct BaseView: View {
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                             impactHeavy.impactOccurred()
                             userDecision = view.thirdChoicePageName
-                            saveChapter(pageName: userDecision)
-                            
-                            saveToUserDefaults(view.decision3, view.thirdChoicePageName)
-                            
-                            
+                            isChapterUnlocked = saveChapter(pageName: userDecision)
+          
                         })
                         .onDisappear{
                             // Shows a chapter unlocked alert if their decision leads them to a new chapter.
-                            if allChapters.contains(userDecision) == true && userDecision == view.thirdChoicePageName {
+                            if isChapterAlreadyUnlocked(userDecision: userDecision, choice: view.thirdChoicePageName) && !isChapterUnlocked {
                                 constructAndStoreChapter(currentPageView: userDecision)
                                 self.showingAlertDecision3 = true
                                 
                             }
+                            saveToUserDefaults(view.decision3, view.thirdChoicePageName)
                         }
                     }
                 }.zIndex(1)
@@ -174,17 +171,51 @@ struct BaseView: View {
     
 }
 
-private func saveChapter(pageName: String) -> Void {
-    let defaults = UserDefaults.standard
-    if Constants.chapters.contains(pageName) {
-        let chapterOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
+/// For some reason I have to define a variable "user decision" and instantiate it with the view choice page name. If I don't do that, then sometimes the chapter alert will not trigger. Need to figure out why.
+private func isChapterAlreadyUnlocked(userDecision: String, choice: String) -> Bool {
+
+        return Constants.chapters.contains(userDecision) == true && userDecision == choice
+    
         
+}
+
+/// This saveChapter function is complicated. First I'm checking if the page is a potential new chapter. If it is, I retrieve all unlocked chapters. Since we can only
+/// store simple object in UserDefault, I can only store the chapter name without ANY identifier. By the way the story goes, sometimes different slides will be the same chapter. (For Instance, Fork In the Road.)
+/// To get around that, I retrieve the identifier from the Chapter object. Then I compare them against the unlocked chapter in UserDefaults to get their id. Then I verify if the new chapter being added already
+/// has an identier. If the identifier already exists, don't trigger the "New Chapter" alert.
+private func saveChapter(pageName: String) -> Bool {
+    let defaults = UserDefaults.standard
+    var chapterIsAlreadyInDefaults = false
+    if Constants.chapters.contains(pageName) {
+        let chapterOptional:[String]? = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters) as? [String] ?? []
+
+        let currentIndex = Constants.chapterMap[pageName]?.order ?? -1
+   
         if let chapterOptional = chapterOptional {
-            var chapters = chapterOptional
-            chapters.append(pageName)
-            defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+
+            var chapters: [String] = chapterOptional
+            let idArr = buildChapterIdentifcationIndex(chapters: chapters)
+            if !idArr.contains(currentIndex) {
+                chapters.append(pageName)
+                defaults.set(chapters, forKey: DefaultsKeys.unlockedChapters)
+                chapterIsAlreadyInDefaults = false
+            } else {
+                chapterIsAlreadyInDefaults = true
+            }
+
         }
     }
+    return chapterIsAlreadyInDefaults
+}
+
+private func buildChapterIdentifcationIndex(chapters: [String]) -> [Int?] {
+    var idArr: [Int?] = []
+ 
+    for i in chapters {
+        let indexOrder: Int? = Constants.chapterMap[i]?.order
+        idArr.append(indexOrder ?? nil)
+    }
+    return idArr
 }
 private func constructAndStoreChapter(currentPageView: String) -> Void {
     

@@ -14,6 +14,7 @@ struct Constants {
  
     
     static let chapters = [Part_1_Intro.PageName,
+                           Part_1_Dissect_My_Brains.PageName,
                            Part_1_Fork_In_The_Road.PageName,
                            Part_1_Cowboys_Of_Katonia.PageName,
                            Part_1_Fake_Til_You_Make.PageName,
@@ -28,7 +29,7 @@ struct Constants {
     
     static let chapterMap = [
         Part_1_Intro.PageName: Chapter(pageName: Part_1_Intro.PageName, chapterTitle: "Adventure Time!", order: 2),
-        
+        Part_1_Dissect_My_Brains.PageName: Chapter(pageName: Part_1_Dissect_My_Brains.PageName, chapterTitle: "Fork In The Road", order: 3),
         Part_1_Fork_In_The_Road.PageName: Chapter(pageName: Part_1_Fork_In_The_Road.PageName, chapterTitle: "Fork In The Road", order: 3) ,
         
         Part_1_Cowboys_Of_Katonia.PageName: Chapter(pageName: Part_1_Cowboys_Of_Katonia.PageName, chapterTitle: "Cowboys of Katonia", order: 4),

@@ -13,7 +13,7 @@ struct Part_4_See_Whats_In_The_Sky: View {
     var body: some View {
 
         let text =
-        "“Bonjour,” the alien says slowly, waving his long slender arm. You look at him slack jawed with confusion. The alien speaks French?\n\n“Je m’appelle Chrono,” he continues with a bow. His eyes never leave your face.\n\nYou shake your head. “Do you speak English, by chance?” you ask hesitantly.\n\nThe creature hits a button located on his belt and says, “Sorry for the confusion. I just assumed…”"
+        "“Bonjour,” the alien says slowly, waving his long slender arm. You look at him slack jawed with confusion. The alien speaks French?\n\n“Je m’appelle Chrono,” he continues with a bow. His eyes never leave your face.\n\nYou shake your head. “Do you speak English, by chance?” you ask.\n\nThe creature taps a device on his ear and says, “Sorry for the confusion. I just assumed…”"
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_Part_2_See_Whats_In_The_Sky.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono In Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
