@@ -16,7 +16,7 @@ struct Part_1_Dissect_My_Brains: View {
     
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Dissect_My_Brains.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Asteroid", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

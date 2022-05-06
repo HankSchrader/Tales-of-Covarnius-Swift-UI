@@ -27,7 +27,7 @@ struct Part_1_1_Landing: View {
         "“Bonjour!” One of the aliens bellows as he steps closer to the ship. He seems to be the one in charge. Or at least, that’s what you assume based on the large crown worn atop his head.\n\n“You’re going to need to adjust your translators,” Chrono says with a yawn. “This Earthling doesn’t speak French.”\n\n“Who are you calling French?” you ask, looking from Chrono to the crown clad extraterrestrial."
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Cruiser", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

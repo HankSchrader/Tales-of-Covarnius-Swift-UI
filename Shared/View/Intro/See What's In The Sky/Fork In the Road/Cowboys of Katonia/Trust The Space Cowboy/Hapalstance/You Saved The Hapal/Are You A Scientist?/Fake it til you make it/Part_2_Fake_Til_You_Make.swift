@@ -18,7 +18,7 @@ struct Part_2_Fake_Til_You_Make: View {
         let decision2 = "Wing it."
         let firstChoicePageName = Part_4_Not_Scientist.PageName
         let secondChoicePageName = Part_1_Wing_It.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Lab", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
