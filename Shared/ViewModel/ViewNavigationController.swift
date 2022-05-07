@@ -126,8 +126,6 @@ struct ViewNavigationController {
             Part_6_Save_The_Hapal()
         case Part_1_Landing.PageName:
             Part_1_Landing()
-        case Part_2_1_Landing.PageName:
-            Part_2_1_Landing()
         case Part_1_1_Landing.PageName:
             Part_1_1_Landing()
         case Part_2_Landing.PageName:
