@@ -15,7 +15,7 @@ struct Part_1_Fork_In_The_Road: View {
         let text =
         "After careful consideration, you decide the alien is probably not going to dissect your brain. The pleading look in his eyes and frightened demeanor shows he needs help.\n\nAt the very least, you’ll get out of all the math homework your teacher assigned today. You cautiously approach the green hued creature. Before you know it, he is insisting you enter the spaceship."
         let firstChoicePageName = Part_2_Fork_In_The_Road.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Earth_", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Chrono and Ship", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
    
     }

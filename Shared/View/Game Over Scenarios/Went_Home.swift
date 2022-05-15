@@ -32,7 +32,7 @@ struct Went_Home_2: View {
     var body: some View {
 
         let text =
-        "You make a snack and keep watching, but nothing ever happens. Eventually, you switch the channel over to cartoons and begin to wonder if you even really saw a spaceship.\n\nYou know what you saw though, and can’t help but wonder what the aliens wanted. As you head to bed, you wonder if you should have investigated after all.\n\nYou can’t help but think perhaps you missed out on the opportunity of a lifetime..."
+        "You make a snack and keep watching, but nothing ever happens. Eventually, you switch the channel over to cartoons and begin to wonder if that had really been a spaceship.\n\nYou know what you saw though, and can’t help but wonder what the aliens wanted. While laying in bed, you wonder if you should have investigated after all.\n\nYou can’t help but think perhaps you missed out on the opportunity of a lifetime..."
 
         let decision1 = Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
