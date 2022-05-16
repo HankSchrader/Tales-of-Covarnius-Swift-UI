@@ -16,6 +16,7 @@ struct BaseView: View {
     var view: StoryPayload
     let defaults = UserDefaults.standard
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+
     let errorMsg = "Something Went Wrong."
     init(view: StoryPayload) {
         self.view = view
@@ -27,16 +28,17 @@ struct BaseView: View {
         let isSecondChoice = {
             self.view.decision2 != ""
         }
-        let allChapters = Constants.chapters
+    
         let isThirdChoice = {
             self.view.decision3 != ""
         }
         let isGameOver = {
             self.view.decision1 == Constants.GameOverPhrase
         }
-        
-        VStack {
-            ZStack {
+  
+        return VStack {
+           
+             ZStack {
                 ScrollView {
                     Text(view.text)
                     
@@ -74,7 +76,7 @@ struct BaseView: View {
                         
                         Text(view.decision1)
                             .padding()
-                            .font(.title)
+                            .font(isIPad ? .title : .body)
                             .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
                                 Text("Awesome!")
                             }
@@ -86,6 +88,9 @@ struct BaseView: View {
                         userDecision = view.firstChoicePageName
                         isChapterUnlocked = saveChapter(pageName: userDecision)
                         // MARK: If it is a gameover, then reset user defaults. Otherwise save the current page.
+                        if view.decision1 == Constants.GameOverPhrase {
+                            UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
+                        }
                       
                         
                     })
@@ -109,9 +114,8 @@ struct BaseView: View {
                                     Text("Nice!")
                                 }
                                 .padding()
-                                .font(.title)
-                            
-                            
+                                .font(isIPad ? .title : .body)
+
                         }
                         
                         .simultaneousGesture(TapGesture().onEnded{
@@ -141,7 +145,8 @@ struct BaseView: View {
                                     Text("Great")
                                 }
                                 .padding()
-                                .font(.title)
+                                .font(isIPad ? .title : .body)
+
                             
                             
                         }
@@ -180,7 +185,7 @@ private func isChapterAlreadyUnlocked(userDecision: String, choice: String) -> B
 }
 
 /// This saveChapter function is complicated. First I'm checking if the page is a potential new chapter. If it is, I retrieve all unlocked chapters. Since we can only
-/// store simple object in UserDefault, I can only store the chapter name without ANY identifier. By the way the story goes, sometimes different slides will be the same chapter. (For Instance, Fork In the Road.)
+/// store simple objects in UserDefault, I can only store the chapter name without ANY identifier. By the way the story goes, sometimes different slides will be the same chapter. (For Instance, Fork In the Road.)
 /// To get around that, I retrieve the identifier from the Chapter object. Then I compare them against the unlocked chapter in UserDefaults to get their id. Then I verify if the new chapter being added already
 /// has an identier. If the identifier already exists, don't trigger the "New Chapter" alert.
 private func saveChapter(pageName: String) -> Bool {
@@ -310,9 +315,7 @@ private func removeMutuallyExclusiveChapters(currentPageView: String, currentUnl
 /// Resets the UserDefaults if the user picks a decision that leads to a game over.
 /// If it is a gameover, then reset user defaults. Otherwise save the current page.
 private func saveToUserDefaults(_ view: String, _ viewChoice: String) -> Void {
-    if view == Constants.GameOverPhrase {
-        UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
-    } else {
+    if view != Constants.GameOverPhrase {
         UserDefaults.standard.set(viewChoice, forKey: DefaultsKeys.currentPage)
     }
 }

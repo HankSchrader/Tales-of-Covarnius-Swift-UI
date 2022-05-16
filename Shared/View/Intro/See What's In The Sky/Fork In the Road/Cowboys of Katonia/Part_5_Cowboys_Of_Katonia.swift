@@ -16,7 +16,7 @@ struct Part_5_Cowboys_Of_Katonia: View {
         let decision2 = "Trust The Space Cowboy"
         let firstChoicePageName = Part_1_Make_A_Run_For_It.PageName
         let secondChoicePageName = Part_1_Trust_The_Space_Cowboy.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Crash Land", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Katonian", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
 
     }

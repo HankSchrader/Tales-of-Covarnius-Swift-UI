@@ -18,7 +18,7 @@ struct TitleView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @State private var showDeleteAlert = false
     var defaults = UserDefaults.standard
-
+  
     private struct Constants {
         static let duration: Double = 0.9
         static let minOpacity: Double = 0.25
