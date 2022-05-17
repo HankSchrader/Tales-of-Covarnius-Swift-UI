@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Part_4_They_Are_Vicious: View {
     static let PageName = "Part_4_They_Are_Vicious"
+    let isIpad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -16,7 +17,7 @@ struct Part_4_They_Are_Vicious: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_They_Are_Vicious.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Outside Home", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIpad ? "Outside Home" : "Outside Home iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
 
 

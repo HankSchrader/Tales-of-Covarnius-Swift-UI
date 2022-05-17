@@ -30,7 +30,7 @@ struct Part_1_2_Diplomatic_Immunity: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Diplomatic_Immunity.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Ambassador or Sneak", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

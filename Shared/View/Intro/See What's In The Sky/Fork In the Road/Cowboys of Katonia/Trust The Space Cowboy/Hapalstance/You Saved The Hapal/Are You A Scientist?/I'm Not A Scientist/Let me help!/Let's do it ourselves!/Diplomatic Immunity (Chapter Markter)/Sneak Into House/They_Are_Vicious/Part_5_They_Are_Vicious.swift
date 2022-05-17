@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Part_5_They_Are_Vicious: View {
     static let PageName = "Part_5_They_Are_Vicious"
+    let isIpad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
        let text =

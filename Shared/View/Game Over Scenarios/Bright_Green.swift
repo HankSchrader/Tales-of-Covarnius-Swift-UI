@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct Bright_Green: View {
-  
-    // NOTE: This should actually be yellow, but I'm not changing it here...to much work.
+
     static let PageName = "Bright_Green"
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -18,7 +18,7 @@ struct Bright_Green: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Lab Explosion", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Lab Explosion" : "Lab Explosion iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
             }
         }

@@ -10,13 +10,14 @@ import SwiftUI
 struct Part_9_Boarding_Ticket: View {
     static let PageName = "Part_9_Boarding_Ticket"
     @State var showMenu = false
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     var body: some View {
         let text =
         "Luna’s tail wags and she snaps her head back and forth. First to you...then to the guard’s desk.\n\n“Luna,” you begin, “why do you care about…” Then it hits you. A big, shiny key lays on the top of the desk. The guard must have forgotten about it in his haste to leave.\n\n“Can you get that, girl?”\n\nYou point to the key, and speak slowly to her. She barks in affirmation. The only problem is that she needs a push through the bars. Just before you help her squeeze through the bars, Chrono taps you on the shoulder.\n\n“I know how to get us out of here,” he says."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_10_Boarding_Ticket.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Covarnian Cruiser", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Covarnian Cruiser" : "Covarnian Cruiser iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -28,6 +29,7 @@ struct Part_9_Boarding_Ticket_Previews: PreviewProvider {
 }
 struct Part_10_Boarding_Ticket: View {
     static let PageName = "Part_10_Boarding_Ticket"
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -37,7 +39,7 @@ struct Part_10_Boarding_Ticket: View {
         let decision2 = "Ram spaceship into wall."
         let firstChoicePageName = Part_1_Fetch_Key.PageName
         let secondChoicePageName = Part_1_Crash_Wall.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Brig", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Brig" : "Brig iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

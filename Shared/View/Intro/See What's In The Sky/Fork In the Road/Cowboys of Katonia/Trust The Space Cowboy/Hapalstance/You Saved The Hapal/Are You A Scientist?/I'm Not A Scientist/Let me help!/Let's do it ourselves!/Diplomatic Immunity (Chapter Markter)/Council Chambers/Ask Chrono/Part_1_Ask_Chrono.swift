@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Part_1_Ask_Chrono: View {
     static let PageName = "Part_1_Ask_Chrono"
+    let isIpad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -17,7 +18,7 @@ struct Part_1_Ask_Chrono: View {
        
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Store_Room.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Outside Home", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIpad ? "Outside Home" : "Outside Home iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
