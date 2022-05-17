@@ -81,10 +81,16 @@ struct ViewNavigationController {
             Part_1_Make_A_Run_For_It()
         case Part_2_Make_A_Run_For_It.PageName:
             Part_2_Make_A_Run_For_It()
+        case Part_2_5_Make_A_Run_For_It.PageName:
+            Part_2_5_Make_A_Run_For_It()
         case Part_1_Trust_The_Space_Cowboy.PageName:
             Part_1_Trust_The_Space_Cowboy()
         case Part_2_Trust_The_Space_Cowboy.PageName:
             Part_2_Trust_The_Space_Cowboy()
+        case Part_2_1_Fake_Til_You_Make.PageName:
+            Part_2_1_Fake_Til_You_Make()
+        case Part_2_2_Fake_Til_You_Make.PageName:
+            Part_2_2_Fake_Til_You_Make()
         case Part_3_Trust_The_Space_Cowboy.PageName:
             Part_3_Trust_The_Space_Cowboy()
         case Part_4_Trust_The_Space_Cowboy.PageName:

@@ -26,7 +26,7 @@ struct Part_2_Save_The_Hapal: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“What’s the matter?” you ask, approaching the couple.\n\nKayo and Kina stand up and you can see the worried looks on their faces.\n\n“The baby hapal wandered into this cave and now he’s too afraid to come out,” Kayo explains. “The problem is, we’re all too big to get through this opening to nab 'em.”"
+        "“What’s the matter?” you ask, approaching the couple.\n\nKayo and Kina stand up and you can see the worried looks on their faces.\n\n“The baby hapal wandered into this cave and now he’s too afraid to come out,” Kayo explains. “The problem is, we’re all too big to get through this opening to nab 'im.”"
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Save_The_Hapal.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: "Hapal", decision1: decision1, firstChoicePageName: firstChoicePageName)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_2_Feed_Dogs: View {
     static let PageName = "Part_2_Feed_Dogs"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+    let isIpad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =

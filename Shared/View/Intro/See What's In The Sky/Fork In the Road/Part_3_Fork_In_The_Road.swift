@@ -11,6 +11,7 @@ struct Part_3_Fork_In_The_Road: View {
     @State var showMenu = false
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     static let PageName = "Part_3_Fork_In_The_Road"
+
     var body: some View {
 
         let decision1 = Constants.ContinuePhrase

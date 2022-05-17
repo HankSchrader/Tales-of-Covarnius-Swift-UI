@@ -13,10 +13,10 @@ struct Part_1_Landing: View {
  
     var body: some View {
         let text =
-        "The next thing you know, you wake up with a loud yawn. A strange dream occupied your mind while you slept, something about an alien and a spaceship…\n\nYou glance frantically at your surroundings and it all comes back to you.\n\nChrono is waking up as well. “Ah, we’re finally here!” he announces, stretching out his long slender arms.\n\nThe ship descends onto a planet that looks like Earth. Aliens that look like Chrono surround the ship as you land. "
+        "The next thing you know, you wake up with a loud yawn. A strange dream occupied your mind while you slept, something about an alien and a spaceship…\n\nYou glance frantically at your surroundings and it all comes back to you.\n\nChrono is waking up as well. “Ah, we’re finally here!” he announces, stretching out his long slender arms.\n\nThe ship descends onto a planet that reminds you of Earth. Aliens that look like Chrono surround the ship as you land. "
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_1_Landing.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Covarnius iPad" : "Covarnius", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIpad ? "Covarnius iPad" : "Covarnius", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

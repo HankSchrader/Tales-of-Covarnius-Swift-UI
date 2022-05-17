@@ -16,7 +16,7 @@ struct Part_4_Let_Me_Help: View {
 
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_Let_Me_Help.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Sad Chrono", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

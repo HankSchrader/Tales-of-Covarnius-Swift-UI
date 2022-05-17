@@ -19,7 +19,7 @@ struct Part_4_Hapalstance: View {
         let decision2 = "Help Kayo with the Hapal."
         let firstChoicePageName = Part_1_Hapal_Down.PageName
         let secondChoicePageName = Part_1_Save_The_Hapal.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Mekop" : "Mekop iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Hapal Decision iPad", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
