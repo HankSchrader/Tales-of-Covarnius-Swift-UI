@@ -17,7 +17,7 @@ struct Part_1_House: View {
         
         let decision1 =  "This is getting shady. Turn back!"
         let decision2 = "Break in. The mission is too important!"
-        let firstChoicePageName = Part_1_Boarding_Ticket.PageName
+        let firstChoicePageName = Part_1_Council.PageName
         let secondChoicePageName = Part_2_House.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: isIpad ? "Outside Home" : "Outside Home iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)

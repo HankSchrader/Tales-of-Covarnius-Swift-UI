@@ -16,7 +16,6 @@ struct Part_2_Tell: View {
         let text =
         "“Thank you, you both deserve a hero’s celebration.” The king says, but then his voice grows weary. “We must thank Luna too, but her fur will take years to clean up.”\n\n“There may be fur everywhere, but at least we have our planet back!” Chrono points out.\n\n“Yes,” King Zanarq chuckles warmly, “I suppose we do.”"
        
-        
         var decision1 = "The End. Congratulations!"
         var firstChoicePageName = Bronze_Ending.PageName
         let currentlyUnlockedChapters: [String]? = defaults.array(forKey: DefaultsKeys.unlockedChapters) as! [String]?
@@ -27,7 +26,7 @@ struct Part_2_Tell: View {
             }
         }
      
-        let storyView: StoryPayload = StoryPayload(text: text, image:  isIPad ? "Big Luna iPad" : "Big Luna", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Dance on Lawn", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

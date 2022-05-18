@@ -15,7 +15,7 @@ struct Went_Home: View {
     var body: some View {
 
         let text =
-        "You decide to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the T.V is reporting on a story about a kitten that was just rescued from a tree. Nothing about an invasion."
+        "You decide to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna\n\nBursting through the front door, you turn on the news to see if there is any update on an alien invasion. The news anchor is reporting a story about a kitten that had been rescued from a tree. Nothing about an invasion."
 
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Went_Home_2.PageName

@@ -13,7 +13,7 @@ struct Part_2_Greatest_Scientist: View {
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
 
     var body: some View {
-        let text = "But if we’re both sleeping, who is going to pilot this ship?” you ask.\n\nChrono replies, “The ship has been pre-programmed to take us back to Covarnius. I’m not allowed to pilot the ships by myself anymore.”\n\n Manual piloting must be a privilege where he is from, you think to yourself.\n\n “Why not?” you ask Chrono. “Did you crash one or something?\n\n Just how superior are these aliens anyhow? After all, they’re relying on you to save their planet."
+        let text = "\"But if we’re both sleeping, who is going to pilot this ship?” you ask.\n\nChrono replies, “The ship has been pre-programmed to take us back to Covarnius. I’m not allowed to pilot the ships by myself anymore.”\n\nManual piloting must be a privilege where he is from, you think to yourself.\n\n“Why not?” you ask Chrono. “Did you crash one or something?\n\nJust how superior are these aliens anyhow? After all, they’re relying on you to save their planet."
             
             let decision1 = Constants.ContinuePhrase
             let firstChoicePageName = Part_3_Greatest_Scientist.PageName

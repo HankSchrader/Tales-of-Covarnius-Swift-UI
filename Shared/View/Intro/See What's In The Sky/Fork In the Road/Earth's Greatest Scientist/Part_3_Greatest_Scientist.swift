@@ -13,7 +13,7 @@ struct Part_3_Greatest_Scientist: View {
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     var body: some View {
         let text =
-            "\"There may have been a slight...incident,” Chrono says shifting in his seat, eyes cast downward. Then his mood shifts, he snaps his head up and looks at you.\n\n“But once I get Earth’s greatest scientist back to Covarnius, they’ll all see I’m smarter than they think. Now if you’re ready, I’m going to engage hypersleep.”\n\nEarth’s greatest scientist? I sure hope he’s not talking about me, you think."
+            "\"There may have been a slight...incident,” Chrono says shifting in his seat. Then his mood shifts, he snaps his head up and looks at you.\n\n“But once I get Earth’s greatest scientist back to Covarnius, they’ll all see I’m smarter than they think. Now if you’re ready, I’m going to engage hypersleep.”\n\nEarth’s greatest scientist? I sure hope he’s not talking about me, you think."
             
             let decision1 = Constants.ContinuePhrase
             let firstChoicePageName = Part_4_Greatest_Scientist.PageName

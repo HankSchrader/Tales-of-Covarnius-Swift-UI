@@ -13,7 +13,7 @@ struct Part_5_Let_Me_Help: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“That might be the worst plan I have ever heard,” King Zanarq responds quickly. “It’s almost certain death for anyone who would undertake such a mission.” King Zanarq waves his hand dismissively. The guards respond by opening the door and escorting the three of you outside.\n\n“Well that didn’t work as planned,” Chrono says matter-of-factly. “Ready to give up yet?”\n\n You think it over for a moment and respond..."
+        "“That might be the worst plan I have ever heard,” King Zanarq responds quickly. “It’s almost certain death for anyone who would undertake such a mission.” King Zanarq waves his hand dismissively. The guards respond by opening the door and escorting the three of you outside.\n\n“Well that didn’t work as planned,” Chrono says matter-of-factly. “Ready to give up yet?”\n\nYou think it over for a moment and respond..."
         let decision1 =  "Let's do it ourselves!"
         let decision2 = "I give up. At least we tried..."
         let firstChoicePageName = Part_1_Do_Ourselves.PageName

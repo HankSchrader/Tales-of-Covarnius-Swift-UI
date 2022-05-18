@@ -214,6 +214,8 @@ struct ViewNavigationController {
             Part_3_They_Are_Vicious()
         case Part_4_They_Are_Vicious.PageName:
             Part_4_They_Are_Vicious()
+        case Part_5_They_Are_Vicious.PageName:
+            Part_5_They_Are_Vicious()
         case Part_1_Feed_Dogs.PageName:
             Part_1_Feed_Dogs()
         case Part_2_Feed_Dogs.PageName:

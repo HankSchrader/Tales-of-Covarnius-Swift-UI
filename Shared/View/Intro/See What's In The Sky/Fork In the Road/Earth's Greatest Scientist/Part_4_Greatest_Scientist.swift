@@ -13,7 +13,7 @@ struct Part_4_Greatest_Scientist: View {
     let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     var body: some View {
         let text =
-        "“Chrono leads you to one of two comfy looking sofas at the back of the spaceship. It looks like the kind of couch that would be found in a psychologist’s office.\n\nYou lay down and instantly sink into the warm, cushiony lining. Luna leaps onto the couch next to you and snuggles up close.\n\n“These couches impart a sleeping agent into your skin upon contact,” Chrono explains. “That’s why you’re getting so tired. Do me a favor and count to ten.”\n\n“Sure,” you reply. “One...two…”"
+        "Chrono leads you to one of two sofas near the back of the spaceship. It looks like a couch that would be found in a psychologist’s office.\n\nYou lay down and instantly sink into the warm, cushiony lining. Luna leaps onto the couch next to you and snuggles up close.\n\n“These couches impart a sleeping agent into your skin upon contact,” Chrono explains. “That’s why you’re getting so tired. Do me a favor and count to ten.”\n\n“Sure,” you reply. “One...two…”"
     
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Landing.PageName
