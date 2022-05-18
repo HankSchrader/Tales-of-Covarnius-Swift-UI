@@ -12,7 +12,7 @@ struct Part_1_Diplomatic_Immunity: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "“Ok, then. That settles that,” Chrono says. “We have a plan, now to put it into action. Chrono stares back at you, dutifully awaiting directions.\n\nSo what does come next? Scratching Luna’s ears always helps you think.\n\n“Well, we’ll need some of those fancy sashes.” You count off on your fingers as you go. “And some sort of credentials. You know, just in case the Sinisterians question us."
+        "“Ok, then. That settles that,” Chrono says. “We have a plan, now to put it into action. Chrono stares back at you, awaiting directions.\n\nSo what does come next? Scratching Luna’s ears always helps you think.\n\n“Well, we’ll need some of those fancy sashes.” You count off on your fingers as you go. “And some sort of credentials. You know, just in case the Sinisterians question us."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_2_Diplomatic_Immunity.PageName

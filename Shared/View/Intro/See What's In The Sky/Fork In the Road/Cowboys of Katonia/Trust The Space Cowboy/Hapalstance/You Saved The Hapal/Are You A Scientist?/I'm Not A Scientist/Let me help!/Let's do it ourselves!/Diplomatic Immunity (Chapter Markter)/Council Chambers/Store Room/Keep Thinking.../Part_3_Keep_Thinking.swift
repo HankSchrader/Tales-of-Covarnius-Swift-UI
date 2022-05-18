@@ -19,7 +19,7 @@ struct Part_3_Keep_Thinking: View {
         let decision2 = "I'm not leaving Luna behind."
         let firstChoicePageName = Part_1_Two_Diplomats.PageName
         let secondChoicePageName = Part_1_Luna_Stays.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Sinisterian Ships", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Sneezy Sinisterian", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
         

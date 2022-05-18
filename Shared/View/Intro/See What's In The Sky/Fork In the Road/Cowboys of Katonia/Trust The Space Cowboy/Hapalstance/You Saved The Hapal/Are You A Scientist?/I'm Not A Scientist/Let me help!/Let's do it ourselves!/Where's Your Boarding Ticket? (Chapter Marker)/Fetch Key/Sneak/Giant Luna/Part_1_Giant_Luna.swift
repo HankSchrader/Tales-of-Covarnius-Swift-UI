@@ -17,7 +17,7 @@ struct Part_1_Giant_Luna: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Giant_Luna.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image:  isIPad ? "Big Luna iPad" : "Big Luna", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image:  isIPad ? "Luna_Growing_iPad_" : "Big Luna", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

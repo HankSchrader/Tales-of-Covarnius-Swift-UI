@@ -33,7 +33,7 @@ struct Part_2_1_Fake_Til_You_Make: View {
 
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_2_Fake_Til_You_Make.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -47,8 +47,8 @@ struct Part_2_2_Fake_Til_You_Make: View {
         "The guard that escorted you to the lab overheard everything and motions you to the door. “I’ll take you back to King Zanarq now,” he says. Before you know it, the scientist is reviewing charts, acting as if you did not even exist.\n\nFollowing the guard out of the lab, you wonder what the scientist was talking about. Covarnius’ last hope? Nothing can save them from what?\n\nMaybe it’s not as bad as it sounds. Perhaps it was their last hope for all-you-can-eat ice cream or riding the biggest roller coaster in the universe! You mull over the scientist’s cryptic words and follow the guard to see King Zanarq."
 
         let decision1 = Constants.ContinuePhrase
-        let firstChoicePageName = Part_4_Not_Scientist.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let firstChoicePageName = Part_1_Not_Scientist.PageName
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

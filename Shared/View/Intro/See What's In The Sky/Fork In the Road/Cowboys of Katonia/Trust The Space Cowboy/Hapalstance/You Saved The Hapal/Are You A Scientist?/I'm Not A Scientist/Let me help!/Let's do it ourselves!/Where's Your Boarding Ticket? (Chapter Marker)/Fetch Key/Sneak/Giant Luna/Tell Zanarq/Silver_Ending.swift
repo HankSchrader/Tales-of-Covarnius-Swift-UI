@@ -15,9 +15,9 @@ struct Silver_Ending: View {
     var body: some View {
         let text = ""
 
-        let decision1 = "You Earned the SECOND best Ending!"
+        let decision1 = "Congratulations!"
         let firstChoicePageName = Part_1_Intro.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Silver", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Gold", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

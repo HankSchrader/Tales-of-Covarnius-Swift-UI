@@ -17,7 +17,7 @@ struct Part_3_Store_Room: View {
        
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_Store_Room.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Box iPad" : "Box iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Covarnian Cruiser" : "Covarnian Cruiser iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

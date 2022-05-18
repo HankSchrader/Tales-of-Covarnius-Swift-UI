@@ -214,13 +214,10 @@ struct ViewNavigationController {
             Part_3_They_Are_Vicious()
         case Part_4_They_Are_Vicious.PageName:
             Part_4_They_Are_Vicious()
-            
         case Part_1_Feed_Dogs.PageName:
             Part_1_Feed_Dogs()
         case Part_2_Feed_Dogs.PageName:
             Part_2_Feed_Dogs()
-            
-            
         case Part_1_Stank_Meat.PageName:
             Part_1_Stank_Meat()
         case Part_2_Stank_Meat.PageName:
@@ -229,8 +226,7 @@ struct ViewNavigationController {
             Part_3_Stank_Meat()
         case Part_4_Stank_Meat.PageName:
             Part_4_Stank_Meat()
-            
-            
+
         case Part_1_Just_Desserts.PageName:
             Part_1_Just_Desserts()
         case Part_2_Just_Desserts.PageName:
