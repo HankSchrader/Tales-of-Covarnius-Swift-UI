@@ -18,7 +18,7 @@ struct Bad_Distraction: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Chief Korgle" : "Chief Korgle iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Blasters", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

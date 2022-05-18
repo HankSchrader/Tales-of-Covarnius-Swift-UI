@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Part_1_Hypersleep: View {
     static let PageName = "Part_1_Hypersleep"
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -19,7 +20,7 @@ struct Part_1_Hypersleep: View {
         let decision2 = "Clog the bathroom toilets."
         let firstChoicePageName = Part_2_Hypersleep.PageName
         let secondChoicePageName = Part_1_Clog_Toilet.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Hyper Sleep 2" : "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

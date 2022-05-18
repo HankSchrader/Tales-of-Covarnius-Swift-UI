@@ -18,7 +18,7 @@ struct Part_9_Gravity_Gun: View {
         let decision2 = "Clog the bathroom toilets."
         let firstChoicePageName = Part_1_Hypersleep.PageName
         let secondChoicePageName = Part_1_Clog_Toilet.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Trebok", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Toilet or Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

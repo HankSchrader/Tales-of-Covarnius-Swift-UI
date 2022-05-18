@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Part_4_Clog_Toilet: View {
     static let PageName = "Part_4_Clog_Toilet"
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     @State var showMenu = false
     var body: some View {
         let text =
@@ -20,7 +21,7 @@ struct Part_4_Clog_Toilet: View {
         let decision2 =  "Create another distraction."
         let firstChoicePageName = Part_1_Help_Chrono.PageName
         let secondChoicePageName = Part_5_Clog_Toilet.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Clogged Toilet", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Key iPad" : "Key", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

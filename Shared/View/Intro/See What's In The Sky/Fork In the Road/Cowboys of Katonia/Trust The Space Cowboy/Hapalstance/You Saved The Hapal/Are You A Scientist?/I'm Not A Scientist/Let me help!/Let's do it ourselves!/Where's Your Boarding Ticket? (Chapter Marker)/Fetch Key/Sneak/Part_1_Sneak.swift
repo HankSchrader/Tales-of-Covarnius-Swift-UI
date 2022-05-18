@@ -13,11 +13,11 @@ struct Part_1_Sneak: View {
     @State var showMenu = false
     var body: some View {
         let text =
-        "You dart behind bushes and trees, and promptly arrive at 99 Larblok Lane: Chrono’s house. Chrono sprints up the staircase, you and Luna follow closely behind. Peering out the window of his bedroom, you notice that Sinisterians are going door to door, rounding up all of the Covarnians.\n\n“They have Mr. Blarknark in chains!” Chrono cries, pointing to his neighbor about six doors down.\n\n“That means we don’t have much time to fix the machine. I'm guessing they’ll be here in about twenty minutes,” you say.\n\nYou turn to the Hyper Growth Ray and realize that it might be more difficult to fix than you thought."
+        "You dart behind bushes and trees, and arrive at 99 Larblok Lane: Chrono’s house. Chrono sprints up the staircase, you and Luna follow closely behind. Peering out the window of his bedroom, you notice that Sinisterians are going door to door, rounding up all of the Covarnians.\n\n“They have Mr. Blarknark in chains!” Chrono cries, pointing to his neighbor about six doors down.\n\n“That means we don’t have much time to fix the machine. I'm guessing they’ll be here in about twenty minutes,” you say.\n\nYou turn to the Hyper Growth Ray and realize that it might be more difficult to fix than you thought."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Sneak.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Invasion", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         
     }

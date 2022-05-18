@@ -16,7 +16,7 @@ struct Part_1_Toilet_To_Hyper_Sleep: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Toilet_To_Hyper_Sleep.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hypersleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -31,7 +31,7 @@ struct Part_2_Toilet_To_Hyper_Sleep: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Toilet_To_Hyper_Sleep.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hypersleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -45,7 +45,7 @@ struct Part_3_Toilet_To_Hyper_Sleep: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_4_Toilet_To_Hyper_Sleep.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hypersleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Hyper Sleep", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -60,7 +60,7 @@ struct Part_4_Toilet_To_Hyper_Sleep: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_5_Hypersleep.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Chief Korgle" : "Chief Korgle iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: "Control Room", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
