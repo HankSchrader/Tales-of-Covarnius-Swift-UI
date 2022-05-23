@@ -18,7 +18,7 @@ struct Part_1_Ask_Chrono: View {
        
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Store_Room.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

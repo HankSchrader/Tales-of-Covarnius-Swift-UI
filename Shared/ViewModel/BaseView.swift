@@ -80,6 +80,12 @@ struct BaseView: View {
                             .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
                                 Text("Awesome!")
                             }
+                            .onAppear{
+                                if(self.showingAlertDecision1 != false) {
+                                    SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                }
+                       
+                            }
                         
                         
                     }.simultaneousGesture(TapGesture().onEnded{
@@ -115,6 +121,12 @@ struct BaseView: View {
                                 }
                                 .padding()
                                 .font(isIPad ? .title : .body)
+                                .onAppear{
+                                    if(self.showingAlertDecision2 != false) {
+                                        SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                    }
+                           
+                                }
 
                         }
                         
@@ -146,6 +158,12 @@ struct BaseView: View {
                                 }
                                 .padding()
                                 .font(isIPad ? .title : .body)
+                                .onAppear{
+                                    if(self.showingAlertDecision3 != false) {
+                                        SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                    }
+                           
+                                }
 
                             
                             

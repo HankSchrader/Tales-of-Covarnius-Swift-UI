@@ -10,6 +10,7 @@ import SwiftUI
 struct Part_1_Warmongers: View {
     static let PageName = "Part_1_Warmongers"
     @State var showMenu = false
+    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     var body: some View {
         let text =
         "You and Chrono walk in silence. If Covarnius is about to be invaded by a hostile race of aliens, you do NOT want to be there for that. You could get captured, enslaved, or worse. What could possibly be done to help?\n\nGoing home is clearly the wisest decision. But on the other hand, there is surely something that the Covarnians haven’t thought of yet. Perhaps you should stay and try to help. You mull over the situation as you continue walking towards the shipping area. A decision needs to be reached as soon as possible.\n\nChrono gives you one last, sad look. This is it. Go home or stay and help the Covarnians?"
@@ -18,7 +19,7 @@ struct Part_1_Warmongers: View {
         let decision2 = "Never Give Up! We can do this."
         let firstChoicePageName = Abandonded_Chrono.PageName
         let secondChoicePageName = Part_1_Let_Me_Help.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Earth or Chrono", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ?  "Earth or Chrono" : "Earth or Chrono iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

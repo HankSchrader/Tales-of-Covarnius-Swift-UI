@@ -20,7 +20,7 @@ struct Part_6_Fork_In_The_Road: View {
 
         let firstChoicePageName = Part_1_Greatest_Scientist.PageName
         let secondChoicePageName = Part_1_Cowboys_Of_Katonia.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ?  "Earth_" : "Earth iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ?  "Earth_" : "Earth_iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
         }
     }
