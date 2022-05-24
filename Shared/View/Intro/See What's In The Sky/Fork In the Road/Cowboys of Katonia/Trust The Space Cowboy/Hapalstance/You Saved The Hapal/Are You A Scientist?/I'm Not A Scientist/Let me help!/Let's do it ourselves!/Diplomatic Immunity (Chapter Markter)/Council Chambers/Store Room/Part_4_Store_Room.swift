@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_4_Store_Room: View {
     static let PageName = "Part_4_Store_Room"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =
@@ -20,7 +20,7 @@ struct Part_4_Store_Room: View {
         let decision2 = "It's not important"
         let firstChoicePageName = Part_1_Keep_Thinking.PageName
         let secondChoicePageName = Part_1_Not_Important.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Covarnius iPad" : "Covarnius", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Covarnius iPad" : "Covarnius", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
 
     }

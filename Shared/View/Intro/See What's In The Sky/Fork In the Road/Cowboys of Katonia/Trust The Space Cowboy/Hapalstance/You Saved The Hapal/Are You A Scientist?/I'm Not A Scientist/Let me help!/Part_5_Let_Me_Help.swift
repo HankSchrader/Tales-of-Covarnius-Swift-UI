@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_5_Let_Me_Help: View {
     static let PageName = "Part_5_Let_Me_Help"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =
@@ -18,7 +18,7 @@ struct Part_5_Let_Me_Help: View {
         let decision2 = "I give up. At least we tried..."
         let firstChoicePageName = Part_1_Do_Ourselves.PageName
         let secondChoicePageName = Part_1_Try_Give_Up.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Sad Chrono iPad" : "Sad Chrono", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Sad Chrono iPad" : "Sad Chrono", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

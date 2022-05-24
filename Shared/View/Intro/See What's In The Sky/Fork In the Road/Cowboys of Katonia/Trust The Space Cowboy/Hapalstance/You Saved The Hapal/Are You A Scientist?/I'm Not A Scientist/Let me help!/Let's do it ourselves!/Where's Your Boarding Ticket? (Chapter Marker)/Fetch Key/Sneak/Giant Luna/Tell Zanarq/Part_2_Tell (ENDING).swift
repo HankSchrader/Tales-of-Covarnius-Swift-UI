@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_2_Tell: View {
     static let PageName = "Part_2_Tell"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     let defaults = UserDefaults.standard
     var body: some View {

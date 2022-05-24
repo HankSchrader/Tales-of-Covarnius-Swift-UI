@@ -19,7 +19,7 @@ struct Went_Home: View {
 
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Went_Home_2.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Game Over Kitty", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Game Over Kitty" : "Game Over Kitty iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

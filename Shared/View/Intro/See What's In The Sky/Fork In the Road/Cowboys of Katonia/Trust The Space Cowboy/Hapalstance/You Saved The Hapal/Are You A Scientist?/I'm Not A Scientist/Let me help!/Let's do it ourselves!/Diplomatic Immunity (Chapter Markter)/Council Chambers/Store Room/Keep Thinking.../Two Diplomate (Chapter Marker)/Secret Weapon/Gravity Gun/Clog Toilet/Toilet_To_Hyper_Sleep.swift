@@ -52,7 +52,7 @@ struct Part_3_Toilet_To_Hyper_Sleep: View {
 
 struct Part_4_Toilet_To_Hyper_Sleep: View {
     static let PageName = "Part_4_Toilet_To_Hyper_Sleep"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
        let text =

@@ -16,7 +16,7 @@ struct Part_1_Secret_Weapon: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_Part_2_Secret_Weapon.PageName
-        let storyView: StoryPayload = StoryPayload(text: text,  image: "Weapon_Choice", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text,  image: Constants.isIPad ? "Weapon_Choice" : "Weapon Choice iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -33,7 +33,7 @@ struct Part_1_Part_2_Secret_Weapon: View {
         let decision2 = "We have an Anti-Gravity Gun!"
         let firstChoicePageName = Part_1_Ice_Ray.PageName
         let secondChoicePageName = Part_1_Gravity_Gun.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Weapon_Choice", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Weapon_Choice" : "Weapon Choice iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName, secondChoicePageName: secondChoicePageName, decision2: decision2)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

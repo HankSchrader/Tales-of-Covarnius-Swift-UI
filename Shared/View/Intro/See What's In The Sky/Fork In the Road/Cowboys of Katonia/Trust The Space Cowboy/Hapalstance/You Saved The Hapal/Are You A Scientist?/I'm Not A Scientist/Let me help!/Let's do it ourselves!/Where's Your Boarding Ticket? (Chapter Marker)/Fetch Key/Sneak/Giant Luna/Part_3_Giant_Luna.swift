@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_3_Giant_Luna: View {
     static let PageName = "Part_3_Giant_Luna"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =

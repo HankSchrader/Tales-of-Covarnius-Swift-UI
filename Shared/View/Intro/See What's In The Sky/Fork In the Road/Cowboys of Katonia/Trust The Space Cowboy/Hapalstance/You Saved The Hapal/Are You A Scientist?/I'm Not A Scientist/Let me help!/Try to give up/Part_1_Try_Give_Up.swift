@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_1_Try_Give_Up: View {
     static let PageName = "Part_1_Try_Give_Up"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =

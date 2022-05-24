@@ -11,7 +11,7 @@ struct Constants {
     static let ipadFontSize = 24
     static let ContinuePhrase = "Keep Going"
     static let GameOverPhrase = "GAME OVER"
- 
+    static let isIPad = UIDevice.current.userInterfaceIdiom == .pad
     
     static let chapters = [Part_1_Intro.PageName,
                            Part_1_Dissect_My_Brains.PageName,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_1_Take_Key: View {
     static let PageName = "Part_1_Take_Key"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     
     var body: some View {
@@ -18,7 +18,7 @@ struct Part_1_Take_Key: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_3_Two_Diplomats.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Key iPad" : "Key", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Key iPad" : "Key", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

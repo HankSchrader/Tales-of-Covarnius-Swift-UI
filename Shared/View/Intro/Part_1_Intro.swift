@@ -12,17 +12,14 @@ struct Part_1_Intro: View {
     @State var showMenu = false
     let defaults = UserDefaults.standard
     static let PageName: String = "Part_1_Intro"
-    var image = "Luna With Bee"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+    var image = "Luna With Bee iPad"
     init() {
        
         let chaptersOptional = UserDefaults.standard.array(forKey: DefaultsKeys.unlockedChapters)
         if chaptersOptional == nil {
             UserDefaults.standard.set( [Part_1_Intro.PageName], forKey: DefaultsKeys.unlockedChapters)
         }
-        if(isIPad) {
-            self.image = "Luna With Bee iPad"
-        }
+   
     }
 
     var body: some View {

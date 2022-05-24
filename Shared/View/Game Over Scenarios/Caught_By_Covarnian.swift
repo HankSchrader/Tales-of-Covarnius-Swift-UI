@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Caught_By_Covarnian: View {
     static let PageName = "Caught_By_Covarnian"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =
@@ -17,7 +17,7 @@ struct Caught_By_Covarnian: View {
         
         let decision1 =  Constants.ContinuePhrase
         let firstChoicePageName = Caught_By_Covarnian_2.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Box iPad" : "Box iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Box iPad" : "Box iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
         }
     }
@@ -25,7 +25,7 @@ struct Caught_By_Covarnian: View {
 
 struct Caught_By_Covarnian_2: View {
     static let PageName = "Caught_By_Covarnian_2"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =
@@ -33,7 +33,7 @@ struct Caught_By_Covarnian_2: View {
         
         let decision1 =  Constants.GameOverPhrase
         let firstChoicePageName = "Title View"
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Earth_" : "Earth_iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Earth_" : "Earth_iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
              DisplayView(showMenu: self.$showMenu, view: storyView)
         }
     }

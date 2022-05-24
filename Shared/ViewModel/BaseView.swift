@@ -15,7 +15,7 @@ struct BaseView: View {
     let vnc = ViewNavigationController()
     var view: StoryPayload
     let defaults = UserDefaults.standard
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
 
     let errorMsg = "Something Went Wrong."
     init(view: StoryPayload) {
@@ -43,7 +43,7 @@ struct BaseView: View {
                     Text(view.text)
                     
                         .fontWeight(.light)
-                        .if(isIPad) {
+                        .if(Constants.isIPad) {
                             view in
                             view.font(.system(size: CGFloat(Constants.ipadFontSize)))
                                 .padding(.leading)
@@ -76,18 +76,15 @@ struct BaseView: View {
                         
                         Text(view.decision1)
                             .padding()
-                            .font(isIPad ? .title : .body)
+                            .font(Constants.isIPad ? .title : .body)
                             .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
                                 Text("Awesome!")
+                                    
+                                    .onAppear{
+                                        SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                    }
                             }
-                            .onAppear{
-                                if(self.showingAlertDecision1 != false) {
-                                    SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
-                                }
-                       
-                            }
-                        
-                        
+          
                     }.simultaneousGesture(TapGesture().onEnded{
                         let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                         impactHeavy.impactOccurred()
@@ -118,15 +115,12 @@ struct BaseView: View {
                             Text(view.decision2)
                                 .alert("\(Constants.chapterMap[view.secondChoicePageName]?.chapterTitle ?? "") Unlocked!", isPresented: self.$showingAlertDecision2) {
                                     Text("Nice!")
+                                        .onAppear{
+                                            SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                        }
                                 }
                                 .padding()
-                                .font(isIPad ? .title : .body)
-                                .onAppear{
-                                    if(self.showingAlertDecision2 != false) {
-                                        SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
-                                    }
-                           
-                                }
+                                .font(Constants.isIPad ? .title : .body)
 
                         }
                         
@@ -154,19 +148,17 @@ struct BaseView: View {
                         NavigationLink(destination: self.vnc.routeDecision(choice: view.thirdChoicePageName).navigationBarBackButtonHidden(true)) {
                             Text(view.decision3)
                                 .alert("\(Constants.chapterMap[view.thirdChoicePageName]?.chapterTitle ?? self.errorMsg) Unlocked!", isPresented: self.$showingAlertDecision3) {
+                         
                                     Text("Great")
+                                        .onAppear{
+                                            SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
+                                        }
+                                  
+                                    
                                 }
                                 .padding()
-                                .font(isIPad ? .title : .body)
-                                .onAppear{
-                                    if(self.showingAlertDecision3 != false) {
-                                        SoundsController.playSounds(soundfile: "New Chapter Sound.wav")
-                                    }
-                           
-                                }
+                                .font(Constants.isIPad ? .title : .body)
 
-                            
-                            
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)

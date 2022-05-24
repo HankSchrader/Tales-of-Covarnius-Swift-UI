@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Part_1_Council: View {
     static let PageName = "Part_1_Council"
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     @State var showMenu = false
     var body: some View {
         let text =
@@ -18,7 +18,7 @@ struct Part_1_Council: View {
       
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_1_2_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
@@ -26,7 +26,7 @@ struct Part_1_Council: View {
 struct Part_1_2_Council: View {
     static let PageName = "Part_1_2_Council"
     @State var showMenu = false
-    let isIPad = UIDevice.current.userInterfaceIdiom == .pad
+     
     var body: some View {
         let text =
         "You follow Chrono to the council chamber and then around to the back of the large metal building. It’s bland architecture contrasts the vibrant flora of Covarnius."
@@ -34,7 +34,7 @@ struct Part_1_2_Council: View {
       
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
