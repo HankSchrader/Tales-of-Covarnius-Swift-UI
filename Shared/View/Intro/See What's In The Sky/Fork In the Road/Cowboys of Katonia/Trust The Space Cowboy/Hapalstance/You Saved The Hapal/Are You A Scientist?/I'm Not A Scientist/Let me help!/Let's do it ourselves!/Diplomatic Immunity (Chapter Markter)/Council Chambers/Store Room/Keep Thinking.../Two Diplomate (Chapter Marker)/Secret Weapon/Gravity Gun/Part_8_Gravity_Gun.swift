@@ -18,7 +18,7 @@ struct Part_8_Gravity_Gun: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_9_Gravity_Gun.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, Constants.isIPad ? "Toilet or Sleep" : "Toilet or Sleep iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Toilet or Sleep" : "Toilet or Sleep iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

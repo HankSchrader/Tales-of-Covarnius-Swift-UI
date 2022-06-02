@@ -427,7 +427,6 @@
 			isa = PBXGroup;
 			children = (
 				53562CBF27B0945200800F0A /* Error Views */,
-				535E3ADC2760DB4F0074EA50 /* Model */,
 				535E3ADD2760DB9A0074EA50 /* View */,
 				535E3ADF2760DEBB0074EA50 /* ViewModel */,
 				536F3CED2757A986007E5250 /* Utilities */,
@@ -605,7 +604,6 @@
 			isa = PBXGroup;
 			children = (
 				535E3A1B27599EDB0074EA50 /* Sneak */,
-				535E3A0C27599B5D0074EA50 /* Part_1_Fetch_Key.swift */,
 				535E3A1227599D200074EA50 /* Part_2_Fetch_Key.swift */,
 				535E3A1427599DA50074EA50 /* Part_3_Fetch_Key.swift */,
 				535E3A1627599DFC0074EA50 /* Part_4_Fetch_Key.swift */,
@@ -883,6 +881,7 @@
 			children = (
 				53C461092789F4F20052B139 /* TitleView.swift */,
 				535E3ACC275B10710074EA50 /* MenuView.swift */,
+				535E3ADC2760DB4F0074EA50 /* Model */,
 				5303C7CA2755AEC500710D34 /* ContentView.swift */,
 				5303C7F32755CB2000710D34 /* Intro */,
 				5303C7F92755CE7A00710D34 /* Game Over Scenarios */,
@@ -920,6 +919,7 @@
 				53BACDBB2756EE38009E493E /* Part_3_Fork_In_The_Road.swift */,
 				53BACDBE2756EF14009E493E /* Part_4_Fork_In_The_Road.swift */,
 				53BC2900276599910040BFB8 /* Part_5_Fork_In_The_Road.swift */,
+				535E3A0C27599B5D0074EA50 /* Part_1_Fetch_Key.swift */,
 				53BACDC42756EFC4009E493E /* Part_6_Fork_In_The_Road.swift */,
 				535E39D0275858610074EA50 /* Earth's Greatest Scientist */,
 				53BACDC72756F22F009E493E /* Cowboys of Katonia */,

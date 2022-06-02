@@ -412,6 +412,8 @@ struct ViewNavigationController {
             
         case Part_1_Giant_Luna.PageName:
             Part_1_Giant_Luna()
+        case Part_1_2_Giant_Luna.PageName:
+            Part_1_2_Giant_Luna()
         case Part_2_Giant_Luna.PageName:
             Part_2_Giant_Luna()
         case Part_3_Giant_Luna.PageName:

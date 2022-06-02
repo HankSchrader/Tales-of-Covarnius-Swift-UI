@@ -35,6 +35,7 @@ struct BaseView: View {
         let isGameOver = {
             self.view.decision1 == Constants.GameOverPhrase
         }
+        let imageOffset = adjustOffSetByImage(image: view.image)
   
         return VStack {
            
@@ -57,16 +58,14 @@ struct BaseView: View {
                         .frame(width: geo.size.width, height: geo.size.height)
                         .opacity(opacity)
                         .animation(Animation.easeOut(duration: 1.25), value: opacity)
+                        .offset( x: imageOffset.x, y: imageOffset.y)
                         .onAppear {
                             DispatchQueue.main.async {
                                 self.opacity += 1
-                                
-                                
                             }
-                            
                         }
+                   
                 }.zIndex(0).ignoresSafeArea()
-                
                 
                 VStack {
                     Spacer()
@@ -75,7 +74,7 @@ struct BaseView: View {
                                     .navigationBarBackButtonHidden(isSecondChoice() || isGameOver())) {
                         
                         Text(view.decision1)
-                            .padding()
+                                            .padding()
                             .font(Constants.isIPad ? .title : .body)
                             .alert("\(Constants.chapterMap[view.firstChoicePageName]?.chapterTitle ?? "decision1") Unlocked!", isPresented: self.$showingAlertDecision1) {
                                 Text("Awesome!")
@@ -185,6 +184,7 @@ struct BaseView: View {
     }
     
 }
+
 
 /// For some reason I have to define a variable "user decision" and instantiate it with the view choice page name. If I don't do that, then sometimes the chapter alert will not trigger. Need to figure out why.
 private func isChapterAlreadyUnlocked(userDecision: String, choice: String) -> Bool {
@@ -329,3 +329,4 @@ private func saveToUserDefaults(_ view: String, _ viewChoice: String) -> Void {
         UserDefaults.standard.set(viewChoice, forKey: DefaultsKeys.currentPage)
     }
 }
+  
