@@ -52,7 +52,7 @@ struct DisplayView: View {
                     
             }
             .navigationBarTitle("Tales of Covarnius", displayMode: .inline)
-            .navigationBarItems(leading: (
+            .navigationBarItems(trailing:  (
                 Button(action: {
                     withAnimation {
                         self.showMenu.toggle()

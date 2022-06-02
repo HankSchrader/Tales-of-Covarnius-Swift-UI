@@ -58,8 +58,17 @@ struct Constants {
 
 public func adjustOffSetByImage(image: String) -> (x: CGFloat, y: CGFloat) {
         switch image {
-        case "Chief Korgle iPhone 2": return (-75.0, 12.0)
+        case "Chief Korgle iPhone 2": return (-20.0, 30.0)
+    
         case "Covarnian Cruiser iPhone Modded": return (-20.0, -10.0)
+        case "Toilet iPhone mod": return (-40.0, 0.0)
+        case "Chief Korgle iPhone 3": return (-20.0, -20.0)
+        case "Blasters iPhone": return (-20.0, -10.0)
+        case "Hyper Sleep iPhone": return (-10.0, 50.0)
+        case "Hyper Sleep iPhone 2": return (-10.0, 100.0)
+        case "Control Room iPhone": return (-10.0, 50.0)
+        case "Hall of Heroes iPhone": return (0.0, 40.0)
+        case "Hall of Heroes iPhone 2": return (0.0, 135.0)
         default: return (0.0, 0.0)
     }
 }

@@ -16,7 +16,7 @@ struct Home_Sweet_Home: View {
 
         let decision1 = "THE END"
         let firstChoicePageName = Silver_Ending.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Hall of Heroes", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Hall of Heroes" : "Hall of Heroes iPhone 2", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }
