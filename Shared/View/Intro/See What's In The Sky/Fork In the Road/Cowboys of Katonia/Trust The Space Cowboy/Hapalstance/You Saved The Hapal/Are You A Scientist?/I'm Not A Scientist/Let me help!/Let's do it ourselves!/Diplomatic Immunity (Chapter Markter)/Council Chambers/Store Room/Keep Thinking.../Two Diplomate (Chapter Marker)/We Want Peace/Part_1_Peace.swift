@@ -13,11 +13,11 @@ struct Part_1_Peace: View {
      
     var body: some View {
         let text =
-        "A peace agreement?” Chief Korgle questions gruffly. “We don’t want peace. In fact we want quite the opposite.”\n\nPerhaps a more forceful approach would have been better.\n\nKorgle continues, “We are going to invade your planet and there’s nothing you can say to change my mind.”\n\nThe chief motions to the guard, “Take these ambassadors back to their ship. I do not wish to speak with them further.”\n\n“This is terrible,” you whisper to Chrono. “The plan's falling apart.”\n\nChrono’s head hangs in defeat.\n\nAs you jump back into your ship, Luna gives you a slobbery lick. “I’m glad to see you too, girl,” you tell her while patting her head. "
+        "A peace agreement?” Chief Korgle questions gruffly. “We don’t want peace. In fact we want quite the opposite.”\n\nPerhaps a more forceful approach would have been better.\n\nKorgle continues, “We are going to invade your planet and there’s nothing you can say to change my mind.”\n\nThe chief motions to the guard, “Take these ambassadors back to their ship. I do not wish to speak with them further.”\n\n“This is terrible,” you whisper to Chrono. “The plan's falling apart.”\n\nChrono’s head hangs in defeat."
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Peace.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Chief Korgle" : "Chief Korgle iPhone",  decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Chief Korgle" : "Chief Korgle iPhone 2",  decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

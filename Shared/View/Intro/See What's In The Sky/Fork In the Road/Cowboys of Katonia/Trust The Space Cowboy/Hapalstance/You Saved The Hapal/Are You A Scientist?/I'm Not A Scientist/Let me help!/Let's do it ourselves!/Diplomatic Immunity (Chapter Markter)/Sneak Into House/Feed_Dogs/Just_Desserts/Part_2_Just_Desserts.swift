@@ -16,7 +16,7 @@ struct Part_2_Just_Desserts: View {
         
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_Council.PageName
-        let storyView: StoryPayload = StoryPayload(text: text, image: "Luna With Bee iPad", decision1: decision1, firstChoicePageName: firstChoicePageName)
+        let storyView: StoryPayload = StoryPayload(text: text, image: Constants.isIPad ? "Running Down Hall" : "Running Down Hall iPhone", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
 }

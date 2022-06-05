@@ -13,7 +13,7 @@ struct Part_2_Make_A_Run_For_It: View {
      
     var body: some View {
      
-        let text = " After a few moments, you’re approached by the alien that you are attempting to escape. “Are you sure y’all don’t need some help?” he asks with concern.\n\nYou’re not sure what else to do at this point. You’re hot and thirsty. Your ship’s broken down. You have no other choice but to accept his help. After catching your breath, you explain the situation.\n\n“Our ship broke down,” you say. “We need help repairing it.”"
+        let text = "After a few moments, you’re approached by the alien that you are attempting to escape. “Are you sure y’all don’t need some help?” he asks with concern.\n\nYou’re not sure what else to do at this point. You’re hot and thirsty. Your ship’s broken down. You have no other choice but to accept his help. After catching your breath, you explain the situation.\n\n“Our ship broke down,” you say. “We need help repairing it.”"
           
     let decision1 = Constants.ContinuePhrase
     let firstChoicePageName = Part_2_5_Make_A_Run_For_It.PageName

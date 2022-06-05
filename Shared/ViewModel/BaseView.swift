@@ -55,6 +55,7 @@ struct BaseView: View {
                     Image(view.image)
                         .resizable()
                         .scaledToFit()
+                        .scaleEffect(1.125)
                         .frame(width: geo.size.width, height: geo.size.height)
                         .opacity(opacity)
                         .animation(Animation.easeOut(duration: 1.25), value: opacity)
@@ -104,7 +105,7 @@ struct BaseView: View {
     
                             }
                             saveToUserDefaults(view.decision1, view.firstChoicePageName)
-                        }.zIndex(1)
+                        }
                     
                         .padding()
                     if(isSecondChoice()) {
@@ -177,7 +178,7 @@ struct BaseView: View {
                         }
                     }
                 }.zIndex(1)
-                    .padding(.bottom)
+                    
             }
         }
         
