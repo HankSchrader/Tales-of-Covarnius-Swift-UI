@@ -403,6 +403,9 @@ struct ViewNavigationController {
             Part_4_Clog_Toilet()
         case Part_5_Clog_Toilet.PageName:
             Part_5_Clog_Toilet()
+        case DedicationView.PageName:
+            DedicationView()
+            
             
         case Part_1_Not_Important.PageName:
             Part_1_Not_Important()

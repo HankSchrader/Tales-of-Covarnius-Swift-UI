@@ -16,7 +16,7 @@ struct Bronze_Ending: View {
         let text = "Good job! But if you play again, you can find even better endings..."
 
         let decision1 = "Congratulations!"
-        let firstChoicePageName = Part_1_Intro.PageName
+        let firstChoicePageName = DedicationView.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: "Silver", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
     }
