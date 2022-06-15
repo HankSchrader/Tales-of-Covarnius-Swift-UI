@@ -452,7 +452,8 @@ struct ViewNavigationController {
             Silver_Ending()
         case Bronze_Ending.PageName:
             Bronze_Ending()
-            
+        case DirectionsView.PageName:
+            DirectionsView()
         default:
             ErrorView(choice: userChoice)
         }

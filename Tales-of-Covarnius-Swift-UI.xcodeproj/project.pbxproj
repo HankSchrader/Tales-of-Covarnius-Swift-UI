@@ -196,6 +196,7 @@
 		53C46114278B9B130052B139 /* ViewNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46113278B9B130052B139 /* ViewNavigationController.swift */; };
 		53C46116278B9F320052B139 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46115278B9F320052B139 /* ImageModel.swift */; };
 		53C6443C285960500071A469 /* DedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6443B285960500071A469 /* DedicationView.swift */; };
+		53C6443E2859682A0071A469 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6443D2859682A0071A469 /* DirectionsView.swift */; };
 		53DB4BBC28232CD900FCFF03 /* Gold_Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB4BBB28232CD900FCFF03 /* Gold_Ending.swift */; };
 		53DB4BBE28232D4A00FCFF03 /* Silver_Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB4BBD28232D4A00FCFF03 /* Silver_Ending.swift */; };
 		53DB4BC028232D8300FCFF03 /* Bronze_Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB4BBF28232D8300FCFF03 /* Bronze_Ending.swift */; };
@@ -396,6 +397,7 @@
 		53C46113278B9B130052B139 /* ViewNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationController.swift; sourceTree = "<group>"; };
 		53C46115278B9F320052B139 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		53C6443B285960500071A469 /* DedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DedicationView.swift; sourceTree = "<group>"; };
+		53C6443D2859682A0071A469 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		53DB4BBB28232CD900FCFF03 /* Gold_Ending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gold_Ending.swift; sourceTree = "<group>"; };
 		53DB4BBD28232D4A00FCFF03 /* Silver_Ending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silver_Ending.swift; sourceTree = "<group>"; };
 		53DB4BBF28232D8300FCFF03 /* Bronze_Ending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bronze_Ending.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 				5303C7F52755CB5D00710D34 /* Run Away! */,
 				5303C7E72755AF4900710D34 /* Part_1_Intro.swift */,
 				53C6443B285960500071A469 /* DedicationView.swift */,
+				53C6443D2859682A0071A469 /* DirectionsView.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -1206,6 +1209,7 @@
 				535E3A7B2759BAA80074EA50 /* Part_2_Peace.swift in Sources */,
 				53BACDDC2756F87D009E493E /* Part_2_Make_A_Run_For_It.swift in Sources */,
 				535E3A462759AA6D0074EA50 /* Part_2_Council.swift in Sources */,
+				53C6443E2859682A0071A469 /* DirectionsView.swift in Sources */,
 				53BACDAB2756E6A1009E493E /* Part 3 See Whats In The Sky.swift in Sources */,
 				53BACDCC2756F649009E493E /* Part_2_Cowboys_Of_Katonia.swift in Sources */,
 				53C4610E278A1F070052B139 /* DisplayView.swift in Sources */,
@@ -1497,7 +1501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1512,7 +1516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.dev";
 				PRODUCT_NAME = "Tales of Covarnius Development";
 				SDKROOT = iphoneos;
@@ -1530,7 +1534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1546,7 +1550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.dev";
 				PRODUCT_NAME = "Tales of Covarnius Development";
 				SDKROOT = iphoneos;
@@ -1624,7 +1628,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1639,7 +1643,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.prod";
 				PRODUCT_NAME = "Tales of Covarnius Production";
 				SDKROOT = iphoneos;
@@ -1709,7 +1713,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1725,7 +1729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.prod";
 				PRODUCT_NAME = "Tales of Covarnius Production";
 				SDKROOT = iphoneos;
@@ -1803,7 +1807,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1818,7 +1822,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.stage";
 				PRODUCT_NAME = "Tales of Covarnius Staging";
 				SDKROOT = iphoneos;
@@ -1888,7 +1892,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.76;
+				CURRENT_PROJECT_VERSION = 1.78;
 				DEVELOPMENT_TEAM = EL239SVJR7;
 				ENABLE_PREVIEWS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1904,7 +1908,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.76;
+				MARKETING_VERSION = 1.78;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrightAnchor.Tales-of-Covarnius-Swift-UI.stage";
 				PRODUCT_NAME = "Tales of Covarnius Staging";
 				SDKROOT = iphoneos;
