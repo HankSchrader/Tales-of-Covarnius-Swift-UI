@@ -15,7 +15,7 @@ struct ContentView: View {
     let vnc = ViewNavigationController()
 
     init() {
-        self.startingViewName = Part_1_Intro.PageName
+        self.startingViewName = DirectionsView.PageName
         self.startingImage = UserDefaults.standard.string(forKey: DefaultsKeys.currentPicture) ?? ""
         
         let startingViewOptional = UserDefaults.standard.string(forKey: DefaultsKeys.currentPage)

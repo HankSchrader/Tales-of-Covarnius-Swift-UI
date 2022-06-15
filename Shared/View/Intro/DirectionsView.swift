@@ -13,8 +13,8 @@ struct DirectionsView: View {
     static let PageName = "Directions"
     var body: some View {
         let text = "Thanks for playing! Unlocked chapters can be viewed by tapping the 3-lined button on the top right.\nTap the blue text on the bottom to make a decision."
-        let decision1 = "Back to the Beginning"
-        let firstChoicePageName = DedicationView.PageName
+        let decision1 = "Start the Adventure!"
+        let firstChoicePageName = Part_1_Intro.PageName
         let storyView: StoryPayload = StoryPayload(text: text, image: "Running Down Hall", decision1: decision1, firstChoicePageName: firstChoicePageName)
         return DisplayView(showMenu: self.$showMenu, view: storyView)
  
