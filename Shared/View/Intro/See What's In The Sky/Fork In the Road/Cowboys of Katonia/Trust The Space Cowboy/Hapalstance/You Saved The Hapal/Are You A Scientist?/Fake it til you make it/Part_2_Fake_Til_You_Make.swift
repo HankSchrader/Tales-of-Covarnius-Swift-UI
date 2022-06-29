@@ -31,7 +31,7 @@ struct Part_2_1_Fake_Til_You_Make: View {
      
     var body: some View {
         let text =
-        " You look around at the lab and realize that there's no way you can help the Covarnians. Not like this anyway. Pushing their possible anger out of your mind, you tell the scientist that they have the wrong person.\n\nConsternation crosses the scientist’s face. “That is troubling news to be sure,” he says. “Your research in the field of cloaking technology was Covarnius’ last hope. So your name isn’t Clyde DuBois?”\n\n“No,” you reply sadly, “my name is—”\n\n“It doesn’t matter,” the scientists says, cutting you off. “Nothing can save us now.”"
+        "You look around at the lab and realize that there's no way you can help the Covarnians. Not like this anyway. Pushing their possible anger out of your mind, you tell the scientist that they have the wrong person.\n\nConsternation crosses the scientist’s face. “That is troubling news to be sure,” he says. “Your research in the field of cloaking technology was Covarnius’ last hope. So your name isn’t Clyde DuBois?”\n\n“No,” you reply sadly, “my name is—”\n\n“It doesn’t matter,” the scientists says, cutting you off. “Nothing can save us now.”"
 
         let decision1 = Constants.ContinuePhrase
         let firstChoicePageName = Part_2_2_Fake_Til_You_Make.PageName

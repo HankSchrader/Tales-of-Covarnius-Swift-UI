@@ -94,7 +94,7 @@ struct BaseView: View {
                         if view.decision1 == Constants.GameOverPhrase {
                             UserDefaults.standard.set(Part_1_Intro.PageName, forKey: DefaultsKeys.currentPage)
                         }
-                      
+                        saveToUserDefaults(view.decision1, view.firstChoicePageName)
                         
                     })
                         .onDisappear{
@@ -104,7 +104,7 @@ struct BaseView: View {
                                 constructAndStoreChapter(currentPageView: userDecision)
     
                             }
-                            saveToUserDefaults(view.decision1, view.firstChoicePageName)
+                       
                         }
                     
                         .padding()
@@ -129,6 +129,7 @@ struct BaseView: View {
                             impactHeavy.impactOccurred()
                             userDecision = view.secondChoicePageName
                             isChapterUnlocked = saveChapter(pageName: userDecision)
+                            saveToUserDefaults(view.decision2, view.secondChoicePageName)
              
                         })
                         
@@ -138,9 +139,9 @@ struct BaseView: View {
                             if isChapterAlreadyUnlocked(userDecision: userDecision, choice: view.secondChoicePageName) && !isChapterUnlocked  {
                                 constructAndStoreChapter(currentPageView: userDecision)
                                 self.showingAlertDecision2 = true
-                                
+                          
                             }
-                            saveToUserDefaults(view.decision2, view.secondChoicePageName)
+                      
                         }
                     }
                     
@@ -174,7 +175,7 @@ struct BaseView: View {
                                 self.showingAlertDecision3 = true
                                 
                             }
-                            saveToUserDefaults(view.decision3, view.thirdChoicePageName)
+                         
                         }
                     }
                 }.zIndex(1)

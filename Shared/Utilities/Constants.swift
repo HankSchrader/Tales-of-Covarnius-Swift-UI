@@ -69,8 +69,10 @@ public func adjustOffSetByImage(image: String) -> (x: CGFloat, y: CGFloat) {
         case "Control Room iPhone": return (-10.0, 50.0)
         case "Hall of Heroes iPhone": return (0.0, 40.0)
         case "Katonian iPhone": return (0.0, 40.0)
+        case "Katonian": return (0.0, -30)
+        case "Running Down Hall": return (0.0, -140.0)
         case "Hall of Heroes iPhone 2": return (0.0, 135.0)
-        default: return (0.0, 0.0)
+        default: return (0.0, -60.0)
     }
 }
 

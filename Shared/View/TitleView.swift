@@ -98,27 +98,11 @@ struct TitleView: View {
                             }
 
 
-                        
                     }.padding()
                         .simultaneousGesture(TapGesture().onEnded{
                             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
                             impactHeavy.impactOccurred()
                         })
-                    
-                    Button(action: {
-                        print("Delete Data.")
-                    }) {
-                        Text("Credits")
-                        
-                            .foregroundColor(Color.orange)
-                        
-                        
-                    }
-                    .padding()
-                    .simultaneousGesture(TapGesture().onEnded{
-                        let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                        impactHeavy.impactOccurred()
-                    })
                     
                     Button("Delete Progress") {
                         showDeleteAlert = true
